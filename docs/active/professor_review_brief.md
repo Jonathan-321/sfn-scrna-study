@@ -125,6 +125,9 @@ The main questions for feedback are:
 
 1. [`README.md`](../README.md)
 2. [`docs/active/scp259_analysis_completion_report.md`](scp259_analysis_completion_report.md)
-3. [`docs/active/uc_first_paper_writeup.md`](uc_first_paper_writeup.md)
-4. [`results/uc_scp259/reports/scp259_final_benchmark_tables.csv`](../results/uc_scp259/reports/scp259_final_benchmark_tables.csv)
+3. [`docs/active/scp259_visual_asset_manifest.md`](scp259_visual_asset_manifest.md)
+4. [`docs/active/uc_first_paper_writeup.md`](uc_first_paper_writeup.md)
 5. [`results/uc_scp259/cfn_benchmarks/uc_recurring_edge_annotation_final_v3.csv`](../results/uc_scp259/cfn_benchmarks/uc_recurring_edge_annotation_final_v3.csv)
+
+The image-based figures are the primary review assets. The LaTeX table files are
+not part of the recommended advisor review path.

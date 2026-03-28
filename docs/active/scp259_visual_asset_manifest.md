@@ -124,19 +124,17 @@ Use for:
 
 - interpretation section
 
-## LaTeX Tables
+## Tables
 
-### Donor-global repeated benchmark
-- [`/Users/jonathanmuhire/CFN/sfn-scrna-study/results/uc_scp259/reports/latex/table1_donor_global_repeated.tex`](/Users/jonathanmuhire/CFN/sfn-scrna-study/results/uc_scp259/reports/latex/table1_donor_global_repeated.tex)
+Primary table source:
 
-### Donor-global LODO benchmark
-- [`/Users/jonathanmuhire/CFN/sfn-scrna-study/results/uc_scp259/reports/latex/table2_donor_global_lodo.tex`](/Users/jonathanmuhire/CFN/sfn-scrna-study/results/uc_scp259/reports/latex/table2_donor_global_lodo.tex)
+- [`/Users/jonathanmuhire/CFN/sfn-scrna-study/results/uc_scp259/reports/scp259_final_benchmark_tables.csv`](/Users/jonathanmuhire/CFN/sfn-scrna-study/results/uc_scp259/reports/scp259_final_benchmark_tables.csv)
 
-### Compartment extension benchmark
-- [`/Users/jonathanmuhire/CFN/sfn-scrna-study/results/uc_scp259/reports/latex/table3_compartment_extension.tex`](/Users/jonathanmuhire/CFN/sfn-scrna-study/results/uc_scp259/reports/latex/table3_compartment_extension.tex)
+Note:
 
-### CFN diagnostics
-- [`/Users/jonathanmuhire/CFN/sfn-scrna-study/results/uc_scp259/reports/latex/table4_cfn_diagnostics.tex`](/Users/jonathanmuhire/CFN/sfn-scrna-study/results/uc_scp259/reports/latex/table4_cfn_diagnostics.tex)
+- the image figures are the primary visual assets
+- the `.tex` table files in `results/uc_scp259/reports/latex/` are optional
+  internal export artifacts and are not required for review or interpretation
 
 ## Recommended paper order
 
@@ -147,4 +145,4 @@ Use for:
 5. Figure 5
 6. Figure 6
 7. Figure 7
-8. Tables 1-4 as manuscript tables or supplement tables
+8. `scp259_final_benchmark_tables.csv` as the compact machine-readable table source
