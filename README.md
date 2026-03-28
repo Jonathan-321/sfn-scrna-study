@@ -1,45 +1,112 @@
 # sfn-scrna-study
 
-Separate workspace for the single-cell RNA direction.
+Donor-aware single-cell RNA benchmarking workspace, currently centered on the
+ulcerative colitis atlas `SCP259` and a first evaluation of StructuralCFN on
+donor-level scRNA representations.
 
-This directory exists to keep the scRNA project distinct from the current
-clinical tabular NHANES and diabetes evaluation work in
-`/Users/jonathanmuhire/CFN/cfn-biomed-eval`.
+## Current status
 
-## Current goal
+This repo is no longer only a planning workspace. The `SCP259` benchmark is
+implemented and analyzed.
 
-Pick one concrete scRNA-seq task, one dataset family, and one defensible
-preprocessing plus evaluation setup before committing to model-heavy work.
+Completed:
 
-## Initial layout
+- donor-aware `Healthy` vs `UC` benchmark definition
+- donor-global composition and pseudobulk tables
+- repeated 5-fold donor CV and leave-one-donor-out robustness checks
+- compartment-aware `Epi` / `LP` extensions
+- first StructuralCFN runs on donor-global and compartment-aware composition
+- structural diagnostics:
+  - top-k overlap
+  - sign consistency
+  - consensus support
+  - full dependency-matrix similarity
+- first-pass biological annotation of recurring CFN edges
 
-- `docs/research_plan.md`: working project plan for the scRNA direction.
-- `docs/dataset_shortlist.md`: shortlist of candidate public datasets and the
-  eventual anchor task.
-- `docs/conventional_modeling_path.md`: methods-first note on the standard
-  scRNA workflow, major design decisions, and frontier directions.
-- `docs/first_benchmark_spec.md`: concrete first benchmark, test families, and
-  diligence gates.
-- `docs/uc_metadata_inventory.md`: current access and metadata audit for the UC
-  anchor dataset.
-- `docs/uc_preprocessing_decisions.md`: dataset-specific preprocessing rules
-  for the first UC donor-level benchmark.
-- `docs/uc_foundations_and_reference_workflows.md`: dataset-understanding note
-  linking the UC structure to standard scRNA workflow branches and reference
-  implementations.
-- `docs/uc_cluster_glossary.md`: plain-language explanation of the UC atlas
-  cluster labels and naming conventions.
-- `docs/uc_first_paper_writeup.md`: working paper-style writeup for the UC
-  benchmark, including current baseline results and the path to StructuralCFN.
-- `docs/uc_intuition_map.tex`: LaTeX concept map for the UC dataset hierarchy,
-  groupings, questions, and modeling ladder.
-- `data/`: raw and processed dataset notes for this track.
-- `scripts/`: one-off utilities for download, preprocessing, and dataset audit.
+## Current SCP259 claim
 
-## Immediate next steps
+The current defensible claim is:
 
-1. Keep the UC metadata audit reproducible with `scripts/audit_uc_metadata.py`.
-2. Build the first donor-level pseudobulk table for the frozen `Healthy` vs
-   `UC` benchmark.
-3. Build donor-level cluster-composition features before adding the more
-   granular donor-by-cell-type table.
+> Donor-level UC versus Healthy prediction is robustly learnable in `SCP259`.
+> Donor pseudobulk is the strongest predictive representation. StructuralCFN is
+> predictive on composition-based representations and recovers biologically
+> coherent edge themes, but its unconstrained structure does not recur stably
+> across folds at `N=30`.
+
+This is therefore an honest benchmark paper story, not yet a stable-mechanism
+or “CFN beats all baselines” story.
+
+## Start here
+
+If you are reviewing the project for the first time, use this order:
+
+1. [`docs/professor_review_brief.md`](docs/professor_review_brief.md)
+2. [`docs/scp259_analysis_completion_report.md`](docs/scp259_analysis_completion_report.md)
+3. [`docs/uc_first_paper_writeup.md`](docs/uc_first_paper_writeup.md)
+4. [`results/uc_scp259/reports/scp259_final_benchmark_tables.csv`](results/uc_scp259/reports/scp259_final_benchmark_tables.csv)
+5. [`results/uc_scp259/cfn_benchmarks/uc_recurring_edge_annotation_final_v3.csv`](results/uc_scp259/cfn_benchmarks/uc_recurring_edge_annotation_final_v3.csv)
+
+## Main documents
+
+- [`docs/professor_review_brief.md`](docs/professor_review_brief.md):
+  advisor-facing summary of what is complete, what is mixed, and what feedback
+  is needed
+- [`docs/scp259_analysis_completion_report.md`](docs/scp259_analysis_completion_report.md):
+  frozen SCP259 benchmark contract, final tables, figure list, and current
+  claim
+- [`docs/uc_first_paper_writeup.md`](docs/uc_first_paper_writeup.md):
+  longer paper-style writeup
+- [`docs/uc_cluster_glossary.md`](docs/uc_cluster_glossary.md):
+  plain-language explanation of atlas cluster names
+- [`docs/uc_preprocessing_decisions.md`](docs/uc_preprocessing_decisions.md):
+  preprocessing decisions for the donor-level benchmark
+
+## Main result artifacts
+
+- Donor-global representation comparison:
+  [`results/uc_scp259/benchmarks/donor_global_representation_comparison.csv`](results/uc_scp259/benchmarks/donor_global_representation_comparison.csv)
+- Final benchmark table export:
+  [`results/uc_scp259/reports/scp259_final_benchmark_tables.csv`](results/uc_scp259/reports/scp259_final_benchmark_tables.csv)
+- Donor-global CFN summary:
+  [`results/uc_scp259/cfn_benchmarks/donor_cluster_props_cfn_full_summary.csv`](results/uc_scp259/cfn_benchmarks/donor_cluster_props_cfn_full_summary.csv)
+- Compartment-aware CFN summary:
+  [`results/uc_scp259/cfn_benchmarks/donor_compartment_cluster_props_cfn_full_summary.csv`](results/uc_scp259/cfn_benchmarks/donor_compartment_cluster_props_cfn_full_summary.csv)
+- CFN matrix similarity comparison:
+  [`results/uc_scp259/cfn_benchmarks/cfn_matrix_similarity_comparison.csv`](results/uc_scp259/cfn_benchmarks/cfn_matrix_similarity_comparison.csv)
+- Curated recurring-edge interpretation:
+  [`results/uc_scp259/cfn_benchmarks/uc_recurring_edge_annotation_final_v3.csv`](results/uc_scp259/cfn_benchmarks/uc_recurring_edge_annotation_final_v3.csv)
+
+## Repository layout
+
+- `docs/`: project framing, benchmark contract, writeups, and reviewer-facing
+  summaries
+- `scripts/`: preprocessing, evaluation, and diagnostic utilities
+- `results/`: small summary artifacts and paper-facing tables
+- `data/`: local raw and processed data folders
+
+## Data tracking policy
+
+Raw and processed data are intentionally not tracked in git.
+
+Ignored by default:
+
+- `data/raw/`
+- `data/processed/`
+- `artifacts/`
+
+Tracked by default:
+
+- docs
+- scripts
+- benchmark summaries
+- CFN summaries
+- small paper-facing result tables
+
+## What is next
+
+The current priority is not new modeling infrastructure. It is:
+
+1. finish SCP259 paper framing
+2. get professor / expert feedback
+3. then decide whether larger-cohort expansion is justified to test the
+   sample-size hypothesis for CFN structure stability
