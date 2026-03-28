@@ -8,7 +8,8 @@ These are the current documents to prioritize:
 
 1. [`active/professor_review_brief.md`](active/professor_review_brief.md)
 2. [`active/scp259_analysis_completion_report.md`](active/scp259_analysis_completion_report.md)
-3. [`active/uc_first_paper_writeup.md`](active/uc_first_paper_writeup.md)
+3. [`active/scp259_visual_asset_manifest.md`](active/scp259_visual_asset_manifest.md)
+4. [`active/uc_first_paper_writeup.md`](active/uc_first_paper_writeup.md)
 
 If you only read three files, read those three.
 
@@ -18,6 +19,7 @@ Current paper-facing and review-facing docs.
 
 - `professor_review_brief.md`
 - `scp259_analysis_completion_report.md`
+- `scp259_visual_asset_manifest.md`
 - `uc_first_paper_writeup.md`
 
 ## `reference/`

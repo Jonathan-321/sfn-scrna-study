@@ -1,0 +1,15 @@
+\begin{table}
+\caption{Leave-one-donor-out robustness check.}
+\begin{tabular}{llllll}
+\toprule
+Representation & Model & AUROC & PRAUC & BalancedAcc & Accuracy \\
+\midrule
+Composition & LogReg & 0.949 & 0.960 & 0.875 & 0.867 \\
+Composition & LinearSVM & 0.926 & 0.931 & 0.861 & 0.867 \\
+Composition & XGBoost & 0.861 & 0.923 & 0.722 & 0.733 \\
+Pseudobulk & LinearSVM & 1.000 & 1.000 & 0.972 & 0.967 \\
+Pseudobulk & LogReg & 1.000 & 1.000 & 0.944 & 0.933 \\
+Pseudobulk & XGBoost & 0.991 & 0.994 & 0.972 & 0.967 \\
+\bottomrule
+\end{tabular}
+\end{table}
