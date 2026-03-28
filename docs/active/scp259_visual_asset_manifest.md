@@ -6,6 +6,11 @@ Last updated: 2026-03-27
 Use `.svg` for the paper when possible. Use `.png` for slides, chat, or quick
 inspection.
 
+Primary reading path:
+
+- the figures are embedded directly in `uc_first_paper_writeup.md`
+- this file is now a supporting asset inventory, not the main narrative
+
 ## Figures
 
 ### Figure 1. Cohort and split audit

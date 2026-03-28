@@ -124,6 +124,12 @@ results look excellent simply because cells from the same donor appear in both
 training and test sets. That is not real generalization. The donor is the true
 independent biological unit, so the benchmark is designed at the donor level.
 
+![Figure 1. SCP259 cohort and split audit.](../../results/uc_scp259/figures/figure1_scp259_cohort_and_split_audit.png)
+
+*Figure 1. Cohort and split audit for the donor-aware benchmark. This figure
+shows label counts, held-out donor counts per fold, and the donor-to-fold test
+assignment matrix used to prevent leakage.*
+
 ## 5. Representations Built So Far
 
 ### 5.1 Donor metadata
@@ -179,6 +185,12 @@ Location-aware donor tables were also built:
 
 These are not yet the primary benchmark, but they are the natural next stage
 once the donor-only baseline is stable.
+
+![Figure 3. Donor-global input representations.](../../results/uc_scp259/figures/figure3_scp259_input_representations.png)
+
+*Figure 3. Donor-global input representations. The visual separation in
+composition and pseudobulk space gives an early view of how much disease signal
+is present before any model fitting.*
 
 ## 6. Evaluation Design
 
@@ -242,6 +254,11 @@ Important note:
 The current runner does not yet apply the donor-prevalence filter described in
 `docs/reference/uc_preprocessing_decisions.md`. That remains a planned sensitivity check.
 
+![Figure 2. SCP259 benchmark overview.](../../results/uc_scp259/figures/figure2_scp259_benchmark_overview.png)
+
+*Figure 2. End-to-end benchmark overview from raw atlas inputs to donor-level
+representations, evaluation, and CFN structural diagnostics.*
+
 ## 7. What Has Been Tried
 
 The following steps are now complete:
@@ -259,8 +276,7 @@ The following steps are now complete:
 11. First donor-by-compartment baselines on `Epi` and `LP`
 12. First StructuralCFN pass on the frozen donor-level composition benchmark
 
-This is the project’s first real execution milestone: the benchmark is no
-longer hypothetical.
+This is the project’s first real execution milestone: the benchmark is no longer hypothetical.
 
 ## 8. Preliminary Results
 
@@ -327,6 +343,12 @@ Interpretation:
   safer than XGBoost on composition
 - this reduces the risk that the original 5-fold result was driven mainly by a
   favorable donor partition
+
+![Figure 4. Donor-global baseline benchmarks.](../../results/uc_scp259/figures/figure4_donor_global_benchmarks.png)
+
+*Figure 4. Donor-global benchmark summary across repeated donor CV and
+leave-one-donor-out evaluation. The main comparison is composition versus
+pseudobulk under the same donor-aware protocol.*
 
 ### 8.2 Donor pseudobulk benchmark
 
@@ -426,6 +448,12 @@ Interpretation:
 - this is important feedback for CFN: the benchmark does not look like a
   tree-only regime
 
+![Figure 5. Compartment-aware extension heatmap.](../../results/uc_scp259/figures/figure5_compartment_extension_heatmap.png)
+
+*Figure 5. Compartment-aware extension across `Epi` and `LP` blocked features.
+Separating the epithelial and lamina propria blocks strengthens the linear
+composition benchmark and preserves the strong pseudobulk signal.*
+
 ### 8.5 StructuralCFN results and diagnostics
 
 The first CFN pass was deliberately restricted to composition-based tables
@@ -497,6 +525,19 @@ Interpretation:
 - the honest SCP259 conclusion is therefore mixed: CFN is predictive and
   biologically suggestive, but its unconstrained structure is not stable enough
   at `N=30` for a strong recurring-backbone claim
+
+![Figure 6. CFN performance versus stability.](../../results/uc_scp259/figures/figure6_cfn_performance_vs_stability.png)
+
+*Figure 6. StructuralCFN predictive performance versus structural stability.
+Compartment-aware composition improves predictive metrics, but top-k overlap
+and full-matrix similarity remain weak to moderate.*
+
+![Figure 7. Recurring CFN edge themes.](../../results/uc_scp259/figures/figure7_recurring_edge_themes.png)
+
+*Figure 7. Conservative biological summary of the recurring CFN edge set. The
+main recurring themes are epithelial regeneration / differentiation and
+epithelial-immune or epithelial-stromal crosstalk, with caveats preserved in
+the curated annotation file.*
 
 ### 8.6 Feature-level hints
 

@@ -40,25 +40,21 @@ or “CFN beats all baselines” story.
 
 If you are reviewing the project for the first time, use this order:
 
-1. [`docs/active/professor_review_brief.md`](docs/active/professor_review_brief.md)
+1. [`docs/active/uc_first_paper_writeup.md`](docs/active/uc_first_paper_writeup.md)
 2. [`docs/active/scp259_analysis_completion_report.md`](docs/active/scp259_analysis_completion_report.md)
 3. [`docs/active/scp259_visual_asset_manifest.md`](docs/active/scp259_visual_asset_manifest.md)
-4. [`docs/active/uc_first_paper_writeup.md`](docs/active/uc_first_paper_writeup.md)
-5. [`results/uc_scp259/reports/scp259_final_benchmark_tables.csv`](results/uc_scp259/reports/scp259_final_benchmark_tables.csv)
-6. [`results/uc_scp259/cfn_benchmarks/uc_recurring_edge_annotation_final_v3.csv`](results/uc_scp259/cfn_benchmarks/uc_recurring_edge_annotation_final_v3.csv)
+4. [`results/uc_scp259/reports/scp259_final_benchmark_tables.csv`](results/uc_scp259/reports/scp259_final_benchmark_tables.csv)
+5. [`results/uc_scp259/cfn_benchmarks/uc_recurring_edge_annotation_final_v3.csv`](results/uc_scp259/cfn_benchmarks/uc_recurring_edge_annotation_final_v3.csv)
 
 ## Main documents
 
-- [`docs/active/professor_review_brief.md`](docs/active/professor_review_brief.md):
-  advisor-facing summary of what is complete, what is mixed, and what feedback
-  is needed
+- [`docs/active/uc_first_paper_writeup.md`](docs/active/uc_first_paper_writeup.md):
+  main SCP259 writeup with figures embedded directly in the text
 - [`docs/active/scp259_analysis_completion_report.md`](docs/active/scp259_analysis_completion_report.md):
   frozen SCP259 benchmark contract, final tables, figure list, and current
   claim
 - [`docs/active/scp259_visual_asset_manifest.md`](docs/active/scp259_visual_asset_manifest.md):
-  figure-by-figure and table-by-table map of the generated visual assets
-- [`docs/active/uc_first_paper_writeup.md`](docs/active/uc_first_paper_writeup.md):
-  longer paper-style writeup
+  figure inventory and asset map for the generated visuals
 - [`docs/reference/uc_cluster_glossary.md`](docs/reference/uc_cluster_glossary.md):
   plain-language explanation of atlas cluster names
 - [`docs/reference/uc_preprocessing_decisions.md`](docs/reference/uc_preprocessing_decisions.md):
@@ -111,6 +107,6 @@ Tracked by default:
 The current priority is not new modeling infrastructure. It is:
 
 1. finish SCP259 paper framing
-2. get professor / expert feedback
+2. get professor / expert feedback on the SCP259 writeup
 3. then decide whether larger-cohort expansion is justified to test the
    sample-size hypothesis for CFN structure stability
