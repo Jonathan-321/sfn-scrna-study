@@ -1,0 +1,89 @@
+level,edge_label,support_count,support_fraction
+raw,Epi__CD8+ IL17+->Epi__Tuft,2,0.4
+raw,Epi__MT-hi->Epi__Endothelial,2,0.4
+raw,Epi__MT-hi->Epi__Plasma,2,0.4
+raw,Epi__Plasma->Epi__Endothelial,2,0.4
+raw,LP__Enterocyte Progenitors->Epi__Myofibroblasts,2,0.4
+raw,LP__Tregs->LP__WNT2B+ Fos-hi,2,0.4
+raw,Epi__Best4+ Enterocytes->LP__Cycling T,1,0.2
+raw,Epi__CD4+ Activated Fos-hi->LP__WNT2B+ Fos-lo 2,1,0.2
+raw,Epi__CD8+ IELs->Epi__Endothelial,1,0.2
+raw,Epi__CD8+ IELs->Epi__Myofibroblasts,1,0.2
+raw,Epi__DC1->Epi__WNT5B+ 1,1,0.2
+raw,Epi__Enterocyte Progenitors->LP__WNT5B+ 2,1,0.2
+raw,Epi__Enterocytes->Epi__Myofibroblasts,1,0.2
+raw,Epi__Enterocytes->LP__WNT5B+ 2,1,0.2
+raw,Epi__Immature Enterocytes 1->Epi__ILCs,1,0.2
+raw,Epi__Immature Enterocytes 1->Epi__Plasma,1,0.2
+raw,Epi__Immature Enterocytes 1->LP__ILCs,1,0.2
+raw,Epi__Immature Goblet->Epi__Enterocyte Progenitors,1,0.2
+raw,Epi__Inflammatory Fibroblasts->LP__CD8+ IELs,1,0.2
+raw,Epi__Macrophages->LP__CD4+ Memory,1,0.2
+raw,Epi__Secretory TA->Epi__Follicular,1,0.2
+raw,Epi__Stem->LP__Microvascular,1,0.2
+raw,Epi__WNT5B+ 2->LP__Cycling T,1,0.2
+raw,LP__CD4+ Activated Fos-lo->LP__WNT2B+ Fos-hi,1,0.2
+raw,LP__CD4+ Memory->Epi__Enteroendocrine,1,0.2
+raw,LP__CD4+ Memory->LP__CD8+ IELs,1,0.2
+raw,LP__CD4+ Memory->LP__TA 1,1,0.2
+raw,LP__CD69+ Mast->LP__Microvascular,1,0.2
+raw,LP__CD8+ IL17+->Epi__WNT2B+ Fos-lo 1,1,0.2
+raw,LP__DC1->Epi__WNT2B+ Fos-lo 2,1,0.2
+raw,LP__DC2->Epi__Plasma,1,0.2
+raw,LP__Enterocyte Progenitors->Epi__CD4+ Activated Fos-lo,1,0.2
+raw,LP__Immature Goblet->Epi__Immature Enterocytes 2,1,0.2
+raw,LP__Microvascular->Epi__DC1,1,0.2
+raw,LP__Microvascular->LP__CD69+ Mast,1,0.2
+raw,LP__NKs->LP__TA 1,1,0.2
+raw,LP__Plasma->Epi__Follicular,1,0.2
+raw,LP__Plasma->LP__Enterocyte Progenitors,1,0.2
+raw,LP__Post-capillary Venules->LP__CD4+ Activated Fos-hi,1,0.2
+raw,LP__Secretory TA->Epi__Secretory TA,1,0.2
+raw,LP__TA 1->Epi__Stem,1,0.2
+raw,LP__Tregs->LP__WNT2B+ Fos-lo 1,1,0.2
+raw,LP__Tuft->Epi__Post-capillary Venules,1,0.2
+raw,LP__WNT5B+ 1->Epi__TA 1,1,0.2
+grouped,grp00[Epi__CD4+ Memory|Epi__CD4+ PD1+|Epi__CD8+ LP|Epi__Cycling B|...]->grp71[Epi__Endothelial],2,0.4
+grouped,grp12[LP__Tregs]->grp10[LP__WNT2B+ Fos-hi],2,0.4
+grouped,grp27[LP__Enterocyte Progenitors]->grp58[Epi__Myofibroblasts],2,0.4
+grouped,grp61[Epi__MT-hi]->grp00[Epi__CD4+ Memory|Epi__CD4+ PD1+|Epi__CD8+ LP|Epi__Cycling B|...],2,0.4
+grouped,grp61[Epi__MT-hi]->grp71[Epi__Endothelial],2,0.4
+grouped,grp76[Epi__CD8+ IL17+]->grp49[Epi__Tuft],2,0.4
+grouped,grp00[Epi__CD4+ Memory|Epi__CD4+ PD1+|Epi__CD8+ LP|Epi__Cycling B|...]->grp36[LP__CD8+ IELs],1,0.2
+grouped,grp02[LP__Inflammatory Fibroblasts|LP__Inflammatory Monocytes|LP__Post-capillary Venules]->grp42[LP__CD4+ Activated Fos-hi],1,0.2
+grouped,grp03[LP__Immature Goblet|LP__Stem|LP__TA 2]->grp63[Epi__Immature Enterocytes 2],1,0.2
+grouped,grp04[LP__Microvascular|LP__WNT5B+ 2]->grp38[LP__CD69+ Mast],1,0.2
+grouped,grp04[LP__Microvascular|LP__WNT5B+ 2]->grp73[Epi__DC1],1,0.2
+grouped,grp07[LP__WNT5B+ 1]->grp51[Epi__TA 1],1,0.2
+grouped,grp11[LP__Tuft]->grp55[Epi__Post-capillary Venules],1,0.2
+grouped,grp12[LP__Tregs]->grp09[LP__WNT2B+ Fos-lo 1],1,0.2
+grouped,grp13[LP__TA 1]->grp52[Epi__Stem],1,0.2
+grouped,grp14[LP__Secretory TA]->grp53[Epi__Secretory TA],1,0.2
+grouped,grp16[LP__Plasma]->grp00[Epi__CD4+ Memory|Epi__CD4+ PD1+|Epi__CD8+ LP|Epi__Cycling B|...],1,0.2
+grouped,grp16[LP__Plasma]->grp27[LP__Enterocyte Progenitors],1,0.2
+grouped,grp18[LP__NKs]->grp13[LP__TA 1],1,0.2
+grouped,grp27[LP__Enterocyte Progenitors]->grp80[Epi__CD4+ Activated Fos-lo],1,0.2
+grouped,grp29[LP__DC2]->grp00[Epi__CD4+ Memory|Epi__CD4+ PD1+|Epi__CD8+ LP|Epi__Cycling B|...],1,0.2
+grouped,grp30[LP__DC1]->grp46[Epi__WNT2B+ Fos-lo 2],1,0.2
+grouped,grp35[LP__CD8+ IL17+]->grp47[Epi__WNT2B+ Fos-lo 1],1,0.2
+grouped,grp38[LP__CD69+ Mast]->grp04[LP__Microvascular|LP__WNT5B+ 2],1,0.2
+grouped,grp40[LP__CD4+ Memory]->grp13[LP__TA 1],1,0.2
+grouped,grp40[LP__CD4+ Memory]->grp36[LP__CD8+ IELs],1,0.2
+grouped,grp40[LP__CD4+ Memory]->grp68[Epi__Enteroendocrine],1,0.2
+grouped,grp41[LP__CD4+ Activated Fos-lo]->grp10[LP__WNT2B+ Fos-hi],1,0.2
+grouped,grp44[Epi__WNT5B+ 2]->grp32[LP__Cycling T],1,0.2
+grouped,grp52[Epi__Stem]->grp04[LP__Microvascular|LP__WNT5B+ 2],1,0.2
+grouped,grp53[Epi__Secretory TA]->grp00[Epi__CD4+ Memory|Epi__CD4+ PD1+|Epi__CD8+ LP|Epi__Cycling B|...],1,0.2
+grouped,grp60[Epi__Macrophages]->grp40[LP__CD4+ Memory],1,0.2
+grouped,grp62[Epi__Immature Goblet]->grp70[Epi__Enterocyte Progenitors],1,0.2
+grouped,grp64[Epi__Immature Enterocytes 1]->grp00[Epi__CD4+ Memory|Epi__CD4+ PD1+|Epi__CD8+ LP|Epi__Cycling B|...],1,0.2
+grouped,grp64[Epi__Immature Enterocytes 1]->grp23[LP__ILCs],1,0.2
+grouped,grp64[Epi__Immature Enterocytes 1]->grp65[Epi__ILCs],1,0.2
+grouped,grp69[Epi__Enterocytes]->grp04[LP__Microvascular|LP__WNT5B+ 2],1,0.2
+grouped,grp69[Epi__Enterocytes]->grp58[Epi__Myofibroblasts],1,0.2
+grouped,grp70[Epi__Enterocyte Progenitors]->grp04[LP__Microvascular|LP__WNT5B+ 2],1,0.2
+grouped,grp73[Epi__DC1]->grp45[Epi__WNT5B+ 1],1,0.2
+grouped,grp77[Epi__CD8+ IELs]->grp58[Epi__Myofibroblasts],1,0.2
+grouped,grp77[Epi__CD8+ IELs]->grp71[Epi__Endothelial],1,0.2
+grouped,grp81[Epi__CD4+ Activated Fos-hi]->grp08[LP__WNT2B+ Fos-lo 2],1,0.2
+grouped,grp82[Epi__Best4+ Enterocytes]->grp32[LP__Cycling T],1,0.2

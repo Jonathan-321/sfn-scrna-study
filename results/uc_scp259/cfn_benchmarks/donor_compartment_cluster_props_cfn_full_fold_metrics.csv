@@ -1,0 +1,6 @@
+run_name,fold,model,n_train,n_test,runtime_seconds,param_count,roc_auc,pr_auc,brier_score
+donor_compartment_cluster_props_cfn_full,0,cfn_default,24,6,7.437561999991885,22339,1.0,1.0,0.09097187966108322
+donor_compartment_cluster_props_cfn_full,1,cfn_default,24,6,5.485855667007854,22339,0.888888888888889,0.9166666666666665,0.21345050632953644
+donor_compartment_cluster_props_cfn_full,2,cfn_default,24,6,6.144837249987177,22339,1.0,1.0,0.052084967494010925
+donor_compartment_cluster_props_cfn_full,3,cfn_default,24,6,5.219508374997531,22339,1.0,1.0,0.15740521252155304
+donor_compartment_cluster_props_cfn_full,4,cfn_default,24,6,5.034320582999499,22339,1.0,1.0,0.14594800770282745

@@ -1,0 +1,751 @@
+run_name	model	fold	feature	importance
+donor_cluster_props_baselines	logreg	0	Enterocyte Progenitors	0.6772153386854336
+donor_cluster_props_baselines	logreg	0	Enteroendocrine	0.6222112181612773
+donor_cluster_props_baselines	logreg	0	CD69+ Mast	0.4686822703902462
+donor_cluster_props_baselines	logreg	0	Immature Goblet	0.4268085017156983
+donor_cluster_props_baselines	logreg	0	Cycling Monocytes	0.425010514072803
+donor_cluster_props_baselines	logreg	0	Best4+ Enterocytes	0.38420867522527163
+donor_cluster_props_baselines	logreg	0	Tregs	0.3819866665533217
+donor_cluster_props_baselines	logreg	0	Microvascular	0.3345241820157321
+donor_cluster_props_baselines	logreg	0	Immature Enterocytes 1	0.32593393244220864
+donor_cluster_props_baselines	logreg	0	CD8+ IELs	0.325617997612024
+donor_cluster_props_baselines	logreg	0	Pericytes	0.31877166419652325
+donor_cluster_props_baselines	logreg	0	TA 2	0.3171326581178818
+donor_cluster_props_baselines	logreg	0	Myofibroblasts	0.3150561067812812
+donor_cluster_props_baselines	logreg	0	CD8+ IL17+	0.314437344280654
+donor_cluster_props_baselines	logreg	0	Glia	0.3079203736099006
+donor_cluster_props_baselines	logreg	0	Immature Enterocytes 2	0.2530741620281895
+donor_cluster_props_baselines	logreg	0	CD4+ Activated Fos-lo	0.25040322854108243
+donor_cluster_props_baselines	logreg	0	Inflammatory Monocytes	0.24929656210780762
+donor_cluster_props_baselines	logreg	0	CD4+ PD1+	0.2228305080558551
+donor_cluster_props_baselines	logreg	0	CD4+ Activated Fos-hi	0.21348439080595852
+donor_cluster_props_baselines	logreg	0	Cycling TA	0.2058530148292902
+donor_cluster_props_baselines	logreg	0	TA 1	0.20325577602946032
+donor_cluster_props_baselines	logreg	0	DC2	0.19264695760624212
+donor_cluster_props_baselines	logreg	0	CD8+ LP	0.19125731048642203
+donor_cluster_props_baselines	logreg	0	Follicular	0.18130215090032614
+donor_cluster_props_baselines	logreg	0	Endothelial	0.17756497634821625
+donor_cluster_props_baselines	logreg	0	Stem	0.17259632463865643
+donor_cluster_props_baselines	logreg	0	WNT2B+ Fos-hi	0.16931299866981933
+donor_cluster_props_baselines	logreg	0	M cells	0.13776423769958135
+donor_cluster_props_baselines	logreg	0	Cycling B	0.1339027615481289
+donor_cluster_props_baselines	logreg	0	Post-capillary Venules	0.1303076540323795
+donor_cluster_props_baselines	logreg	0	Inflammatory Fibroblasts	0.1277911870330207
+donor_cluster_props_baselines	logreg	0	Plasma	0.11273114642419063
+donor_cluster_props_baselines	logreg	0	Secretory TA	0.10927024102305491
+donor_cluster_props_baselines	logreg	0	CD69- Mast	0.10744381481564166
+donor_cluster_props_baselines	logreg	0	RSPO3+	0.10190250167474522
+donor_cluster_props_baselines	logreg	0	Tuft	0.0904421744707242
+donor_cluster_props_baselines	logreg	0	DC1	0.084320059352244
+donor_cluster_props_baselines	logreg	0	Goblet	0.08123036180942468
+donor_cluster_props_baselines	logreg	0	Cycling T	0.08002446257284414
+donor_cluster_props_baselines	logreg	0	NKs	0.06472095084653474
+donor_cluster_props_baselines	logreg	0	WNT2B+ Fos-lo 1	0.0607759049957208
+donor_cluster_props_baselines	logreg	0	GC	0.06027712774454059
+donor_cluster_props_baselines	logreg	0	Macrophages	0.05938333551597487
+donor_cluster_props_baselines	logreg	0	CD4+ Memory	0.047894639366181484
+donor_cluster_props_baselines	logreg	0	WNT2B+ Fos-lo 2	0.040349691226943
+donor_cluster_props_baselines	logreg	0	Enterocytes	0.03584477499789992
+donor_cluster_props_baselines	logreg	0	WNT5B+ 1	0.03339536128029138
+donor_cluster_props_baselines	logreg	0	ILCs	0.029259038326564197
+donor_cluster_props_baselines	logreg	0	WNT5B+ 2	0.014923583116727906
+donor_cluster_props_baselines	linear_svm	0	Enterocyte Progenitors	0.2597868495548994
+donor_cluster_props_baselines	linear_svm	0	Enteroendocrine	0.2481388804828415
+donor_cluster_props_baselines	linear_svm	0	Best4+ Enterocytes	0.23852837942115024
+donor_cluster_props_baselines	linear_svm	0	Immature Goblet	0.19561288016784792
+donor_cluster_props_baselines	linear_svm	0	Tregs	0.17090955797929414
+donor_cluster_props_baselines	linear_svm	0	CD69+ Mast	0.17000983656736787
+donor_cluster_props_baselines	linear_svm	0	Cycling Monocytes	0.15136420148568186
+donor_cluster_props_baselines	linear_svm	0	CD8+ IELs	0.15051048591604374
+donor_cluster_props_baselines	linear_svm	0	Microvascular	0.14704273512707744
+donor_cluster_props_baselines	linear_svm	0	CD8+ IL17+	0.1370616038220303
+donor_cluster_props_baselines	linear_svm	0	Glia	0.13312588977726084
+donor_cluster_props_baselines	linear_svm	0	Immature Enterocytes 1	0.12627658277858558
+donor_cluster_props_baselines	linear_svm	0	TA 2	0.1257229611162496
+donor_cluster_props_baselines	linear_svm	0	Pericytes	0.12520856229490057
+donor_cluster_props_baselines	linear_svm	0	Inflammatory Monocytes	0.12452954155345763
+donor_cluster_props_baselines	linear_svm	0	CD8+ LP	0.10103266927413355
+donor_cluster_props_baselines	linear_svm	0	CD4+ PD1+	0.09568430193125374
+donor_cluster_props_baselines	linear_svm	0	CD4+ Activated Fos-hi	0.09233635502475868
+donor_cluster_props_baselines	linear_svm	0	Cycling TA	0.08456842960081351
+donor_cluster_props_baselines	linear_svm	0	DC2	0.08081348093544083
+donor_cluster_props_baselines	linear_svm	0	Stem	0.07608034206333392
+donor_cluster_props_baselines	linear_svm	0	Immature Enterocytes 2	0.07522331400680922
+donor_cluster_props_baselines	linear_svm	0	Myofibroblasts	0.07472589276569544
+donor_cluster_props_baselines	linear_svm	0	TA 1	0.07431283466175131
+donor_cluster_props_baselines	linear_svm	0	CD4+ Activated Fos-lo	0.0696493389558212
+donor_cluster_props_baselines	linear_svm	0	WNT2B+ Fos-hi	0.06501559163056489
+donor_cluster_props_baselines	linear_svm	0	Tuft	0.055272910821391
+donor_cluster_props_baselines	linear_svm	0	Endothelial	0.05409024130036571
+donor_cluster_props_baselines	linear_svm	0	Inflammatory Fibroblasts	0.051159460868658344
+donor_cluster_props_baselines	linear_svm	0	Goblet	0.04957271640052639
+donor_cluster_props_baselines	linear_svm	0	Plasma	0.049399448098622976
+donor_cluster_props_baselines	linear_svm	0	CD69- Mast	0.046304135503133524
+donor_cluster_props_baselines	linear_svm	0	Post-capillary Venules	0.04390856087528919
+donor_cluster_props_baselines	linear_svm	0	Secretory TA	0.043136742590086485
+donor_cluster_props_baselines	linear_svm	0	Follicular	0.04219117709272233
+donor_cluster_props_baselines	linear_svm	0	M cells	0.039902011914640906
+donor_cluster_props_baselines	linear_svm	0	ILCs	0.03667574586850439
+donor_cluster_props_baselines	linear_svm	0	Cycling B	0.03482491222003936
+donor_cluster_props_baselines	linear_svm	0	Cycling T	0.030325861762165278
+donor_cluster_props_baselines	linear_svm	0	Macrophages	0.028746522903138172
+donor_cluster_props_baselines	linear_svm	0	Enterocytes	0.02863902692984107
+donor_cluster_props_baselines	linear_svm	0	WNT2B+ Fos-lo 1	0.025817490151758264
+donor_cluster_props_baselines	linear_svm	0	MT-hi	0.025202125256657243
+donor_cluster_props_baselines	linear_svm	0	NKs	0.02500284317621293
+donor_cluster_props_baselines	linear_svm	0	WNT5B+ 2	0.01763185905483881
+donor_cluster_props_baselines	linear_svm	0	CD4+ Memory	0.010051682499691256
+donor_cluster_props_baselines	linear_svm	0	RSPO3+	0.006941708857160694
+donor_cluster_props_baselines	linear_svm	0	GC	0.006218345028452558
+donor_cluster_props_baselines	linear_svm	0	WNT2B+ Fos-lo 2	0.003374455542787362
+donor_cluster_props_baselines	linear_svm	0	DC1	0.0020677236870449145
+donor_cluster_props_baselines	xgb	0	Immature Enterocytes 1	0.11975704878568649
+donor_cluster_props_baselines	xgb	0	Enterocyte Progenitors	0.10323061048984528
+donor_cluster_props_baselines	xgb	0	Cycling Monocytes	0.09119001030921936
+donor_cluster_props_baselines	xgb	0	Inflammatory Fibroblasts	0.06057455390691757
+donor_cluster_props_baselines	xgb	0	CD8+ IELs	0.05708334222435951
+donor_cluster_props_baselines	xgb	0	Glia	0.04199148342013359
+donor_cluster_props_baselines	xgb	0	Tregs	0.04096658527851105
+donor_cluster_props_baselines	xgb	0	CD4+ Activated Fos-lo	0.0370519645512104
+donor_cluster_props_baselines	xgb	0	NKs	0.036601293832063675
+donor_cluster_props_baselines	xgb	0	Pericytes	0.03643267974257469
+donor_cluster_props_baselines	xgb	0	WNT5B+ 1	0.03532853350043297
+donor_cluster_props_baselines	xgb	0	CD69+ Mast	0.032265450805425644
+donor_cluster_props_baselines	xgb	0	ILCs	0.03179236501455307
+donor_cluster_props_baselines	xgb	0	Myofibroblasts	0.031519439071416855
+donor_cluster_props_baselines	xgb	0	DC2	0.028673458844423294
+donor_cluster_props_baselines	xgb	0	WNT2B+ Fos-hi	0.027160819619894028
+donor_cluster_props_baselines	xgb	0	Microvascular	0.023733260110020638
+donor_cluster_props_baselines	xgb	0	TA 1	0.023030679672956467
+donor_cluster_props_baselines	xgb	0	Immature Goblet	0.022937417030334473
+donor_cluster_props_baselines	xgb	0	CD4+ Activated Fos-hi	0.02122512273490429
+donor_cluster_props_baselines	xgb	0	WNT2B+ Fos-lo 2	0.016792384907603264
+donor_cluster_props_baselines	xgb	0	WNT2B+ Fos-lo 1	0.01635374315083027
+donor_cluster_props_baselines	xgb	0	DC1	0.01633797585964203
+donor_cluster_props_baselines	xgb	0	Tuft	0.016284162178635597
+donor_cluster_props_baselines	xgb	0	WNT5B+ 2	0.014806747436523438
+donor_cluster_props_baselines	xgb	0	Enteroendocrine	0.011679640039801598
+donor_cluster_props_baselines	xgb	0	Secretory TA	0.0051992652006447315
+donor_cluster_props_baselines	xgb	0	GC	0.0
+donor_cluster_props_baselines	xgb	0	CD4+ Memory	0.0
+donor_cluster_props_baselines	xgb	0	CD4+ PD1+	0.0
+donor_cluster_props_baselines	xgb	0	CD69- Mast	0.0
+donor_cluster_props_baselines	xgb	0	CD8+ IL17+	0.0
+donor_cluster_props_baselines	xgb	0	CD8+ LP	0.0
+donor_cluster_props_baselines	xgb	0	TA 2	0.0
+donor_cluster_props_baselines	xgb	0	Cycling B	0.0
+donor_cluster_props_baselines	xgb	0	Stem	0.0
+donor_cluster_props_baselines	xgb	0	RSPO3+	0.0
+donor_cluster_props_baselines	xgb	0	Post-capillary Venules	0.0
+donor_cluster_props_baselines	xgb	0	Plasma	0.0
+donor_cluster_props_baselines	xgb	0	Cycling T	0.0
+donor_cluster_props_baselines	xgb	0	Cycling TA	0.0
+donor_cluster_props_baselines	xgb	0	Endothelial	0.0
+donor_cluster_props_baselines	xgb	0	Enterocytes	0.0
+donor_cluster_props_baselines	xgb	0	Macrophages	0.0
+donor_cluster_props_baselines	xgb	0	MT-hi	0.0
+donor_cluster_props_baselines	xgb	0	M cells	0.0
+donor_cluster_props_baselines	xgb	0	Inflammatory Monocytes	0.0
+donor_cluster_props_baselines	xgb	0	Follicular	0.0
+donor_cluster_props_baselines	xgb	0	Immature Enterocytes 2	0.0
+donor_cluster_props_baselines	xgb	0	Goblet	0.0
+donor_cluster_props_baselines	logreg	1	Enteroendocrine	0.5151158285264209
+donor_cluster_props_baselines	logreg	1	Myofibroblasts	0.4504821445784193
+donor_cluster_props_baselines	logreg	1	Tregs	0.43894008138166335
+donor_cluster_props_baselines	logreg	1	CD8+ IELs	0.4348675873009407
+donor_cluster_props_baselines	logreg	1	Enterocyte Progenitors	0.43263171603544204
+donor_cluster_props_baselines	logreg	1	CD8+ IL17+	0.4226265367855654
+donor_cluster_props_baselines	logreg	1	Pericytes	0.40332841998402646
+donor_cluster_props_baselines	logreg	1	Microvascular	0.3997942070858132
+donor_cluster_props_baselines	logreg	1	NKs	0.3993387449096491
+donor_cluster_props_baselines	logreg	1	CD69+ Mast	0.373481048477476
+donor_cluster_props_baselines	logreg	1	TA 1	0.35959616027888003
+donor_cluster_props_baselines	logreg	1	CD4+ Activated Fos-lo	0.297952884335474
+donor_cluster_props_baselines	logreg	1	CD4+ Memory	0.27001471163783275
+donor_cluster_props_baselines	logreg	1	Glia	0.2609184607982717
+donor_cluster_props_baselines	logreg	1	Secretory TA	0.2560028464085747
+donor_cluster_props_baselines	logreg	1	M cells	0.25362402579830723
+donor_cluster_props_baselines	logreg	1	Follicular	0.2442615410988379
+donor_cluster_props_baselines	logreg	1	CD4+ Activated Fos-hi	0.23702226138991953
+donor_cluster_props_baselines	logreg	1	Cycling Monocytes	0.2301216904117138
+donor_cluster_props_baselines	logreg	1	Immature Enterocytes 1	0.22980713850180828
+donor_cluster_props_baselines	logreg	1	RSPO3+	0.2240098007403083
+donor_cluster_props_baselines	logreg	1	Best4+ Enterocytes	0.22137582897633104
+donor_cluster_props_baselines	logreg	1	WNT5B+ 1	0.2125449301305567
+donor_cluster_props_baselines	logreg	1	Plasma	0.20953369523061915
+donor_cluster_props_baselines	logreg	1	Immature Enterocytes 2	0.2045736636765205
+donor_cluster_props_baselines	logreg	1	TA 2	0.2024776986987633
+donor_cluster_props_baselines	logreg	1	Inflammatory Monocytes	0.18690610356609016
+donor_cluster_props_baselines	logreg	1	Goblet	0.1824295426862205
+donor_cluster_props_baselines	logreg	1	DC1	0.17398443954244908
+donor_cluster_props_baselines	logreg	1	Cycling B	0.1735688112249847
+donor_cluster_props_baselines	logreg	1	DC2	0.15586703379318995
+donor_cluster_props_baselines	logreg	1	Post-capillary Venules	0.15120181378413208
+donor_cluster_props_baselines	logreg	1	Cycling TA	0.1472318541568426
+donor_cluster_props_baselines	logreg	1	Endothelial	0.14707746920874284
+donor_cluster_props_baselines	logreg	1	WNT2B+ Fos-lo 2	0.14041935689836524
+donor_cluster_props_baselines	logreg	1	WNT5B+ 2	0.13382277924834274
+donor_cluster_props_baselines	logreg	1	CD4+ PD1+	0.11859469181895148
+donor_cluster_props_baselines	logreg	1	Inflammatory Fibroblasts	0.11808712682215936
+donor_cluster_props_baselines	logreg	1	Immature Goblet	0.11328374457945962
+donor_cluster_props_baselines	logreg	1	CD69- Mast	0.09492046831331316
+donor_cluster_props_baselines	logreg	1	MT-hi	0.0851359123130989
+donor_cluster_props_baselines	logreg	1	WNT2B+ Fos-lo 1	0.08193638504064356
+donor_cluster_props_baselines	logreg	1	GC	0.08073483108460362
+donor_cluster_props_baselines	logreg	1	Cycling T	0.07655522338507043
+donor_cluster_props_baselines	logreg	1	Tuft	0.06853926227503748
+donor_cluster_props_baselines	logreg	1	Stem	0.03211418070209544
+donor_cluster_props_baselines	logreg	1	CD8+ LP	0.03165183238352989
+donor_cluster_props_baselines	logreg	1	ILCs	0.012806863769359026
+donor_cluster_props_baselines	logreg	1	WNT2B+ Fos-hi	0.004302254933938177
+donor_cluster_props_baselines	logreg	1	Enterocytes	0.0024757614941931048
+donor_cluster_props_baselines	linear_svm	1	CD8+ IL17+	0.20907631440480423
+donor_cluster_props_baselines	linear_svm	1	Enteroendocrine	0.20564211881291994
+donor_cluster_props_baselines	linear_svm	1	CD8+ IELs	0.1927533672690778
+donor_cluster_props_baselines	linear_svm	1	TA 1	0.17077292161130023
+donor_cluster_props_baselines	linear_svm	1	Microvascular	0.16872411230288534
+donor_cluster_props_baselines	linear_svm	1	Pericytes	0.1632031708176022
+donor_cluster_props_baselines	linear_svm	1	Tregs	0.16036712680240942
+donor_cluster_props_baselines	linear_svm	1	Myofibroblasts	0.14943231056524597
+donor_cluster_props_baselines	linear_svm	1	Enterocyte Progenitors	0.14842185512816375
+donor_cluster_props_baselines	linear_svm	1	WNT5B+ 1	0.1438893991196283
+donor_cluster_props_baselines	linear_svm	1	CD4+ Activated Fos-lo	0.12858306812860978
+donor_cluster_props_baselines	linear_svm	1	CD69+ Mast	0.11874032516836634
+donor_cluster_props_baselines	linear_svm	1	TA 2	0.11835695379222971
+donor_cluster_props_baselines	linear_svm	1	NKs	0.11555526512194142
+donor_cluster_props_baselines	linear_svm	1	Best4+ Enterocytes	0.11281252508756298
+donor_cluster_props_baselines	linear_svm	1	GC	0.11198713495446626
+donor_cluster_props_baselines	linear_svm	1	Cycling TA	0.11044520486562481
+donor_cluster_props_baselines	linear_svm	1	Follicular	0.11024619679041399
+donor_cluster_props_baselines	linear_svm	1	M cells	0.10954578686663834
+donor_cluster_props_baselines	linear_svm	1	Secretory TA	0.10499438896929161
+donor_cluster_props_baselines	linear_svm	1	Inflammatory Monocytes	0.10239684412408712
+donor_cluster_props_baselines	linear_svm	1	Goblet	0.09904288378668073
+donor_cluster_props_baselines	linear_svm	1	Plasma	0.09715661658536434
+donor_cluster_props_baselines	linear_svm	1	Glia	0.09468576236666332
+donor_cluster_props_baselines	linear_svm	1	CD4+ Activated Fos-hi	0.08857610922441034
+donor_cluster_props_baselines	linear_svm	1	CD4+ Memory	0.07727949903716133
+donor_cluster_props_baselines	linear_svm	1	WNT5B+ 2	0.06886925203472045
+donor_cluster_props_baselines	linear_svm	1	Immature Enterocytes 2	0.0617254346912945
+donor_cluster_props_baselines	linear_svm	1	Post-capillary Venules	0.05821428241269998
+donor_cluster_props_baselines	linear_svm	1	RSPO3+	0.057773918235506885
+donor_cluster_props_baselines	linear_svm	1	CD69- Mast	0.052705911496094854
+donor_cluster_props_baselines	linear_svm	1	WNT2B+ Fos-lo 2	0.04876298879199116
+donor_cluster_props_baselines	linear_svm	1	Immature Enterocytes 1	0.047547369327229666
+donor_cluster_props_baselines	linear_svm	1	Inflammatory Fibroblasts	0.04743488385559463
+donor_cluster_props_baselines	linear_svm	1	WNT2B+ Fos-lo 1	0.047048521005226426
+donor_cluster_props_baselines	linear_svm	1	Cycling T	0.044901647988813645
+donor_cluster_props_baselines	linear_svm	1	Cycling Monocytes	0.044679656725797705
+donor_cluster_props_baselines	linear_svm	1	Cycling B	0.04380392764037086
+donor_cluster_props_baselines	linear_svm	1	DC2	0.04259003233238192
+donor_cluster_props_baselines	linear_svm	1	DC1	0.03946644063205834
+donor_cluster_props_baselines	linear_svm	1	Endothelial	0.03796054844827308
+donor_cluster_props_baselines	linear_svm	1	WNT2B+ Fos-hi	0.03618673670435133
+donor_cluster_props_baselines	linear_svm	1	CD8+ LP	0.03024022443482577
+donor_cluster_props_baselines	linear_svm	1	Macrophages	0.024564605182004838
+donor_cluster_props_baselines	linear_svm	1	MT-hi	0.023761372433089567
+donor_cluster_props_baselines	linear_svm	1	Stem	0.01222223604208425
+donor_cluster_props_baselines	linear_svm	1	Immature Goblet	0.009048558358446507
+donor_cluster_props_baselines	linear_svm	1	ILCs	0.007675112257516041
+donor_cluster_props_baselines	linear_svm	1	Enterocytes	0.006729439087216599
+donor_cluster_props_baselines	linear_svm	1	CD4+ PD1+	0.006623701601980551
+donor_cluster_props_baselines	xgb	1	Pericytes	0.08288849145174026
+donor_cluster_props_baselines	xgb	1	Tregs	0.08173162490129471
+donor_cluster_props_baselines	xgb	1	Enterocytes	0.07379215955734253
+donor_cluster_props_baselines	xgb	1	Cycling T	0.07176006585359573
+donor_cluster_props_baselines	xgb	1	Tuft	0.06590268760919571
+donor_cluster_props_baselines	xgb	1	CD69+ Mast	0.06419917196035385
+donor_cluster_props_baselines	xgb	1	Microvascular	0.05131906643509865
+donor_cluster_props_baselines	xgb	1	Inflammatory Fibroblasts	0.04876048490405083
+donor_cluster_props_baselines	xgb	1	Myofibroblasts	0.04707667604088783
+donor_cluster_props_baselines	xgb	1	Cycling Monocytes	0.043848149478435516
+donor_cluster_props_baselines	xgb	1	GC	0.038631949573755264
+donor_cluster_props_baselines	xgb	1	Enteroendocrine	0.03473133593797684
+donor_cluster_props_baselines	xgb	1	TA 2	0.03355468809604645
+donor_cluster_props_baselines	xgb	1	CD69- Mast	0.03101998381316662
+donor_cluster_props_baselines	xgb	1	Inflammatory Monocytes	0.029259080067276955
+donor_cluster_props_baselines	xgb	1	CD4+ PD1+	0.0283693578094244
+donor_cluster_props_baselines	xgb	1	NKs	0.026235690340399742
+donor_cluster_props_baselines	xgb	1	CD8+ IELs	0.023171316832304
+donor_cluster_props_baselines	xgb	1	WNT2B+ Fos-hi	0.02287922240793705
+donor_cluster_props_baselines	xgb	1	Immature Goblet	0.019425498321652412
+donor_cluster_props_baselines	xgb	1	WNT5B+ 2	0.019166527315974236
+donor_cluster_props_baselines	xgb	1	Glia	0.0170186385512352
+donor_cluster_props_baselines	xgb	1	DC1	0.013953444547951221
+donor_cluster_props_baselines	xgb	1	CD4+ Activated Fos-lo	0.012343241833150387
+donor_cluster_props_baselines	xgb	1	Cycling B	0.00854126363992691
+donor_cluster_props_baselines	xgb	1	ILCs	0.007529567927122116
+donor_cluster_props_baselines	xgb	1	Goblet	0.0028906273655593395
+donor_cluster_props_baselines	xgb	1	TA 1	0.0
+donor_cluster_props_baselines	xgb	1	RSPO3+	0.0
+donor_cluster_props_baselines	xgb	1	Post-capillary Venules	0.0
+donor_cluster_props_baselines	xgb	1	WNT2B+ Fos-lo 1	0.0
+donor_cluster_props_baselines	xgb	1	Plasma	0.0
+donor_cluster_props_baselines	xgb	1	WNT2B+ Fos-lo 2	0.0
+donor_cluster_props_baselines	xgb	1	Secretory TA	0.0
+donor_cluster_props_baselines	xgb	1	Stem	0.0
+donor_cluster_props_baselines	xgb	1	Best4+ Enterocytes	0.0
+donor_cluster_props_baselines	xgb	1	MT-hi	0.0
+donor_cluster_props_baselines	xgb	1	M cells	0.0
+donor_cluster_props_baselines	xgb	1	Immature Enterocytes 2	0.0
+donor_cluster_props_baselines	xgb	1	WNT5B+ 1	0.0
+donor_cluster_props_baselines	xgb	1	Follicular	0.0
+donor_cluster_props_baselines	xgb	1	Enterocyte Progenitors	0.0
+donor_cluster_props_baselines	xgb	1	Endothelial	0.0
+donor_cluster_props_baselines	xgb	1	DC2	0.0
+donor_cluster_props_baselines	xgb	1	Cycling TA	0.0
+donor_cluster_props_baselines	xgb	1	CD8+ LP	0.0
+donor_cluster_props_baselines	xgb	1	CD8+ IL17+	0.0
+donor_cluster_props_baselines	xgb	1	CD4+ Memory	0.0
+donor_cluster_props_baselines	xgb	1	CD4+ Activated Fos-hi	0.0
+donor_cluster_props_baselines	xgb	1	Macrophages	0.0
+donor_cluster_props_baselines	logreg	2	Enteroendocrine	0.6178223198228046
+donor_cluster_props_baselines	logreg	2	CD8+ IELs	0.5473147114472338
+donor_cluster_props_baselines	logreg	2	Pericytes	0.49592966344858463
+donor_cluster_props_baselines	logreg	2	Enterocyte Progenitors	0.4587109775076883
+donor_cluster_props_baselines	logreg	2	Microvascular	0.43283898440108687
+donor_cluster_props_baselines	logreg	2	Best4+ Enterocytes	0.4152910082937554
+donor_cluster_props_baselines	logreg	2	CD69+ Mast	0.4136093836250298
+donor_cluster_props_baselines	logreg	2	Tregs	0.3522127978397323
+donor_cluster_props_baselines	logreg	2	Glia	0.3178466672159134
+donor_cluster_props_baselines	logreg	2	Myofibroblasts	0.3082967073214544
+donor_cluster_props_baselines	logreg	2	TA 2	0.30633128419498007
+donor_cluster_props_baselines	logreg	2	Post-capillary Venules	0.3058021818393691
+donor_cluster_props_baselines	logreg	2	Inflammatory Fibroblasts	0.2931178869212156
+donor_cluster_props_baselines	logreg	2	Immature Goblet	0.28771234340037477
+donor_cluster_props_baselines	logreg	2	CD8+ IL17+	0.2748836962434101
+donor_cluster_props_baselines	logreg	2	M cells	0.27239716500935474
+donor_cluster_props_baselines	logreg	2	Inflammatory Monocytes	0.2545532696775895
+donor_cluster_props_baselines	logreg	2	Immature Enterocytes 1	0.2258119738356152
+donor_cluster_props_baselines	logreg	2	Endothelial	0.21798680865672848
+donor_cluster_props_baselines	logreg	2	CD69- Mast	0.2121398714540159
+donor_cluster_props_baselines	logreg	2	WNT5B+ 1	0.21015241988233913
+donor_cluster_props_baselines	logreg	2	Secretory TA	0.17384930967588577
+donor_cluster_props_baselines	logreg	2	Immature Enterocytes 2	0.1720686527579089
+donor_cluster_props_baselines	logreg	2	Cycling Monocytes	0.1709916423129667
+donor_cluster_props_baselines	logreg	2	Macrophages	0.1681750553270716
+donor_cluster_props_baselines	logreg	2	WNT5B+ 2	0.15824135466092498
+donor_cluster_props_baselines	logreg	2	CD4+ Activated Fos-hi	0.15685000644617092
+donor_cluster_props_baselines	logreg	2	Cycling TA	0.15127975978477531
+donor_cluster_props_baselines	logreg	2	Goblet	0.14942156676692867
+donor_cluster_props_baselines	logreg	2	WNT2B+ Fos-lo 2	0.14688233646018725
+donor_cluster_props_baselines	logreg	2	Cycling B	0.14194331818284814
+donor_cluster_props_baselines	logreg	2	WNT2B+ Fos-lo 1	0.13451692933428092
+donor_cluster_props_baselines	logreg	2	CD4+ Activated Fos-lo	0.1275418432658812
+donor_cluster_props_baselines	logreg	2	Tuft	0.10681348416909386
+donor_cluster_props_baselines	logreg	2	Stem	0.10545965903854554
+donor_cluster_props_baselines	logreg	2	TA 1	0.09300422268306169
+donor_cluster_props_baselines	logreg	2	Follicular	0.07162458931088941
+donor_cluster_props_baselines	logreg	2	NKs	0.0628494750242303
+donor_cluster_props_baselines	logreg	2	DC1	0.055543326224562185
+donor_cluster_props_baselines	logreg	2	Enterocytes	0.051410099376134874
+donor_cluster_props_baselines	logreg	2	WNT2B+ Fos-hi	0.04347139843490186
+donor_cluster_props_baselines	logreg	2	CD8+ LP	0.04032418185709726
+donor_cluster_props_baselines	logreg	2	CD4+ PD1+	0.03913372381240665
+donor_cluster_props_baselines	logreg	2	RSPO3+	0.023175086965682382
+donor_cluster_props_baselines	logreg	2	ILCs	0.02078698602308411
+donor_cluster_props_baselines	logreg	2	MT-hi	0.018215122722575965
+donor_cluster_props_baselines	logreg	2	CD4+ Memory	0.016243019572646927
+donor_cluster_props_baselines	logreg	2	DC2	0.013654614713561214
+donor_cluster_props_baselines	logreg	2	Plasma	0.005484288547117649
+donor_cluster_props_baselines	logreg	2	Cycling T	0.0038066630296479573
+donor_cluster_props_baselines	linear_svm	2	Enteroendocrine	0.27061292337395276
+donor_cluster_props_baselines	linear_svm	2	Best4+ Enterocytes	0.2472739410232132
+donor_cluster_props_baselines	linear_svm	2	Pericytes	0.2220207525729475
+donor_cluster_props_baselines	linear_svm	2	CD8+ IELs	0.2155199046118831
+donor_cluster_props_baselines	linear_svm	2	Microvascular	0.19868397080897857
+donor_cluster_props_baselines	linear_svm	2	TA 2	0.16146431066546912
+donor_cluster_props_baselines	linear_svm	2	CD69+ Mast	0.15903832154099165
+donor_cluster_props_baselines	linear_svm	2	Enterocyte Progenitors	0.15392549666785232
+donor_cluster_props_baselines	linear_svm	2	Tregs	0.153278033714503
+donor_cluster_props_baselines	linear_svm	2	WNT5B+ 1	0.15209133443259687
+donor_cluster_props_baselines	linear_svm	2	Secretory TA	0.12876474702711363
+donor_cluster_props_baselines	linear_svm	2	Post-capillary Venules	0.12620135271373448
+donor_cluster_props_baselines	linear_svm	2	CD8+ IL17+	0.12037395106729762
+donor_cluster_props_baselines	linear_svm	2	Inflammatory Fibroblasts	0.10462132377505928
+donor_cluster_props_baselines	linear_svm	2	Immature Goblet	0.10372468573082327
+donor_cluster_props_baselines	linear_svm	2	Inflammatory Monocytes	0.10028507606353186
+donor_cluster_props_baselines	linear_svm	2	Myofibroblasts	0.09685277294119701
+donor_cluster_props_baselines	linear_svm	2	Glia	0.08606347798062705
+donor_cluster_props_baselines	linear_svm	2	M cells	0.08314971912787342
+donor_cluster_props_baselines	linear_svm	2	WNT5B+ 2	0.07988866316208333
+donor_cluster_props_baselines	linear_svm	2	Endothelial	0.07947120115294301
+donor_cluster_props_baselines	linear_svm	2	WNT2B+ Fos-lo 2	0.06460641397993377
+donor_cluster_props_baselines	linear_svm	2	TA 1	0.05964847205426543
+donor_cluster_props_baselines	linear_svm	2	Immature Enterocytes 1	0.05620987080614514
+donor_cluster_props_baselines	linear_svm	2	Cycling TA	0.05616583971503791
+donor_cluster_props_baselines	linear_svm	2	Cycling B	0.0524476511861999
+donor_cluster_props_baselines	linear_svm	2	CD4+ Activated Fos-lo	0.05144906827429627
+donor_cluster_props_baselines	linear_svm	2	WNT2B+ Fos-lo 1	0.05104028754775801
+donor_cluster_props_baselines	linear_svm	2	Immature Enterocytes 2	0.0482665486941981
+donor_cluster_props_baselines	linear_svm	2	MT-hi	0.04673215614884474
+donor_cluster_props_baselines	linear_svm	2	Tuft	0.043444400028676125
+donor_cluster_props_baselines	linear_svm	2	CD4+ PD1+	0.04150098489960627
+donor_cluster_props_baselines	linear_svm	2	Goblet	0.04075436423960689
+donor_cluster_props_baselines	linear_svm	2	Stem	0.03963826665169798
+donor_cluster_props_baselines	linear_svm	2	CD4+ Memory	0.03556424788236402
+donor_cluster_props_baselines	linear_svm	2	ILCs	0.03471803400072271
+donor_cluster_props_baselines	linear_svm	2	GC	0.034370035220724134
+donor_cluster_props_baselines	linear_svm	2	Enterocytes	0.03219471617130849
+donor_cluster_props_baselines	linear_svm	2	Macrophages	0.031582805592301706
+donor_cluster_props_baselines	linear_svm	2	CD69- Mast	0.030519233377900357
+donor_cluster_props_baselines	linear_svm	2	Follicular	0.024118296823235373
+donor_cluster_props_baselines	linear_svm	2	Cycling Monocytes	0.023128937933221058
+donor_cluster_props_baselines	linear_svm	2	DC2	0.022902190351439616
+donor_cluster_props_baselines	linear_svm	2	NKs	0.02003053294245459
+donor_cluster_props_baselines	linear_svm	2	RSPO3+	0.019548223326117026
+donor_cluster_props_baselines	linear_svm	2	CD4+ Activated Fos-hi	0.012481882312438151
+donor_cluster_props_baselines	linear_svm	2	DC1	0.007661163565328574
+donor_cluster_props_baselines	linear_svm	2	Cycling T	0.006513809787541101
+donor_cluster_props_baselines	linear_svm	2	Plasma	0.004114044782866394
+donor_cluster_props_baselines	linear_svm	2	WNT2B+ Fos-hi	0.003994244954723253
+donor_cluster_props_baselines	xgb	2	CD8+ IELs	0.14089691638946533
+donor_cluster_props_baselines	xgb	2	Immature Enterocytes 1	0.10731451213359833
+donor_cluster_props_baselines	xgb	2	Enterocyte Progenitors	0.1054573506116867
+donor_cluster_props_baselines	xgb	2	CD69+ Mast	0.10338932275772095
+donor_cluster_props_baselines	xgb	2	MT-hi	0.09002036601305008
+donor_cluster_props_baselines	xgb	2	Myofibroblasts	0.08833885937929153
+donor_cluster_props_baselines	xgb	2	Tregs	0.07049645483493805
+donor_cluster_props_baselines	xgb	2	Pericytes	0.07011264562606812
+donor_cluster_props_baselines	xgb	2	Follicular	0.04247915744781494
+donor_cluster_props_baselines	xgb	2	Post-capillary Venules	0.03765960782766342
+donor_cluster_props_baselines	xgb	2	CD4+ Activated Fos-lo	0.037599947303533554
+donor_cluster_props_baselines	xgb	2	Enterocytes	0.027850143611431122
+donor_cluster_props_baselines	xgb	2	Glia	0.027800986543297768
+donor_cluster_props_baselines	xgb	2	CD4+ Activated Fos-hi	0.024259451776742935
+donor_cluster_props_baselines	xgb	2	Enteroendocrine	0.018924033269286156
+donor_cluster_props_baselines	xgb	2	WNT5B+ 1	0.004729652777314186
+donor_cluster_props_baselines	xgb	2	M cells	0.0026706031057983637
+donor_cluster_props_baselines	xgb	2	Secretory TA	0.0
+donor_cluster_props_baselines	xgb	2	Stem	0.0
+donor_cluster_props_baselines	xgb	2	TA 1	0.0
+donor_cluster_props_baselines	xgb	2	TA 2	0.0
+donor_cluster_props_baselines	xgb	2	Tuft	0.0
+donor_cluster_props_baselines	xgb	2	WNT2B+ Fos-hi	0.0
+donor_cluster_props_baselines	xgb	2	NKs	0.0
+donor_cluster_props_baselines	xgb	2	WNT2B+ Fos-lo 1	0.0
+donor_cluster_props_baselines	xgb	2	WNT2B+ Fos-lo 2	0.0
+donor_cluster_props_baselines	xgb	2	Microvascular	0.0
+donor_cluster_props_baselines	xgb	2	Macrophages	0.0
+donor_cluster_props_baselines	xgb	2	Plasma	0.0
+donor_cluster_props_baselines	xgb	2	RSPO3+	0.0
+donor_cluster_props_baselines	xgb	2	Best4+ Enterocytes	0.0
+donor_cluster_props_baselines	xgb	2	Inflammatory Fibroblasts	0.0
+donor_cluster_props_baselines	xgb	2	CD4+ Memory	0.0
+donor_cluster_props_baselines	xgb	2	CD4+ PD1+	0.0
+donor_cluster_props_baselines	xgb	2	CD69- Mast	0.0
+donor_cluster_props_baselines	xgb	2	CD8+ IL17+	0.0
+donor_cluster_props_baselines	xgb	2	CD8+ LP	0.0
+donor_cluster_props_baselines	xgb	2	Cycling B	0.0
+donor_cluster_props_baselines	xgb	2	Cycling Monocytes	0.0
+donor_cluster_props_baselines	xgb	2	Cycling T	0.0
+donor_cluster_props_baselines	xgb	2	Cycling TA	0.0
+donor_cluster_props_baselines	xgb	2	DC1	0.0
+donor_cluster_props_baselines	xgb	2	DC2	0.0
+donor_cluster_props_baselines	xgb	2	Endothelial	0.0
+donor_cluster_props_baselines	xgb	2	GC	0.0
+donor_cluster_props_baselines	xgb	2	Goblet	0.0
+donor_cluster_props_baselines	xgb	2	ILCs	0.0
+donor_cluster_props_baselines	xgb	2	Immature Enterocytes 2	0.0
+donor_cluster_props_baselines	xgb	2	Immature Goblet	0.0
+donor_cluster_props_baselines	xgb	2	Inflammatory Monocytes	0.0
+donor_cluster_props_baselines	logreg	3	Enteroendocrine	0.7202171671062854
+donor_cluster_props_baselines	logreg	3	Enterocyte Progenitors	0.5416595248722621
+donor_cluster_props_baselines	logreg	3	Myofibroblasts	0.47611874981512836
+donor_cluster_props_baselines	logreg	3	Tregs	0.4598287270734185
+donor_cluster_props_baselines	logreg	3	Pericytes	0.45507054828872945
+donor_cluster_props_baselines	logreg	3	CD69+ Mast	0.3916332924364193
+donor_cluster_props_baselines	logreg	3	DC1	0.36267321697862726
+donor_cluster_props_baselines	logreg	3	CD8+ IL17+	0.36155907547517435
+donor_cluster_props_baselines	logreg	3	Immature Goblet	0.3466657499861328
+donor_cluster_props_baselines	logreg	3	Endothelial	0.3398521976562427
+donor_cluster_props_baselines	logreg	3	Best4+ Enterocytes	0.3371838394402265
+donor_cluster_props_baselines	logreg	3	Glia	0.33636455204739896
+donor_cluster_props_baselines	logreg	3	Cycling Monocytes	0.31485003052041727
+donor_cluster_props_baselines	logreg	3	TA 2	0.3056430556973863
+donor_cluster_props_baselines	logreg	3	Microvascular	0.2984127898032205
+donor_cluster_props_baselines	logreg	3	Inflammatory Monocytes	0.250574914903423
+donor_cluster_props_baselines	logreg	3	CD8+ IELs	0.24458889321377883
+donor_cluster_props_baselines	logreg	3	CD4+ Activated Fos-hi	0.23180692767713543
+donor_cluster_props_baselines	logreg	3	RSPO3+	0.22652805850609256
+donor_cluster_props_baselines	logreg	3	Post-capillary Venules	0.21803020349998153
+donor_cluster_props_baselines	logreg	3	Secretory TA	0.21130102673668014
+donor_cluster_props_baselines	logreg	3	CD4+ Activated Fos-lo	0.20911190539738084
+donor_cluster_props_baselines	logreg	3	M cells	0.19789080187972977
+donor_cluster_props_baselines	logreg	3	WNT5B+ 1	0.18818122331279824
+donor_cluster_props_baselines	logreg	3	WNT2B+ Fos-lo 2	0.18429011318256944
+donor_cluster_props_baselines	logreg	3	CD4+ PD1+	0.17760415900686996
+donor_cluster_props_baselines	logreg	3	WNT5B+ 2	0.17759235421855554
+donor_cluster_props_baselines	logreg	3	Immature Enterocytes 2	0.17677518434174833
+donor_cluster_props_baselines	logreg	3	GC	0.15585228380279367
+donor_cluster_props_baselines	logreg	3	DC2	0.15431901455070857
+donor_cluster_props_baselines	logreg	3	Inflammatory Fibroblasts	0.15074622970364435
+donor_cluster_props_baselines	logreg	3	Goblet	0.14243685731986258
+donor_cluster_props_baselines	logreg	3	CD69- Mast	0.13325102467923233
+donor_cluster_props_baselines	logreg	3	Stem	0.1327222479668204
+donor_cluster_props_baselines	logreg	3	Macrophages	0.12840958261581828
+donor_cluster_props_baselines	logreg	3	WNT2B+ Fos-hi	0.12579634115292115
+donor_cluster_props_baselines	logreg	3	Immature Enterocytes 1	0.11375540173611484
+donor_cluster_props_baselines	logreg	3	Tuft	0.11308174725412651
+donor_cluster_props_baselines	logreg	3	MT-hi	0.11275278395533597
+donor_cluster_props_baselines	logreg	3	ILCs	0.10485179776240357
+donor_cluster_props_baselines	logreg	3	Plasma	0.10408927559993067
+donor_cluster_props_baselines	logreg	3	Cycling T	0.10074059977935114
+donor_cluster_props_baselines	logreg	3	Cycling B	0.09929959296808274
+donor_cluster_props_baselines	logreg	3	Enterocytes	0.08477016301887372
+donor_cluster_props_baselines	logreg	3	CD4+ Memory	0.07149338443514926
+donor_cluster_props_baselines	logreg	3	Cycling TA	0.06662790815336335
+donor_cluster_props_baselines	logreg	3	WNT2B+ Fos-lo 1	0.06446181849768477
+donor_cluster_props_baselines	logreg	3	TA 1	0.062478783140855455
+donor_cluster_props_baselines	logreg	3	NKs	0.06183313839804692
+donor_cluster_props_baselines	logreg	3	CD8+ LP	0.030098940755631607
+donor_cluster_props_baselines	linear_svm	3	Enteroendocrine	0.3240585532531054
+donor_cluster_props_baselines	linear_svm	3	Best4+ Enterocytes	0.1904891963819893
+donor_cluster_props_baselines	linear_svm	3	Pericytes	0.18632392134672435
+donor_cluster_props_baselines	linear_svm	3	Tregs	0.18610327690807713
+donor_cluster_props_baselines	linear_svm	3	Myofibroblasts	0.16386233542870854
+donor_cluster_props_baselines	linear_svm	3	CD8+ IL17+	0.16148432934413987
+donor_cluster_props_baselines	linear_svm	3	Enterocyte Progenitors	0.16075568636172116
+donor_cluster_props_baselines	linear_svm	3	GC	0.15260570271611665
+donor_cluster_props_baselines	linear_svm	3	WNT5B+ 1	0.15115207712068096
+donor_cluster_props_baselines	linear_svm	3	TA 2	0.14709182571516077
+donor_cluster_props_baselines	linear_svm	3	CD8+ IELs	0.14371183862230336
+donor_cluster_props_baselines	linear_svm	3	Microvascular	0.1380483234701916
+donor_cluster_props_baselines	linear_svm	3	Secretory TA	0.13141734840585245
+donor_cluster_props_baselines	linear_svm	3	Endothelial	0.13104945957582953
+donor_cluster_props_baselines	linear_svm	3	Immature Goblet	0.1279733820754159
+donor_cluster_props_baselines	linear_svm	3	CD69+ Mast	0.1243450128353559
+donor_cluster_props_baselines	linear_svm	3	Glia	0.11893570515780383
+donor_cluster_props_baselines	linear_svm	3	Inflammatory Monocytes	0.10717817276856664
+donor_cluster_props_baselines	linear_svm	3	Goblet	0.10072963250102443
+donor_cluster_props_baselines	linear_svm	3	CD4+ Activated Fos-hi	0.09556174099116323
+donor_cluster_props_baselines	linear_svm	3	M cells	0.09215573981204697
+donor_cluster_props_baselines	linear_svm	3	Post-capillary Venules	0.08915513801781572
+donor_cluster_props_baselines	linear_svm	3	Enterocytes	0.08742525519556416
+donor_cluster_props_baselines	linear_svm	3	CD4+ PD1+	0.08503239558205225
+donor_cluster_props_baselines	linear_svm	3	DC1	0.08235309876670424
+donor_cluster_props_baselines	linear_svm	3	WNT5B+ 2	0.08231568736131184
+donor_cluster_props_baselines	linear_svm	3	Cycling T	0.08219460522923208
+donor_cluster_props_baselines	linear_svm	3	MT-hi	0.08194847044958764
+donor_cluster_props_baselines	linear_svm	3	WNT2B+ Fos-lo 2	0.08034099220965726
+donor_cluster_props_baselines	linear_svm	3	ILCs	0.07967987497799292
+donor_cluster_props_baselines	linear_svm	3	Macrophages	0.078893820466371
+donor_cluster_props_baselines	linear_svm	3	NKs	0.07759667862958225
+donor_cluster_props_baselines	linear_svm	3	Follicular	0.07690725322413111
+donor_cluster_props_baselines	linear_svm	3	Cycling Monocytes	0.06649964219782682
+donor_cluster_props_baselines	linear_svm	3	RSPO3+	0.06338939991364817
+donor_cluster_props_baselines	linear_svm	3	CD4+ Activated Fos-lo	0.06294027100565514
+donor_cluster_props_baselines	linear_svm	3	CD69- Mast	0.06002308287067641
+donor_cluster_props_baselines	linear_svm	3	Inflammatory Fibroblasts	0.05569371145146797
+donor_cluster_props_baselines	linear_svm	3	DC2	0.05322836415573579
+donor_cluster_props_baselines	linear_svm	3	Immature Enterocytes 2	0.04696146978623439
+donor_cluster_props_baselines	linear_svm	3	WNT2B+ Fos-hi	0.037616966938125426
+donor_cluster_props_baselines	linear_svm	3	Stem	0.03480135682029034
+donor_cluster_props_baselines	linear_svm	3	Plasma	0.03379201937713046
+donor_cluster_props_baselines	linear_svm	3	WNT2B+ Fos-lo 1	0.031366488838360844
+donor_cluster_props_baselines	linear_svm	3	CD8+ LP	0.027558524924982855
+donor_cluster_props_baselines	linear_svm	3	Cycling B	0.020533255032193616
+donor_cluster_props_baselines	linear_svm	3	Tuft	0.02029322835473589
+donor_cluster_props_baselines	linear_svm	3	Cycling TA	0.017426207489617256
+donor_cluster_props_baselines	linear_svm	3	CD4+ Memory	0.015340212663180967
+donor_cluster_props_baselines	linear_svm	3	Immature Enterocytes 1	0.009470050729160719
+donor_cluster_props_baselines	xgb	3	Inflammatory Fibroblasts	0.1277911514043808
+donor_cluster_props_baselines	xgb	3	CD4+ Activated Fos-lo	0.11881907284259796
+donor_cluster_props_baselines	xgb	3	Cycling T	0.08961298316717148
+donor_cluster_props_baselines	xgb	3	CD69+ Mast	0.0820603221654892
+donor_cluster_props_baselines	xgb	3	Tregs	0.07719863951206207
+donor_cluster_props_baselines	xgb	3	Enteroendocrine	0.06138041615486145
+donor_cluster_props_baselines	xgb	3	Glia	0.050291627645492554
+donor_cluster_props_baselines	xgb	3	DC1	0.04938354343175888
+donor_cluster_props_baselines	xgb	3	Pericytes	0.049177151173353195
+donor_cluster_props_baselines	xgb	3	CD4+ Activated Fos-hi	0.04783444106578827
+donor_cluster_props_baselines	xgb	3	Enterocyte Progenitors	0.04143388196825981
+donor_cluster_props_baselines	xgb	3	Immature Goblet	0.041031066328287125
+donor_cluster_props_baselines	xgb	3	WNT2B+ Fos-hi	0.031689561903476715
+donor_cluster_props_baselines	xgb	3	Best4+ Enterocytes	0.027037905529141426
+donor_cluster_props_baselines	xgb	3	Cycling Monocytes	0.02510148286819458
+donor_cluster_props_baselines	xgb	3	NKs	0.024160590022802353
+donor_cluster_props_baselines	xgb	3	M cells	0.01813838630914688
+donor_cluster_props_baselines	xgb	3	Tuft	0.01754816062748432
+donor_cluster_props_baselines	xgb	3	CD4+ PD1+	0.011638128198683262
+donor_cluster_props_baselines	xgb	3	CD69- Mast	0.008671474643051624
+donor_cluster_props_baselines	xgb	3	Myofibroblasts	0.0
+donor_cluster_props_baselines	xgb	3	Microvascular	0.0
+donor_cluster_props_baselines	xgb	3	Plasma	0.0
+donor_cluster_props_baselines	xgb	3	TA 1	0.0
+donor_cluster_props_baselines	xgb	3	RSPO3+	0.0
+donor_cluster_props_baselines	xgb	3	Secretory TA	0.0
+donor_cluster_props_baselines	xgb	3	Stem	0.0
+donor_cluster_props_baselines	xgb	3	TA 2	0.0
+donor_cluster_props_baselines	xgb	3	WNT2B+ Fos-lo 1	0.0
+donor_cluster_props_baselines	xgb	3	WNT2B+ Fos-lo 2	0.0
+donor_cluster_props_baselines	xgb	3	Post-capillary Venules	0.0
+donor_cluster_props_baselines	xgb	3	Macrophages	0.0
+donor_cluster_props_baselines	xgb	3	Immature Enterocytes 1	0.0
+donor_cluster_props_baselines	xgb	3	Inflammatory Monocytes	0.0
+donor_cluster_props_baselines	xgb	3	CD4+ Memory	0.0
+donor_cluster_props_baselines	xgb	3	CD8+ IELs	0.0
+donor_cluster_props_baselines	xgb	3	CD8+ IL17+	0.0
+donor_cluster_props_baselines	xgb	3	CD8+ LP	0.0
+donor_cluster_props_baselines	xgb	3	Cycling B	0.0
+donor_cluster_props_baselines	xgb	3	Cycling TA	0.0
+donor_cluster_props_baselines	xgb	3	DC2	0.0
+donor_cluster_props_baselines	xgb	3	Endothelial	0.0
+donor_cluster_props_baselines	xgb	3	Enterocytes	0.0
+donor_cluster_props_baselines	xgb	3	Follicular	0.0
+donor_cluster_props_baselines	xgb	3	GC	0.0
+donor_cluster_props_baselines	xgb	3	Goblet	0.0
+donor_cluster_props_baselines	xgb	3	ILCs	0.0
+donor_cluster_props_baselines	xgb	3	WNT5B+ 1	0.0
+donor_cluster_props_baselines	xgb	3	Immature Enterocytes 2	0.0
+donor_cluster_props_baselines	xgb	3	MT-hi	0.0
+donor_cluster_props_baselines	logreg	4	Enterocyte Progenitors	0.605713611948614
+donor_cluster_props_baselines	logreg	4	Pericytes	0.4829212113565752
+donor_cluster_props_baselines	logreg	4	Tregs	0.4698475554832136
+donor_cluster_props_baselines	logreg	4	Myofibroblasts	0.4202682535370656
+donor_cluster_props_baselines	logreg	4	CD69+ Mast	0.4045134861952334
+donor_cluster_props_baselines	logreg	4	Endothelial	0.38868861456943493
+donor_cluster_props_baselines	logreg	4	Enteroendocrine	0.3667629817059316
+donor_cluster_props_baselines	logreg	4	Cycling Monocytes	0.3524480816370854
+donor_cluster_props_baselines	logreg	4	CD8+ IL17+	0.3507912697881534
+donor_cluster_props_baselines	logreg	4	CD4+ Activated Fos-lo	0.33877487533864115
+donor_cluster_props_baselines	logreg	4	TA 1	0.28179449093286596
+donor_cluster_props_baselines	logreg	4	Follicular	0.2776901463487855
+donor_cluster_props_baselines	logreg	4	DC2	0.271712776556866
+donor_cluster_props_baselines	logreg	4	Immature Enterocytes 2	0.25499530694894024
+donor_cluster_props_baselines	logreg	4	Cycling T	0.2545154488837663
+donor_cluster_props_baselines	logreg	4	Immature Goblet	0.2497607202542271
+donor_cluster_props_baselines	logreg	4	CD4+ PD1+	0.24839969230463746
+donor_cluster_props_baselines	logreg	4	CD69- Mast	0.2296648881104563
+donor_cluster_props_baselines	logreg	4	Post-capillary Venules	0.19024901873004982
+donor_cluster_props_baselines	logreg	4	Inflammatory Monocytes	0.18339258795171684
+donor_cluster_props_baselines	logreg	4	Glia	0.18101507145993007
+donor_cluster_props_baselines	logreg	4	Best4+ Enterocytes	0.17770795464545633
+donor_cluster_props_baselines	logreg	4	Cycling B	0.16633289440283885
+donor_cluster_props_baselines	logreg	4	WNT2B+ Fos-lo 2	0.16483894740679572
+donor_cluster_props_baselines	logreg	4	CD8+ IELs	0.16446219933714687
+donor_cluster_props_baselines	logreg	4	RSPO3+	0.1640032443130518
+donor_cluster_props_baselines	logreg	4	Microvascular	0.14790939676793735
+donor_cluster_props_baselines	logreg	4	Secretory TA	0.14489917230853105
+donor_cluster_props_baselines	logreg	4	GC	0.13731446670886138
+donor_cluster_props_baselines	logreg	4	Inflammatory Fibroblasts	0.13556625476669304
+donor_cluster_props_baselines	logreg	4	Cycling TA	0.13385561517899605
+donor_cluster_props_baselines	logreg	4	WNT5B+ 1	0.13012559600812204
+donor_cluster_props_baselines	logreg	4	CD4+ Memory	0.12582546267990039
+donor_cluster_props_baselines	logreg	4	M cells	0.11529844250197031
+donor_cluster_props_baselines	logreg	4	Tuft	0.11443335166463223
+donor_cluster_props_baselines	logreg	4	Goblet	0.10632954147130773
+donor_cluster_props_baselines	logreg	4	MT-hi	0.10457165009859432
+donor_cluster_props_baselines	logreg	4	Immature Enterocytes 1	0.09385947701722328
+donor_cluster_props_baselines	logreg	4	WNT2B+ Fos-lo 1	0.08859260823860875
+donor_cluster_props_baselines	logreg	4	Enterocytes	0.08606562525781936
+donor_cluster_props_baselines	logreg	4	WNT5B+ 2	0.08529589451593726
+donor_cluster_props_baselines	logreg	4	TA 2	0.08398260708398168
+donor_cluster_props_baselines	logreg	4	CD8+ LP	0.08121510409168636
+donor_cluster_props_baselines	logreg	4	DC1	0.06504981367905124
+donor_cluster_props_baselines	logreg	4	Plasma	0.06119195341745807
+donor_cluster_props_baselines	logreg	4	WNT2B+ Fos-hi	0.05415452388254192
+donor_cluster_props_baselines	logreg	4	CD4+ Activated Fos-hi	0.029539683936284863
+donor_cluster_props_baselines	logreg	4	Stem	0.024260548777996282
+donor_cluster_props_baselines	logreg	4	Macrophages	0.021554196405051962
+donor_cluster_props_baselines	logreg	4	ILCs	0.006644140759204651
+donor_cluster_props_baselines	linear_svm	4	Enterocyte Progenitors	0.19924028812022002
+donor_cluster_props_baselines	linear_svm	4	Pericytes	0.18960060455014435
+donor_cluster_props_baselines	linear_svm	4	Tregs	0.16477328274468858
+donor_cluster_props_baselines	linear_svm	4	Endothelial	0.1553610664028532
+donor_cluster_props_baselines	linear_svm	4	Enteroendocrine	0.15420321465372205
+donor_cluster_props_baselines	linear_svm	4	CD4+ Activated Fos-lo	0.15071607510032664
+donor_cluster_props_baselines	linear_svm	4	CD69+ Mast	0.14511299762417115
+donor_cluster_props_baselines	linear_svm	4	Myofibroblasts	0.13513184210953097
+donor_cluster_props_baselines	linear_svm	4	Follicular	0.12660658162614552
+donor_cluster_props_baselines	linear_svm	4	TA 1	0.11818132158642078
+donor_cluster_props_baselines	linear_svm	4	DC2	0.1156876115144724
+donor_cluster_props_baselines	linear_svm	4	Cycling T	0.11398243871837295
+donor_cluster_props_baselines	linear_svm	4	WNT5B+ 1	0.10937165685706106
+donor_cluster_props_baselines	linear_svm	4	CD8+ IL17+	0.10564520220074278
+donor_cluster_props_baselines	linear_svm	4	Immature Goblet	0.09984065618208662
+donor_cluster_props_baselines	linear_svm	4	Cycling Monocytes	0.09969432155425584
+donor_cluster_props_baselines	linear_svm	4	CD8+ IELs	0.09240780885009402
+donor_cluster_props_baselines	linear_svm	4	CD69- Mast	0.08976272454356787
+donor_cluster_props_baselines	linear_svm	4	Inflammatory Monocytes	0.07811017403235808
+donor_cluster_props_baselines	linear_svm	4	Post-capillary Venules	0.07662535881488755
+donor_cluster_props_baselines	linear_svm	4	Glia	0.07412129478099108
+donor_cluster_props_baselines	linear_svm	4	Cycling TA	0.07370494439528429
+donor_cluster_props_baselines	linear_svm	4	CD4+ PD1+	0.07165984765110466
+donor_cluster_props_baselines	linear_svm	4	Secretory TA	0.06530322490251342
+donor_cluster_props_baselines	linear_svm	4	Best4+ Enterocytes	0.061070435393013364
+donor_cluster_props_baselines	linear_svm	4	WNT2B+ Fos-lo 2	0.056240850610733
+donor_cluster_props_baselines	linear_svm	4	MT-hi	0.0554572505923612
+donor_cluster_props_baselines	linear_svm	4	Inflammatory Fibroblasts	0.053514488463833845
+donor_cluster_props_baselines	linear_svm	4	Immature Enterocytes 2	0.05217283412660198
+donor_cluster_props_baselines	linear_svm	4	WNT2B+ Fos-hi	0.04700220952174512
+donor_cluster_props_baselines	linear_svm	4	RSPO3+	0.04629149467964722
+donor_cluster_props_baselines	linear_svm	4	WNT2B+ Fos-lo 1	0.04610442591726341
+donor_cluster_props_baselines	linear_svm	4	M cells	0.0371904309059431
+donor_cluster_props_baselines	linear_svm	4	WNT5B+ 2	0.035812238846000564
+donor_cluster_props_baselines	linear_svm	4	TA 2	0.03566501337822675
+donor_cluster_props_baselines	linear_svm	4	Microvascular	0.03439659956546422
+donor_cluster_props_baselines	linear_svm	4	Plasma	0.03042333592737833
+donor_cluster_props_baselines	linear_svm	4	Immature Enterocytes 1	0.028597507481306225
+donor_cluster_props_baselines	linear_svm	4	Enterocytes	0.02659965983942615
+donor_cluster_props_baselines	linear_svm	4	Cycling B	0.02624636911072121
+donor_cluster_props_baselines	linear_svm	4	Tuft	0.022717913317899487
+donor_cluster_props_baselines	linear_svm	4	CD8+ LP	0.022402285951978247
+donor_cluster_props_baselines	linear_svm	4	CD4+ Activated Fos-hi	0.017984270714593353
+donor_cluster_props_baselines	linear_svm	4	Macrophages	0.014988603669335063
+donor_cluster_props_baselines	linear_svm	4	ILCs	0.012109955813781437
+donor_cluster_props_baselines	linear_svm	4	Goblet	0.007139622193221756
+donor_cluster_props_baselines	linear_svm	4	DC1	0.00693261734775899
+donor_cluster_props_baselines	linear_svm	4	CD4+ Memory	0.005620496590293435
+donor_cluster_props_baselines	linear_svm	4	Stem	0.004085272050781852
+donor_cluster_props_baselines	linear_svm	4	NKs	0.002779639531018655
+donor_cluster_props_baselines	xgb	4	Inflammatory Fibroblasts	0.2894103229045868
+donor_cluster_props_baselines	xgb	4	Tregs	0.2000931054353714
+donor_cluster_props_baselines	xgb	4	Immature Enterocytes 2	0.13527005910873413
+donor_cluster_props_baselines	xgb	4	Pericytes	0.0969431921839714
+donor_cluster_props_baselines	xgb	4	Enterocyte Progenitors	0.06300461292266846
+donor_cluster_props_baselines	xgb	4	Immature Enterocytes 1	0.04876289889216423
+donor_cluster_props_baselines	xgb	4	CD4+ Activated Fos-lo	0.033659372478723526
+donor_cluster_props_baselines	xgb	4	Cycling Monocytes	0.028824640437960625
+donor_cluster_props_baselines	xgb	4	ILCs	0.02098962664604187
+donor_cluster_props_baselines	xgb	4	Glia	0.019922684878110886
+donor_cluster_props_baselines	xgb	4	CD4+ PD1+	0.016459833830595016
+donor_cluster_props_baselines	xgb	4	WNT5B+ 2	0.012293348088860512
+donor_cluster_props_baselines	xgb	4	CD4+ Memory	0.010635201819241047
+donor_cluster_props_baselines	xgb	4	Cycling TA	0.009668176993727684
+donor_cluster_props_baselines	xgb	4	Myofibroblasts	0.009459631517529488
+donor_cluster_props_baselines	xgb	4	Enterocytes	0.004603206180036068
+donor_cluster_props_baselines	xgb	4	Cycling T	0.0
+donor_cluster_props_baselines	xgb	4	NKs	0.0
+donor_cluster_props_baselines	xgb	4	Plasma	0.0
+donor_cluster_props_baselines	xgb	4	Post-capillary Venules	0.0
+donor_cluster_props_baselines	xgb	4	RSPO3+	0.0
+donor_cluster_props_baselines	xgb	4	Secretory TA	0.0
+donor_cluster_props_baselines	xgb	4	TA 1	0.0
+donor_cluster_props_baselines	xgb	4	Microvascular	0.0
+donor_cluster_props_baselines	xgb	4	TA 2	0.0
+donor_cluster_props_baselines	xgb	4	CD4+ Activated Fos-hi	0.0
+donor_cluster_props_baselines	xgb	4	Tuft	0.0
+donor_cluster_props_baselines	xgb	4	WNT2B+ Fos-hi	0.0
+donor_cluster_props_baselines	xgb	4	WNT2B+ Fos-lo 1	0.0
+donor_cluster_props_baselines	xgb	4	WNT2B+ Fos-lo 2	0.0
+donor_cluster_props_baselines	xgb	4	Stem	0.0
+donor_cluster_props_baselines	xgb	4	Macrophages	0.0
+donor_cluster_props_baselines	xgb	4	MT-hi	0.0
+donor_cluster_props_baselines	xgb	4	M cells	0.0
+donor_cluster_props_baselines	xgb	4	DC1	0.0
+donor_cluster_props_baselines	xgb	4	DC2	0.0
+donor_cluster_props_baselines	xgb	4	Endothelial	0.0
+donor_cluster_props_baselines	xgb	4	CD8+ LP	0.0
+donor_cluster_props_baselines	xgb	4	Enteroendocrine	0.0
+donor_cluster_props_baselines	xgb	4	Follicular	0.0
+donor_cluster_props_baselines	xgb	4	GC	0.0
+donor_cluster_props_baselines	xgb	4	CD8+ IL17+	0.0
+donor_cluster_props_baselines	xgb	4	Goblet	0.0
+donor_cluster_props_baselines	xgb	4	CD8+ IELs	0.0
+donor_cluster_props_baselines	xgb	4	WNT5B+ 1	0.0
+donor_cluster_props_baselines	xgb	4	CD69- Mast	0.0
+donor_cluster_props_baselines	xgb	4	Immature Goblet	0.0
+donor_cluster_props_baselines	xgb	4	CD69+ Mast	0.0
+donor_cluster_props_baselines	xgb	4	Inflammatory Monocytes	0.0
+donor_cluster_props_baselines	xgb	4	Cycling B	0.0
