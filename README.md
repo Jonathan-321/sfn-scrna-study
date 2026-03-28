@@ -40,25 +40,25 @@ or “CFN beats all baselines” story.
 
 If you are reviewing the project for the first time, use this order:
 
-1. [`docs/professor_review_brief.md`](docs/professor_review_brief.md)
-2. [`docs/scp259_analysis_completion_report.md`](docs/scp259_analysis_completion_report.md)
-3. [`docs/uc_first_paper_writeup.md`](docs/uc_first_paper_writeup.md)
+1. [`docs/active/professor_review_brief.md`](docs/active/professor_review_brief.md)
+2. [`docs/active/scp259_analysis_completion_report.md`](docs/active/scp259_analysis_completion_report.md)
+3. [`docs/active/uc_first_paper_writeup.md`](docs/active/uc_first_paper_writeup.md)
 4. [`results/uc_scp259/reports/scp259_final_benchmark_tables.csv`](results/uc_scp259/reports/scp259_final_benchmark_tables.csv)
 5. [`results/uc_scp259/cfn_benchmarks/uc_recurring_edge_annotation_final_v3.csv`](results/uc_scp259/cfn_benchmarks/uc_recurring_edge_annotation_final_v3.csv)
 
 ## Main documents
 
-- [`docs/professor_review_brief.md`](docs/professor_review_brief.md):
+- [`docs/active/professor_review_brief.md`](docs/active/professor_review_brief.md):
   advisor-facing summary of what is complete, what is mixed, and what feedback
   is needed
-- [`docs/scp259_analysis_completion_report.md`](docs/scp259_analysis_completion_report.md):
+- [`docs/active/scp259_analysis_completion_report.md`](docs/active/scp259_analysis_completion_report.md):
   frozen SCP259 benchmark contract, final tables, figure list, and current
   claim
-- [`docs/uc_first_paper_writeup.md`](docs/uc_first_paper_writeup.md):
+- [`docs/active/uc_first_paper_writeup.md`](docs/active/uc_first_paper_writeup.md):
   longer paper-style writeup
-- [`docs/uc_cluster_glossary.md`](docs/uc_cluster_glossary.md):
+- [`docs/reference/uc_cluster_glossary.md`](docs/reference/uc_cluster_glossary.md):
   plain-language explanation of atlas cluster names
-- [`docs/uc_preprocessing_decisions.md`](docs/uc_preprocessing_decisions.md):
+- [`docs/reference/uc_preprocessing_decisions.md`](docs/reference/uc_preprocessing_decisions.md):
   preprocessing decisions for the donor-level benchmark
 
 ## Main result artifacts
@@ -78,8 +78,9 @@ If you are reviewing the project for the first time, use this order:
 
 ## Repository layout
 
-- `docs/`: project framing, benchmark contract, writeups, and reviewer-facing
-  summaries
+- `docs/active/`: current paper-facing and review-facing documents
+- `docs/reference/`: supporting dataset, preprocessing, and interpretation notes
+- `docs/archive/`: older planning documents retained for history
 - `scripts/`: preprocessing, evaluation, and diagnostic utilities
 - `results/`: small summary artifacts and paper-facing tables
 - `data/`: local raw and processed data folders
