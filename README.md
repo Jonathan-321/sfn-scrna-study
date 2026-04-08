@@ -4,6 +4,10 @@ Donor-aware single-cell RNA benchmarking workspace, currently centered on the
 ulcerative colitis atlas `SCP259` and a first evaluation of StructuralCFN on
 donor-level scRNA representations.
 
+<p align="center">
+  <img src="results/uc_scp259/figures/figure2_scp259_benchmark_overview.png" alt="Benchmark Overview" width="85%">
+</p>
+
 ## Current status
 
 This repo is no longer only a planning workspace. The `SCP259` benchmark is
@@ -35,6 +39,23 @@ The current defensible claim is:
 
 This is therefore an honest benchmark paper story, not yet a stable-mechanism
 or “CFN beats all baselines” story.
+
+## Key Figures
+
+<p align="center">
+  <img src="results/uc_scp259/figures/figure4_donor_global_benchmarks.png" alt="Donor-Global Benchmarks" width="85%">
+</p>
+<p align="center"><em>Figure 4: Donor-global benchmark results across representations</em></p>
+
+<p align="center">
+  <img src="results/uc_scp259/figures/figure5_compartment_extension_heatmap.png" alt="Compartment Extension" width="85%">
+</p>
+<p align="center"><em>Figure 5: Compartment-aware extension heatmap</em></p>
+
+<p align="center">
+  <img src="results/uc_scp259/figures/figure7_recurring_edge_themes.png" alt="Recurring Edge Themes" width="85%">
+</p>
+<p align="center"><em>Figure 7: Biologically annotated recurring CFN edge themes</em></p>
 
 ## Start here
 
