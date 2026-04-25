@@ -1,0 +1,7 @@
+direction	model	point_auc	boot_mean	ci_lo_95	ci_hi_95
+CD→UC	logreg	0.5033	0.5033	0.3357	0.681
+CD→UC	linear_svm	0.5468	0.5465	0.375	0.718
+CD→UC	xgb	0.4646	0.4627	0.3041	0.6258
+UC→CD	logreg	0.7407	0.7381	0.5357	0.8995
+UC→CD	linear_svm	0.7639	0.7615	0.5733	0.915
+UC→CD	xgb	0.8333	0.8335	0.72	0.9306

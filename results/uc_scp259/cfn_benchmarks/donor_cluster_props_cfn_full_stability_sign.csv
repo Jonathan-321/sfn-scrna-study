@@ -1,0 +1,52 @@
+feature,n_valid_folds,majority_sign,sign_consistency
+Best4+ Enterocytes,5,1,0.8
+CD4+ Activated Fos-hi,5,-1,0.8
+CD4+ Activated Fos-lo,5,-1,1.0
+CD4+ Memory,5,1,0.6
+CD4+ PD1+,5,1,0.8
+CD69+ Mast,5,1,1.0
+CD69- Mast,5,1,0.8
+CD8+ IELs,5,-1,1.0
+CD8+ IL17+,5,1,1.0
+CD8+ LP,5,1,0.8
+Cycling B,5,1,1.0
+Cycling Monocytes,5,-1,1.0
+Cycling T,5,1,0.8
+Cycling TA,5,-1,0.8
+DC1,5,-1,1.0
+DC2,5,-1,0.8
+Endothelial,5,1,1.0
+Enterocyte Progenitors,5,-1,1.0
+Enterocytes,5,-1,1.0
+Enteroendocrine,5,1,1.0
+Follicular,5,1,1.0
+GC,5,1,0.8
+Glia,5,-1,1.0
+Goblet,5,-1,1.0
+ILCs,5,-1,0.6
+Immature Enterocytes 1,5,-1,1.0
+Immature Enterocytes 2,5,-1,1.0
+Immature Goblet,5,1,1.0
+Inflammatory Fibroblasts,5,1,1.0
+Inflammatory Monocytes,5,1,1.0
+M cells,5,1,1.0
+MT-hi,5,-1,0.6
+Macrophages,5,1,0.8
+Microvascular,5,-1,1.0
+Myofibroblasts,5,1,1.0
+NKs,5,-1,1.0
+Pericytes,5,1,1.0
+Plasma,5,-1,0.6
+Post-capillary Venules,5,1,1.0
+RSPO3+,5,-1,0.8
+Secretory TA,5,-1,1.0
+Stem,5,1,0.8
+TA 1,5,-1,0.8
+TA 2,5,1,0.8
+Tregs,5,1,1.0
+Tuft,5,-1,1.0
+WNT2B+ Fos-hi,5,1,0.6
+WNT2B+ Fos-lo 1,5,-1,0.8
+WNT2B+ Fos-lo 2,5,1,1.0
+WNT5B+ 1,5,-1,1.0
+WNT5B+ 2,5,1,0.8

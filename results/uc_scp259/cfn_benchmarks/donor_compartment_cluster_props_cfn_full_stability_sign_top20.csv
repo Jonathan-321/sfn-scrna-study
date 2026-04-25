@@ -1,0 +1,103 @@
+feature,n_valid_folds,majority_sign,sign_consistency
+Epi__Best4+ Enterocytes,5,1,0.8
+Epi__CD4+ Activated Fos-hi,5,1,1.0
+Epi__CD4+ Activated Fos-lo,5,-1,0.6
+Epi__CD4+ Memory,5,1,1.0
+Epi__CD4+ PD1+,5,1,0.8
+Epi__CD69+ Mast,5,1,1.0
+Epi__CD69- Mast,5,1,0.8
+Epi__CD8+ IELs,5,-1,1.0
+Epi__CD8+ IL17+,5,1,1.0
+Epi__CD8+ LP,5,1,1.0
+Epi__Cycling B,5,1,1.0
+Epi__Cycling Monocytes,5,1,1.0
+Epi__Cycling T,5,1,1.0
+Epi__Cycling TA,5,-1,0.8
+Epi__DC1,5,1,0.8
+Epi__DC2,5,1,1.0
+Epi__Endothelial,5,1,1.0
+Epi__Enterocyte Progenitors,5,-1,1.0
+Epi__Enterocytes,5,1,0.6
+Epi__Enteroendocrine,5,1,1.0
+Epi__Follicular,5,-1,0.6
+Epi__GC,5,-1,0.6
+Epi__Glia,5,1,1.0
+Epi__Goblet,5,-1,1.0
+Epi__ILCs,5,1,1.0
+Epi__Immature Enterocytes 1,5,-1,1.0
+Epi__Immature Enterocytes 2,5,-1,1.0
+Epi__Immature Goblet,5,1,0.8
+Epi__Inflammatory Fibroblasts,5,1,0.8
+Epi__Inflammatory Monocytes,5,1,1.0
+Epi__M cells,5,1,0.8
+Epi__MT-hi,5,-1,1.0
+Epi__Macrophages,5,1,1.0
+Epi__Microvascular,5,-1,1.0
+Epi__Myofibroblasts,5,-1,0.8
+Epi__NKs,5,-1,1.0
+Epi__Pericytes,5,-1,1.0
+Epi__Plasma,5,1,0.6
+Epi__Post-capillary Venules,5,1,1.0
+Epi__RSPO3+,5,1,1.0
+Epi__Secretory TA,5,-1,0.8
+Epi__Stem,5,-1,1.0
+Epi__TA 1,5,-1,0.6
+Epi__TA 2,5,1,0.6
+Epi__Tregs,5,1,1.0
+Epi__Tuft,5,-1,0.8
+Epi__WNT2B+ Fos-hi,5,1,1.0
+Epi__WNT2B+ Fos-lo 1,5,-1,1.0
+Epi__WNT2B+ Fos-lo 2,5,-1,1.0
+Epi__WNT5B+ 1,5,1,1.0
+Epi__WNT5B+ 2,5,1,0.8
+LP__Best4+ Enterocytes,5,1,0.8
+LP__CD4+ Activated Fos-hi,5,-1,1.0
+LP__CD4+ Activated Fos-lo,5,-1,1.0
+LP__CD4+ Memory,5,1,0.6
+LP__CD4+ PD1+,5,1,0.6
+LP__CD69+ Mast,5,1,1.0
+LP__CD69- Mast,5,1,0.8
+LP__CD8+ IELs,5,1,0.8
+LP__CD8+ IL17+,5,-1,0.6
+LP__CD8+ LP,5,-1,1.0
+LP__Cycling B,5,-1,0.8
+LP__Cycling Monocytes,5,-1,1.0
+LP__Cycling T,5,1,0.6
+LP__Cycling TA,5,1,1.0
+LP__DC1,5,-1,1.0
+LP__DC2,5,-1,1.0
+LP__Endothelial,5,1,1.0
+LP__Enterocyte Progenitors,5,1,0.6
+LP__Enterocytes,5,-1,0.8
+LP__Enteroendocrine,5,1,1.0
+LP__Follicular,5,1,0.6
+LP__GC,5,-1,0.6
+LP__Glia,5,-1,1.0
+LP__Goblet,5,1,1.0
+LP__ILCs,5,-1,1.0
+LP__Immature Enterocytes 1,5,-1,0.6
+LP__Immature Enterocytes 2,5,1,0.8
+LP__Immature Goblet,5,1,1.0
+LP__Inflammatory Fibroblasts,5,1,1.0
+LP__Inflammatory Monocytes,5,1,1.0
+LP__M cells,5,1,1.0
+LP__MT-hi,5,-1,1.0
+LP__Macrophages,5,1,0.8
+LP__Microvascular,5,-1,1.0
+LP__Myofibroblasts,5,1,1.0
+LP__NKs,5,1,0.8
+LP__Pericytes,5,1,1.0
+LP__Plasma,5,-1,1.0
+LP__Post-capillary Venules,5,1,1.0
+LP__RSPO3+,5,-1,1.0
+LP__Secretory TA,5,1,1.0
+LP__Stem,5,1,1.0
+LP__TA 1,5,1,1.0
+LP__TA 2,5,1,1.0
+LP__Tregs,5,1,1.0
+LP__Tuft,5,1,1.0
+LP__WNT2B+ Fos-hi,5,-1,1.0
+LP__WNT2B+ Fos-lo 1,5,-1,0.8
+LP__WNT2B+ Fos-lo 2,5,1,0.8
+LP__WNT5B+ 1,5,-1,1.0
+LP__WNT5B+ 2,5,-1,1.0

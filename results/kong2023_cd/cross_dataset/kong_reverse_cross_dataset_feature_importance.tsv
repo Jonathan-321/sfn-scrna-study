@@ -1,0 +1,205 @@
+feature	importance	model	run_name
+Enterocytes TMIGD1 MEP1A	-0.3119048476219177	logreg	kong_reverse_cross_dataset
+T cells CD8	-0.2661288380622864	logreg	kong_reverse_cross_dataset
+Plasma cells	0.19856657087802887	logreg	kong_reverse_cross_dataset
+T cells CD4 FOSB	-0.136249378323555	logreg	kong_reverse_cross_dataset
+Tregs	0.11441226303577423	logreg	kong_reverse_cross_dataset
+Endothelial cells CD36	0.07835015654563904	logreg	kong_reverse_cross_dataset
+T cells CD4 IL17A	-0.07492800801992416	logreg	kong_reverse_cross_dataset
+Monocytes S100A8 S100A9	0.07352641969919205	logreg	kong_reverse_cross_dataset
+Mast cells	0.06802160292863846	logreg	kong_reverse_cross_dataset
+Goblet cells SPINK4	0.06621445715427399	logreg	kong_reverse_cross_dataset
+Goblet cells MUC2 TFF1	0.06371437758207321	logreg	kong_reverse_cross_dataset
+Endothelial cells DARC	0.06069689616560936	logreg	kong_reverse_cross_dataset
+IELs ID3 ENTPD1	-0.05638817325234413	logreg	kong_reverse_cross_dataset
+Stem cells OLFM4	0.04824308305978775	logreg	kong_reverse_cross_dataset
+Fibroblasts ADAMDEC1	0.04302600026130676	logreg	kong_reverse_cross_dataset
+Macrophages CCL3 CCL4	0.04253075644373894	logreg	kong_reverse_cross_dataset
+Tuft cells	-0.04225616157054901	logreg	kong_reverse_cross_dataset
+Myofibroblasts GREM1 GREM2	0.040619175881147385	logreg	kong_reverse_cross_dataset
+Enterocytes BEST4	-0.03866681829094887	logreg	kong_reverse_cross_dataset
+Enterocytes CA1 CA2 CA4-	-0.0365711972117424	logreg	kong_reverse_cross_dataset
+Epithelial Cycling cells	-0.03564554080367088	logreg	kong_reverse_cross_dataset
+DC2 CD1D	0.03298145905137062	logreg	kong_reverse_cross_dataset
+Macrophages	0.03218425065279007	logreg	kong_reverse_cross_dataset
+Paneth cells	-0.031995225697755814	logreg	kong_reverse_cross_dataset
+Stem cells OLFM4 GSTA1	-0.031225239858031273	logreg	kong_reverse_cross_dataset
+DC1	0.028879741206765175	logreg	kong_reverse_cross_dataset
+T cells Naive CD4	-0.02809075079858303	logreg	kong_reverse_cross_dataset
+Endothelial cells CA4 CD36	0.027502557262778282	logreg	kong_reverse_cross_dataset
+Pericytes HIGD1B STEAP4	0.027111174538731575	logreg	kong_reverse_cross_dataset
+NK cells KLRF1 CD3G-	0.024507485330104828	logreg	kong_reverse_cross_dataset
+Goblet cells MUC2 TFF1-	0.02423904277384281	logreg	kong_reverse_cross_dataset
+B cells	-0.02302931807935238	logreg	kong_reverse_cross_dataset
+Epithelial cells METTL12 MAFB	-0.022301873192191124	logreg	kong_reverse_cross_dataset
+Stem cells OLFM4 PCNA	-0.02185300923883915	logreg	kong_reverse_cross_dataset
+T cells CD8 KLRG1	0.020543532446026802	logreg	kong_reverse_cross_dataset
+T cells OGT	-0.020147224888205528	logreg	kong_reverse_cross_dataset
+DC2 CD1D-	0.018328335136175156	logreg	kong_reverse_cross_dataset
+Epithelial HBB HBA	0.017966551706194878	logreg	kong_reverse_cross_dataset
+Mature DCs	0.017548812553286552	logreg	kong_reverse_cross_dataset
+Enterocytes TMIGD1 MEP1A GSTA1	-0.01667209342122078	logreg	kong_reverse_cross_dataset
+Macrophages Metallothionein	-0.015162641182541847	logreg	kong_reverse_cross_dataset
+Lymphatics	0.014908283948898315	logreg	kong_reverse_cross_dataset
+Glial cells	-0.014690088108181953	logreg	kong_reverse_cross_dataset
+B cells AICDA LRMP	-0.01381823979318142	logreg	kong_reverse_cross_dataset
+Myofibroblasts HHIP NPNT	0.013754921965301037	logreg	kong_reverse_cross_dataset
+Fibroblasts NPY SLITRK6	-0.013634857721626759	logreg	kong_reverse_cross_dataset
+Macrophages PLA2G2D	0.013193914666771889	logreg	kong_reverse_cross_dataset
+Immune Cycling cells	0.012678653933107853	logreg	kong_reverse_cross_dataset
+Fibroblasts SFRP2 SLPI	-0.012628383934497833	logreg	kong_reverse_cross_dataset
+Monocytes CHI3L1 CYP27A1	0.012381644919514656	logreg	kong_reverse_cross_dataset
+Pericytes RERGL NTRK2	0.01175709255039692	logreg	kong_reverse_cross_dataset
+Stromal Cycling cells	0.011110502295196056	logreg	kong_reverse_cross_dataset
+Endothelial cells LTC4S SEMA3G	0.011098076589405537	logreg	kong_reverse_cross_dataset
+Fibroblasts SMOC2 PTGIS	-0.009935232810676098	logreg	kong_reverse_cross_dataset
+Enterochromaffin cells	-0.00887981615960598	logreg	kong_reverse_cross_dataset
+Macrophages CXCL9 CXCL10	0.008383816108107567	logreg	kong_reverse_cross_dataset
+Inflammatory fibroblasts IL11 CHI3L1	0.007544859778136015	logreg	kong_reverse_cross_dataset
+Fibroblasts KCNN3 LY6H	-0.006560273934155703	logreg	kong_reverse_cross_dataset
+Activated fibroblasts CCL19 ADAMADEC1	0.0063668303191661835	logreg	kong_reverse_cross_dataset
+NK-like cells ID3 ENTPD1	-0.005864286795258522	logreg	kong_reverse_cross_dataset
+Monocytes HBB	0.00556980911642313	logreg	kong_reverse_cross_dataset
+Stem cells OLFM4 LGR5	-0.0053972844034433365	logreg	kong_reverse_cross_dataset
+Cycling cells	0.005019029602408409	logreg	kong_reverse_cross_dataset
+ILCs	-0.004270399920642376	logreg	kong_reverse_cross_dataset
+Neutrophils S100A8 S100A9	0.002539421198889613	logreg	kong_reverse_cross_dataset
+L cells	-0.0014561050338670611	logreg	kong_reverse_cross_dataset
+Macrophages LYVE1	0.0007129463483579457	logreg	kong_reverse_cross_dataset
+Enteroendocrine cells	-0.00040704148705117404	logreg	kong_reverse_cross_dataset
+T cells CD8	-0.9198289991809241	linear_svm	kong_reverse_cross_dataset
+T cells CD4 FOSB	-0.5742539029316508	linear_svm	kong_reverse_cross_dataset
+Enterocytes TMIGD1 MEP1A	-0.5625786094005026	linear_svm	kong_reverse_cross_dataset
+Tregs	0.41617989997123944	linear_svm	kong_reverse_cross_dataset
+Goblet cells MUC2 TFF1	0.31989183168826396	linear_svm	kong_reverse_cross_dataset
+Monocytes S100A8 S100A9	0.27640680073382995	linear_svm	kong_reverse_cross_dataset
+T cells CD4 IL17A	-0.2612522307808769	linear_svm	kong_reverse_cross_dataset
+Goblet cells SPINK4	0.26062205843212927	linear_svm	kong_reverse_cross_dataset
+Enterocytes CA1 CA2 CA4-	-0.24679677292117544	linear_svm	kong_reverse_cross_dataset
+Endothelial cells CD36	0.24063164121851172	linear_svm	kong_reverse_cross_dataset
+Stem cells OLFM4	0.23904964008171328	linear_svm	kong_reverse_cross_dataset
+Endothelial cells DARC	0.22060729689908565	linear_svm	kong_reverse_cross_dataset
+Mast cells	0.20424380502148173	linear_svm	kong_reverse_cross_dataset
+Plasma cells	0.16928111136587873	linear_svm	kong_reverse_cross_dataset
+Tuft cells	-0.1595523437868334	linear_svm	kong_reverse_cross_dataset
+T cells Naive CD4	-0.15069560349708888	linear_svm	kong_reverse_cross_dataset
+Epithelial Cycling cells	-0.14780512038178292	linear_svm	kong_reverse_cross_dataset
+Enterocytes BEST4	-0.14662642702708362	linear_svm	kong_reverse_cross_dataset
+Myofibroblasts GREM1 GREM2	0.14387909414129163	linear_svm	kong_reverse_cross_dataset
+IELs ID3 ENTPD1	-0.13408906550920355	linear_svm	kong_reverse_cross_dataset
+B cells	-0.13388767220043338	linear_svm	kong_reverse_cross_dataset
+Macrophages CCL3 CCL4	0.12563495985869355	linear_svm	kong_reverse_cross_dataset
+DC2 CD1D	0.11533958583102231	linear_svm	kong_reverse_cross_dataset
+Endothelial cells CA4 CD36	0.1071134481264086	linear_svm	kong_reverse_cross_dataset
+NK cells KLRF1 CD3G-	0.10681398013908401	linear_svm	kong_reverse_cross_dataset
+DC1	0.10629903190828588	linear_svm	kong_reverse_cross_dataset
+Paneth cells	-0.09966570996495545	linear_svm	kong_reverse_cross_dataset
+Pericytes HIGD1B STEAP4	0.0980271671070437	linear_svm	kong_reverse_cross_dataset
+Stem cells OLFM4 PCNA	-0.08985437437136305	linear_svm	kong_reverse_cross_dataset
+Macrophages	0.08903454822317966	linear_svm	kong_reverse_cross_dataset
+Fibroblasts SMOC2 PTGIS	-0.0843594857485951	linear_svm	kong_reverse_cross_dataset
+Glial cells	-0.08222513235005564	linear_svm	kong_reverse_cross_dataset
+Epithelial HBB HBA	0.07269821541825768	linear_svm	kong_reverse_cross_dataset
+Goblet cells MUC2 TFF1-	0.07255733205962542	linear_svm	kong_reverse_cross_dataset
+T cells CD8 KLRG1	0.07251235557127052	linear_svm	kong_reverse_cross_dataset
+Macrophages Metallothionein	-0.07234309493327856	linear_svm	kong_reverse_cross_dataset
+Fibroblasts NPY SLITRK6	-0.0712018193816902	linear_svm	kong_reverse_cross_dataset
+Stem cells OLFM4 GSTA1	-0.06980112314263458	linear_svm	kong_reverse_cross_dataset
+Epithelial cells METTL12 MAFB	-0.06905460651635532	linear_svm	kong_reverse_cross_dataset
+Mature DCs	0.06612755392708905	linear_svm	kong_reverse_cross_dataset
+B cells AICDA LRMP	-0.05952738985769568	linear_svm	kong_reverse_cross_dataset
+DC2 CD1D-	0.05782972439791633	linear_svm	kong_reverse_cross_dataset
+Lymphatics	0.05719476938711014	linear_svm	kong_reverse_cross_dataset
+Fibroblasts SFRP2 SLPI	-0.05370381033673062	linear_svm	kong_reverse_cross_dataset
+Macrophages PLA2G2D	0.04992405342071288	linear_svm	kong_reverse_cross_dataset
+T cells OGT	-0.048659731224366974	linear_svm	kong_reverse_cross_dataset
+Monocytes CHI3L1 CYP27A1	0.0473203494176099	linear_svm	kong_reverse_cross_dataset
+Enterocytes TMIGD1 MEP1A GSTA1	-0.04387582942855122	linear_svm	kong_reverse_cross_dataset
+NK-like cells ID3 ENTPD1	-0.04236625289038831	linear_svm	kong_reverse_cross_dataset
+Pericytes RERGL NTRK2	0.041911104151153296	linear_svm	kong_reverse_cross_dataset
+Macrophages LYVE1	-0.04191028241339659	linear_svm	kong_reverse_cross_dataset
+Stromal Cycling cells	0.04173678633492806	linear_svm	kong_reverse_cross_dataset
+Endothelial cells LTC4S SEMA3G	0.04100349974280097	linear_svm	kong_reverse_cross_dataset
+Fibroblasts KCNN3 LY6H	-0.040094413360413875	linear_svm	kong_reverse_cross_dataset
+Macrophages CXCL9 CXCL10	0.03271319530744273	linear_svm	kong_reverse_cross_dataset
+Immune Cycling cells	0.030229854198050538	linear_svm	kong_reverse_cross_dataset
+Enterochromaffin cells	-0.029643041279161113	linear_svm	kong_reverse_cross_dataset
+Myofibroblasts HHIP NPNT	0.028804171301554184	linear_svm	kong_reverse_cross_dataset
+Inflammatory fibroblasts IL11 CHI3L1	0.02727678349007038	linear_svm	kong_reverse_cross_dataset
+Stem cells OLFM4 LGR5	-0.022391774739421656	linear_svm	kong_reverse_cross_dataset
+Monocytes HBB	0.02129096152862699	linear_svm	kong_reverse_cross_dataset
+Activated fibroblasts CCL19 ADAMADEC1	0.01953599748159888	linear_svm	kong_reverse_cross_dataset
+Fibroblasts ADAMDEC1	0.01850701262863424	linear_svm	kong_reverse_cross_dataset
+ILCs	-0.015234881628473706	linear_svm	kong_reverse_cross_dataset
+Cycling cells	0.013729249474698266	linear_svm	kong_reverse_cross_dataset
+Neutrophils S100A8 S100A9	0.009624739245968973	linear_svm	kong_reverse_cross_dataset
+Enteroendocrine cells	-0.003980060254757427	linear_svm	kong_reverse_cross_dataset
+L cells	0.0022226983244449383	linear_svm	kong_reverse_cross_dataset
+Lymphatics	0.05898144841194153	xgb	kong_reverse_cross_dataset
+Tuft cells	0.05248168483376503	xgb	kong_reverse_cross_dataset
+Mature DCs	0.04758294299244881	xgb	kong_reverse_cross_dataset
+Enterocytes CA1 CA2 CA4-	0.044925227761268616	xgb	kong_reverse_cross_dataset
+Monocytes S100A8 S100A9	0.04340746998786926	xgb	kong_reverse_cross_dataset
+Fibroblasts NPY SLITRK6	0.04255950078368187	xgb	kong_reverse_cross_dataset
+T cells CD8	0.039526186883449554	xgb	kong_reverse_cross_dataset
+Paneth cells	0.03317888826131821	xgb	kong_reverse_cross_dataset
+Endothelial cells DARC	0.02982611022889614	xgb	kong_reverse_cross_dataset
+Tregs	0.02935037761926651	xgb	kong_reverse_cross_dataset
+T cells CD4 FOSB	0.025181764736771584	xgb	kong_reverse_cross_dataset
+Monocytes CHI3L1 CYP27A1	0.025134380906820297	xgb	kong_reverse_cross_dataset
+Enterochromaffin cells	0.02401466853916645	xgb	kong_reverse_cross_dataset
+Stromal Cycling cells	0.024007635191082954	xgb	kong_reverse_cross_dataset
+DC2 CD1D-	0.023249804973602295	xgb	kong_reverse_cross_dataset
+DC2 CD1D	0.021896935999393463	xgb	kong_reverse_cross_dataset
+Goblet cells SPINK4	0.021808041259646416	xgb	kong_reverse_cross_dataset
+DC1	0.021357623860239983	xgb	kong_reverse_cross_dataset
+T cells Naive CD4	0.020517338067293167	xgb	kong_reverse_cross_dataset
+Mast cells	0.01921497844159603	xgb	kong_reverse_cross_dataset
+Myofibroblasts HHIP NPNT	0.019078997895121574	xgb	kong_reverse_cross_dataset
+ILCs	0.019064905121922493	xgb	kong_reverse_cross_dataset
+Macrophages Metallothionein	0.018358808010816574	xgb	kong_reverse_cross_dataset
+Endothelial cells CD36	0.018071113154292107	xgb	kong_reverse_cross_dataset
+Macrophages LYVE1	0.017627252265810966	xgb	kong_reverse_cross_dataset
+Goblet cells MUC2 TFF1-	0.016627730801701546	xgb	kong_reverse_cross_dataset
+Stem cells OLFM4	0.015725834295153618	xgb	kong_reverse_cross_dataset
+Myofibroblasts GREM1 GREM2	0.01527032908052206	xgb	kong_reverse_cross_dataset
+Pericytes RERGL NTRK2	0.014810498803853989	xgb	kong_reverse_cross_dataset
+Activated fibroblasts CCL19 ADAMADEC1	0.014030423946678638	xgb	kong_reverse_cross_dataset
+Glial cells	0.013843905180692673	xgb	kong_reverse_cross_dataset
+NK cells KLRF1 CD3G-	0.013236927799880505	xgb	kong_reverse_cross_dataset
+Macrophages CCL3 CCL4	0.013077175244688988	xgb	kong_reverse_cross_dataset
+Fibroblasts KCNN3 LY6H	0.012444541789591312	xgb	kong_reverse_cross_dataset
+Plasma cells	0.012146387249231339	xgb	kong_reverse_cross_dataset
+Endothelial cells LTC4S SEMA3G	0.0115998899564147	xgb	kong_reverse_cross_dataset
+Endothelial cells CA4 CD36	0.011528008617460728	xgb	kong_reverse_cross_dataset
+Pericytes HIGD1B STEAP4	0.011127942241728306	xgb	kong_reverse_cross_dataset
+Fibroblasts SFRP2 SLPI	0.009860850870609283	xgb	kong_reverse_cross_dataset
+Enterocytes BEST4	0.009705625474452972	xgb	kong_reverse_cross_dataset
+T cells OGT	0.009116746485233307	xgb	kong_reverse_cross_dataset
+Cycling cells	0.00826377421617508	xgb	kong_reverse_cross_dataset
+Fibroblasts SMOC2 PTGIS	0.0070996819995343685	xgb	kong_reverse_cross_dataset
+Fibroblasts ADAMDEC1	0.006163104437291622	xgb	kong_reverse_cross_dataset
+T cells CD8 KLRG1	0.004919919651001692	xgb	kong_reverse_cross_dataset
+Enterocytes TMIGD1 MEP1A	0.004487285856157541	xgb	kong_reverse_cross_dataset
+Immune Cycling cells	0.004392140544950962	xgb	kong_reverse_cross_dataset
+NK-like cells ID3 ENTPD1	0.003971279598772526	xgb	kong_reverse_cross_dataset
+Stem cells OLFM4 PCNA	0.003750247647985816	xgb	kong_reverse_cross_dataset
+Goblet cells MUC2 TFF1	0.0033737742342054844	xgb	kong_reverse_cross_dataset
+Enteroendocrine cells	0.003367559053003788	xgb	kong_reverse_cross_dataset
+Macrophages CXCL9 CXCL10	0.0032636525575071573	xgb	kong_reverse_cross_dataset
+B cells AICDA LRMP	0.001767786336131394	xgb	kong_reverse_cross_dataset
+B cells	0.000622881983872503	xgb	kong_reverse_cross_dataset
+Inflammatory fibroblasts IL11 CHI3L1	0.0	xgb	kong_reverse_cross_dataset
+IELs ID3 ENTPD1	0.0	xgb	kong_reverse_cross_dataset
+Enterocytes TMIGD1 MEP1A GSTA1	0.0	xgb	kong_reverse_cross_dataset
+Epithelial Cycling cells	0.0	xgb	kong_reverse_cross_dataset
+Epithelial HBB HBA	0.0	xgb	kong_reverse_cross_dataset
+Epithelial cells METTL12 MAFB	0.0	xgb	kong_reverse_cross_dataset
+Macrophages	0.0	xgb	kong_reverse_cross_dataset
+L cells	0.0	xgb	kong_reverse_cross_dataset
+Macrophages PLA2G2D	0.0	xgb	kong_reverse_cross_dataset
+Monocytes HBB	0.0	xgb	kong_reverse_cross_dataset
+Neutrophils S100A8 S100A9	0.0	xgb	kong_reverse_cross_dataset
+Stem cells OLFM4 LGR5	0.0	xgb	kong_reverse_cross_dataset
+Stem cells OLFM4 GSTA1	0.0	xgb	kong_reverse_cross_dataset
+T cells CD4 IL17A	0.0	xgb	kong_reverse_cross_dataset

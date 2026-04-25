@@ -1,0 +1,15 @@
+\begin{table}
+\caption{Compartment-aware benchmark extension.}
+\begin{tabular}{llllll}
+\toprule
+Representation & Model & AUROC & PRAUC & BalancedAcc & MacroF1 \\
+\midrule
+Compartment composition & LinearSVM & 0.956 & 0.967 & 0.875 & 0.865 \\
+Compartment composition & LogReg & 0.956 & 0.967 & 0.850 & 0.830 \\
+Compartment composition & XGBoost & 0.711 & 0.843 & 0.592 & 0.561 \\
+Compartment pseudobulk & LinearSVM & 1.000 & 1.000 & 0.967 & 0.966 \\
+Compartment pseudobulk & LogReg & 1.000 & 1.000 & 1.000 & 1.000 \\
+Compartment pseudobulk & XGBoost & 0.956 & 0.961 & 0.908 & 0.899 \\
+\bottomrule
+\end{tabular}
+\end{table}

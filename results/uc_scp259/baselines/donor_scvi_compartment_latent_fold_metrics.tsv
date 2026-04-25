@@ -1,0 +1,16 @@
+run_name	model	fold	n_train	n_test	n_features_selected	roc_auc	pr_auc	balanced_accuracy	macro_f1	runtime_s
+donor_scvi_compartment_latent	logreg	0	24	6	60	1.0	1.0	1.0	1.0	0.012166976928710938
+donor_scvi_compartment_latent	linear_svm	0	24	6	60	1.0	1.0	0.8333333333333333	0.8285714285714285	0.009141921997070312
+donor_scvi_compartment_latent	xgb	0	24	6	60	0.7777777777777779	0.8055555555555556	0.8333333333333333	0.8285714285714285	0.07988643646240234
+donor_scvi_compartment_latent	logreg	1	24	6	60	1.0	1.0	0.8333333333333333	0.8285714285714285	0.011684179306030273
+donor_scvi_compartment_latent	linear_svm	1	24	6	60	1.0	1.0	0.8333333333333333	0.8285714285714285	0.008770227432250977
+donor_scvi_compartment_latent	xgb	1	24	6	60	1.0	1.0	1.0	1.0	0.023973703384399414
+donor_scvi_compartment_latent	logreg	2	24	6	60	0.5	0.6791666666666667	0.5	0.25	0.010230064392089844
+donor_scvi_compartment_latent	linear_svm	2	24	6	60	0.5	0.6791666666666667	0.5	0.4857142857142857	0.008962154388427734
+donor_scvi_compartment_latent	xgb	2	24	6	60	0.875	0.95	0.625	0.4857142857142857	0.02289724349975586
+donor_scvi_compartment_latent	logreg	3	24	6	60	1.0	1.0	1.0	1.0	0.010695695877075195
+donor_scvi_compartment_latent	linear_svm	3	24	6	60	1.0	1.0	1.0	1.0	0.00930476188659668
+donor_scvi_compartment_latent	xgb	3	24	6	60	1.0	1.0	1.0	1.0	0.024391889572143555
+donor_scvi_compartment_latent	logreg	4	24	6	60	1.0	1.0	0.875	0.8285714285714285	0.00997471809387207
+donor_scvi_compartment_latent	linear_svm	4	24	6	60	1.0	1.0	1.0	1.0	0.008920431137084961
+donor_scvi_compartment_latent	xgb	4	24	6	60	1.0	1.0	1.0	1.0	0.027649641036987305

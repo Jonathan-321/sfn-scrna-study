@@ -1,0 +1,9 @@
+dropped_type	auroc_without	auroc_full_4type	delta	direction	n_train	n_test
+DC1	0.787	0.7546	0.0324	CD→UC	71	30
+ILCs	0.2778	0.7546	-0.4769	CD→UC	71	30
+Macrophages	0.7593	0.7546	0.0046	CD→UC	71	30
+Tregs	0.5278	0.7546	-0.2269	CD→UC	71	30
+DC1	0.5338	0.5087	0.0251	UC→CD	30	71
+ILCs	0.4586	0.5087	-0.0501	UC→CD	30	71
+Macrophages	0.512	0.5087	0.0033	UC→CD	30	71
+Tregs	0.537	0.5087	0.0283	UC→CD	30	71

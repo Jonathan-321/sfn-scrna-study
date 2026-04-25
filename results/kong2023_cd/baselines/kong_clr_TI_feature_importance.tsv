@@ -1,0 +1,1251 @@
+model	fold	feature	importance	clr
+logreg	0	Goblet cells SPINK4	0.5536507094471517	True
+logreg	0	Endothelial cells DARC	0.5528548202001451	True
+logreg	0	T cells CD8	0.5454025365513678	True
+logreg	0	NK cells KLRF1 CD3G-	0.4997289943704255	True
+logreg	0	Tuft cells	0.43971097976054513	True
+logreg	0	DC1	0.41659977679619803	True
+logreg	0	T cells CD4 FOSB	0.4030967890992438	True
+logreg	0	Monocytes S100A8 S100A9	0.3474416660286572	True
+logreg	0	Fibroblasts SFRP2 SLPI	0.336653819786177	True
+logreg	0	Lymphatics	0.3104207966035576	True
+logreg	0	T cells Naive CD4	0.29484795811394277	True
+logreg	0	Endothelial cells CA4 CD36	0.2923858270831296	True
+logreg	0	B cells	0.2895003290351867	True
+logreg	0	Enterochromaffin cells	0.289196068498618	True
+logreg	0	Macrophages CCL3 CCL4	0.26489391722189026	True
+logreg	0	Fibroblasts SMOC2 PTGIS	0.2592559670029973	True
+logreg	0	Pericytes RERGL NTRK2	0.2568803811768631	True
+logreg	0	T cells OGT	0.24912436108648298	True
+logreg	0	Paneth cells	0.2478877991997833	True
+logreg	0	Endothelial cells CD36	0.24551571424322527	True
+logreg	0	Fibroblasts KCNN3 LY6H	0.2433193949893103	True
+logreg	0	ILCs	0.2242439866263759	True
+logreg	0	Goblet cells MUC2 TFF1	0.2177968843822777	True
+logreg	0	Pericytes HIGD1B STEAP4	0.20442953817037468	True
+logreg	0	DC2 CD1D	0.20250593728467542	True
+logreg	0	Cycling cells	0.20046406769788172	True
+logreg	0	Goblet cells MUC2 TFF1-	0.18251515169788005	True
+logreg	0	Enterocytes TMIGD1 MEP1A GSTA1	0.18107803967250755	True
+logreg	0	Myofibroblasts HHIP NPNT	0.17313564160261902	True
+logreg	0	Epithelial cells METTL12 MAFB	0.17167568844897	True
+logreg	0	L cells	0.15487675862585012	True
+logreg	0	Plasma cells	0.1468209198963471	True
+logreg	0	Enterocytes TMIGD1 MEP1A	0.14587062946708185	True
+logreg	0	T cells CD4 IL17A	0.13009069563200246	True
+logreg	0	Fibroblasts NPY SLITRK6	0.12094487980913075	True
+logreg	0	Mature DCs	0.11793519718758035	True
+logreg	0	Mast cells	0.11759299339464198	True
+logreg	0	Monocytes CHI3L1 CYP27A1	0.11476524845573213	True
+logreg	0	Endothelial cells LTC4S SEMA3G	0.1042053744699966	True
+logreg	0	Stem cells OLFM4 GSTA1	0.09892658868588462	True
+logreg	0	T cells CD8 KLRG1	0.08625999868013666	True
+logreg	0	Stem cells OLFM4	0.08295918216822892	True
+logreg	0	Enterocytes BEST4	0.08242608801434513	True
+logreg	0	Macrophages LYVE1	0.08117902708681014	True
+logreg	0	Glial cells	0.07573247456257295	True
+logreg	0	Stem cells OLFM4 LGR5	0.07112283700339041	True
+logreg	0	DC2 CD1D-	0.06718405822394384	True
+logreg	0	Macrophages	0.06699089550851743	True
+logreg	0	Epithelial Cycling cells	0.05797360367815869	True
+logreg	0	Neutrophils S100A8 S100A9	0.05590815231262554	True
+linear_svm	0	Endothelial cells DARC	0.2510607628807088	True
+linear_svm	0	Goblet cells SPINK4	0.23068817529393476	True
+linear_svm	0	T cells CD8	0.20197745823846794	True
+linear_svm	0	NK cells KLRF1 CD3G-	0.18821869763549415	True
+linear_svm	0	DC1	0.15176428978986528	True
+linear_svm	0	Tuft cells	0.13307782986946798	True
+linear_svm	0	Fibroblasts SFRP2 SLPI	0.12886851772236843	True
+linear_svm	0	Lymphatics	0.12505674208548961	True
+linear_svm	0	T cells CD4 FOSB	0.123569056155316	True
+linear_svm	0	Monocytes S100A8 S100A9	0.12177747324001335	True
+linear_svm	0	Enterochromaffin cells	0.10547158924436834	True
+linear_svm	0	Endothelial cells CA4 CD36	0.10247811786285796	True
+linear_svm	0	Macrophages CCL3 CCL4	0.09971227305590748	True
+linear_svm	0	Endothelial cells CD36	0.09923820690900739	True
+linear_svm	0	Cycling cells	0.095308577001745	True
+linear_svm	0	Paneth cells	0.09049014983101952	True
+linear_svm	0	T cells Naive CD4	0.09000945625602043	True
+linear_svm	0	Goblet cells MUC2 TFF1	0.0894584846412809	True
+linear_svm	0	B cells	0.08716793060103996	True
+linear_svm	0	Fibroblasts SMOC2 PTGIS	0.08214251096533458	True
+linear_svm	0	L cells	0.07344180091139577	True
+linear_svm	0	Fibroblasts KCNN3 LY6H	0.07326710102435566	True
+linear_svm	0	Endothelial cells LTC4S SEMA3G	0.07241094780865909	True
+linear_svm	0	T cells OGT	0.07077851996515971	True
+linear_svm	0	Pericytes RERGL NTRK2	0.06751524633367521	True
+linear_svm	0	ILCs	0.06461128938073835	True
+linear_svm	0	Enterocytes TMIGD1 MEP1A	0.06351013682021037	True
+linear_svm	0	Epithelial cells METTL12 MAFB	0.05700872101916136	True
+linear_svm	0	Myofibroblasts HHIP NPNT	0.05077885445358699	True
+linear_svm	0	Stem cells OLFM4 LGR5	0.04866227096060516	True
+linear_svm	0	Pericytes HIGD1B STEAP4	0.04842646616981641	True
+linear_svm	0	Macrophages LYVE1	0.046658462204269086	True
+linear_svm	0	Goblet cells MUC2 TFF1-	0.04466290181888981	True
+linear_svm	0	DC2 CD1D	0.04405811458008205	True
+linear_svm	0	Stem cells OLFM4 GSTA1	0.04076564999381166	True
+linear_svm	0	Enterocytes TMIGD1 MEP1A GSTA1	0.0403529042822527	True
+linear_svm	0	Mast cells	0.04029007222026616	True
+linear_svm	0	DC2 CD1D-	0.039065242759647206	True
+linear_svm	0	Glial cells	0.03841332045360547	True
+linear_svm	0	Macrophages	0.036286239596288586	True
+linear_svm	0	Enterocytes BEST4	0.03452127020353752	True
+linear_svm	0	IELs ID3 ENTPD1	0.029828830688679878	True
+linear_svm	0	T cells CD8 KLRG1	0.027327241126502266	True
+linear_svm	0	Fibroblasts NPY SLITRK6	0.02576181323322506	True
+linear_svm	0	Fibroblasts ADAMDEC1	0.024958576619785403	True
+linear_svm	0	B cells AICDA LRMP	0.023827093673719893	True
+linear_svm	0	Stem cells OLFM4 PCNA	0.022787974074083155	True
+linear_svm	0	Stem cells OLFM4	0.022275746526366567	True
+linear_svm	0	T cells CD4 IL17A	0.02110078988883346	True
+linear_svm	0	Myofibroblasts GREM1 GREM2	0.017773278395906197	True
+xgb	0	Enterochromaffin cells	0.171015664935112	True
+xgb	0	Tuft cells	0.13002736866474152	True
+xgb	0	DC1	0.08639708161354065	True
+xgb	0	T cells CD8	0.07098894566297531	True
+xgb	0	Goblet cells MUC2 TFF1	0.06652521342039108	True
+xgb	0	T cells CD4 FOSB	0.05377358943223953	True
+xgb	0	Monocytes S100A8 S100A9	0.05311797559261322	True
+xgb	0	Goblet cells MUC2 TFF1-	0.0469595342874527	True
+xgb	0	T cells Naive CD4	0.0442916601896286	True
+xgb	0	Cycling cells	0.04322011023759842	True
+xgb	0	Fibroblasts SMOC2 PTGIS	0.03555137291550636	True
+xgb	0	Goblet cells SPINK4	0.031558968126773834	True
+xgb	0	Activated fibroblasts CCL19 ADAMADEC1	0.02778645232319832	True
+xgb	0	Macrophages CCL3 CCL4	0.023761576041579247	True
+xgb	0	B cells	0.022798677906394005	True
+xgb	0	Monocytes CHI3L1 CYP27A1	0.018179932609200478	True
+xgb	0	Endothelial cells CD36	0.012946290895342827	True
+xgb	0	Fibroblasts NPY SLITRK6	0.011331493966281414	True
+xgb	0	Myofibroblasts GREM1 GREM2	0.01104753464460373	True
+xgb	0	Epithelial Cycling cells	0.010610812343657017	True
+xgb	0	IELs ID3 ENTPD1	0.009087172336876392	True
+xgb	0	NK cells KLRF1 CD3G-	0.004805960226804018	True
+xgb	0	B cells AICDA LRMP	0.0047442056238651276	True
+xgb	0	Epithelial cells METTL12 MAFB	0.0038247951306402683	True
+xgb	0	Macrophages	0.0028170195873826742	True
+xgb	0	ILCs	0.0023006608244031668	True
+xgb	0	Pericytes HIGD1B STEAP4	0.000529878365341574	True
+xgb	0	Enterocytes TMIGD1 MEP1A	0.0	True
+xgb	0	Endothelial cells DARC	0.0	True
+xgb	0	DC2 CD1D	0.0	True
+xgb	0	Enterocytes BEST4	0.0	True
+xgb	0	Endothelial cells LTC4S SEMA3G	0.0	True
+xgb	0	Lymphatics	0.0	True
+xgb	0	L cells	0.0	True
+xgb	0	Fibroblasts SFRP2 SLPI	0.0	True
+xgb	0	Epithelial HBB HBA	0.0	True
+xgb	0	Fibroblasts KCNN3 LY6H	0.0	True
+xgb	0	Fibroblasts ADAMDEC1	0.0	True
+xgb	0	Glial cells	0.0	True
+xgb	0	Enterocytes TMIGD1 MEP1A GSTA1	0.0	True
+xgb	0	Endothelial cells CA4 CD36	0.0	True
+xgb	0	DC2 CD1D-	0.0	True
+xgb	0	Mast cells	0.0	True
+xgb	0	Macrophages PLA2G2D	0.0	True
+xgb	0	Monocytes HBB	0.0	True
+xgb	0	Mature DCs	0.0	True
+xgb	0	Macrophages LYVE1	0.0	True
+xgb	0	Macrophages CXCL9 CXCL10	0.0	True
+xgb	0	Pericytes RERGL NTRK2	0.0	True
+xgb	0	Paneth cells	0.0	True
+elasticnet	0	Endothelial cells DARC	0.8092752394656261	True
+elasticnet	0	T cells CD8	0.7408733954131523	True
+elasticnet	0	Goblet cells SPINK4	0.67314761365535	True
+elasticnet	0	Tuft cells	0.6392238760730647	True
+elasticnet	0	DC1	0.5443677474620227	True
+elasticnet	0	NK cells KLRF1 CD3G-	0.477676469231873	True
+elasticnet	0	T cells CD4 FOSB	0.3647106406128327	True
+elasticnet	0	Fibroblasts SFRP2 SLPI	0.3387568500187513	True
+elasticnet	0	Monocytes S100A8 S100A9	0.3070900823290324	True
+elasticnet	0	Fibroblasts SMOC2 PTGIS	0.2568030300496109	True
+elasticnet	0	B cells	0.21128786528363774	True
+elasticnet	0	Macrophages CCL3 CCL4	0.1911519806480749	True
+elasticnet	0	Endothelial cells CA4 CD36	0.15964675945767082	True
+elasticnet	0	Pericytes RERGL NTRK2	0.1378220374708675	True
+elasticnet	0	Fibroblasts KCNN3 LY6H	0.13711077814591366	True
+elasticnet	0	Enterochromaffin cells	0.12942831828240525	True
+elasticnet	0	Plasma cells	0.07873527711666585	True
+elasticnet	0	DC2 CD1D	0.0688997047787643	True
+elasticnet	0	T cells Naive CD4	0.04905329669660938	True
+elasticnet	0	T cells OGT	0.04340751279164067	True
+elasticnet	0	Myofibroblasts HHIP NPNT	0.03890143528297084	True
+elasticnet	0	Endothelial cells CD36	0.03597221163482803	True
+elasticnet	0	Lymphatics	0.03117107170371599	True
+elasticnet	0	Enterocytes TMIGD1 MEP1A GSTA1	0.00705639139073056	True
+elasticnet	0	Epithelial Cycling cells	0.0	True
+elasticnet	0	Enterocytes TMIGD1 MEP1A	0.0	True
+elasticnet	0	Enterocytes BEST4	0.0	True
+elasticnet	0	Endothelial cells LTC4S SEMA3G	0.0	True
+elasticnet	0	Cycling cells	0.0	True
+elasticnet	0	DC2 CD1D-	0.0	True
+elasticnet	0	B cells AICDA LRMP	0.0	True
+elasticnet	0	Activated fibroblasts CCL19 ADAMADEC1	0.0	True
+elasticnet	0	Macrophages	0.0	True
+elasticnet	0	L cells	0.0	True
+elasticnet	0	ILCs	0.0	True
+elasticnet	0	IELs ID3 ENTPD1	0.0	True
+elasticnet	0	Goblet cells MUC2 TFF1	0.0	True
+elasticnet	0	Goblet cells MUC2 TFF1-	0.0	True
+elasticnet	0	Fibroblasts NPY SLITRK6	0.0	True
+elasticnet	0	Glial cells	0.0	True
+elasticnet	0	Epithelial HBB HBA	0.0	True
+elasticnet	0	Fibroblasts ADAMDEC1	0.0	True
+elasticnet	0	Epithelial cells METTL12 MAFB	0.0	True
+elasticnet	0	Monocytes CHI3L1 CYP27A1	0.0	True
+elasticnet	0	Monocytes HBB	0.0	True
+elasticnet	0	Macrophages CXCL9 CXCL10	0.0	True
+elasticnet	0	Macrophages LYVE1	0.0	True
+elasticnet	0	Macrophages PLA2G2D	0.0	True
+elasticnet	0	Pericytes HIGD1B STEAP4	0.0	True
+elasticnet	0	Paneth cells	0.0	True
+catboost	0	Tuft cells	29.404466950915932	True
+catboost	0	T cells CD8	17.217088592981614	True
+catboost	0	DC1	6.703797824855686	True
+catboost	0	Endothelial cells DARC	4.026337334958409	True
+catboost	0	Goblet cells SPINK4	2.8665743678426043	True
+catboost	0	Goblet cells MUC2 TFF1	2.7808544243842666	True
+catboost	0	Macrophages CXCL9 CXCL10	2.4306827286104133	True
+catboost	0	Glial cells	2.1131253461556816	True
+catboost	0	Fibroblasts KCNN3 LY6H	1.9287033518527061	True
+catboost	0	Enterochromaffin cells	1.6881207540664809	True
+catboost	0	Macrophages CCL3 CCL4	1.4014331405924465	True
+catboost	0	T cells CD4 FOSB	1.386419920106911	True
+catboost	0	Enterocytes BEST4	1.347790802623409	True
+catboost	0	Plasma cells	1.1641698606268782	True
+catboost	0	Monocytes S100A8 S100A9	1.0987214017671638	True
+catboost	0	Endothelial cells CA4 CD36	1.0637458629495067	True
+catboost	0	Myofibroblasts HHIP NPNT	0.9767048656014999	True
+catboost	0	B cells	0.9766978639986871	True
+catboost	0	Neutrophils S100A8 S100A9	0.9749816869814995	True
+catboost	0	Stem cells OLFM4	0.9377076364742799	True
+catboost	0	T cells Naive CD4	0.9006612835984638	True
+catboost	0	Lymphatics	0.8801752171200256	True
+catboost	0	Monocytes CHI3L1 CYP27A1	0.8176895371101315	True
+catboost	0	T cells OGT	0.7805734302195416	True
+catboost	0	Stem cells OLFM4 GSTA1	0.7713851596203812	True
+catboost	0	Myofibroblasts GREM1 GREM2	0.7644518487573844	True
+catboost	0	Mast cells	0.7274090419927521	True
+catboost	0	Macrophages PLA2G2D	0.7253722587112256	True
+catboost	0	Stem cells OLFM4 PCNA	0.7159034547403287	True
+catboost	0	DC2 CD1D	0.7153875191516846	True
+catboost	0	Monocytes HBB	0.7127374717848064	True
+catboost	0	Paneth cells	0.6952396156553755	True
+catboost	0	ILCs	0.626211017656613	True
+catboost	0	Goblet cells MUC2 TFF1-	0.6080228258605009	True
+catboost	0	Enterocytes TMIGD1 MEP1A GSTA1	0.5636730165336056	True
+catboost	0	Endothelial cells LTC4S SEMA3G	0.5520549313829846	True
+catboost	0	Pericytes RERGL NTRK2	0.5452628480052591	True
+catboost	0	IELs ID3 ENTPD1	0.5407440081763151	True
+catboost	0	Fibroblasts SFRP2 SLPI	0.4750184418795158	True
+catboost	0	Pericytes HIGD1B STEAP4	0.46781390719336163	True
+catboost	0	Epithelial cells METTL12 MAFB	0.45129350689560327	True
+catboost	0	Epithelial Cycling cells	0.42990179053837396	True
+catboost	0	Fibroblasts ADAMDEC1	0.34092832018833186	True
+catboost	0	Cycling cells	0.27817361347014563	True
+catboost	0	B cells AICDA LRMP	0.24651697839095063	True
+catboost	0	Mature DCs	0.24389315316179483	True
+catboost	0	Fibroblasts SMOC2 PTGIS	0.23677228902679656	True
+catboost	0	L cells	0.20699519396449156	True
+catboost	0	T cells CD4 IL17A	0.18317997298694122	True
+catboost	0	NK cells KLRF1 CD3G-	0.1818340812225435	True
+logreg	1	Tuft cells	0.6920620553433781	True
+logreg	1	Goblet cells SPINK4	0.6240969711302877	True
+logreg	1	NK cells KLRF1 CD3G-	0.5310717331101558	True
+logreg	1	Epithelial cells METTL12 MAFB	0.48066294892666955	True
+logreg	1	Fibroblasts SMOC2 PTGIS	0.4716535449153606	True
+logreg	1	Fibroblasts SFRP2 SLPI	0.4250714826892112	True
+logreg	1	Cycling cells	0.41824737585943517	True
+logreg	1	DC1	0.39708471378339405	True
+logreg	1	Endothelial cells DARC	0.38677021903897335	True
+logreg	1	Fibroblasts NPY SLITRK6	0.3400018111660731	True
+logreg	1	Plasma cells	0.3329233142333085	True
+logreg	1	T cells CD8	0.3316593883882958	True
+logreg	1	Monocytes CHI3L1 CYP27A1	0.3207917509850393	True
+logreg	1	DC2 CD1D-	0.31920517780182633	True
+logreg	1	T cells CD4 FOSB	0.2983610704847	True
+logreg	1	Macrophages	0.2962603700786019	True
+logreg	1	Glial cells	0.27703982724134113	True
+logreg	1	Goblet cells MUC2 TFF1	0.2639629348371942	True
+logreg	1	Paneth cells	0.25535848809057393	True
+logreg	1	Lymphatics	0.25283958298978676	True
+logreg	1	Enterochromaffin cells	0.24991653587190385	True
+logreg	1	T cells CD8 KLRG1	0.24859359753947674	True
+logreg	1	Endothelial cells CD36	0.2235662568677763	True
+logreg	1	Macrophages CXCL9 CXCL10	0.22114475080809812	True
+logreg	1	Mast cells	0.21802049960721398	True
+logreg	1	T cells Naive CD4	0.2175795962079607	True
+logreg	1	Macrophages LYVE1	0.20128077789098256	True
+logreg	1	Neutrophils S100A8 S100A9	0.19709423148888944	True
+logreg	1	Pericytes RERGL NTRK2	0.1933784687868942	True
+logreg	1	Macrophages PLA2G2D	0.19133403131401477	True
+logreg	1	Endothelial cells CA4 CD36	0.17646026370409787	True
+logreg	1	Monocytes S100A8 S100A9	0.17372047699996285	True
+logreg	1	DC2 CD1D	0.17285373708102264	True
+logreg	1	Stem cells OLFM4 GSTA1	0.17103571811205362	True
+logreg	1	Enterocytes TMIGD1 MEP1A	0.16616193201728258	True
+logreg	1	Mature DCs	0.1608022613873512	True
+logreg	1	Stem cells OLFM4 LGR5	0.1561388409930902	True
+logreg	1	Activated fibroblasts CCL19 ADAMADEC1	0.14928694275862145	True
+logreg	1	Enterocytes TMIGD1 MEP1A GSTA1	0.14132645912355363	True
+logreg	1	T cells OGT	0.13672308041196451	True
+logreg	1	ILCs	0.13355076649848457	True
+logreg	1	Endothelial cells LTC4S SEMA3G	0.12070956998865812	True
+logreg	1	Enterocytes BEST4	0.1203421082855286	True
+logreg	1	Pericytes HIGD1B STEAP4	0.11570415815555815	True
+logreg	1	Macrophages CCL3 CCL4	0.10720040860121194	True
+logreg	1	Stem cells OLFM4 PCNA	0.1016726983057333	True
+logreg	1	Epithelial HBB HBA	0.09049453698098037	True
+logreg	1	T cells CD4 IL17A	0.08726532845965428	True
+logreg	1	Fibroblasts KCNN3 LY6H	0.08725391542654694	True
+logreg	1	Myofibroblasts HHIP NPNT	0.08491053063119126	True
+linear_svm	1	Tuft cells	0.33384041484658455	True
+linear_svm	1	Goblet cells SPINK4	0.28023885982639163	True
+linear_svm	1	NK cells KLRF1 CD3G-	0.2729084863791025	True
+linear_svm	1	Fibroblasts SMOC2 PTGIS	0.24046259083835184	True
+linear_svm	1	DC1	0.2020612493009838	True
+linear_svm	1	Epithelial cells METTL12 MAFB	0.19445277162399996	True
+linear_svm	1	Plasma cells	0.18507685305006671	True
+linear_svm	1	Fibroblasts SFRP2 SLPI	0.18277186615630037	True
+linear_svm	1	Glial cells	0.1802174036837285	True
+linear_svm	1	Mast cells	0.17793643478391527	True
+linear_svm	1	Macrophages	0.16678745231351066	True
+linear_svm	1	Fibroblasts NPY SLITRK6	0.15704911112980147	True
+linear_svm	1	DC2 CD1D-	0.15286182085442196	True
+linear_svm	1	Monocytes CHI3L1 CYP27A1	0.1491553005238889	True
+linear_svm	1	Lymphatics	0.14356817312552927	True
+linear_svm	1	T cells CD8 KLRG1	0.13234443678912908	True
+linear_svm	1	Macrophages LYVE1	0.12813833494505422	True
+linear_svm	1	Endothelial cells DARC	0.12631240132732463	True
+linear_svm	1	T cells CD4 FOSB	0.1253330793371966	True
+linear_svm	1	Cycling cells	0.1250366864852856	True
+linear_svm	1	Macrophages CXCL9 CXCL10	0.12490196675657053	True
+linear_svm	1	Goblet cells MUC2 TFF1	0.12450806095265055	True
+linear_svm	1	Pericytes RERGL NTRK2	0.12100487173766789	True
+linear_svm	1	Stem cells OLFM4 LGR5	0.12013390839002618	True
+linear_svm	1	T cells CD8	0.1184892704660421	True
+linear_svm	1	T cells Naive CD4	0.11512717239456641	True
+linear_svm	1	Activated fibroblasts CCL19 ADAMADEC1	0.09407734636051124	True
+linear_svm	1	Endothelial cells CA4 CD36	0.09004712087130648	True
+linear_svm	1	Macrophages PLA2G2D	0.08829212594912864	True
+linear_svm	1	Enterocytes TMIGD1 MEP1A	0.08629633685380282	True
+linear_svm	1	Endothelial cells CD36	0.08578097954473732	True
+linear_svm	1	DC2 CD1D	0.08562141652949529	True
+linear_svm	1	Paneth cells	0.08459630583595433	True
+linear_svm	1	ILCs	0.07298304736517604	True
+linear_svm	1	Neutrophils S100A8 S100A9	0.06939006695604774	True
+linear_svm	1	Monocytes HBB	0.06718939170547042	True
+linear_svm	1	Enterochromaffin cells	0.06492918404978043	True
+linear_svm	1	Macrophages CCL3 CCL4	0.062196010213520656	True
+linear_svm	1	Stem cells OLFM4 GSTA1	0.060468192551847884	True
+linear_svm	1	Enterocytes BEST4	0.05623329777304491	True
+linear_svm	1	Endothelial cells LTC4S SEMA3G	0.0555765201941798	True
+linear_svm	1	Goblet cells MUC2 TFF1-	0.05242638869643632	True
+linear_svm	1	B cells AICDA LRMP	0.05130127373863827	True
+linear_svm	1	L cells	0.04911294763379993	True
+linear_svm	1	Mature DCs	0.048149675217890694	True
+linear_svm	1	Tregs	0.0466616891313786	True
+linear_svm	1	Pericytes HIGD1B STEAP4	0.04307150363152812	True
+linear_svm	1	Fibroblasts KCNN3 LY6H	0.038167544500700756	True
+linear_svm	1	IELs ID3 ENTPD1	0.036385407964301716	True
+linear_svm	1	Myofibroblasts HHIP NPNT	0.0314809161063362	True
+xgb	1	Tuft cells	0.14844368398189545	True
+xgb	1	Cycling cells	0.11105860024690628	True
+xgb	1	T cells CD4 FOSB	0.07997292280197144	True
+xgb	1	Goblet cells SPINK4	0.07831156253814697	True
+xgb	1	Goblet cells MUC2 TFF1-	0.06729781627655029	True
+xgb	1	Monocytes S100A8 S100A9	0.06528621166944504	True
+xgb	1	Goblet cells MUC2 TFF1	0.05693718045949936	True
+xgb	1	Stem cells OLFM4 GSTA1	0.045952726155519485	True
+xgb	1	DC1	0.04469658061861992	True
+xgb	1	Fibroblasts SMOC2 PTGIS	0.04190201684832573	True
+xgb	1	Endothelial cells DARC	0.03695458546280861	True
+xgb	1	T cells CD8	0.034132443368434906	True
+xgb	1	Monocytes CHI3L1 CYP27A1	0.028226496651768684	True
+xgb	1	Epithelial cells METTL12 MAFB	0.025950074195861816	True
+xgb	1	T cells Naive CD4	0.023641755804419518	True
+xgb	1	B cells	0.016485469415783882	True
+xgb	1	Fibroblasts SFRP2 SLPI	0.01627044752240181	True
+xgb	1	Enterochromaffin cells	0.014589881524443626	True
+xgb	1	T cells CD4 IL17A	0.013360759243369102	True
+xgb	1	Fibroblasts NPY SLITRK6	0.009735715575516224	True
+xgb	1	Epithelial Cycling cells	0.008614549413323402	True
+xgb	1	Macrophages PLA2G2D	0.008428039960563183	True
+xgb	1	Plasma cells	0.007607551757246256	True
+xgb	1	Epithelial HBB HBA	0.004367117770016193	True
+xgb	1	Endothelial cells LTC4S SEMA3G	0.004159924574196339	True
+xgb	1	Macrophages	0.0032546138390898705	True
+xgb	1	Fibroblasts KCNN3 LY6H	0.003123270347714424	True
+xgb	1	Enterocytes TMIGD1 MEP1A GSTA1	0.0005429753800854087	True
+xgb	1	Glial cells	0.00037904016789980233	True
+xgb	1	Fibroblasts ADAMDEC1	0.0003160449268762022	True
+xgb	1	B cells AICDA LRMP	0.0	True
+xgb	1	DC2 CD1D	0.0	True
+xgb	1	Lymphatics	0.0	True
+xgb	1	L cells	0.0	True
+xgb	1	ILCs	0.0	True
+xgb	1	IELs ID3 ENTPD1	0.0	True
+xgb	1	Activated fibroblasts CCL19 ADAMADEC1	0.0	True
+xgb	1	Endothelial cells CD36	0.0	True
+xgb	1	Enterocytes TMIGD1 MEP1A	0.0	True
+xgb	1	Enterocytes BEST4	0.0	True
+xgb	1	Endothelial cells CA4 CD36	0.0	True
+xgb	1	DC2 CD1D-	0.0	True
+xgb	1	Monocytes HBB	0.0	True
+xgb	1	Macrophages CXCL9 CXCL10	0.0	True
+xgb	1	Macrophages LYVE1	0.0	True
+xgb	1	Mast cells	0.0	True
+xgb	1	Mature DCs	0.0	True
+xgb	1	Macrophages CCL3 CCL4	0.0	True
+xgb	1	Pericytes RERGL NTRK2	0.0	True
+xgb	1	Pericytes HIGD1B STEAP4	0.0	True
+elasticnet	1	Tuft cells	1.0852430360021752	True
+elasticnet	1	Goblet cells SPINK4	0.7576422407976962	True
+elasticnet	1	Fibroblasts SMOC2 PTGIS	0.603303632139073	True
+elasticnet	1	Endothelial cells DARC	0.5463292008437142	True
+elasticnet	1	Fibroblasts SFRP2 SLPI	0.4924137919230064	True
+elasticnet	1	Epithelial cells METTL12 MAFB	0.42916823295119333	True
+elasticnet	1	Cycling cells	0.4240767106575369	True
+elasticnet	1	DC1	0.39774505202074467	True
+elasticnet	1	T cells CD8	0.39005724642593753	True
+elasticnet	1	NK cells KLRF1 CD3G-	0.3346481540876597	True
+elasticnet	1	Fibroblasts NPY SLITRK6	0.3221053875593784	True
+elasticnet	1	Monocytes CHI3L1 CYP27A1	0.2332088941071894	True
+elasticnet	1	Plasma cells	0.21865010488642944	True
+elasticnet	1	Lymphatics	0.11444004507864028	True
+elasticnet	1	Macrophages CXCL9 CXCL10	0.08620837260524522	True
+elasticnet	1	T cells CD4 FOSB	0.08093907865381944	True
+elasticnet	1	Paneth cells	0.06971616479308626	True
+elasticnet	1	Mature DCs	0.061067740999593154	True
+elasticnet	1	Stem cells OLFM4 GSTA1	0.04700252266715698	True
+elasticnet	1	Macrophages	0.04274614590114278	True
+elasticnet	1	Activated fibroblasts CCL19 ADAMADEC1	0.03476379242968774	True
+elasticnet	1	DC2 CD1D-	0.022890281315502393	True
+elasticnet	1	Glial cells	0.012831944379315703	True
+elasticnet	1	Endothelial cells LTC4S SEMA3G	0.0	True
+elasticnet	1	Epithelial Cycling cells	0.0	True
+elasticnet	1	Enterocytes TMIGD1 MEP1A GSTA1	0.0	True
+elasticnet	1	Enterocytes TMIGD1 MEP1A	0.0	True
+elasticnet	1	Enterocytes BEST4	0.0	True
+elasticnet	1	Enterochromaffin cells	0.0	True
+elasticnet	1	B cells AICDA LRMP	0.0	True
+elasticnet	1	DC2 CD1D	0.0	True
+elasticnet	1	B cells	0.0	True
+elasticnet	1	ILCs	0.0	True
+elasticnet	1	L cells	0.0	True
+elasticnet	1	Goblet cells MUC2 TFF1-	0.0	True
+elasticnet	1	IELs ID3 ENTPD1	0.0	True
+elasticnet	1	Goblet cells MUC2 TFF1	0.0	True
+elasticnet	1	Fibroblasts KCNN3 LY6H	0.0	True
+elasticnet	1	Epithelial HBB HBA	0.0	True
+elasticnet	1	Fibroblasts ADAMDEC1	0.0	True
+elasticnet	1	Endothelial cells CA4 CD36	0.0	True
+elasticnet	1	Endothelial cells CD36	0.0	True
+elasticnet	1	Myofibroblasts GREM1 GREM2	0.0	True
+elasticnet	1	Mast cells	0.0	True
+elasticnet	1	Monocytes HBB	0.0	True
+elasticnet	1	Macrophages LYVE1	0.0	True
+elasticnet	1	Macrophages PLA2G2D	0.0	True
+elasticnet	1	Macrophages CCL3 CCL4	0.0	True
+elasticnet	1	Pericytes RERGL NTRK2	0.0	True
+elasticnet	1	Pericytes HIGD1B STEAP4	0.0	True
+catboost	1	Tuft cells	35.83593758336904	True
+catboost	1	Goblet cells MUC2 TFF1-	7.178352912786401	True
+catboost	1	T cells CD4 FOSB	4.378910962619883	True
+catboost	1	Cycling cells	3.8208260258038735	True
+catboost	1	Endothelial cells DARC	3.5212924940875485	True
+catboost	1	Goblet cells SPINK4	3.46806045895223	True
+catboost	1	Monocytes CHI3L1 CYP27A1	3.004474253705051	True
+catboost	1	T cells CD8	2.6089840516409866	True
+catboost	1	T cells OGT	2.4856596793433443	True
+catboost	1	Macrophages CXCL9 CXCL10	2.3037665203270623	True
+catboost	1	Enterocytes BEST4	2.006701480029074	True
+catboost	1	DC1	1.9639850731241117	True
+catboost	1	Stem cells OLFM4 GSTA1	1.9378605313063189	True
+catboost	1	Paneth cells	1.8625250832121814	True
+catboost	1	Stem cells OLFM4	1.511561587627197	True
+catboost	1	B cells	1.3022368661826866	True
+catboost	1	T cells CD4 IL17A	1.2263145699236726	True
+catboost	1	Enterochromaffin cells	1.1401125107910384	True
+catboost	1	Neutrophils S100A8 S100A9	1.1171559689089972	True
+catboost	1	Epithelial Cycling cells	0.9624774099152927	True
+catboost	1	Glial cells	0.9297070121859096	True
+catboost	1	Myofibroblasts GREM1 GREM2	0.9239268600794086	True
+catboost	1	Mast cells	0.8401559779854388	True
+catboost	1	DC2 CD1D	0.8298665840383426	True
+catboost	1	Plasma cells	0.8187515088902186	True
+catboost	1	Tregs	0.7995288632233906	True
+catboost	1	Fibroblasts SMOC2 PTGIS	0.7550318951660384	True
+catboost	1	Endothelial cells CA4 CD36	0.7453974795969386	True
+catboost	1	Epithelial cells METTL12 MAFB	0.7403370730683746	True
+catboost	1	Macrophages PLA2G2D	0.7313451568414474	True
+catboost	1	T cells Naive CD4	0.7266301203840937	True
+catboost	1	T cells CD8 KLRG1	0.6600957535486633	True
+catboost	1	Mature DCs	0.6321680425141114	True
+catboost	1	Stem cells OLFM4 PCNA	0.5716769290236581	True
+catboost	1	Myofibroblasts HHIP NPNT	0.5084343944938172	True
+catboost	1	Goblet cells MUC2 TFF1	0.46500119236459564	True
+catboost	1	Fibroblasts KCNN3 LY6H	0.44570038861744726	True
+catboost	1	Fibroblasts SFRP2 SLPI	0.42982393761831444	True
+catboost	1	L cells	0.3946531271086324	True
+catboost	1	DC2 CD1D-	0.3790860830868186	True
+catboost	1	Epithelial HBB HBA	0.37420694755923983	True
+catboost	1	Macrophages CCL3 CCL4	0.34056752207706625	True
+catboost	1	IELs ID3 ENTPD1	0.2597485532401784	True
+catboost	1	ILCs	0.24765344588140392	True
+catboost	1	Pericytes RERGL NTRK2	0.24692567050939931	True
+catboost	1	Activated fibroblasts CCL19 ADAMADEC1	0.21409959600411108	True
+catboost	1	Monocytes HBB	0.20541956692692478	True
+catboost	1	Endothelial cells LTC4S SEMA3G	0.19875657414372003	True
+catboost	1	Endothelial cells CD36	0.15954284525505547	True
+catboost	1	Pericytes HIGD1B STEAP4	0.13332948082188453	True
+logreg	2	Tuft cells	0.5971009454249969	True
+logreg	2	Goblet cells SPINK4	0.5927333237381206	True
+logreg	2	Fibroblasts SFRP2 SLPI	0.5580443058047709	True
+logreg	2	DC1	0.49199883136393857	True
+logreg	2	Monocytes S100A8 S100A9	0.43794702783351547	True
+logreg	2	T cells CD8	0.4257676676319347	True
+logreg	2	T cells CD4 FOSB	0.37919483956020905	True
+logreg	2	Fibroblasts SMOC2 PTGIS	0.36528532363813265	True
+logreg	2	T cells OGT	0.3360478584611147	True
+logreg	2	Glial cells	0.3222226317525211	True
+logreg	2	L cells	0.3211461493874074	True
+logreg	2	Plasma cells	0.3187861449191379	True
+logreg	2	Monocytes CHI3L1 CYP27A1	0.30827711754893644	True
+logreg	2	NK cells KLRF1 CD3G-	0.29067166844418973	True
+logreg	2	Enterocytes TMIGD1 MEP1A	0.28906273743880234	True
+logreg	2	Activated fibroblasts CCL19 ADAMADEC1	0.27325740504654783	True
+logreg	2	Enterocytes TMIGD1 MEP1A GSTA1	0.27187476736627264	True
+logreg	2	Enterochromaffin cells	0.23717048409353214	True
+logreg	2	Endothelial cells LTC4S SEMA3G	0.22686979886418948	True
+logreg	2	Macrophages PLA2G2D	0.22670510929250434	True
+logreg	2	Stem cells OLFM4 GSTA1	0.2227775128580707	True
+logreg	2	Pericytes HIGD1B STEAP4	0.21865367052581605	True
+logreg	2	T cells CD4 IL17A	0.2124280687953091	True
+logreg	2	Macrophages CXCL9 CXCL10	0.20049990052250302	True
+logreg	2	B cells AICDA LRMP	0.18949965008127848	True
+logreg	2	T cells Naive CD4	0.18723510627443868	True
+logreg	2	Enterocytes BEST4	0.18638061987493165	True
+logreg	2	ILCs	0.18574504101885397	True
+logreg	2	Lymphatics	0.18567440097420998	True
+logreg	2	Neutrophils S100A8 S100A9	0.17478375219207487	True
+logreg	2	Mature DCs	0.16970624737185802	True
+logreg	2	Macrophages	0.16808839418784888	True
+logreg	2	IELs ID3 ENTPD1	0.16362830517888585	True
+logreg	2	Myofibroblasts GREM1 GREM2	0.1629459262642907	True
+logreg	2	Epithelial HBB HBA	0.13107766217340022	True
+logreg	2	Endothelial cells CD36	0.1258827768906725	True
+logreg	2	Macrophages LYVE1	0.11783444420464548	True
+logreg	2	DC2 CD1D	0.11738222767713348	True
+logreg	2	Stem cells OLFM4	0.11678971223014681	True
+logreg	2	Goblet cells MUC2 TFF1	0.11564435792192004	True
+logreg	2	Myofibroblasts HHIP NPNT	0.11270991846684926	True
+logreg	2	Pericytes RERGL NTRK2	0.10751956995218193	True
+logreg	2	Fibroblasts KCNN3 LY6H	0.10652243646733327	True
+logreg	2	Endothelial cells CA4 CD36	0.10437912216402995	True
+logreg	2	Stem cells OLFM4 PCNA	0.10379991681451999	True
+logreg	2	Macrophages CCL3 CCL4	0.0988737783905437	True
+logreg	2	Tregs	0.09874461191471108	True
+logreg	2	Monocytes HBB	0.09534368167469674	True
+logreg	2	Stem cells OLFM4 LGR5	0.09491494792529517	True
+logreg	2	Mast cells	0.09356514175971568	True
+linear_svm	2	Tuft cells	0.32433051807075064	True
+linear_svm	2	DC1	0.26323603010953434	True
+linear_svm	2	Goblet cells SPINK4	0.25368937795412927	True
+linear_svm	2	Fibroblasts SFRP2 SLPI	0.19415041364192692	True
+linear_svm	2	Monocytes CHI3L1 CYP27A1	0.17989622734213717	True
+linear_svm	2	NK cells KLRF1 CD3G-	0.1756102213968068	True
+linear_svm	2	Enterocytes TMIGD1 MEP1A	0.1752865872178742	True
+linear_svm	2	Glial cells	0.17338609209998837	True
+linear_svm	2	Fibroblasts SMOC2 PTGIS	0.16935660345279527	True
+linear_svm	2	L cells	0.15188510508841668	True
+linear_svm	2	Endothelial cells LTC4S SEMA3G	0.1441661779110512	True
+linear_svm	2	T cells CD4 FOSB	0.14387761971660168	True
+linear_svm	2	T cells OGT	0.138573532663295	True
+linear_svm	2	Activated fibroblasts CCL19 ADAMADEC1	0.1359789159920628	True
+linear_svm	2	Pericytes HIGD1B STEAP4	0.13348489590183882	True
+linear_svm	2	Monocytes S100A8 S100A9	0.13323637859536633	True
+linear_svm	2	Macrophages CXCL9 CXCL10	0.13224485224843882	True
+linear_svm	2	Plasma cells	0.1119821044726377	True
+linear_svm	2	T cells CD8	0.11159085588109505	True
+linear_svm	2	Lymphatics	0.10780270230886554	True
+linear_svm	2	Macrophages PLA2G2D	0.10739528429358369	True
+linear_svm	2	T cells Naive CD4	0.10407184493369702	True
+linear_svm	2	Macrophages	0.10309256594639266	True
+linear_svm	2	Stem cells OLFM4 LGR5	0.10171189235792519	True
+linear_svm	2	Macrophages LYVE1	0.09425715879178626	True
+linear_svm	2	Fibroblasts ADAMDEC1	0.08786722013425163	True
+linear_svm	2	Tregs	0.07995400314574583	True
+linear_svm	2	Epithelial HBB HBA	0.07913328882124002	True
+linear_svm	2	Endothelial cells CA4 CD36	0.07905730517589532	True
+linear_svm	2	Enterocytes TMIGD1 MEP1A GSTA1	0.0754743846578458	True
+linear_svm	2	Stem cells OLFM4 GSTA1	0.07423355929224072	True
+linear_svm	2	Macrophages CCL3 CCL4	0.0668220628179958	True
+linear_svm	2	B cells AICDA LRMP	0.06296029458981489	True
+linear_svm	2	Enterocytes BEST4	0.06263535610687938	True
+linear_svm	2	ILCs	0.060133634031658945	True
+linear_svm	2	IELs ID3 ENTPD1	0.054895784805388356	True
+linear_svm	2	Neutrophils S100A8 S100A9	0.049957678469849165	True
+linear_svm	2	Pericytes RERGL NTRK2	0.04990278444490097	True
+linear_svm	2	Enterochromaffin cells	0.04770055279684954	True
+linear_svm	2	DC2 CD1D	0.04374249868874971	True
+linear_svm	2	Myofibroblasts GREM1 GREM2	0.041743235114564334	True
+linear_svm	2	Paneth cells	0.04064594468247168	True
+linear_svm	2	Fibroblasts KCNN3 LY6H	0.03996053261400395	True
+linear_svm	2	Myofibroblasts HHIP NPNT	0.0392647129559581	True
+linear_svm	2	Goblet cells MUC2 TFF1	0.0365604880758387	True
+linear_svm	2	Monocytes HBB	0.03464812067014489	True
+linear_svm	2	Cycling cells	0.03058156402280994	True
+linear_svm	2	T cells CD8 KLRG1	0.030571038579035564	True
+linear_svm	2	Endothelial cells DARC	0.028587301331828407	True
+linear_svm	2	Stem cells OLFM4	0.027171378968369103	True
+xgb	2	T cells CD4 FOSB	0.15599648654460907	True
+xgb	2	T cells CD8	0.09751444309949875	True
+xgb	2	DC2 CD1D	0.08170664310455322	True
+xgb	2	Enterocytes BEST4	0.0768589898943901	True
+xgb	2	Tuft cells	0.0677303597331047	True
+xgb	2	Goblet cells SPINK4	0.0628075823187828	True
+xgb	2	T cells Naive CD4	0.056709613651037216	True
+xgb	2	Cycling cells	0.048490412533283234	True
+xgb	2	DC1	0.04532220587134361	True
+xgb	2	Enterochromaffin cells	0.03614453226327896	True
+xgb	2	Stem cells OLFM4 GSTA1	0.03271038085222244	True
+xgb	2	Enterocytes TMIGD1 MEP1A	0.03236361965537071	True
+xgb	2	Goblet cells MUC2 TFF1-	0.032130274921655655	True
+xgb	2	Enterocytes TMIGD1 MEP1A GSTA1	0.026911670342087746	True
+xgb	2	Mature DCs	0.022340580821037292	True
+xgb	2	Macrophages CXCL9 CXCL10	0.016634708270430565	True
+xgb	2	Monocytes S100A8 S100A9	0.014834120869636536	True
+xgb	2	Macrophages PLA2G2D	0.01452391967177391	True
+xgb	2	Monocytes CHI3L1 CYP27A1	0.014426273293793201	True
+xgb	2	Neutrophils S100A8 S100A9	0.013879391364753246	True
+xgb	2	T cells CD4 IL17A	0.013087762519717216	True
+xgb	2	T cells OGT	0.01289542205631733	True
+xgb	2	Goblet cells MUC2 TFF1	0.009439721703529358	True
+xgb	2	ILCs	0.003805335843935609	True
+xgb	2	Fibroblasts SFRP2 SLPI	0.0030034356750547886	True
+xgb	2	Fibroblasts SMOC2 PTGIS	0.002994196955114603	True
+xgb	2	Endothelial cells DARC	0.0026752471458166838	True
+xgb	2	Activated fibroblasts CCL19 ADAMADEC1	0.0013862189371138811	True
+xgb	2	Fibroblasts NPY SLITRK6	0.0006765264552086592	True
+xgb	2	Epithelial Cycling cells	0.0	True
+xgb	2	Endothelial cells CD36	0.0	True
+xgb	2	Endothelial cells LTC4S SEMA3G	0.0	True
+xgb	2	Macrophages	0.0	True
+xgb	2	Lymphatics	0.0	True
+xgb	2	L cells	0.0	True
+xgb	2	IELs ID3 ENTPD1	0.0	True
+xgb	2	Fibroblasts KCNN3 LY6H	0.0	True
+xgb	2	Fibroblasts ADAMDEC1	0.0	True
+xgb	2	Epithelial cells METTL12 MAFB	0.0	True
+xgb	2	Glial cells	0.0	True
+xgb	2	Epithelial HBB HBA	0.0	True
+xgb	2	DC2 CD1D-	0.0	True
+xgb	2	B cells	0.0	True
+xgb	2	B cells AICDA LRMP	0.0	True
+xgb	2	Endothelial cells CA4 CD36	0.0	True
+xgb	2	Monocytes HBB	0.0	True
+xgb	2	Macrophages LYVE1	0.0	True
+xgb	2	Macrophages CCL3 CCL4	0.0	True
+xgb	2	Pericytes RERGL NTRK2	0.0	True
+xgb	2	Pericytes HIGD1B STEAP4	0.0	True
+elasticnet	2	Tuft cells	0.9161316949501237	True
+elasticnet	2	Goblet cells SPINK4	0.7097533716077093	True
+elasticnet	2	T cells CD8	0.7072547359781962	True
+elasticnet	2	Fibroblasts SFRP2 SLPI	0.5889215402551469	True
+elasticnet	2	DC1	0.5552710954706801	True
+elasticnet	2	Fibroblasts SMOC2 PTGIS	0.49402467515350146	True
+elasticnet	2	Monocytes S100A8 S100A9	0.41262225679859144	True
+elasticnet	2	T cells CD4 FOSB	0.34822062175849977	True
+elasticnet	2	Activated fibroblasts CCL19 ADAMADEC1	0.27582228351802585	True
+elasticnet	2	Enterocytes TMIGD1 MEP1A	0.1703305868198342	True
+elasticnet	2	Enterocytes TMIGD1 MEP1A GSTA1	0.16691945471004846	True
+elasticnet	2	Stem cells OLFM4 GSTA1	0.15073765158079439	True
+elasticnet	2	Plasma cells	0.1505531479544179	True
+elasticnet	2	Myofibroblasts GREM1 GREM2	0.12001179892839858	True
+elasticnet	2	Pericytes HIGD1B STEAP4	0.11999096704427223	True
+elasticnet	2	Glial cells	0.11958062455686852	True
+elasticnet	2	Endothelial cells LTC4S SEMA3G	0.1138791902531041	True
+elasticnet	2	T cells OGT	0.10532603016228283	True
+elasticnet	2	Monocytes CHI3L1 CYP27A1	0.09260746707885621	True
+elasticnet	2	L cells	0.07564968003705717	True
+elasticnet	2	T cells CD4 IL17A	0.05283480583720757	True
+elasticnet	2	Enterochromaffin cells	0.025589527548168522	True
+elasticnet	2	Cycling cells	0.0	True
+elasticnet	2	Endothelial cells CD36	0.0	True
+elasticnet	2	Epithelial Cycling cells	0.0	True
+elasticnet	2	Enterocytes BEST4	0.0	True
+elasticnet	2	Endothelial cells DARC	0.0	True
+elasticnet	2	DC2 CD1D	0.0	True
+elasticnet	2	Endothelial cells CA4 CD36	0.0	True
+elasticnet	2	DC2 CD1D-	0.0	True
+elasticnet	2	B cells AICDA LRMP	0.0	True
+elasticnet	2	B cells	0.0	True
+elasticnet	2	Macrophages	0.0	True
+elasticnet	2	Lymphatics	0.0	True
+elasticnet	2	ILCs	0.0	True
+elasticnet	2	IELs ID3 ENTPD1	0.0	True
+elasticnet	2	Goblet cells MUC2 TFF1	0.0	True
+elasticnet	2	Goblet cells MUC2 TFF1-	0.0	True
+elasticnet	2	Epithelial cells METTL12 MAFB	0.0	True
+elasticnet	2	Fibroblasts NPY SLITRK6	0.0	True
+elasticnet	2	Epithelial HBB HBA	0.0	True
+elasticnet	2	Fibroblasts KCNN3 LY6H	0.0	True
+elasticnet	2	Fibroblasts ADAMDEC1	0.0	True
+elasticnet	2	Monocytes HBB	0.0	True
+elasticnet	2	Macrophages PLA2G2D	0.0	True
+elasticnet	2	Macrophages CCL3 CCL4	0.0	True
+elasticnet	2	Macrophages LYVE1	0.0	True
+elasticnet	2	Macrophages CXCL9 CXCL10	0.0	True
+elasticnet	2	Pericytes RERGL NTRK2	0.0	True
+elasticnet	2	Paneth cells	0.0	True
+catboost	2	Tuft cells	21.02772728348337	True
+catboost	2	T cells CD8	20.782674870334137	True
+catboost	2	T cells CD4 FOSB	8.01912883096794	True
+catboost	2	Goblet cells MUC2 TFF1-	7.214215165352764	True
+catboost	2	DC1	3.4741197313400227	True
+catboost	2	T cells CD4 IL17A	2.656288073579149	True
+catboost	2	Epithelial HBB HBA	2.290291864207459	True
+catboost	2	Goblet cells SPINK4	1.8907692937260565	True
+catboost	2	Monocytes S100A8 S100A9	1.8896845745685584	True
+catboost	2	Plasma cells	1.7933017640011226	True
+catboost	2	Fibroblasts KCNN3 LY6H	1.7699803472995217	True
+catboost	2	Mature DCs	1.7176967181063134	True
+catboost	2	Stem cells OLFM4 GSTA1	1.697000650317927	True
+catboost	2	Neutrophils S100A8 S100A9	1.5586926592238068	True
+catboost	2	IELs ID3 ENTPD1	1.5139575733610606	True
+catboost	2	Macrophages PLA2G2D	1.489755991576546	True
+catboost	2	Myofibroblasts HHIP NPNT	1.4111136460620257	True
+catboost	2	Enterocytes BEST4	1.2250416811823814	True
+catboost	2	Endothelial cells CA4 CD36	1.0914641642349272	True
+catboost	2	Macrophages CXCL9 CXCL10	1.0276553159285449	True
+catboost	2	Endothelial cells DARC	0.978109306513679	True
+catboost	2	T cells Naive CD4	0.8819056503278493	True
+catboost	2	B cells AICDA LRMP	0.8189429360292662	True
+catboost	2	Goblet cells MUC2 TFF1	0.778338993943703	True
+catboost	2	T cells CD8 KLRG1	0.7650110453450637	True
+catboost	2	Enterochromaffin cells	0.7186759036021068	True
+catboost	2	T cells OGT	0.7106545433777176	True
+catboost	2	DC2 CD1D-	0.6478440100500558	True
+catboost	2	Monocytes HBB	0.6213773138279911	True
+catboost	2	Glial cells	0.4750943591630314	True
+catboost	2	Enterocytes TMIGD1 MEP1A GSTA1	0.43755506950115364	True
+catboost	2	Tregs	0.4039167529677166	True
+catboost	2	Mast cells	0.3908203361820316	True
+catboost	2	Stem cells OLFM4 PCNA	0.37376703023943314	True
+catboost	2	Stem cells OLFM4	0.3681561422525385	True
+catboost	2	Pericytes RERGL NTRK2	0.36748550499749977	True
+catboost	2	Monocytes CHI3L1 CYP27A1	0.36313050112201306	True
+catboost	2	Epithelial cells METTL12 MAFB	0.3513403296774128	True
+catboost	2	Endothelial cells LTC4S SEMA3G	0.3383381343178009	True
+catboost	2	Enterocytes TMIGD1 MEP1A	0.3201852255020777	True
+catboost	2	L cells	0.2949879670568912	True
+catboost	2	Macrophages CCL3 CCL4	0.2922382303394316	True
+catboost	2	Macrophages	0.2889393440582925	True
+catboost	2	Myofibroblasts GREM1 GREM2	0.25880701236450404	True
+catboost	2	B cells	0.252436270895404	True
+catboost	2	DC2 CD1D	0.22076057183171643	True
+catboost	2	Endothelial cells CD36	0.21795725160633428	True
+catboost	2	Activated fibroblasts CCL19 ADAMADEC1	0.20323142224912152	True
+catboost	2	Fibroblasts SFRP2 SLPI	0.19086786091313723	True
+catboost	2	Paneth cells	0.18707456822359567	True
+logreg	3	Tuft cells	0.8536588629637695	True
+logreg	3	NK cells KLRF1 CD3G-	0.6975684235696289	True
+logreg	3	DC1	0.6084777308172409	True
+logreg	3	Goblet cells SPINK4	0.60716871057868	True
+logreg	3	Fibroblasts SFRP2 SLPI	0.5611040061009129	True
+logreg	3	Plasma cells	0.38961483431681165	True
+logreg	3	T cells CD4 FOSB	0.3657393243051809	True
+logreg	3	Enterochromaffin cells	0.36000738888459954	True
+logreg	3	Endothelial cells DARC	0.35761485797809417	True
+logreg	3	T cells CD8	0.3507982638411441	True
+logreg	3	Fibroblasts SMOC2 PTGIS	0.3451111672485506	True
+logreg	3	Macrophages LYVE1	0.3263301212088661	True
+logreg	3	Macrophages PLA2G2D	0.30976253660002384	True
+logreg	3	Fibroblasts NPY SLITRK6	0.2980737495913144	True
+logreg	3	Endothelial cells CD36	0.29262781574717345	True
+logreg	3	T cells Naive CD4	0.2867363375669484	True
+logreg	3	Monocytes S100A8 S100A9	0.2843910369046932	True
+logreg	3	T cells OGT	0.2765729082909353	True
+logreg	3	Goblet cells MUC2 TFF1	0.27469557375212605	True
+logreg	3	Stem cells OLFM4	0.27029273666444853	True
+logreg	3	Stem cells OLFM4 LGR5	0.24543554122103595	True
+logreg	3	Enterocytes BEST4	0.23414606083931122	True
+logreg	3	Epithelial cells METTL12 MAFB	0.2242949464075253	True
+logreg	3	Macrophages	0.22347291905047545	True
+logreg	3	T cells CD8 KLRG1	0.22321516350295695	True
+logreg	3	Endothelial cells LTC4S SEMA3G	0.2192903616309952	True
+logreg	3	Enterocytes TMIGD1 MEP1A GSTA1	0.21430177777720646	True
+logreg	3	Epithelial HBB HBA	0.19177058651885084	True
+logreg	3	Cycling cells	0.1819777974057494	True
+logreg	3	Stem cells OLFM4 GSTA1	0.16196303083251928	True
+logreg	3	T cells CD4 IL17A	0.1606698286176589	True
+logreg	3	B cells AICDA LRMP	0.14874541175611408	True
+logreg	3	Fibroblasts KCNN3 LY6H	0.14046109726314115	True
+logreg	3	Enterocytes TMIGD1 MEP1A	0.12754013873176231	True
+logreg	3	DC2 CD1D-	0.11717847482841846	True
+logreg	3	DC2 CD1D	0.11146097411806535	True
+logreg	3	Macrophages CCL3 CCL4	0.11036208836116737	True
+logreg	3	Mast cells	0.10823031281567663	True
+logreg	3	Pericytes HIGD1B STEAP4	0.1023598159756399	True
+logreg	3	Endothelial cells CA4 CD36	0.08777030888497726	True
+logreg	3	Epithelial Cycling cells	0.08481436327803472	True
+logreg	3	Stem cells OLFM4 PCNA	0.07250554403480335	True
+logreg	3	Pericytes RERGL NTRK2	0.050828283094081446	True
+logreg	3	Lymphatics	0.05038943086064618	True
+logreg	3	Monocytes HBB	0.044480288487694926	True
+logreg	3	Monocytes CHI3L1 CYP27A1	0.043872403377800843	True
+logreg	3	Goblet cells MUC2 TFF1-	0.04132778992332852	True
+logreg	3	Macrophages CXCL9 CXCL10	0.036900324299473	True
+logreg	3	Glial cells	0.035886451075755665	True
+logreg	3	Paneth cells	0.03244547145843369	True
+linear_svm	3	Tuft cells	0.417104199125545	True
+linear_svm	3	NK cells KLRF1 CD3G-	0.35193076910627885	True
+linear_svm	3	Fibroblasts SFRP2 SLPI	0.32498777766928566	True
+linear_svm	3	DC1	0.30137921453798017	True
+linear_svm	3	Goblet cells SPINK4	0.26516888871736005	True
+linear_svm	3	Fibroblasts SMOC2 PTGIS	0.20395387311702018	True
+linear_svm	3	Macrophages LYVE1	0.18493470565164336	True
+linear_svm	3	Macrophages PLA2G2D	0.1753932910262873	True
+linear_svm	3	T cells CD8	0.16743320358487168	True
+linear_svm	3	Plasma cells	0.1672895184119668	True
+linear_svm	3	Stem cells OLFM4 LGR5	0.16145937013357142	True
+linear_svm	3	Endothelial cells DARC	0.1487602039376531	True
+linear_svm	3	T cells CD4 FOSB	0.14247577569670167	True
+linear_svm	3	T cells CD8 KLRG1	0.1419105872903813	True
+linear_svm	3	Monocytes S100A8 S100A9	0.13234659163949272	True
+linear_svm	3	Enterochromaffin cells	0.1278547770780003	True
+linear_svm	3	Fibroblasts NPY SLITRK6	0.12740621031233476	True
+linear_svm	3	T cells Naive CD4	0.11938137133890508	True
+linear_svm	3	Goblet cells MUC2 TFF1	0.11832487850025478	True
+linear_svm	3	Stem cells OLFM4	0.1167383715554	True
+linear_svm	3	Enterocytes BEST4	0.11459376341726309	True
+linear_svm	3	T cells OGT	0.10951878012549886	True
+linear_svm	3	Endothelial cells CD36	0.10861214782980254	True
+linear_svm	3	Endothelial cells LTC4S SEMA3G	0.10093356055094102	True
+linear_svm	3	Macrophages	0.10058142496280574	True
+linear_svm	3	Mast cells	0.10012445694974872	True
+linear_svm	3	DC2 CD1D-	0.08872077465124487	True
+linear_svm	3	Epithelial cells METTL12 MAFB	0.08800916454462945	True
+linear_svm	3	Stem cells OLFM4 GSTA1	0.08641125755154477	True
+linear_svm	3	Mature DCs	0.0810639726544643	True
+linear_svm	3	T cells CD4 IL17A	0.07736960342007487	True
+linear_svm	3	Fibroblasts KCNN3 LY6H	0.07587560212810833	True
+linear_svm	3	Goblet cells MUC2 TFF1-	0.07149958199010492	True
+linear_svm	3	Enterocytes TMIGD1 MEP1A	0.06487082871637961	True
+linear_svm	3	Monocytes HBB	0.05739164040258614	True
+linear_svm	3	B cells AICDA LRMP	0.05240118328967794	True
+linear_svm	3	Epithelial HBB HBA	0.04573574987490296	True
+linear_svm	3	Cycling cells	0.04487322831328316	True
+linear_svm	3	Enterocytes TMIGD1 MEP1A GSTA1	0.044734701219692224	True
+linear_svm	3	Endothelial cells CA4 CD36	0.041436506666016046	True
+linear_svm	3	Paneth cells	0.041155824175399466	True
+linear_svm	3	Myofibroblasts HHIP NPNT	0.04032722833751942	True
+linear_svm	3	B cells	0.03968495458986304	True
+linear_svm	3	Monocytes CHI3L1 CYP27A1	0.03861711101215547	True
+linear_svm	3	Neutrophils S100A8 S100A9	0.037849685162827024	True
+linear_svm	3	DC2 CD1D	0.03752090070298435	True
+linear_svm	3	ILCs	0.036400777459420906	True
+linear_svm	3	Macrophages CCL3 CCL4	0.03363833264202974	True
+linear_svm	3	Activated fibroblasts CCL19 ADAMADEC1	0.033562398142295335	True
+linear_svm	3	Epithelial Cycling cells	0.03184529312585466	True
+xgb	3	Tuft cells	0.17630299925804138	True
+xgb	3	Enterochromaffin cells	0.09333465248346329	True
+xgb	3	Goblet cells MUC2 TFF1-	0.0635208934545517	True
+xgb	3	T cells CD4 IL17A	0.06146370992064476	True
+xgb	3	Glial cells	0.05993285030126572	True
+xgb	3	Goblet cells MUC2 TFF1	0.059634432196617126	True
+xgb	3	Fibroblasts SFRP2 SLPI	0.05773167312145233	True
+xgb	3	T cells CD8	0.05076327174901962	True
+xgb	3	T cells Naive CD4	0.045774832367897034	True
+xgb	3	B cells AICDA LRMP	0.0353943295776844	True
+xgb	3	Neutrophils S100A8 S100A9	0.03360772132873535	True
+xgb	3	DC1	0.03256817162036896	True
+xgb	3	Macrophages LYVE1	0.03158238157629967	True
+xgb	3	Fibroblasts KCNN3 LY6H	0.030607081949710846	True
+xgb	3	T cells CD4 FOSB	0.027514848858118057	True
+xgb	3	Cycling cells	0.023952743038535118	True
+xgb	3	DC2 CD1D-	0.023933425545692444	True
+xgb	3	Stem cells OLFM4	0.019861621782183647	True
+xgb	3	Endothelial cells CD36	0.008627224713563919	True
+xgb	3	Monocytes S100A8 S100A9	0.008176620118319988	True
+xgb	3	Enterocytes BEST4	0.007731664460152388	True
+xgb	3	DC2 CD1D	0.0065222326666116714	True
+xgb	3	NK cells KLRF1 CD3G-	0.006396387703716755	True
+xgb	3	T cells CD8 KLRG1	0.006269597448408604	True
+xgb	3	Monocytes HBB	0.006021034903824329	True
+xgb	3	Fibroblasts NPY SLITRK6	0.005923564080148935	True
+xgb	3	Goblet cells SPINK4	0.005740663968026638	True
+xgb	3	Epithelial Cycling cells	0.00392103148624301	True
+xgb	3	Macrophages PLA2G2D	0.003273001406341791	True
+xgb	3	Endothelial cells DARC	0.002043497748672962	True
+xgb	3	L cells	0.000947639113292098	True
+xgb	3	Monocytes CHI3L1 CYP27A1	0.0005264784558676183	True
+xgb	3	Lymphatics	0.00039774816832505167	True
+xgb	3	Macrophages	0.0	True
+xgb	3	IELs ID3 ENTPD1	0.0	True
+xgb	3	Fibroblasts SMOC2 PTGIS	0.0	True
+xgb	3	Fibroblasts ADAMDEC1	0.0	True
+xgb	3	ILCs	0.0	True
+xgb	3	Epithelial HBB HBA	0.0	True
+xgb	3	Enterocytes TMIGD1 MEP1A GSTA1	0.0	True
+xgb	3	Endothelial cells CA4 CD36	0.0	True
+xgb	3	Endothelial cells LTC4S SEMA3G	0.0	True
+xgb	3	B cells	0.0	True
+xgb	3	Activated fibroblasts CCL19 ADAMADEC1	0.0	True
+xgb	3	Enterocytes TMIGD1 MEP1A	0.0	True
+xgb	3	Epithelial cells METTL12 MAFB	0.0	True
+xgb	3	Mast cells	0.0	True
+xgb	3	Macrophages CCL3 CCL4	0.0	True
+xgb	3	Pericytes RERGL NTRK2	0.0	True
+xgb	3	Pericytes HIGD1B STEAP4	0.0	True
+elasticnet	3	Tuft cells	1.2941257782627063	True
+elasticnet	3	Goblet cells SPINK4	0.7769036021159551	True
+elasticnet	3	DC1	0.6863156430489361	True
+elasticnet	3	Fibroblasts SFRP2 SLPI	0.5575805731712492	True
+elasticnet	3	NK cells KLRF1 CD3G-	0.46812753341390584	True
+elasticnet	3	T cells CD8	0.44136489202800355	True
+elasticnet	3	Endothelial cells DARC	0.42556023902911305	True
+elasticnet	3	T cells CD4 FOSB	0.3204165993386068	True
+elasticnet	3	Plasma cells	0.2665742020012195	True
+elasticnet	3	Enterochromaffin cells	0.24553328428763568	True
+elasticnet	3	Endothelial cells CD36	0.2383818268186765	True
+elasticnet	3	Cycling cells	0.17005012791707522	True
+elasticnet	3	Fibroblasts SMOC2 PTGIS	0.16992954711356167	True
+elasticnet	3	Epithelial HBB HBA	0.10346056203902133	True
+elasticnet	3	Endothelial cells LTC4S SEMA3G	0.10148916272110871	True
+elasticnet	3	Macrophages LYVE1	0.0987379017122595	True
+elasticnet	3	Macrophages PLA2G2D	0.0894794642696841	True
+elasticnet	3	Enterocytes TMIGD1 MEP1A GSTA1	0.08939964202784885	True
+elasticnet	3	Epithelial cells METTL12 MAFB	0.0757440138882213	True
+elasticnet	3	T cells OGT	0.07312502128392016	True
+elasticnet	3	Macrophages	0.04512013272748989	True
+elasticnet	3	Fibroblasts NPY SLITRK6	0.02973839859819898	True
+elasticnet	3	Monocytes S100A8 S100A9	0.022128766268955543	True
+elasticnet	3	Enterocytes BEST4	0.019681226119298328	True
+elasticnet	3	Epithelial Cycling cells	0.0	True
+elasticnet	3	Enterocytes TMIGD1 MEP1A	0.0	True
+elasticnet	3	B cells	0.0	True
+elasticnet	3	Activated fibroblasts CCL19 ADAMADEC1	0.0	True
+elasticnet	3	B cells AICDA LRMP	0.0	True
+elasticnet	3	DC2 CD1D	0.0	True
+elasticnet	3	DC2 CD1D-	0.0	True
+elasticnet	3	Endothelial cells CA4 CD36	0.0	True
+elasticnet	3	Lymphatics	0.0	True
+elasticnet	3	L cells	0.0	True
+elasticnet	3	ILCs	0.0	True
+elasticnet	3	IELs ID3 ENTPD1	0.0	True
+elasticnet	3	Goblet cells MUC2 TFF1	0.0	True
+elasticnet	3	Goblet cells MUC2 TFF1-	0.0	True
+elasticnet	3	Fibroblasts KCNN3 LY6H	0.0	True
+elasticnet	3	Glial cells	0.0	True
+elasticnet	3	Fibroblasts ADAMDEC1	0.0	True
+elasticnet	3	Monocytes HBB	0.0	True
+elasticnet	3	Myofibroblasts GREM1 GREM2	0.0	True
+elasticnet	3	Monocytes CHI3L1 CYP27A1	0.0	True
+elasticnet	3	Mast cells	0.0	True
+elasticnet	3	Mature DCs	0.0	True
+elasticnet	3	Macrophages CXCL9 CXCL10	0.0	True
+elasticnet	3	Macrophages CCL3 CCL4	0.0	True
+elasticnet	3	Pericytes RERGL NTRK2	0.0	True
+elasticnet	3	Pericytes HIGD1B STEAP4	0.0	True
+catboost	3	Tuft cells	42.42367266372295	True
+catboost	3	T cells CD4 FOSB	5.831466193963905	True
+catboost	3	DC1	5.63265373054965	True
+catboost	3	T cells CD8	5.023724075265892	True
+catboost	3	Goblet cells SPINK4	3.2292996623848924	True
+catboost	3	Glial cells	3.0363508809012303	True
+catboost	3	Enterochromaffin cells	2.5428651236547934	True
+catboost	3	T cells CD4 IL17A	2.1141370711293095	True
+catboost	3	Epithelial HBB HBA	1.9572505766598893	True
+catboost	3	Stem cells OLFM4	1.8630503449405182	True
+catboost	3	Pericytes RERGL NTRK2	1.7894786325657488	True
+catboost	3	Stem cells OLFM4 GSTA1	1.4854492864608873	True
+catboost	3	Cycling cells	1.4341675929305115	True
+catboost	3	Fibroblasts SFRP2 SLPI	1.3578043877556674	True
+catboost	3	Lymphatics	1.2056416011599935	True
+catboost	3	IELs ID3 ENTPD1	1.178051791349723	True
+catboost	3	Goblet cells MUC2 TFF1-	1.1742303145335162	True
+catboost	3	Endothelial cells CA4 CD36	1.0823260531850825	True
+catboost	3	T cells OGT	1.0225117153580168	True
+catboost	3	Plasma cells	0.8626034206098918	True
+catboost	3	Macrophages CXCL9 CXCL10	0.8308918169522043	True
+catboost	3	Myofibroblasts GREM1 GREM2	0.7608570164240925	True
+catboost	3	Fibroblasts KCNN3 LY6H	0.7086022424781537	True
+catboost	3	Monocytes HBB	0.6621158079211411	True
+catboost	3	Stem cells OLFM4 PCNA	0.6226466649163921	True
+catboost	3	Monocytes S100A8 S100A9	0.5856256592420782	True
+catboost	3	Goblet cells MUC2 TFF1	0.5853425360689345	True
+catboost	3	B cells AICDA LRMP	0.572926322027048	True
+catboost	3	Endothelial cells CD36	0.565130228081275	True
+catboost	3	Endothelial cells LTC4S SEMA3G	0.5635368604095782	True
+catboost	3	Enterocytes BEST4	0.5514471054065022	True
+catboost	3	T cells Naive CD4	0.5294688472838129	True
+catboost	3	T cells CD8 KLRG1	0.5111670887817094	True
+catboost	3	DC2 CD1D-	0.5108859758814279	True
+catboost	3	B cells	0.4681325369905276	True
+catboost	3	Endothelial cells DARC	0.43208537688959703	True
+catboost	3	Epithelial Cycling cells	0.43157172227247087	True
+catboost	3	Macrophages CCL3 CCL4	0.42397534400765235	True
+catboost	3	Neutrophils S100A8 S100A9	0.3925591055063914	True
+catboost	3	Mature DCs	0.34533085819003445	True
+catboost	3	Fibroblasts NPY SLITRK6	0.3406496833765912	True
+catboost	3	Epithelial cells METTL12 MAFB	0.26698528919285225	True
+catboost	3	Paneth cells	0.24694499119583602	True
+catboost	3	Fibroblasts SMOC2 PTGIS	0.21916099998513017	True
+catboost	3	ILCs	0.21002112241066087	True
+catboost	3	Monocytes CHI3L1 CYP27A1	0.1662184944193508	True
+catboost	3	Macrophages LYVE1	0.1625204042087299	True
+catboost	3	Macrophages	0.15616785172383263	True
+catboost	3	L cells	0.14398911264063224	True
+catboost	3	DC2 CD1D	0.13396247546657997	True
+logreg	4	Tuft cells	0.8890770506745856	True
+logreg	4	Goblet cells SPINK4	0.7677077356212236	True
+logreg	4	DC1	0.653844964398091	True
+logreg	4	Fibroblasts SFRP2 SLPI	0.5693203193266113	True
+logreg	4	NK cells KLRF1 CD3G-	0.562631683414271	True
+logreg	4	Plasma cells	0.47264968904641386	True
+logreg	4	Fibroblasts SMOC2 PTGIS	0.3925076576464386	True
+logreg	4	T cells CD4 FOSB	0.3792189406055194	True
+logreg	4	Macrophages LYVE1	0.3135756152905006	True
+logreg	4	T cells Naive CD4	0.30695406914332785	True
+logreg	4	DC2 CD1D-	0.2977834268315542	True
+logreg	4	Enterocytes TMIGD1 MEP1A	0.2892374127818489	True
+logreg	4	T cells OGT	0.2848869203066909	True
+logreg	4	Enterochromaffin cells	0.28161299733272727	True
+logreg	4	Endothelial cells DARC	0.2778171085045337	True
+logreg	4	Macrophages	0.2775520761472786	True
+logreg	4	Macrophages CXCL9 CXCL10	0.2462377767417085	True
+logreg	4	Goblet cells MUC2 TFF1	0.2400407046615414	True
+logreg	4	T cells CD8	0.23665186610190733	True
+logreg	4	Fibroblasts NPY SLITRK6	0.23043112698208795	True
+logreg	4	Monocytes S100A8 S100A9	0.2274637781190257	True
+logreg	4	Enterocytes TMIGD1 MEP1A GSTA1	0.21917730508150907	True
+logreg	4	Endothelial cells LTC4S SEMA3G	0.21100602975663207	True
+logreg	4	Myofibroblasts HHIP NPNT	0.19918260518267528	True
+logreg	4	DC2 CD1D	0.19734690393720186	True
+logreg	4	Monocytes CHI3L1 CYP27A1	0.19575340563193544	True
+logreg	4	Lymphatics	0.1859812902095606	True
+logreg	4	Epithelial cells METTL12 MAFB	0.1838521365772129	True
+logreg	4	B cells AICDA LRMP	0.1808088328742864	True
+logreg	4	Stem cells OLFM4	0.17259185861567683	True
+logreg	4	Endothelial cells CA4 CD36	0.1704621972259436	True
+logreg	4	Cycling cells	0.16767134719646692	True
+logreg	4	Stem cells OLFM4 GSTA1	0.1661588887812181	True
+logreg	4	Pericytes HIGD1B STEAP4	0.16484854944114524	True
+logreg	4	Fibroblasts KCNN3 LY6H	0.16165358335394409	True
+logreg	4	Endothelial cells CD36	0.16146066567912673	True
+logreg	4	Stem cells OLFM4 LGR5	0.16088832697617073	True
+logreg	4	T cells CD8 KLRG1	0.14952673834339264	True
+logreg	4	Mature DCs	0.14338000216745267	True
+logreg	4	Monocytes HBB	0.12682421813814487	True
+logreg	4	Macrophages PLA2G2D	0.12377939916712477	True
+logreg	4	Neutrophils S100A8 S100A9	0.12326921813612976	True
+logreg	4	Pericytes RERGL NTRK2	0.12292193455300938	True
+logreg	4	ILCs	0.12161759012348729	True
+logreg	4	Enterocytes BEST4	0.11009999238647351	True
+logreg	4	Paneth cells	0.09885611335611372	True
+logreg	4	T cells CD4 IL17A	0.09788141137267882	True
+logreg	4	Fibroblasts ADAMDEC1	0.09473381149063137	True
+logreg	4	Mast cells	0.09435183940547401	True
+logreg	4	Glial cells	0.08284969488969483	True
+linear_svm	4	Tuft cells	0.45913024172579797	True
+linear_svm	4	DC1	0.3352307359551683	True
+linear_svm	4	Goblet cells SPINK4	0.3335436364082161	True
+linear_svm	4	NK cells KLRF1 CD3G-	0.2493641996035542	True
+linear_svm	4	Fibroblasts SFRP2 SLPI	0.2362244613869597	True
+linear_svm	4	Fibroblasts SMOC2 PTGIS	0.23256204808679054	True
+linear_svm	4	Plasma cells	0.2134821439051644	True
+linear_svm	4	Macrophages LYVE1	0.18144461287232566	True
+linear_svm	4	Enterocytes TMIGD1 MEP1A	0.17038243704948366	True
+linear_svm	4	Macrophages CXCL9 CXCL10	0.16336737352901132	True
+linear_svm	4	T cells Naive CD4	0.1584544548633731	True
+linear_svm	4	T cells CD4 FOSB	0.15276281492894572	True
+linear_svm	4	DC2 CD1D-	0.14845592021055345	True
+linear_svm	4	Stem cells OLFM4 LGR5	0.1459634982067115	True
+linear_svm	4	Macrophages	0.14404330079642644	True
+linear_svm	4	Mast cells	0.13501319022161865	True
+linear_svm	4	Goblet cells MUC2 TFF1	0.11291892595646855	True
+linear_svm	4	Monocytes CHI3L1 CYP27A1	0.10764029686052821	True
+linear_svm	4	Epithelial cells METTL12 MAFB	0.10724268005356455	True
+linear_svm	4	DC2 CD1D	0.10722344457548957	True
+linear_svm	4	T cells CD8 KLRG1	0.10671075800104557	True
+linear_svm	4	Cycling cells	0.09864758358749436	True
+linear_svm	4	Lymphatics	0.09582890098185212	True
+linear_svm	4	Endothelial cells LTC4S SEMA3G	0.08957013547188437	True
+linear_svm	4	T cells OGT	0.08645028098332033	True
+linear_svm	4	B cells AICDA LRMP	0.08157633304350301	True
+linear_svm	4	Glial cells	0.08081563725746652	True
+linear_svm	4	Enterocytes TMIGD1 MEP1A GSTA1	0.0776064968656221	True
+linear_svm	4	Enterochromaffin cells	0.07699011317708483	True
+linear_svm	4	Fibroblasts KCNN3 LY6H	0.07466211583093721	True
+linear_svm	4	Fibroblasts NPY SLITRK6	0.07188186514132827	True
+linear_svm	4	Monocytes HBB	0.07090403419418304	True
+linear_svm	4	Stem cells OLFM4 PCNA	0.07067812689049444	True
+linear_svm	4	Pericytes RERGL NTRK2	0.07038213638082529	True
+linear_svm	4	Stem cells OLFM4 GSTA1	0.06730302156755692	True
+linear_svm	4	Stem cells OLFM4	0.06533661920947054	True
+linear_svm	4	Endothelial cells CA4 CD36	0.06061419437167148	True
+linear_svm	4	Fibroblasts ADAMDEC1	0.058778677719457384	True
+linear_svm	4	Endothelial cells DARC	0.057122670020702926	True
+linear_svm	4	Endothelial cells CD36	0.055067442475613376	True
+linear_svm	4	Pericytes HIGD1B STEAP4	0.05459228391542506	True
+linear_svm	4	Monocytes S100A8 S100A9	0.051829086497805245	True
+linear_svm	4	Tregs	0.04808175636356027	True
+linear_svm	4	Myofibroblasts HHIP NPNT	0.04571990626255887	True
+linear_svm	4	Macrophages PLA2G2D	0.045076408858985506	True
+linear_svm	4	T cells CD4 IL17A	0.04057812666941322	True
+linear_svm	4	Paneth cells	0.03590525109906481	True
+linear_svm	4	Activated fibroblasts CCL19 ADAMADEC1	0.035761037148436925	True
+linear_svm	4	Enterocytes BEST4	0.03319107593835863	True
+linear_svm	4	Goblet cells MUC2 TFF1-	0.03316066995327127	True
+xgb	4	Goblet cells MUC2 TFF1-	0.10230789333581924	True
+xgb	4	Tuft cells	0.0996706411242485	True
+xgb	4	Cycling cells	0.09220577031373978	True
+xgb	4	T cells CD4 FOSB	0.0914924368262291	True
+xgb	4	Goblet cells SPINK4	0.06462490558624268	True
+xgb	4	T cells CD8	0.05909479036927223	True
+xgb	4	Enterochromaffin cells	0.057979971170425415	True
+xgb	4	DC2 CD1D	0.055019084364175797	True
+xgb	4	Macrophages CXCL9 CXCL10	0.04699879139661789	True
+xgb	4	DC1	0.04225840047001839	True
+xgb	4	B cells	0.041829537600278854	True
+xgb	4	T cells Naive CD4	0.040726542472839355	True
+xgb	4	Fibroblasts ADAMDEC1	0.03878095746040344	True
+xgb	4	Goblet cells MUC2 TFF1	0.03220561519265175	True
+xgb	4	Glial cells	0.02684706263244152	True
+xgb	4	Monocytes S100A8 S100A9	0.025993335992097855	True
+xgb	4	Epithelial Cycling cells	0.014652615413069725	True
+xgb	4	Stem cells OLFM4 PCNA	0.013890725560486317	True
+xgb	4	Macrophages CCL3 CCL4	0.012911498546600342	True
+xgb	4	Stem cells OLFM4	0.012321016751229763	True
+xgb	4	Macrophages PLA2G2D	0.010018294677138329	True
+xgb	4	Mature DCs	0.00857630092650652	True
+xgb	4	Fibroblasts NPY SLITRK6	0.008484568446874619	True
+xgb	4	Stem cells OLFM4 LGR5	0.0011091666528955102	True
+xgb	4	Enterocytes TMIGD1 MEP1A GSTA1	0.0	True
+xgb	4	Enterocytes TMIGD1 MEP1A	0.0	True
+xgb	4	Enterocytes BEST4	0.0	True
+xgb	4	Endothelial cells LTC4S SEMA3G	0.0	True
+xgb	4	Endothelial cells CA4 CD36	0.0	True
+xgb	4	DC2 CD1D-	0.0	True
+xgb	4	B cells AICDA LRMP	0.0	True
+xgb	4	Activated fibroblasts CCL19 ADAMADEC1	0.0	True
+xgb	4	Macrophages	0.0	True
+xgb	4	Lymphatics	0.0	True
+xgb	4	L cells	0.0	True
+xgb	4	ILCs	0.0	True
+xgb	4	IELs ID3 ENTPD1	0.0	True
+xgb	4	Epithelial cells METTL12 MAFB	0.0	True
+xgb	4	Fibroblasts SFRP2 SLPI	0.0	True
+xgb	4	Fibroblasts SMOC2 PTGIS	0.0	True
+xgb	4	Epithelial HBB HBA	0.0	True
+xgb	4	Fibroblasts KCNN3 LY6H	0.0	True
+xgb	4	Endothelial cells DARC	0.0	True
+xgb	4	Endothelial cells CD36	0.0	True
+xgb	4	Monocytes HBB	0.0	True
+xgb	4	Macrophages LYVE1	0.0	True
+xgb	4	Monocytes CHI3L1 CYP27A1	0.0	True
+xgb	4	Mast cells	0.0	True
+xgb	4	Pericytes RERGL NTRK2	0.0	True
+xgb	4	Pericytes HIGD1B STEAP4	0.0	True
+elasticnet	4	Tuft cells	1.3425326964419506	True
+elasticnet	4	Goblet cells SPINK4	0.9843608089894795	True
+elasticnet	4	DC1	0.697556829957723	True
+elasticnet	4	Fibroblasts SFRP2 SLPI	0.6124390252867794	True
+elasticnet	4	NK cells KLRF1 CD3G-	0.4260640107870177	True
+elasticnet	4	Plasma cells	0.4099900438954389	True
+elasticnet	4	Endothelial cells DARC	0.4046228372094881	True
+elasticnet	4	T cells CD4 FOSB	0.3910503797141804	True
+elasticnet	4	Fibroblasts SMOC2 PTGIS	0.2928405814917434	True
+elasticnet	4	T cells CD8	0.2641357452428336	True
+elasticnet	4	Endothelial cells LTC4S SEMA3G	0.18616098803517034	True
+elasticnet	4	Enterocytes TMIGD1 MEP1A	0.11829934699615628	True
+elasticnet	4	Monocytes S100A8 S100A9	0.0975888334142406	True
+elasticnet	4	Pericytes HIGD1B STEAP4	0.09616432705818077	True
+elasticnet	4	Macrophages LYVE1	0.09528717856520269	True
+elasticnet	4	Monocytes CHI3L1 CYP27A1	0.0765949716765519	True
+elasticnet	4	DC2 CD1D-	0.06906471670666517	True
+elasticnet	4	Fibroblasts NPY SLITRK6	0.06030961368577136	True
+elasticnet	4	Lymphatics	0.05087254588848987	True
+elasticnet	4	Macrophages CXCL9 CXCL10	0.04274390406019719	True
+elasticnet	4	Macrophages	0.02278720483179739	True
+elasticnet	4	T cells OGT	0.01419614668214392	True
+elasticnet	4	Mature DCs	0.012559925882080589	True
+elasticnet	4	Enterochromaffin cells	0.0	True
+elasticnet	4	Epithelial Cycling cells	0.0	True
+elasticnet	4	Enterocytes TMIGD1 MEP1A GSTA1	0.0	True
+elasticnet	4	Enterocytes BEST4	0.0	True
+elasticnet	4	DC2 CD1D	0.0	True
+elasticnet	4	Endothelial cells CA4 CD36	0.0	True
+elasticnet	4	Cycling cells	0.0	True
+elasticnet	4	Activated fibroblasts CCL19 ADAMADEC1	0.0	True
+elasticnet	4	B cells	0.0	True
+elasticnet	4	ILCs	0.0	True
+elasticnet	4	L cells	0.0	True
+elasticnet	4	Goblet cells MUC2 TFF1-	0.0	True
+elasticnet	4	IELs ID3 ENTPD1	0.0	True
+elasticnet	4	Goblet cells MUC2 TFF1	0.0	True
+elasticnet	4	Fibroblasts ADAMDEC1	0.0	True
+elasticnet	4	Epithelial cells METTL12 MAFB	0.0	True
+elasticnet	4	Glial cells	0.0	True
+elasticnet	4	Epithelial HBB HBA	0.0	True
+elasticnet	4	Fibroblasts KCNN3 LY6H	0.0	True
+elasticnet	4	B cells AICDA LRMP	0.0	True
+elasticnet	4	Endothelial cells CD36	0.0	True
+elasticnet	4	Monocytes HBB	0.0	True
+elasticnet	4	Mast cells	0.0	True
+elasticnet	4	Macrophages CCL3 CCL4	0.0	True
+elasticnet	4	Macrophages PLA2G2D	0.0	True
+elasticnet	4	Pericytes RERGL NTRK2	0.0	True
+elasticnet	4	Paneth cells	0.0	True
+catboost	4	Tuft cells	32.2307865600082	True
+catboost	4	T cells CD4 FOSB	6.823209171731706	True
+catboost	4	Goblet cells SPINK4	5.293686177242075	True
+catboost	4	DC1	5.104179116426581	True
+catboost	4	T cells CD8	3.5968524271862217	True
+catboost	4	Cycling cells	3.2170422394117466	True
+catboost	4	Stem cells OLFM4 GSTA1	2.7622394430992805	True
+catboost	4	Monocytes S100A8 S100A9	2.739848511173331	True
+catboost	4	Stem cells OLFM4	2.7119536346708686	True
+catboost	4	Macrophages PLA2G2D	2.114759347035204	True
+catboost	4	Fibroblasts SFRP2 SLPI	2.0213948846766185	True
+catboost	4	IELs ID3 ENTPD1	1.878624133038485	True
+catboost	4	Goblet cells MUC2 TFF1-	1.7318098458508278	True
+catboost	4	DC2 CD1D	1.6806609245088164	True
+catboost	4	Goblet cells MUC2 TFF1	1.6615476873411188	True
+catboost	4	Glial cells	1.6590850771636214	True
+catboost	4	Macrophages CXCL9 CXCL10	1.6583756695459841	True
+catboost	4	Enterochromaffin cells	1.583719033422647	True
+catboost	4	T cells Naive CD4	1.4202141068576049	True
+catboost	4	Plasma cells	1.3620558177925788	True
+catboost	4	Endothelial cells DARC	1.1233226372391234	True
+catboost	4	Macrophages CCL3 CCL4	1.1196165036908914	True
+catboost	4	T cells OGT	1.0945943116311891	True
+catboost	4	Mature DCs	0.9492541915944201	True
+catboost	4	Monocytes CHI3L1 CYP27A1	0.9481177114902708	True
+catboost	4	Endothelial cells CA4 CD36	0.9274622339288969	True
+catboost	4	Neutrophils S100A8 S100A9	0.8107432481576726	True
+catboost	4	Pericytes RERGL NTRK2	0.7703266441946424	True
+catboost	4	Myofibroblasts GREM1 GREM2	0.7431496443844623	True
+catboost	4	B cells	0.71213425233321	True
+catboost	4	T cells CD4 IL17A	0.7099356267821377	True
+catboost	4	Mast cells	0.6931687245109301	True
+catboost	4	Fibroblasts KCNN3 LY6H	0.5839213442221962	True
+catboost	4	Endothelial cells LTC4S SEMA3G	0.498100595586765	True
+catboost	4	Paneth cells	0.4832033080171273	True
+catboost	4	L cells	0.45413577037638253	True
+catboost	4	Monocytes HBB	0.450275760355234	True
+catboost	4	Enterocytes BEST4	0.4163950123666704	True
+catboost	4	Epithelial cells METTL12 MAFB	0.36200136762731944	True
+catboost	4	Epithelial Cycling cells	0.3581209419665982	True
+catboost	4	Macrophages	0.24510943175747682	True
+catboost	4	Epithelial HBB HBA	0.22790099977957706	True
+catboost	4	Endothelial cells CD36	0.21039189091187188	True
+catboost	4	Pericytes HIGD1B STEAP4	0.20226579787489923	True
+catboost	4	ILCs	0.19659098046529633	True
+catboost	4	B cells AICDA LRMP	0.19085547357311522	True
+catboost	4	Fibroblasts NPY SLITRK6	0.18417685281064175	True
+catboost	4	NK cells KLRF1 CD3G-	0.1662448806856445	True
+catboost	4	Myofibroblasts HHIP NPNT	0.14131118525409214	True
+catboost	4	Lymphatics	0.13344879391852307	True

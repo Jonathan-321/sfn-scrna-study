@@ -1,0 +1,10 @@
+data/raw/
+data/processed/
+artifacts/
+*.h5ad
+*.h5
+*.loom
+*.rds
+__pycache__/
+*.pyc
+.DS_Store

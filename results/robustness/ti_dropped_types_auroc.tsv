@@ -1,0 +1,19 @@
+cell_type	mean_auroc_5fold	std_auroc_5fold	n_folds_valid	spearman_rho	spearman_p	filter_reason
+Enterochromaffin cells	0.8278	0.0539	5	-0.4589	0.0022	low_variance_or_prevalence
+Monocytes S100A8 S100A9	0.7833	0.2082	5	0.4134	0.0065	low_variance_or_prevalence
+Enterocytes BEST4	0.7389	0.1788	5	-0.3261	0.0351	low_variance_or_prevalence
+DC1	0.7389	0.1985	5	0.387	0.0113	low_variance_or_prevalence
+Macrophages CXCL9 CXCL10	0.7333	0.2098	5	0.3051	0.0495	low_variance_or_prevalence
+Neutrophils S100A8 S100A9	0.7278	0.1975	5	0.5827	0.0001	low_variance_or_prevalence
+Fibroblasts SMOC2 PTGIS	0.7222	0.173	5	0.309	0.0465	low_variance_or_prevalence
+Monocytes CHI3L1 CYP27A1	0.7028	0.0793	5	0.3281	0.0339	low_variance_or_prevalence
+Endothelial cells CA4 CD36	0.6944	0.1591	5	0.1653	0.2956	low_variance_or_prevalence
+Mature DCs	0.6889	0.1633	5	0.3175	0.0405	low_variance_or_prevalence
+Myofibroblasts HHIP NPNT	0.6722	0.1854	5	0.2045	0.1938	low_variance_or_prevalence
+Enterocytes TMIGD1 MEP1A GSTA1	0.6722	0.2021	5	-0.2652	0.0896	low_variance_or_prevalence
+Pericytes HIGD1B STEAP4	0.6667	0.1561	5	0.2131	0.1753	low_variance_or_prevalence
+Endothelial cells LTC4S SEMA3G	0.6167	0.0754	5	0.1306	0.4099	low_variance_or_prevalence
+Monocytes HBB	0.5611	0.228	5	0.1958	0.214	low_variance_or_prevalence
+L cells	0.55	0.2584	5	-0.0522	0.7428	low_variance_or_prevalence
+Pericytes RERGL NTRK2	0.4778	0.1743	5	-0.0594	0.7087	low_variance_or_prevalence
+ILCs	0.4611	0.2419	5	0.013	0.9347	low_variance_or_prevalence

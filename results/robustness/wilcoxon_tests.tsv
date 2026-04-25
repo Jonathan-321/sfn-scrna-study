@@ -1,0 +1,10 @@
+comparison	n_folds	mean_a	mean_b	delta	test	stat	p
+SCP259 CLR global SVM vs SCP259 CLR compartment SVM	5	0.9278	0.9278	0.0	wilcoxon	0.0	1.0
+SCP259 CLR compartment SVM vs SCP259 CFN compartment	5	0.9278	0.9778	-0.05	wilcoxon	0.0	1.0
+SCP259 CFN global vs SCP259 CFN compartment	5	0.9056	0.9778	-0.0722	wilcoxon	0.0	0.5
+SCP259 scVI global XGB vs SCP259 scVI compartment XGB	5	0.725	0.9306	-0.2056	wilcoxon	1.0	0.5
+SCP259 CLR compartment SVM vs SCP259 scVI compartment XGB	5	0.9278	0.9306	-0.0028	wilcoxon	5.0	1.0
+Kong TI CLR (unfiltered) vs Kong TI CFN	5	0.9667	0.8111	0.1556	wilcoxon	0.0	0.125
+Kong TI CLR (unfiltered) vs Kong TI CLR (filtered)	5	0.9667	0.9167	0.05	wilcoxon	2.0	0.375
+Kong colon CLR (unfilt.) vs Kong colon CFN (unfilt.)	5	0.9	0.92	-0.02	wilcoxon	2.0	1.0
+Kong colon CFN (unfilt.) vs Kong colon CFN (filtered)	5	0.92	0.96	-0.04	wilcoxon	0.0	0.5

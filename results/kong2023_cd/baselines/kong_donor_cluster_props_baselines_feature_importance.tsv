@@ -1,0 +1,751 @@
+run_name	model	fold	feature	importance
+kong_donor_cluster_props_baselines	logreg	0	Monocytes S100A8 S100A9	0.6533597863899112
+kong_donor_cluster_props_baselines	logreg	0	Stromal Cycling cells	0.606616622651459
+kong_donor_cluster_props_baselines	logreg	0	NK cells KLRF1 CD3G-	0.5644812100722221
+kong_donor_cluster_props_baselines	logreg	0	Goblet cells SPINK4	0.5227974432633454
+kong_donor_cluster_props_baselines	logreg	0	Endothelial cells CA4 CD36	0.5131061425486516
+kong_donor_cluster_props_baselines	logreg	0	T cells CD8	0.4930919128652357
+kong_donor_cluster_props_baselines	logreg	0	Enterocytes BEST4	0.4756803836414058
+kong_donor_cluster_props_baselines	logreg	0	Tregs	0.46233331729146326
+kong_donor_cluster_props_baselines	logreg	0	Goblet cells MUC2 TFF1-	0.4459853131425627
+kong_donor_cluster_props_baselines	logreg	0	Endothelial cells DARC	0.43700353417465426
+kong_donor_cluster_props_baselines	logreg	0	Neutrophils S100A8 S100A9	0.43521789484613255
+kong_donor_cluster_props_baselines	logreg	0	Endothelial cells LTC4S SEMA3G	0.42802265836229747
+kong_donor_cluster_props_baselines	logreg	0	Macrophages	0.4234200280953524
+kong_donor_cluster_props_baselines	logreg	0	Tuft cells	0.40237896551461655
+kong_donor_cluster_props_baselines	logreg	0	Pericytes HIGD1B STEAP4	0.4006028093030047
+kong_donor_cluster_props_baselines	logreg	0	Fibroblasts SFRP2 SLPI	0.3675450425972346
+kong_donor_cluster_props_baselines	logreg	0	Monocytes CHI3L1 CYP27A1	0.3626896501043236
+kong_donor_cluster_props_baselines	logreg	0	DC2 CD1D-	0.35926817947110895
+kong_donor_cluster_props_baselines	logreg	0	DC2 CD1D	0.35613002931656207
+kong_donor_cluster_props_baselines	logreg	0	Macrophages Metallothionein	0.3555608779294226
+kong_donor_cluster_props_baselines	logreg	0	Enterochromaffin cells	0.344525982980506
+kong_donor_cluster_props_baselines	logreg	0	Fibroblasts KCNN3 LY6H	0.33177058448868296
+kong_donor_cluster_props_baselines	logreg	0	T cells CD4 FOSB	0.32058100849922555
+kong_donor_cluster_props_baselines	logreg	0	Fibroblasts NPY SLITRK6	0.31493739090445994
+kong_donor_cluster_props_baselines	logreg	0	DC1	0.3125283468426431
+kong_donor_cluster_props_baselines	logreg	0	Epithelial HBB HBA	0.2974335200176368
+kong_donor_cluster_props_baselines	logreg	0	Lymphatics	0.28637876309583266
+kong_donor_cluster_props_baselines	logreg	0	Epithelial cells METTL12 MAFB	0.2668200017947336
+kong_donor_cluster_props_baselines	logreg	0	Glial cells	0.25925199021962025
+kong_donor_cluster_props_baselines	logreg	0	L cells	0.2449197098777396
+kong_donor_cluster_props_baselines	logreg	0	Stem cells OLFM4 LGR5	0.24318906051746372
+kong_donor_cluster_props_baselines	logreg	0	ILCs	0.22952214398939713
+kong_donor_cluster_props_baselines	logreg	0	Fibroblasts SMOC2 PTGIS	0.22136611847262075
+kong_donor_cluster_props_baselines	logreg	0	B cells	0.2196779133681931
+kong_donor_cluster_props_baselines	logreg	0	Macrophages LYVE1	0.2154805254722312
+kong_donor_cluster_props_baselines	logreg	0	Enterocytes CA1 CA2 CA4-	0.20525928449733058
+kong_donor_cluster_props_baselines	logreg	0	Monocytes HBB	0.19295883924639387
+kong_donor_cluster_props_baselines	logreg	0	Paneth cells	0.1919418915913242
+kong_donor_cluster_props_baselines	logreg	0	Macrophages PLA2G2D	0.1836392731950227
+kong_donor_cluster_props_baselines	logreg	0	Stem cells OLFM4	0.18226178044291086
+kong_donor_cluster_props_baselines	logreg	0	Mature DCs	0.17679159083448945
+kong_donor_cluster_props_baselines	logreg	0	Inflammatory fibroblasts IL11 CHI3L1	0.17187579949690673
+kong_donor_cluster_props_baselines	logreg	0	Mast cells	0.16543846936289067
+kong_donor_cluster_props_baselines	logreg	0	Macrophages CXCL9 CXCL10	0.16398326815865713
+kong_donor_cluster_props_baselines	logreg	0	Plasma cells	0.15671190595690165
+kong_donor_cluster_props_baselines	logreg	0	Stem cells OLFM4 PCNA	0.14626552542644464
+kong_donor_cluster_props_baselines	logreg	0	Endothelial cells CD36	0.1419192427047664
+kong_donor_cluster_props_baselines	logreg	0	Pericytes RERGL NTRK2	0.13887498469716278
+kong_donor_cluster_props_baselines	logreg	0	Fibroblasts ADAMDEC1	0.1344196237753257
+kong_donor_cluster_props_baselines	logreg	0	Goblet cells MUC2 TFF1	0.1172148363579217
+kong_donor_cluster_props_baselines	linear_svm	0	Enterocytes BEST4	0.2696517928893994
+kong_donor_cluster_props_baselines	linear_svm	0	Stromal Cycling cells	0.2577078140923833
+kong_donor_cluster_props_baselines	linear_svm	0	NK cells KLRF1 CD3G-	0.2525720243407971
+kong_donor_cluster_props_baselines	linear_svm	0	T cells CD8	0.2506661458194145
+kong_donor_cluster_props_baselines	linear_svm	0	Monocytes S100A8 S100A9	0.24212465072153078
+kong_donor_cluster_props_baselines	linear_svm	0	Endothelial cells CA4 CD36	0.23537902260425733
+kong_donor_cluster_props_baselines	linear_svm	0	Macrophages	0.20965824572401498
+kong_donor_cluster_props_baselines	linear_svm	0	Tregs	0.201925113177851
+kong_donor_cluster_props_baselines	linear_svm	0	Goblet cells SPINK4	0.20011328310483495
+kong_donor_cluster_props_baselines	linear_svm	0	Endothelial cells LTC4S SEMA3G	0.19952367569171175
+kong_donor_cluster_props_baselines	linear_svm	0	Fibroblasts SFRP2 SLPI	0.19080334781032457
+kong_donor_cluster_props_baselines	linear_svm	0	T cells CD4 FOSB	0.188668757910548
+kong_donor_cluster_props_baselines	linear_svm	0	Enterochromaffin cells	0.1845435673285027
+kong_donor_cluster_props_baselines	linear_svm	0	Lymphatics	0.17889213061903553
+kong_donor_cluster_props_baselines	linear_svm	0	L cells	0.17444255760176075
+kong_donor_cluster_props_baselines	linear_svm	0	DC2 CD1D-	0.17186871145423338
+kong_donor_cluster_props_baselines	linear_svm	0	Goblet cells MUC2 TFF1-	0.17077285814411425
+kong_donor_cluster_props_baselines	linear_svm	0	Endothelial cells DARC	0.16661837140311908
+kong_donor_cluster_props_baselines	linear_svm	0	Macrophages Metallothionein	0.16496224354989575
+kong_donor_cluster_props_baselines	linear_svm	0	Pericytes HIGD1B STEAP4	0.16051764678740835
+kong_donor_cluster_props_baselines	linear_svm	0	DC2 CD1D	0.15590921304081248
+kong_donor_cluster_props_baselines	linear_svm	0	NK-like cells ID3 ENTPD1	0.15534397709765663
+kong_donor_cluster_props_baselines	linear_svm	0	Fibroblasts KCNN3 LY6H	0.14683302886350194
+kong_donor_cluster_props_baselines	linear_svm	0	Epithelial HBB HBA	0.14498714058044265
+kong_donor_cluster_props_baselines	linear_svm	0	Epithelial cells METTL12 MAFB	0.1439583177006496
+kong_donor_cluster_props_baselines	linear_svm	0	Plasma cells	0.1340262967204538
+kong_donor_cluster_props_baselines	linear_svm	0	DC1	0.13242790987090636
+kong_donor_cluster_props_baselines	linear_svm	0	Stem cells OLFM4 LGR5	0.12331902466313079
+kong_donor_cluster_props_baselines	linear_svm	0	Monocytes CHI3L1 CYP27A1	0.11992639783636516
+kong_donor_cluster_props_baselines	linear_svm	0	Fibroblasts NPY SLITRK6	0.11968097939716975
+kong_donor_cluster_props_baselines	linear_svm	0	Stem cells OLFM4 PCNA	0.1145847404772778
+kong_donor_cluster_props_baselines	linear_svm	0	Tuft cells	0.10805132154203737
+kong_donor_cluster_props_baselines	linear_svm	0	Macrophages CXCL9 CXCL10	0.10771605543599294
+kong_donor_cluster_props_baselines	linear_svm	0	Endothelial cells CD36	0.10617447095782807
+kong_donor_cluster_props_baselines	linear_svm	0	Paneth cells	0.1031731136899889
+kong_donor_cluster_props_baselines	linear_svm	0	Fibroblasts SMOC2 PTGIS	0.10216413148800674
+kong_donor_cluster_props_baselines	linear_svm	0	Enterocytes CA1 CA2 CA4-	0.10194774756879105
+kong_donor_cluster_props_baselines	linear_svm	0	Goblet cells MUC2 TFF1	0.10116946907212601
+kong_donor_cluster_props_baselines	linear_svm	0	T cells CD4 IL17A	0.0967718285869014
+kong_donor_cluster_props_baselines	linear_svm	0	Mature DCs	0.09547444942696975
+kong_donor_cluster_props_baselines	linear_svm	0	Glial cells	0.09158363587615562
+kong_donor_cluster_props_baselines	linear_svm	0	Neutrophils S100A8 S100A9	0.08318328143707163
+kong_donor_cluster_props_baselines	linear_svm	0	Pericytes RERGL NTRK2	0.07671743822673655
+kong_donor_cluster_props_baselines	linear_svm	0	Macrophages LYVE1	0.07622234049355966
+kong_donor_cluster_props_baselines	linear_svm	0	ILCs	0.0740143207498512
+kong_donor_cluster_props_baselines	linear_svm	0	Fibroblasts ADAMDEC1	0.06576481044656689
+kong_donor_cluster_props_baselines	linear_svm	0	B cells	0.06450117021414123
+kong_donor_cluster_props_baselines	linear_svm	0	Macrophages PLA2G2D	0.0586124476559662
+kong_donor_cluster_props_baselines	linear_svm	0	T cells CD8 KLRG1	0.05224984055320163
+kong_donor_cluster_props_baselines	linear_svm	0	Myofibroblasts HHIP NPNT	0.04803307782425459
+kong_donor_cluster_props_baselines	xgb	0	T cells CD8	0.08107057213783264
+kong_donor_cluster_props_baselines	xgb	0	Stromal Cycling cells	0.08056610077619553
+kong_donor_cluster_props_baselines	xgb	0	Mature DCs	0.052907977253198624
+kong_donor_cluster_props_baselines	xgb	0	Paneth cells	0.05088971555233002
+kong_donor_cluster_props_baselines	xgb	0	Monocytes S100A8 S100A9	0.04487033560872078
+kong_donor_cluster_props_baselines	xgb	0	Endothelial cells DARC	0.04348193481564522
+kong_donor_cluster_props_baselines	xgb	0	Myofibroblasts HHIP NPNT	0.04226982221007347
+kong_donor_cluster_props_baselines	xgb	0	DC2 CD1D-	0.038848258554935455
+kong_donor_cluster_props_baselines	xgb	0	Tuft cells	0.033552978187799454
+kong_donor_cluster_props_baselines	xgb	0	Monocytes CHI3L1 CYP27A1	0.032557424157857895
+kong_donor_cluster_props_baselines	xgb	0	Tregs	0.03253043442964554
+kong_donor_cluster_props_baselines	xgb	0	Enterocytes CA1 CA2 CA4-	0.029573984444141388
+kong_donor_cluster_props_baselines	xgb	0	Stem cells OLFM4	0.027153830975294113
+kong_donor_cluster_props_baselines	xgb	0	Macrophages LYVE1	0.02700464427471161
+kong_donor_cluster_props_baselines	xgb	0	Goblet cells MUC2 TFF1-	0.02625562623143196
+kong_donor_cluster_props_baselines	xgb	0	NK-like cells ID3 ENTPD1	0.02578195184469223
+kong_donor_cluster_props_baselines	xgb	0	T cells OGT	0.025396864861249924
+kong_donor_cluster_props_baselines	xgb	0	T cells CD4 FOSB	0.02450452744960785
+kong_donor_cluster_props_baselines	xgb	0	Glial cells	0.022348590195178986
+kong_donor_cluster_props_baselines	xgb	0	Pericytes HIGD1B STEAP4	0.022094132378697395
+kong_donor_cluster_props_baselines	xgb	0	B cells AICDA LRMP	0.020388860255479813
+kong_donor_cluster_props_baselines	xgb	0	Enterochromaffin cells	0.018993942067027092
+kong_donor_cluster_props_baselines	xgb	0	Endothelial cells CD36	0.0181940495967865
+kong_donor_cluster_props_baselines	xgb	0	Fibroblasts SFRP2 SLPI	0.016073092818260193
+kong_donor_cluster_props_baselines	xgb	0	DC1	0.015208058059215546
+kong_donor_cluster_props_baselines	xgb	0	B cells	0.014733272604644299
+kong_donor_cluster_props_baselines	xgb	0	Macrophages Metallothionein	0.011696171946823597
+kong_donor_cluster_props_baselines	xgb	0	Lymphatics	0.011151831597089767
+kong_donor_cluster_props_baselines	xgb	0	Monocytes HBB	0.010859092697501183
+kong_donor_cluster_props_baselines	xgb	0	Epithelial cells METTL12 MAFB	0.009886271320283413
+kong_donor_cluster_props_baselines	xgb	0	Fibroblasts SMOC2 PTGIS	0.009225884452462196
+kong_donor_cluster_props_baselines	xgb	0	Activated fibroblasts CCL19 ADAMADEC1	0.008905231952667236
+kong_donor_cluster_props_baselines	xgb	0	Endothelial cells CA4 CD36	0.007292951922863722
+kong_donor_cluster_props_baselines	xgb	0	Macrophages CXCL9 CXCL10	0.006852122955024242
+kong_donor_cluster_props_baselines	xgb	0	Goblet cells SPINK4	0.006676080171018839
+kong_donor_cluster_props_baselines	xgb	0	Fibroblasts KCNN3 LY6H	0.006589515600353479
+kong_donor_cluster_props_baselines	xgb	0	Myofibroblasts GREM1 GREM2	0.0059775481931865215
+kong_donor_cluster_props_baselines	xgb	0	NK cells KLRF1 CD3G-	0.005596034694463015
+kong_donor_cluster_props_baselines	xgb	0	Enteroendocrine cells	0.005466959439218044
+kong_donor_cluster_props_baselines	xgb	0	Cycling cells	0.005386099684983492
+kong_donor_cluster_props_baselines	xgb	0	Stem cells OLFM4 PCNA	0.00442902185022831
+kong_donor_cluster_props_baselines	xgb	0	DC2 CD1D	0.004321516025811434
+kong_donor_cluster_props_baselines	xgb	0	Enterocytes TMIGD1 MEP1A	0.0038034841418266296
+kong_donor_cluster_props_baselines	xgb	0	IELs ID3 ENTPD1	0.0027238342445343733
+kong_donor_cluster_props_baselines	xgb	0	Mast cells	0.0023359376937150955
+kong_donor_cluster_props_baselines	xgb	0	Fibroblasts NPY SLITRK6	0.0015415006782859564
+kong_donor_cluster_props_baselines	xgb	0	Fibroblasts ADAMDEC1	0.0011792295845225453
+kong_donor_cluster_props_baselines	xgb	0	ILCs	0.0006845855386927724
+kong_donor_cluster_props_baselines	xgb	0	Epithelial Cycling cells	0.0001681355497566983
+kong_donor_cluster_props_baselines	xgb	0	Immune Cycling cells	0.0
+kong_donor_cluster_props_baselines	logreg	1	Stromal Cycling cells	0.8033336845297744
+kong_donor_cluster_props_baselines	logreg	1	Monocytes S100A8 S100A9	0.7581811528814321
+kong_donor_cluster_props_baselines	logreg	1	NK cells KLRF1 CD3G-	0.7151771879534977
+kong_donor_cluster_props_baselines	logreg	1	Goblet cells SPINK4	0.6447039843515784
+kong_donor_cluster_props_baselines	logreg	1	T cells CD4 FOSB	0.5829378398477646
+kong_donor_cluster_props_baselines	logreg	1	Monocytes CHI3L1 CYP27A1	0.5749424933187341
+kong_donor_cluster_props_baselines	logreg	1	Neutrophils S100A8 S100A9	0.4511120144765792
+kong_donor_cluster_props_baselines	logreg	1	T cells CD8	0.4388780243970823
+kong_donor_cluster_props_baselines	logreg	1	Macrophages	0.4284484411580303
+kong_donor_cluster_props_baselines	logreg	1	Fibroblasts NPY SLITRK6	0.4053619098252952
+kong_donor_cluster_props_baselines	logreg	1	DC1	0.40422978370035845
+kong_donor_cluster_props_baselines	logreg	1	Macrophages CXCL9 CXCL10	0.3954899125193858
+kong_donor_cluster_props_baselines	logreg	1	T cells Naive CD4	0.39278764034472097
+kong_donor_cluster_props_baselines	logreg	1	Pericytes HIGD1B STEAP4	0.3886993593210935
+kong_donor_cluster_props_baselines	logreg	1	Activated fibroblasts CCL19 ADAMADEC1	0.3717916787994348
+kong_donor_cluster_props_baselines	logreg	1	Fibroblasts SFRP2 SLPI	0.34906883689689144
+kong_donor_cluster_props_baselines	logreg	1	Endothelial cells DARC	0.3105627900071027
+kong_donor_cluster_props_baselines	logreg	1	DC2 CD1D-	0.30961961492579493
+kong_donor_cluster_props_baselines	logreg	1	Epithelial Cycling cells	0.3053319273986981
+kong_donor_cluster_props_baselines	logreg	1	Lymphatics	0.3045410675832845
+kong_donor_cluster_props_baselines	logreg	1	Endothelial cells CD36	0.29667075345896216
+kong_donor_cluster_props_baselines	logreg	1	Tuft cells	0.27833646051788774
+kong_donor_cluster_props_baselines	logreg	1	Inflammatory fibroblasts IL11 CHI3L1	0.27695421130739667
+kong_donor_cluster_props_baselines	logreg	1	Enterocytes CA1 CA2 CA4-	0.2708290981680859
+kong_donor_cluster_props_baselines	logreg	1	Macrophages LYVE1	0.24994717278314169
+kong_donor_cluster_props_baselines	logreg	1	Endothelial cells CA4 CD36	0.24346602742910828
+kong_donor_cluster_props_baselines	logreg	1	Enterocytes BEST4	0.23047250489564666
+kong_donor_cluster_props_baselines	logreg	1	Glial cells	0.22178648123966302
+kong_donor_cluster_props_baselines	logreg	1	Fibroblasts ADAMDEC1	0.21902615467071287
+kong_donor_cluster_props_baselines	logreg	1	Enterochromaffin cells	0.21092582000141255
+kong_donor_cluster_props_baselines	logreg	1	Goblet cells MUC2 TFF1	0.21060610992169684
+kong_donor_cluster_props_baselines	logreg	1	DC2 CD1D	0.2073374689481264
+kong_donor_cluster_props_baselines	logreg	1	Mature DCs	0.2035727281619413
+kong_donor_cluster_props_baselines	logreg	1	Stem cells OLFM4 LGR5	0.20213325360938328
+kong_donor_cluster_props_baselines	logreg	1	Mast cells	0.20069736504209337
+kong_donor_cluster_props_baselines	logreg	1	Enteroendocrine cells	0.2001513969177239
+kong_donor_cluster_props_baselines	logreg	1	Endothelial cells LTC4S SEMA3G	0.1977759979623391
+kong_donor_cluster_props_baselines	logreg	1	T cells CD4 IL17A	0.1852310075407546
+kong_donor_cluster_props_baselines	logreg	1	Epithelial cells METTL12 MAFB	0.1776240090431724
+kong_donor_cluster_props_baselines	logreg	1	T cells CD8 KLRG1	0.17433432768920942
+kong_donor_cluster_props_baselines	logreg	1	T cells OGT	0.17355926591073803
+kong_donor_cluster_props_baselines	logreg	1	Macrophages PLA2G2D	0.1721672347944247
+kong_donor_cluster_props_baselines	logreg	1	Pericytes RERGL NTRK2	0.16848282534212602
+kong_donor_cluster_props_baselines	logreg	1	B cells	0.16814972589692015
+kong_donor_cluster_props_baselines	logreg	1	Fibroblasts KCNN3 LY6H	0.16610920796432355
+kong_donor_cluster_props_baselines	logreg	1	Macrophages Metallothionein	0.16080178050146074
+kong_donor_cluster_props_baselines	logreg	1	Stem cells OLFM4 PCNA	0.1554071345305698
+kong_donor_cluster_props_baselines	logreg	1	L cells	0.15317427185252877
+kong_donor_cluster_props_baselines	logreg	1	Enterocytes TMIGD1 MEP1A GSTA1	0.15087414009927044
+kong_donor_cluster_props_baselines	logreg	1	Cycling cells	0.11850297535712216
+kong_donor_cluster_props_baselines	linear_svm	1	Goblet cells SPINK4	0.364651184191536
+kong_donor_cluster_props_baselines	linear_svm	1	Stromal Cycling cells	0.3635209447200969
+kong_donor_cluster_props_baselines	linear_svm	1	Macrophages CXCL9 CXCL10	0.31447128737940533
+kong_donor_cluster_props_baselines	linear_svm	1	NK cells KLRF1 CD3G-	0.2966821796106106
+kong_donor_cluster_props_baselines	linear_svm	1	Monocytes S100A8 S100A9	0.2893500790330331
+kong_donor_cluster_props_baselines	linear_svm	1	T cells CD4 FOSB	0.2884127875999689
+kong_donor_cluster_props_baselines	linear_svm	1	Macrophages	0.2512957599702878
+kong_donor_cluster_props_baselines	linear_svm	1	DC2 CD1D-	0.23544095561241288
+kong_donor_cluster_props_baselines	linear_svm	1	Activated fibroblasts CCL19 ADAMADEC1	0.23418380548166678
+kong_donor_cluster_props_baselines	linear_svm	1	Monocytes CHI3L1 CYP27A1	0.22505430238548468
+kong_donor_cluster_props_baselines	linear_svm	1	Mast cells	0.2248226905995926
+kong_donor_cluster_props_baselines	linear_svm	1	Enteroendocrine cells	0.21991049583224928
+kong_donor_cluster_props_baselines	linear_svm	1	DC1	0.21750214242588067
+kong_donor_cluster_props_baselines	linear_svm	1	Enterocytes CA1 CA2 CA4-	0.20215476353410777
+kong_donor_cluster_props_baselines	linear_svm	1	T cells Naive CD4	0.20156916818377624
+kong_donor_cluster_props_baselines	linear_svm	1	Lymphatics	0.18279027518376967
+kong_donor_cluster_props_baselines	linear_svm	1	Fibroblasts NPY SLITRK6	0.1825485360055844
+kong_donor_cluster_props_baselines	linear_svm	1	Pericytes HIGD1B STEAP4	0.17928521691733096
+kong_donor_cluster_props_baselines	linear_svm	1	Pericytes RERGL NTRK2	0.16100798755228185
+kong_donor_cluster_props_baselines	linear_svm	1	T cells CD8	0.15701415062691976
+kong_donor_cluster_props_baselines	linear_svm	1	Goblet cells MUC2 TFF1	0.15202883569589568
+kong_donor_cluster_props_baselines	linear_svm	1	Neutrophils S100A8 S100A9	0.14975415952842142
+kong_donor_cluster_props_baselines	linear_svm	1	Fibroblasts SFRP2 SLPI	0.14137619717306277
+kong_donor_cluster_props_baselines	linear_svm	1	Macrophages LYVE1	0.14019529609057546
+kong_donor_cluster_props_baselines	linear_svm	1	Fibroblasts ADAMDEC1	0.13470244074554802
+kong_donor_cluster_props_baselines	linear_svm	1	Epithelial cells METTL12 MAFB	0.13373817678542307
+kong_donor_cluster_props_baselines	linear_svm	1	Inflammatory fibroblasts IL11 CHI3L1	0.13252291530591775
+kong_donor_cluster_props_baselines	linear_svm	1	B cells	0.13232774980371292
+kong_donor_cluster_props_baselines	linear_svm	1	NK-like cells ID3 ENTPD1	0.1288398087003672
+kong_donor_cluster_props_baselines	linear_svm	1	Epithelial Cycling cells	0.12834580189800507
+kong_donor_cluster_props_baselines	linear_svm	1	Endothelial cells CA4 CD36	0.1259005479798564
+kong_donor_cluster_props_baselines	linear_svm	1	Stem cells OLFM4 LGR5	0.12382908977093364
+kong_donor_cluster_props_baselines	linear_svm	1	Enterocytes BEST4	0.12046469258644896
+kong_donor_cluster_props_baselines	linear_svm	1	Goblet cells MUC2 TFF1-	0.11011333861798307
+kong_donor_cluster_props_baselines	linear_svm	1	Glial cells	0.10242334743869132
+kong_donor_cluster_props_baselines	linear_svm	1	Enterochromaffin cells	0.10091823434932656
+kong_donor_cluster_props_baselines	linear_svm	1	DC2 CD1D	0.09962407589682919
+kong_donor_cluster_props_baselines	linear_svm	1	L cells	0.09185354082943419
+kong_donor_cluster_props_baselines	linear_svm	1	Endothelial cells CD36	0.0875865301183708
+kong_donor_cluster_props_baselines	linear_svm	1	Enterocytes TMIGD1 MEP1A GSTA1	0.08649240490763825
+kong_donor_cluster_props_baselines	linear_svm	1	Endothelial cells DARC	0.08600143590034588
+kong_donor_cluster_props_baselines	linear_svm	1	Endothelial cells LTC4S SEMA3G	0.08567334820361554
+kong_donor_cluster_props_baselines	linear_svm	1	T cells OGT	0.07297587267656569
+kong_donor_cluster_props_baselines	linear_svm	1	Stem cells OLFM4	0.06982682692276898
+kong_donor_cluster_props_baselines	linear_svm	1	T cells CD8 KLRG1	0.05907112232676888
+kong_donor_cluster_props_baselines	linear_svm	1	Cycling cells	0.05549862918868173
+kong_donor_cluster_props_baselines	linear_svm	1	Mature DCs	0.05518697659492952
+kong_donor_cluster_props_baselines	linear_svm	1	Fibroblasts SMOC2 PTGIS	0.05324943718229863
+kong_donor_cluster_props_baselines	linear_svm	1	Stem cells OLFM4 GSTA1	0.04950145063075901
+kong_donor_cluster_props_baselines	linear_svm	1	IELs ID3 ENTPD1	0.04853062308849529
+kong_donor_cluster_props_baselines	xgb	1	Neutrophils S100A8 S100A9	0.1282617449760437
+kong_donor_cluster_props_baselines	xgb	1	T cells CD8 KLRG1	0.05757475271821022
+kong_donor_cluster_props_baselines	xgb	1	Monocytes CHI3L1 CYP27A1	0.05581285059452057
+kong_donor_cluster_props_baselines	xgb	1	T cells CD8	0.05080636590719223
+kong_donor_cluster_props_baselines	xgb	1	Mature DCs	0.04626923054456711
+kong_donor_cluster_props_baselines	xgb	1	Immune Cycling cells	0.045795440673828125
+kong_donor_cluster_props_baselines	xgb	1	T cells CD4 IL17A	0.04161632061004639
+kong_donor_cluster_props_baselines	xgb	1	Enterocytes TMIGD1 MEP1A	0.03638337552547455
+kong_donor_cluster_props_baselines	xgb	1	Tuft cells	0.03394291177392006
+kong_donor_cluster_props_baselines	xgb	1	Monocytes S100A8 S100A9	0.03156541660428047
+kong_donor_cluster_props_baselines	xgb	1	Paneth cells	0.028959937393665314
+kong_donor_cluster_props_baselines	xgb	1	T cells CD4 FOSB	0.02398381382226944
+kong_donor_cluster_props_baselines	xgb	1	Lymphatics	0.01990995556116104
+kong_donor_cluster_props_baselines	xgb	1	Enterocytes BEST4	0.0197274312376976
+kong_donor_cluster_props_baselines	xgb	1	Pericytes RERGL NTRK2	0.01946623995900154
+kong_donor_cluster_props_baselines	xgb	1	Fibroblasts SMOC2 PTGIS	0.019133886322379112
+kong_donor_cluster_props_baselines	xgb	1	Endothelial cells DARC	0.019023073837161064
+kong_donor_cluster_props_baselines	xgb	1	Goblet cells MUC2 TFF1	0.018840476870536804
+kong_donor_cluster_props_baselines	xgb	1	Inflammatory fibroblasts IL11 CHI3L1	0.015710176900029182
+kong_donor_cluster_props_baselines	xgb	1	Endothelial cells CD36	0.015561033971607685
+kong_donor_cluster_props_baselines	xgb	1	DC2 CD1D	0.015557502396404743
+kong_donor_cluster_props_baselines	xgb	1	Enterochromaffin cells	0.015430742874741554
+kong_donor_cluster_props_baselines	xgb	1	DC2 CD1D-	0.015283959917724133
+kong_donor_cluster_props_baselines	xgb	1	Stem cells OLFM4	0.014865798875689507
+kong_donor_cluster_props_baselines	xgb	1	Myofibroblasts HHIP NPNT	0.014415248297154903
+kong_donor_cluster_props_baselines	xgb	1	DC1	0.013412063010036945
+kong_donor_cluster_props_baselines	xgb	1	Activated fibroblasts CCL19 ADAMADEC1	0.013061104342341423
+kong_donor_cluster_props_baselines	xgb	1	Tregs	0.012540346942842007
+kong_donor_cluster_props_baselines	xgb	1	Cycling cells	0.01170556154102087
+kong_donor_cluster_props_baselines	xgb	1	Glial cells	0.011500339023768902
+kong_donor_cluster_props_baselines	xgb	1	Pericytes HIGD1B STEAP4	0.010977429337799549
+kong_donor_cluster_props_baselines	xgb	1	Fibroblasts SFRP2 SLPI	0.010713723488152027
+kong_donor_cluster_props_baselines	xgb	1	T cells Naive CD4	0.009485235437750816
+kong_donor_cluster_props_baselines	xgb	1	Fibroblasts KCNN3 LY6H	0.009117151610553265
+kong_donor_cluster_props_baselines	xgb	1	Fibroblasts NPY SLITRK6	0.008714322932064533
+kong_donor_cluster_props_baselines	xgb	1	T cells OGT	0.008258132264018059
+kong_donor_cluster_props_baselines	xgb	1	Mast cells	0.00808630883693695
+kong_donor_cluster_props_baselines	xgb	1	Macrophages CCL3 CCL4	0.007988536730408669
+kong_donor_cluster_props_baselines	xgb	1	Goblet cells SPINK4	0.007264550309628248
+kong_donor_cluster_props_baselines	xgb	1	B cells AICDA LRMP	0.00671602226793766
+kong_donor_cluster_props_baselines	xgb	1	Macrophages LYVE1	0.00525637436658144
+kong_donor_cluster_props_baselines	xgb	1	Epithelial cells METTL12 MAFB	0.00509942602366209
+kong_donor_cluster_props_baselines	xgb	1	ILCs	0.0049995724111795425
+kong_donor_cluster_props_baselines	xgb	1	Goblet cells MUC2 TFF1-	0.00480013620108366
+kong_donor_cluster_props_baselines	xgb	1	NK cells KLRF1 CD3G-	0.004492116626352072
+kong_donor_cluster_props_baselines	xgb	1	Macrophages CXCL9 CXCL10	0.004316554870456457
+kong_donor_cluster_props_baselines	xgb	1	Fibroblasts ADAMDEC1	0.0038368767127394676
+kong_donor_cluster_props_baselines	xgb	1	Stem cells OLFM4 PCNA	0.003806354943662882
+kong_donor_cluster_props_baselines	xgb	1	B cells	0.003767172107473016
+kong_donor_cluster_props_baselines	xgb	1	Stem cells OLFM4 LGR5	0.0034318461548537016
+kong_donor_cluster_props_baselines	logreg	2	NK cells KLRF1 CD3G-	0.7838862389298714
+kong_donor_cluster_props_baselines	logreg	2	T cells CD8	0.771744211289579
+kong_donor_cluster_props_baselines	logreg	2	Stromal Cycling cells	0.7300383266733026
+kong_donor_cluster_props_baselines	logreg	2	Goblet cells SPINK4	0.681385688533413
+kong_donor_cluster_props_baselines	logreg	2	DC1	0.6330538092851753
+kong_donor_cluster_props_baselines	logreg	2	Endothelial cells CA4 CD36	0.59931902196078
+kong_donor_cluster_props_baselines	logreg	2	Tuft cells	0.5149294568460638
+kong_donor_cluster_props_baselines	logreg	2	Pericytes HIGD1B STEAP4	0.4562510397826895
+kong_donor_cluster_props_baselines	logreg	2	Macrophages Metallothionein	0.44408960848482854
+kong_donor_cluster_props_baselines	logreg	2	Mast cells	0.41165700785603065
+kong_donor_cluster_props_baselines	logreg	2	Tregs	0.4100134164035485
+kong_donor_cluster_props_baselines	logreg	2	Monocytes S100A8 S100A9	0.40530441081718194
+kong_donor_cluster_props_baselines	logreg	2	Enterochromaffin cells	0.3919263880281848
+kong_donor_cluster_props_baselines	logreg	2	T cells CD4 FOSB	0.37864988505261143
+kong_donor_cluster_props_baselines	logreg	2	Lymphatics	0.3600700772167917
+kong_donor_cluster_props_baselines	logreg	2	Cycling cells	0.35789179758872136
+kong_donor_cluster_props_baselines	logreg	2	Fibroblasts SFRP2 SLPI	0.3425930419026942
+kong_donor_cluster_props_baselines	logreg	2	Monocytes CHI3L1 CYP27A1	0.3310499373722928
+kong_donor_cluster_props_baselines	logreg	2	Fibroblasts NPY SLITRK6	0.3199106321900943
+kong_donor_cluster_props_baselines	logreg	2	Endothelial cells LTC4S SEMA3G	0.3048170654657011
+kong_donor_cluster_props_baselines	logreg	2	Endothelial cells DARC	0.3046804583790323
+kong_donor_cluster_props_baselines	logreg	2	T cells OGT	0.30015500445328086
+kong_donor_cluster_props_baselines	logreg	2	Goblet cells MUC2 TFF1	0.2922552357957396
+kong_donor_cluster_props_baselines	logreg	2	NK-like cells ID3 ENTPD1	0.2761601643757994
+kong_donor_cluster_props_baselines	logreg	2	Stem cells OLFM4 PCNA	0.27369884221247587
+kong_donor_cluster_props_baselines	logreg	2	Fibroblasts KCNN3 LY6H	0.26216220062924545
+kong_donor_cluster_props_baselines	logreg	2	Macrophages LYVE1	0.24696535238559197
+kong_donor_cluster_props_baselines	logreg	2	Neutrophils S100A8 S100A9	0.24381710260786407
+kong_donor_cluster_props_baselines	logreg	2	Enterocytes CA1 CA2 CA4-	0.24328050993874253
+kong_donor_cluster_props_baselines	logreg	2	Macrophages	0.22825636917945252
+kong_donor_cluster_props_baselines	logreg	2	Macrophages PLA2G2D	0.22729391173685629
+kong_donor_cluster_props_baselines	logreg	2	Epithelial cells METTL12 MAFB	0.21489632572514894
+kong_donor_cluster_props_baselines	logreg	2	DC2 CD1D	0.21113488284676227
+kong_donor_cluster_props_baselines	logreg	2	DC2 CD1D-	0.2021926107069407
+kong_donor_cluster_props_baselines	logreg	2	Epithelial Cycling cells	0.2010734387987452
+kong_donor_cluster_props_baselines	logreg	2	Stem cells OLFM4 LGR5	0.18921251419615753
+kong_donor_cluster_props_baselines	logreg	2	Activated fibroblasts CCL19 ADAMADEC1	0.17350354470663815
+kong_donor_cluster_props_baselines	logreg	2	T cells Naive CD4	0.17094384087045592
+kong_donor_cluster_props_baselines	logreg	2	T cells CD4 IL17A	0.168746084404026
+kong_donor_cluster_props_baselines	logreg	2	Macrophages CCL3 CCL4	0.16855484906889742
+kong_donor_cluster_props_baselines	logreg	2	Stem cells OLFM4	0.16610467782298993
+kong_donor_cluster_props_baselines	logreg	2	L cells	0.15803184708032506
+kong_donor_cluster_props_baselines	logreg	2	ILCs	0.1563357201551338
+kong_donor_cluster_props_baselines	logreg	2	Endothelial cells CD36	0.15289519752238154
+kong_donor_cluster_props_baselines	logreg	2	Fibroblasts ADAMDEC1	0.143359890342154
+kong_donor_cluster_props_baselines	logreg	2	Paneth cells	0.13895772605032486
+kong_donor_cluster_props_baselines	logreg	2	Monocytes HBB	0.11456263335768585
+kong_donor_cluster_props_baselines	logreg	2	Enterocytes BEST4	0.10890195749624366
+kong_donor_cluster_props_baselines	logreg	2	Fibroblasts SMOC2 PTGIS	0.10554183763239808
+kong_donor_cluster_props_baselines	logreg	2	Macrophages CXCL9 CXCL10	0.09841694836106979
+kong_donor_cluster_props_baselines	linear_svm	2	T cells CD8	0.36228292923252214
+kong_donor_cluster_props_baselines	linear_svm	2	Stromal Cycling cells	0.3406919958065927
+kong_donor_cluster_props_baselines	linear_svm	2	NK cells KLRF1 CD3G-	0.29726811071074616
+kong_donor_cluster_props_baselines	linear_svm	2	DC1	0.2877759529471659
+kong_donor_cluster_props_baselines	linear_svm	2	Endothelial cells CA4 CD36	0.27676627671574644
+kong_donor_cluster_props_baselines	linear_svm	2	Pericytes HIGD1B STEAP4	0.23975573441421796
+kong_donor_cluster_props_baselines	linear_svm	2	Tuft cells	0.2177298283956016
+kong_donor_cluster_props_baselines	linear_svm	2	Lymphatics	0.21611128250085948
+kong_donor_cluster_props_baselines	linear_svm	2	Macrophages Metallothionein	0.2080319668794302
+kong_donor_cluster_props_baselines	linear_svm	2	NK-like cells ID3 ENTPD1	0.20732423551635723
+kong_donor_cluster_props_baselines	linear_svm	2	T cells CD4 FOSB	0.198015461662293
+kong_donor_cluster_props_baselines	linear_svm	2	Goblet cells SPINK4	0.19615343924118261
+kong_donor_cluster_props_baselines	linear_svm	2	Fibroblasts SFRP2 SLPI	0.19319791280167373
+kong_donor_cluster_props_baselines	linear_svm	2	Mast cells	0.18694181972775797
+kong_donor_cluster_props_baselines	linear_svm	2	Cycling cells	0.18689809640263252
+kong_donor_cluster_props_baselines	linear_svm	2	Enterochromaffin cells	0.17319280836844494
+kong_donor_cluster_props_baselines	linear_svm	2	Paneth cells	0.1615387527699364
+kong_donor_cluster_props_baselines	linear_svm	2	Fibroblasts NPY SLITRK6	0.15862986950240282
+kong_donor_cluster_props_baselines	linear_svm	2	DC2 CD1D-	0.14981153125644592
+kong_donor_cluster_props_baselines	linear_svm	2	Endothelial cells CD36	0.14620522918754664
+kong_donor_cluster_props_baselines	linear_svm	2	Goblet cells MUC2 TFF1	0.14510198178564196
+kong_donor_cluster_props_baselines	linear_svm	2	Tregs	0.14327851945705913
+kong_donor_cluster_props_baselines	linear_svm	2	Stem cells OLFM4 PCNA	0.13529728230735497
+kong_donor_cluster_props_baselines	linear_svm	2	Endothelial cells LTC4S SEMA3G	0.13444571242758033
+kong_donor_cluster_props_baselines	linear_svm	2	T cells OGT	0.1341543453581241
+kong_donor_cluster_props_baselines	linear_svm	2	Goblet cells MUC2 TFF1-	0.1308905141661862
+kong_donor_cluster_props_baselines	linear_svm	2	Macrophages PLA2G2D	0.12610153255298767
+kong_donor_cluster_props_baselines	linear_svm	2	Fibroblasts KCNN3 LY6H	0.12168961573748405
+kong_donor_cluster_props_baselines	linear_svm	2	Macrophages	0.11950524244905485
+kong_donor_cluster_props_baselines	linear_svm	2	Enterocytes CA1 CA2 CA4-	0.11946679106776326
+kong_donor_cluster_props_baselines	linear_svm	2	Monocytes CHI3L1 CYP27A1	0.11689999367906664
+kong_donor_cluster_props_baselines	linear_svm	2	Macrophages LYVE1	0.1113099459903739
+kong_donor_cluster_props_baselines	linear_svm	2	Epithelial Cycling cells	0.11013865046636795
+kong_donor_cluster_props_baselines	linear_svm	2	Macrophages CCL3 CCL4	0.10666842152404454
+kong_donor_cluster_props_baselines	linear_svm	2	Endothelial cells DARC	0.10263939956175151
+kong_donor_cluster_props_baselines	linear_svm	2	B cells AICDA LRMP	0.0993630215907359
+kong_donor_cluster_props_baselines	linear_svm	2	Stem cells OLFM4	0.09644565165892782
+kong_donor_cluster_props_baselines	linear_svm	2	Activated fibroblasts CCL19 ADAMADEC1	0.09477964113782217
+kong_donor_cluster_props_baselines	linear_svm	2	T cells CD4 IL17A	0.09141173018592726
+kong_donor_cluster_props_baselines	linear_svm	2	Monocytes HBB	0.09020881485908674
+kong_donor_cluster_props_baselines	linear_svm	2	Epithelial cells METTL12 MAFB	0.08784320638757116
+kong_donor_cluster_props_baselines	linear_svm	2	Stem cells OLFM4 LGR5	0.08389167178947671
+kong_donor_cluster_props_baselines	linear_svm	2	Enterocytes TMIGD1 MEP1A GSTA1	0.07472082461011892
+kong_donor_cluster_props_baselines	linear_svm	2	T cells Naive CD4	0.07397540437497926
+kong_donor_cluster_props_baselines	linear_svm	2	DC2 CD1D	0.07378962295383863
+kong_donor_cluster_props_baselines	linear_svm	2	L cells	0.0731541203595366
+kong_donor_cluster_props_baselines	linear_svm	2	Neutrophils S100A8 S100A9	0.06250539865956288
+kong_donor_cluster_props_baselines	linear_svm	2	Monocytes S100A8 S100A9	0.0606260102809202
+kong_donor_cluster_props_baselines	linear_svm	2	Glial cells	0.05428979081440163
+kong_donor_cluster_props_baselines	linear_svm	2	Plasma cells	0.052211285746220956
+kong_donor_cluster_props_baselines	xgb	2	Enterocytes BEST4	0.08588013797998428
+kong_donor_cluster_props_baselines	xgb	2	Monocytes S100A8 S100A9	0.06009500101208687
+kong_donor_cluster_props_baselines	xgb	2	T cells CD4 FOSB	0.050355277955532074
+kong_donor_cluster_props_baselines	xgb	2	Enterocytes CA1 CA2 CA4-	0.04776085913181305
+kong_donor_cluster_props_baselines	xgb	2	Mature DCs	0.04462239891290665
+kong_donor_cluster_props_baselines	xgb	2	Fibroblasts NPY SLITRK6	0.041582316160202026
+kong_donor_cluster_props_baselines	xgb	2	Tuft cells	0.0387054868042469
+kong_donor_cluster_props_baselines	xgb	2	B cells AICDA LRMP	0.03100515343248844
+kong_donor_cluster_props_baselines	xgb	2	Stem cells OLFM4	0.030294356867671013
+kong_donor_cluster_props_baselines	xgb	2	Endothelial cells CA4 CD36	0.02888110838830471
+kong_donor_cluster_props_baselines	xgb	2	T cells Naive CD4	0.02741430699825287
+kong_donor_cluster_props_baselines	xgb	2	Fibroblasts SFRP2 SLPI	0.02709187939763069
+kong_donor_cluster_props_baselines	xgb	2	DC1	0.026093432679772377
+kong_donor_cluster_props_baselines	xgb	2	Goblet cells SPINK4	0.024728266522288322
+kong_donor_cluster_props_baselines	xgb	2	Macrophages LYVE1	0.024278920143842697
+kong_donor_cluster_props_baselines	xgb	2	DC2 CD1D	0.023619934916496277
+kong_donor_cluster_props_baselines	xgb	2	T cells CD8	0.023231126368045807
+kong_donor_cluster_props_baselines	xgb	2	Macrophages CCL3 CCL4	0.02164996787905693
+kong_donor_cluster_props_baselines	xgb	2	Endothelial cells LTC4S SEMA3G	0.021485699340701103
+kong_donor_cluster_props_baselines	xgb	2	Enterocytes TMIGD1 MEP1A GSTA1	0.019770175218582153
+kong_donor_cluster_props_baselines	xgb	2	Stromal Cycling cells	0.01789359748363495
+kong_donor_cluster_props_baselines	xgb	2	NK-like cells ID3 ENTPD1	0.016580818220973015
+kong_donor_cluster_props_baselines	xgb	2	Goblet cells MUC2 TFF1	0.015898367390036583
+kong_donor_cluster_props_baselines	xgb	2	Paneth cells	0.015726646408438683
+kong_donor_cluster_props_baselines	xgb	2	Fibroblasts KCNN3 LY6H	0.015497718006372452
+kong_donor_cluster_props_baselines	xgb	2	Macrophages	0.015248465351760387
+kong_donor_cluster_props_baselines	xgb	2	Glial cells	0.0149749256670475
+kong_donor_cluster_props_baselines	xgb	2	Endothelial cells DARC	0.014357510022819042
+kong_donor_cluster_props_baselines	xgb	2	Macrophages Metallothionein	0.013083399273455143
+kong_donor_cluster_props_baselines	xgb	2	Stem cells OLFM4 PCNA	0.012433081865310669
+kong_donor_cluster_props_baselines	xgb	2	T cells OGT	0.012076189741492271
+kong_donor_cluster_props_baselines	xgb	2	Endothelial cells CD36	0.011235472746193409
+kong_donor_cluster_props_baselines	xgb	2	ILCs	0.011070515029132366
+kong_donor_cluster_props_baselines	xgb	2	NK cells KLRF1 CD3G-	0.010673497803509235
+kong_donor_cluster_props_baselines	xgb	2	Pericytes HIGD1B STEAP4	0.010427068918943405
+kong_donor_cluster_props_baselines	xgb	2	DC2 CD1D-	0.010059444233775139
+kong_donor_cluster_props_baselines	xgb	2	Fibroblasts ADAMDEC1	0.01001705415546894
+kong_donor_cluster_props_baselines	xgb	2	Cycling cells	0.009407066740095615
+kong_donor_cluster_props_baselines	xgb	2	Enterocytes TMIGD1 MEP1A	0.008969038724899292
+kong_donor_cluster_props_baselines	xgb	2	Enterochromaffin cells	0.007853424176573753
+kong_donor_cluster_props_baselines	xgb	2	Plasma cells	0.007313821464776993
+kong_donor_cluster_props_baselines	xgb	2	Activated fibroblasts CCL19 ADAMADEC1	0.00723150372505188
+kong_donor_cluster_props_baselines	xgb	2	Macrophages CXCL9 CXCL10	0.007120178081095219
+kong_donor_cluster_props_baselines	xgb	2	Monocytes CHI3L1 CYP27A1	0.006376432720571756
+kong_donor_cluster_props_baselines	xgb	2	Epithelial Cycling cells	0.005824639927595854
+kong_donor_cluster_props_baselines	xgb	2	Goblet cells MUC2 TFF1-	0.005274064838886261
+kong_donor_cluster_props_baselines	xgb	2	B cells	0.004929140210151672
+kong_donor_cluster_props_baselines	xgb	2	Tregs	0.0032359061297029257
+kong_donor_cluster_props_baselines	xgb	2	T cells CD4 IL17A	0.0006652470328845084
+kong_donor_cluster_props_baselines	xgb	2	IELs ID3 ENTPD1	0.0
+kong_donor_cluster_props_baselines	logreg	3	Stromal Cycling cells	0.9848264961785473
+kong_donor_cluster_props_baselines	logreg	3	NK cells KLRF1 CD3G-	0.7441900995554894
+kong_donor_cluster_props_baselines	logreg	3	Monocytes CHI3L1 CYP27A1	0.6243428008506489
+kong_donor_cluster_props_baselines	logreg	3	Goblet cells SPINK4	0.5726805197024283
+kong_donor_cluster_props_baselines	logreg	3	Pericytes HIGD1B STEAP4	0.5313479617204607
+kong_donor_cluster_props_baselines	logreg	3	Endothelial cells CA4 CD36	0.5241433851271144
+kong_donor_cluster_props_baselines	logreg	3	DC1	0.5142527786229802
+kong_donor_cluster_props_baselines	logreg	3	Tuft cells	0.5114110696722345
+kong_donor_cluster_props_baselines	logreg	3	Monocytes S100A8 S100A9	0.4882286700193258
+kong_donor_cluster_props_baselines	logreg	3	Tregs	0.4449701023653813
+kong_donor_cluster_props_baselines	logreg	3	Endothelial cells LTC4S SEMA3G	0.436979258255195
+kong_donor_cluster_props_baselines	logreg	3	Neutrophils S100A8 S100A9	0.43421174483438096
+kong_donor_cluster_props_baselines	logreg	3	T cells CD8	0.4199019852791339
+kong_donor_cluster_props_baselines	logreg	3	T cells CD4 FOSB	0.4012683506275873
+kong_donor_cluster_props_baselines	logreg	3	DC2 CD1D	0.3966593734763479
+kong_donor_cluster_props_baselines	logreg	3	Macrophages	0.3931952234022071
+kong_donor_cluster_props_baselines	logreg	3	Stem cells OLFM4 LGR5	0.3824946711585627
+kong_donor_cluster_props_baselines	logreg	3	Macrophages Metallothionein	0.37994530410117155
+kong_donor_cluster_props_baselines	logreg	3	Mature DCs	0.3372416359726793
+kong_donor_cluster_props_baselines	logreg	3	Endothelial cells DARC	0.3316725456044711
+kong_donor_cluster_props_baselines	logreg	3	NK-like cells ID3 ENTPD1	0.30474190970283066
+kong_donor_cluster_props_baselines	logreg	3	Plasma cells	0.2975586349265564
+kong_donor_cluster_props_baselines	logreg	3	Epithelial cells METTL12 MAFB	0.28132832483828063
+kong_donor_cluster_props_baselines	logreg	3	B cells AICDA LRMP	0.28123150769469535
+kong_donor_cluster_props_baselines	logreg	3	Inflammatory fibroblasts IL11 CHI3L1	0.27096634714011136
+kong_donor_cluster_props_baselines	logreg	3	Mast cells	0.2646204987833414
+kong_donor_cluster_props_baselines	logreg	3	DC2 CD1D-	0.2592327951534475
+kong_donor_cluster_props_baselines	logreg	3	Fibroblasts SFRP2 SLPI	0.254335976474211
+kong_donor_cluster_props_baselines	logreg	3	Macrophages LYVE1	0.22402658964599073
+kong_donor_cluster_props_baselines	logreg	3	T cells CD8 KLRG1	0.21994395863394883
+kong_donor_cluster_props_baselines	logreg	3	L cells	0.19174244311446542
+kong_donor_cluster_props_baselines	logreg	3	Activated fibroblasts CCL19 ADAMADEC1	0.19109512450333432
+kong_donor_cluster_props_baselines	logreg	3	Fibroblasts KCNN3 LY6H	0.18151652862933013
+kong_donor_cluster_props_baselines	logreg	3	T cells Naive CD4	0.1691962333758381
+kong_donor_cluster_props_baselines	logreg	3	B cells	0.15800558982827906
+kong_donor_cluster_props_baselines	logreg	3	T cells OGT	0.15511182852067495
+kong_donor_cluster_props_baselines	logreg	3	Macrophages CXCL9 CXCL10	0.15461644242616931
+kong_donor_cluster_props_baselines	logreg	3	Lymphatics	0.1523024694013974
+kong_donor_cluster_props_baselines	logreg	3	Enterocytes CA1 CA2 CA4-	0.14963620119499316
+kong_donor_cluster_props_baselines	logreg	3	Enterochromaffin cells	0.14934913701263647
+kong_donor_cluster_props_baselines	logreg	3	Enterocytes TMIGD1 MEP1A	0.14874642836437427
+kong_donor_cluster_props_baselines	logreg	3	Myofibroblasts HHIP NPNT	0.11633277948212505
+kong_donor_cluster_props_baselines	logreg	3	Cycling cells	0.09953081520745395
+kong_donor_cluster_props_baselines	logreg	3	Macrophages CCL3 CCL4	0.09941604263011299
+kong_donor_cluster_props_baselines	logreg	3	Fibroblasts SMOC2 PTGIS	0.09573039938471603
+kong_donor_cluster_props_baselines	logreg	3	Myofibroblasts GREM1 GREM2	0.09002805222619889
+kong_donor_cluster_props_baselines	logreg	3	Immune Cycling cells	0.08691626238752358
+kong_donor_cluster_props_baselines	logreg	3	Stem cells OLFM4 PCNA	0.07627755083095912
+kong_donor_cluster_props_baselines	logreg	3	Fibroblasts NPY SLITRK6	0.07377841603141459
+kong_donor_cluster_props_baselines	logreg	3	Macrophages PLA2G2D	0.07357263056406949
+kong_donor_cluster_props_baselines	linear_svm	3	Stromal Cycling cells	0.49251897616666623
+kong_donor_cluster_props_baselines	linear_svm	3	Endothelial cells CA4 CD36	0.3349662583864216
+kong_donor_cluster_props_baselines	linear_svm	3	Pericytes HIGD1B STEAP4	0.3087693162113748
+kong_donor_cluster_props_baselines	linear_svm	3	DC1	0.2746483147782892
+kong_donor_cluster_props_baselines	linear_svm	3	Macrophages	0.2727215391948176
+kong_donor_cluster_props_baselines	linear_svm	3	Tregs	0.26696852789445213
+kong_donor_cluster_props_baselines	linear_svm	3	NK-like cells ID3 ENTPD1	0.2550367953049988
+kong_donor_cluster_props_baselines	linear_svm	3	Monocytes CHI3L1 CYP27A1	0.2526782260325165
+kong_donor_cluster_props_baselines	linear_svm	3	Tuft cells	0.2510344639128974
+kong_donor_cluster_props_baselines	linear_svm	3	NK cells KLRF1 CD3G-	0.24906370892730897
+kong_donor_cluster_props_baselines	linear_svm	3	Endothelial cells LTC4S SEMA3G	0.24416977453646763
+kong_donor_cluster_props_baselines	linear_svm	3	Stem cells OLFM4 LGR5	0.237990641784449
+kong_donor_cluster_props_baselines	linear_svm	3	DC2 CD1D	0.2185942801076165
+kong_donor_cluster_props_baselines	linear_svm	3	Goblet cells SPINK4	0.2133335438671463
+kong_donor_cluster_props_baselines	linear_svm	3	T cells CD4 FOSB	0.20606803666005344
+kong_donor_cluster_props_baselines	linear_svm	3	B cells	0.19887308978620744
+kong_donor_cluster_props_baselines	linear_svm	3	DC2 CD1D-	0.17292452075716225
+kong_donor_cluster_props_baselines	linear_svm	3	T cells CD8	0.17208616234245702
+kong_donor_cluster_props_baselines	linear_svm	3	Plasma cells	0.17013957056201803
+kong_donor_cluster_props_baselines	linear_svm	3	B cells AICDA LRMP	0.16676473534748895
+kong_donor_cluster_props_baselines	linear_svm	3	Epithelial cells METTL12 MAFB	0.16244546915071106
+kong_donor_cluster_props_baselines	linear_svm	3	Mature DCs	0.15890038873151513
+kong_donor_cluster_props_baselines	linear_svm	3	Endothelial cells DARC	0.15206026833061465
+kong_donor_cluster_props_baselines	linear_svm	3	Macrophages CXCL9 CXCL10	0.14880222188300746
+kong_donor_cluster_props_baselines	linear_svm	3	Neutrophils S100A8 S100A9	0.13063376378646144
+kong_donor_cluster_props_baselines	linear_svm	3	Goblet cells MUC2 TFF1-	0.12699312487406336
+kong_donor_cluster_props_baselines	linear_svm	3	Macrophages Metallothionein	0.12299689066912048
+kong_donor_cluster_props_baselines	linear_svm	3	Monocytes S100A8 S100A9	0.12005171918917364
+kong_donor_cluster_props_baselines	linear_svm	3	Enterocytes CA1 CA2 CA4-	0.11565177052875288
+kong_donor_cluster_props_baselines	linear_svm	3	Lymphatics	0.11435071210962816
+kong_donor_cluster_props_baselines	linear_svm	3	L cells	0.10892815246465486
+kong_donor_cluster_props_baselines	linear_svm	3	Activated fibroblasts CCL19 ADAMADEC1	0.10884613556308328
+kong_donor_cluster_props_baselines	linear_svm	3	ILCs	0.10238564838375583
+kong_donor_cluster_props_baselines	linear_svm	3	T cells Naive CD4	0.10168854916184397
+kong_donor_cluster_props_baselines	linear_svm	3	Enterocytes BEST4	0.09829374802696902
+kong_donor_cluster_props_baselines	linear_svm	3	Fibroblasts SFRP2 SLPI	0.09560394441751799
+kong_donor_cluster_props_baselines	linear_svm	3	Macrophages LYVE1	0.09512457019720585
+kong_donor_cluster_props_baselines	linear_svm	3	T cells OGT	0.09462283476541812
+kong_donor_cluster_props_baselines	linear_svm	3	Inflammatory fibroblasts IL11 CHI3L1	0.09398963295021046
+kong_donor_cluster_props_baselines	linear_svm	3	Fibroblasts KCNN3 LY6H	0.091598664857708
+kong_donor_cluster_props_baselines	linear_svm	3	Enterocytes TMIGD1 MEP1A	0.088269269282058
+kong_donor_cluster_props_baselines	linear_svm	3	T cells CD4 IL17A	0.08774758250607273
+kong_donor_cluster_props_baselines	linear_svm	3	T cells CD8 KLRG1	0.08688315098275223
+kong_donor_cluster_props_baselines	linear_svm	3	Enterocytes TMIGD1 MEP1A GSTA1	0.07242566789985769
+kong_donor_cluster_props_baselines	linear_svm	3	Glial cells	0.0717446536899541
+kong_donor_cluster_props_baselines	linear_svm	3	Macrophages CCL3 CCL4	0.06824331207703796
+kong_donor_cluster_props_baselines	linear_svm	3	Monocytes HBB	0.06217490608646615
+kong_donor_cluster_props_baselines	linear_svm	3	Paneth cells	0.060887973454894384
+kong_donor_cluster_props_baselines	linear_svm	3	Macrophages PLA2G2D	0.057544489952347955
+kong_donor_cluster_props_baselines	linear_svm	3	Pericytes RERGL NTRK2	0.05634028722222287
+kong_donor_cluster_props_baselines	xgb	3	DC2 CD1D-	0.07351444661617279
+kong_donor_cluster_props_baselines	xgb	3	Enterocytes BEST4	0.07171934098005295
+kong_donor_cluster_props_baselines	xgb	3	Stromal Cycling cells	0.05864434689283371
+kong_donor_cluster_props_baselines	xgb	3	Endothelial cells DARC	0.0577595978975296
+kong_donor_cluster_props_baselines	xgb	3	Enterocytes TMIGD1 MEP1A GSTA1	0.05601364001631737
+kong_donor_cluster_props_baselines	xgb	3	T cells CD8	0.049621470272541046
+kong_donor_cluster_props_baselines	xgb	3	Mature DCs	0.047537773847579956
+kong_donor_cluster_props_baselines	xgb	3	Tuft cells	0.04144793003797531
+kong_donor_cluster_props_baselines	xgb	3	Endothelial cells LTC4S SEMA3G	0.031142540276050568
+kong_donor_cluster_props_baselines	xgb	3	DC1	0.030994519591331482
+kong_donor_cluster_props_baselines	xgb	3	Stem cells OLFM4 PCNA	0.029729504138231277
+kong_donor_cluster_props_baselines	xgb	3	Monocytes S100A8 S100A9	0.028287691995501518
+kong_donor_cluster_props_baselines	xgb	3	Enterochromaffin cells	0.025375384837388992
+kong_donor_cluster_props_baselines	xgb	3	Endothelial cells CA4 CD36	0.0242131520062685
+kong_donor_cluster_props_baselines	xgb	3	Pericytes HIGD1B STEAP4	0.024211466312408447
+kong_donor_cluster_props_baselines	xgb	3	Stem cells OLFM4	0.02265988476574421
+kong_donor_cluster_props_baselines	xgb	3	T cells CD4 FOSB	0.02009095810353756
+kong_donor_cluster_props_baselines	xgb	3	Mast cells	0.01954563893377781
+kong_donor_cluster_props_baselines	xgb	3	Stem cells OLFM4 LGR5	0.018356049433350563
+kong_donor_cluster_props_baselines	xgb	3	Fibroblasts NPY SLITRK6	0.01719970814883709
+kong_donor_cluster_props_baselines	xgb	3	Enterocytes TMIGD1 MEP1A	0.01681329309940338
+kong_donor_cluster_props_baselines	xgb	3	Macrophages CCL3 CCL4	0.01676071062684059
+kong_donor_cluster_props_baselines	xgb	3	Myofibroblasts GREM1 GREM2	0.014601757749915123
+kong_donor_cluster_props_baselines	xgb	3	NK-like cells ID3 ENTPD1	0.014578851871192455
+kong_donor_cluster_props_baselines	xgb	3	Endothelial cells CD36	0.013896727003157139
+kong_donor_cluster_props_baselines	xgb	3	Fibroblasts SMOC2 PTGIS	0.01256550569087267
+kong_donor_cluster_props_baselines	xgb	3	T cells CD8 KLRG1	0.011724142357707024
+kong_donor_cluster_props_baselines	xgb	3	L cells	0.011521668173372746
+kong_donor_cluster_props_baselines	xgb	3	Plasma cells	0.011013035662472248
+kong_donor_cluster_props_baselines	xgb	3	Fibroblasts SFRP2 SLPI	0.009717882610857487
+kong_donor_cluster_props_baselines	xgb	3	Epithelial Cycling cells	0.009673557244241238
+kong_donor_cluster_props_baselines	xgb	3	Lymphatics	0.009577927179634571
+kong_donor_cluster_props_baselines	xgb	3	T cells Naive CD4	0.009448658674955368
+kong_donor_cluster_props_baselines	xgb	3	Paneth cells	0.00920427031815052
+kong_donor_cluster_props_baselines	xgb	3	Goblet cells SPINK4	0.008621497079730034
+kong_donor_cluster_props_baselines	xgb	3	Monocytes CHI3L1 CYP27A1	0.00808559637516737
+kong_donor_cluster_props_baselines	xgb	3	Macrophages CXCL9 CXCL10	0.007343404460698366
+kong_donor_cluster_props_baselines	xgb	3	Activated fibroblasts CCL19 ADAMADEC1	0.007129854056984186
+kong_donor_cluster_props_baselines	xgb	3	Glial cells	0.006678965408354998
+kong_donor_cluster_props_baselines	xgb	3	ILCs	0.0064688813872635365
+kong_donor_cluster_props_baselines	xgb	3	Fibroblasts KCNN3 LY6H	0.006109434645622969
+kong_donor_cluster_props_baselines	xgb	3	NK cells KLRF1 CD3G-	0.005860814359039068
+kong_donor_cluster_props_baselines	xgb	3	T cells CD4 IL17A	0.005739786196500063
+kong_donor_cluster_props_baselines	xgb	3	Macrophages LYVE1	0.0048369551077485085
+kong_donor_cluster_props_baselines	xgb	3	DC2 CD1D	0.004479032941162586
+kong_donor_cluster_props_baselines	xgb	3	IELs ID3 ENTPD1	0.004137265030294657
+kong_donor_cluster_props_baselines	xgb	3	Fibroblasts ADAMDEC1	0.0023833755403757095
+kong_donor_cluster_props_baselines	xgb	3	Macrophages	0.0015763816190883517
+kong_donor_cluster_props_baselines	xgb	3	Enteroendocrine cells	0.0013857356971129775
+kong_donor_cluster_props_baselines	xgb	3	Goblet cells MUC2 TFF1-	0.0
+kong_donor_cluster_props_baselines	logreg	4	Goblet cells SPINK4	0.9190720442833215
+kong_donor_cluster_props_baselines	logreg	4	T cells CD8	0.6650071588783617
+kong_donor_cluster_props_baselines	logreg	4	Monocytes S100A8 S100A9	0.6458320345562402
+kong_donor_cluster_props_baselines	logreg	4	Tuft cells	0.6172549767034384
+kong_donor_cluster_props_baselines	logreg	4	Mature DCs	0.5347206604405347
+kong_donor_cluster_props_baselines	logreg	4	Monocytes CHI3L1 CYP27A1	0.5327242936991868
+kong_donor_cluster_props_baselines	logreg	4	Mast cells	0.5154517048132785
+kong_donor_cluster_props_baselines	logreg	4	Macrophages	0.48690003085787537
+kong_donor_cluster_props_baselines	logreg	4	Enterocytes BEST4	0.4661814377261209
+kong_donor_cluster_props_baselines	logreg	4	Endothelial cells CA4 CD36	0.4513352328236166
+kong_donor_cluster_props_baselines	logreg	4	Stromal Cycling cells	0.44530498402407337
+kong_donor_cluster_props_baselines	logreg	4	Paneth cells	0.4452555400771622
+kong_donor_cluster_props_baselines	logreg	4	DC1	0.422068246846451
+kong_donor_cluster_props_baselines	logreg	4	T cells CD4 FOSB	0.41788668552981956
+kong_donor_cluster_props_baselines	logreg	4	Enterochromaffin cells	0.3827444488652077
+kong_donor_cluster_props_baselines	logreg	4	Macrophages Metallothionein	0.379694283538552
+kong_donor_cluster_props_baselines	logreg	4	Tregs	0.37868053516128236
+kong_donor_cluster_props_baselines	logreg	4	Neutrophils S100A8 S100A9	0.3664037492145842
+kong_donor_cluster_props_baselines	logreg	4	Fibroblasts SFRP2 SLPI	0.36536931280580387
+kong_donor_cluster_props_baselines	logreg	4	Stem cells OLFM4	0.29699822791004354
+kong_donor_cluster_props_baselines	logreg	4	Endothelial cells LTC4S SEMA3G	0.28574982749121614
+kong_donor_cluster_props_baselines	logreg	4	Fibroblasts KCNN3 LY6H	0.27862882865542415
+kong_donor_cluster_props_baselines	logreg	4	Enterocytes CA1 CA2 CA4-	0.25099048888962155
+kong_donor_cluster_props_baselines	logreg	4	DC2 CD1D	0.24994088626475602
+kong_donor_cluster_props_baselines	logreg	4	Enterocytes TMIGD1 MEP1A GSTA1	0.24951336504819874
+kong_donor_cluster_props_baselines	logreg	4	T cells OGT	0.23977851116262408
+kong_donor_cluster_props_baselines	logreg	4	Macrophages LYVE1	0.23499007964139945
+kong_donor_cluster_props_baselines	logreg	4	Pericytes HIGD1B STEAP4	0.22168040310041875
+kong_donor_cluster_props_baselines	logreg	4	DC2 CD1D-	0.21563539129373382
+kong_donor_cluster_props_baselines	logreg	4	IELs ID3 ENTPD1	0.20414736632937186
+kong_donor_cluster_props_baselines	logreg	4	Inflammatory fibroblasts IL11 CHI3L1	0.20344882752638788
+kong_donor_cluster_props_baselines	logreg	4	T cells Naive CD4	0.19854906560932462
+kong_donor_cluster_props_baselines	logreg	4	Plasma cells	0.1913370169919325
+kong_donor_cluster_props_baselines	logreg	4	Fibroblasts NPY SLITRK6	0.1894457527776091
+kong_donor_cluster_props_baselines	logreg	4	Goblet cells MUC2 TFF1	0.17814071303061182
+kong_donor_cluster_props_baselines	logreg	4	Endothelial cells DARC	0.17462634584106337
+kong_donor_cluster_props_baselines	logreg	4	NK cells KLRF1 CD3G-	0.1597375092373044
+kong_donor_cluster_props_baselines	logreg	4	Enteroendocrine cells	0.1544536458632094
+kong_donor_cluster_props_baselines	logreg	4	Macrophages CXCL9 CXCL10	0.147422116356006
+kong_donor_cluster_props_baselines	logreg	4	Myofibroblasts HHIP NPNT	0.1390390759861461
+kong_donor_cluster_props_baselines	logreg	4	Endothelial cells CD36	0.13566033782382242
+kong_donor_cluster_props_baselines	logreg	4	Macrophages PLA2G2D	0.11559785802606855
+kong_donor_cluster_props_baselines	logreg	4	Activated fibroblasts CCL19 ADAMADEC1	0.11516375183207885
+kong_donor_cluster_props_baselines	logreg	4	T cells CD4 IL17A	0.11313215014257527
+kong_donor_cluster_props_baselines	logreg	4	T cells CD8 KLRG1	0.11213561525015799
+kong_donor_cluster_props_baselines	logreg	4	Glial cells	0.09110891491182478
+kong_donor_cluster_props_baselines	logreg	4	Epithelial HBB HBA	0.09097797660791172
+kong_donor_cluster_props_baselines	logreg	4	Monocytes HBB	0.08982531468987762
+kong_donor_cluster_props_baselines	logreg	4	Pericytes RERGL NTRK2	0.08613991158832168
+kong_donor_cluster_props_baselines	logreg	4	Stem cells OLFM4 GSTA1	0.07777291756696975
+kong_donor_cluster_props_baselines	linear_svm	4	Goblet cells SPINK4	0.4007138776260033
+kong_donor_cluster_props_baselines	linear_svm	4	T cells CD8	0.3388609210982363
+kong_donor_cluster_props_baselines	linear_svm	4	Tuft cells	0.29222187680417067
+kong_donor_cluster_props_baselines	linear_svm	4	Macrophages	0.29162283009987117
+kong_donor_cluster_props_baselines	linear_svm	4	Paneth cells	0.287636848051319
+kong_donor_cluster_props_baselines	linear_svm	4	Monocytes S100A8 S100A9	0.27581370507647873
+kong_donor_cluster_props_baselines	linear_svm	4	Endothelial cells CA4 CD36	0.23609134018175676
+kong_donor_cluster_props_baselines	linear_svm	4	Mast cells	0.21959923006996132
+kong_donor_cluster_props_baselines	linear_svm	4	DC1	0.21266490799791804
+kong_donor_cluster_props_baselines	linear_svm	4	Mature DCs	0.21222349488242676
+kong_donor_cluster_props_baselines	linear_svm	4	T cells CD4 FOSB	0.2085793277321107
+kong_donor_cluster_props_baselines	linear_svm	4	Enterochromaffin cells	0.2081735615520695
+kong_donor_cluster_props_baselines	linear_svm	4	Monocytes CHI3L1 CYP27A1	0.20532756287869883
+kong_donor_cluster_props_baselines	linear_svm	4	Tregs	0.19215052457851955
+kong_donor_cluster_props_baselines	linear_svm	4	Macrophages Metallothionein	0.19072014958382283
+kong_donor_cluster_props_baselines	linear_svm	4	Enterocytes CA1 CA2 CA4-	0.18580400579807932
+kong_donor_cluster_props_baselines	linear_svm	4	Enterocytes BEST4	0.1809487873369436
+kong_donor_cluster_props_baselines	linear_svm	4	Fibroblasts SFRP2 SLPI	0.17525335868052924
+kong_donor_cluster_props_baselines	linear_svm	4	Stem cells OLFM4	0.16440563144789602
+kong_donor_cluster_props_baselines	linear_svm	4	Enterocytes TMIGD1 MEP1A GSTA1	0.1393315519379169
+kong_donor_cluster_props_baselines	linear_svm	4	Glial cells	0.13506761557867547
+kong_donor_cluster_props_baselines	linear_svm	4	T cells Naive CD4	0.13239308176375794
+kong_donor_cluster_props_baselines	linear_svm	4	Endothelial cells LTC4S SEMA3G	0.1313659209807368
+kong_donor_cluster_props_baselines	linear_svm	4	Stromal Cycling cells	0.13040163489620446
+kong_donor_cluster_props_baselines	linear_svm	4	Fibroblasts KCNN3 LY6H	0.11950834156199269
+kong_donor_cluster_props_baselines	linear_svm	4	DC2 CD1D-	0.1185845133305212
+kong_donor_cluster_props_baselines	linear_svm	4	IELs ID3 ENTPD1	0.11403900261183295
+kong_donor_cluster_props_baselines	linear_svm	4	Goblet cells MUC2 TFF1-	0.1127336966445231
+kong_donor_cluster_props_baselines	linear_svm	4	T cells OGT	0.10817745443084092
+kong_donor_cluster_props_baselines	linear_svm	4	DC2 CD1D	0.10056925003794369
+kong_donor_cluster_props_baselines	linear_svm	4	Goblet cells MUC2 TFF1	0.10037419707173567
+kong_donor_cluster_props_baselines	linear_svm	4	Plasma cells	0.09135487015428242
+kong_donor_cluster_props_baselines	linear_svm	4	Neutrophils S100A8 S100A9	0.08508175588657094
+kong_donor_cluster_props_baselines	linear_svm	4	Pericytes HIGD1B STEAP4	0.08407005174269906
+kong_donor_cluster_props_baselines	linear_svm	4	Activated fibroblasts CCL19 ADAMADEC1	0.0776052486388155
+kong_donor_cluster_props_baselines	linear_svm	4	Macrophages LYVE1	0.07594340158867716
+kong_donor_cluster_props_baselines	linear_svm	4	Myofibroblasts HHIP NPNT	0.07553963377563278
+kong_donor_cluster_props_baselines	linear_svm	4	Endothelial cells CD36	0.07146111311150756
+kong_donor_cluster_props_baselines	linear_svm	4	Epithelial Cycling cells	0.07045092028178651
+kong_donor_cluster_props_baselines	linear_svm	4	Fibroblasts NPY SLITRK6	0.06915700696661789
+kong_donor_cluster_props_baselines	linear_svm	4	Inflammatory fibroblasts IL11 CHI3L1	0.061421490626395486
+kong_donor_cluster_props_baselines	linear_svm	4	T cells CD8 KLRG1	0.060699967135510804
+kong_donor_cluster_props_baselines	linear_svm	4	Fibroblasts ADAMDEC1	0.05950721447737873
+kong_donor_cluster_props_baselines	linear_svm	4	Enteroendocrine cells	0.054903890460766415
+kong_donor_cluster_props_baselines	linear_svm	4	Stem cells OLFM4 PCNA	0.05401565049196674
+kong_donor_cluster_props_baselines	linear_svm	4	Endothelial cells DARC	0.052288064379045596
+kong_donor_cluster_props_baselines	linear_svm	4	NK-like cells ID3 ENTPD1	0.04882745762931422
+kong_donor_cluster_props_baselines	linear_svm	4	Epithelial HBB HBA	0.04681627750666007
+kong_donor_cluster_props_baselines	linear_svm	4	Immune Cycling cells	0.043874542464510516
+kong_donor_cluster_props_baselines	linear_svm	4	NK cells KLRF1 CD3G-	0.03884978475554292
+kong_donor_cluster_props_baselines	xgb	4	Neutrophils S100A8 S100A9	0.07595077902078629
+kong_donor_cluster_props_baselines	xgb	4	T cells OGT	0.07252388447523117
+kong_donor_cluster_props_baselines	xgb	4	Enterocytes TMIGD1 MEP1A GSTA1	0.05548136681318283
+kong_donor_cluster_props_baselines	xgb	4	Endothelial cells DARC	0.05283552035689354
+kong_donor_cluster_props_baselines	xgb	4	Mature DCs	0.05209607258439064
+kong_donor_cluster_props_baselines	xgb	4	Macrophages LYVE1	0.05119512602686882
+kong_donor_cluster_props_baselines	xgb	4	Tuft cells	0.04657520726323128
+kong_donor_cluster_props_baselines	xgb	4	T cells CD8	0.04563907906413078
+kong_donor_cluster_props_baselines	xgb	4	Paneth cells	0.03702247887849808
+kong_donor_cluster_props_baselines	xgb	4	Fibroblasts NPY SLITRK6	0.03649875894188881
+kong_donor_cluster_props_baselines	xgb	4	Monocytes S100A8 S100A9	0.02959088794887066
+kong_donor_cluster_props_baselines	xgb	4	Stromal Cycling cells	0.029587924480438232
+kong_donor_cluster_props_baselines	xgb	4	T cells CD4 FOSB	0.02874932624399662
+kong_donor_cluster_props_baselines	xgb	4	Goblet cells SPINK4	0.028101511299610138
+kong_donor_cluster_props_baselines	xgb	4	Fibroblasts SMOC2 PTGIS	0.02316812425851822
+kong_donor_cluster_props_baselines	xgb	4	Cycling cells	0.021008437499403954
+kong_donor_cluster_props_baselines	xgb	4	Inflammatory fibroblasts IL11 CHI3L1	0.020069479942321777
+kong_donor_cluster_props_baselines	xgb	4	Enterochromaffin cells	0.019725827500224113
+kong_donor_cluster_props_baselines	xgb	4	Stem cells OLFM4	0.01880929060280323
+kong_donor_cluster_props_baselines	xgb	4	DC2 CD1D	0.017241014167666435
+kong_donor_cluster_props_baselines	xgb	4	Monocytes CHI3L1 CYP27A1	0.016841566190123558
+kong_donor_cluster_props_baselines	xgb	4	DC1	0.016612041741609573
+kong_donor_cluster_props_baselines	xgb	4	Stem cells OLFM4 PCNA	0.01609019935131073
+kong_donor_cluster_props_baselines	xgb	4	Endothelial cells CA4 CD36	0.015143495053052902
+kong_donor_cluster_props_baselines	xgb	4	Endothelial cells LTC4S SEMA3G	0.01500936783850193
+kong_donor_cluster_props_baselines	xgb	4	Mast cells	0.01463996060192585
+kong_donor_cluster_props_baselines	xgb	4	Myofibroblasts GREM1 GREM2	0.013761915266513824
+kong_donor_cluster_props_baselines	xgb	4	Goblet cells MUC2 TFF1-	0.013110049068927765
+kong_donor_cluster_props_baselines	xgb	4	Fibroblasts SFRP2 SLPI	0.01307531539350748
+kong_donor_cluster_props_baselines	xgb	4	Glial cells	0.011951347813010216
+kong_donor_cluster_props_baselines	xgb	4	Fibroblasts KCNN3 LY6H	0.010030408389866352
+kong_donor_cluster_props_baselines	xgb	4	B cells	0.007894129492342472
+kong_donor_cluster_props_baselines	xgb	4	Fibroblasts ADAMDEC1	0.007730348967015743
+kong_donor_cluster_props_baselines	xgb	4	Enterocytes BEST4	0.007107414770871401
+kong_donor_cluster_props_baselines	xgb	4	Plasma cells	0.006374394986778498
+kong_donor_cluster_props_baselines	xgb	4	Immune Cycling cells	0.006147648207843304
+kong_donor_cluster_props_baselines	xgb	4	Epithelial HBB HBA	0.005926295183598995
+kong_donor_cluster_props_baselines	xgb	4	NK-like cells ID3 ENTPD1	0.0058524650521576405
+kong_donor_cluster_props_baselines	xgb	4	Macrophages	0.005331641528755426
+kong_donor_cluster_props_baselines	xgb	4	Pericytes HIGD1B STEAP4	0.004815362859517336
+kong_donor_cluster_props_baselines	xgb	4	Macrophages CXCL9 CXCL10	0.0046345945447683334
+kong_donor_cluster_props_baselines	xgb	4	Lymphatics	0.004451942164450884
+kong_donor_cluster_props_baselines	xgb	4	DC2 CD1D-	0.004282249603420496
+kong_donor_cluster_props_baselines	xgb	4	NK cells KLRF1 CD3G-	0.0038979121018201113
+kong_donor_cluster_props_baselines	xgb	4	Stem cells OLFM4 LGR5	0.003882356220856309
+kong_donor_cluster_props_baselines	xgb	4	Macrophages Metallothionein	0.0035355184227228165
+kong_donor_cluster_props_baselines	xgb	4	Activated fibroblasts CCL19 ADAMADEC1	0.0
+kong_donor_cluster_props_baselines	xgb	4	Endothelial cells CD36	0.0
+kong_donor_cluster_props_baselines	xgb	4	ILCs	0.0
+kong_donor_cluster_props_baselines	xgb	4	IELs ID3 ENTPD1	0.0

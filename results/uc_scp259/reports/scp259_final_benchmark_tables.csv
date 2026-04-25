@@ -1,0 +1,23 @@
+table_id,protocol,representation,model,roc_auc,roc_auc_sd,pr_auc,pr_auc_sd,balanced_accuracy,macro_f1,brier,use_case,note
+table1,repeated_5fold_x10,donor_global_composition,logreg,0.936389,0.028851,0.958778,0.019037,0.855000,0.839294,,main_benchmark,Best donor-global composition baseline
+table1,repeated_5fold_x10,donor_global_composition,linear_svm,0.927222,0.034167,0.953556,0.023591,0.850833,0.837889,,main_benchmark,Competitive with logreg
+table1,repeated_5fold_x10,donor_global_composition,xgb,0.878611,0.034223,0.933833,0.020873,0.767500,0.744786,,main_benchmark,Weaker than linear models
+table1,repeated_5fold_x10,donor_global_pseudobulk,xgb,0.997500,0.007906,0.999000,0.003162,0.955000,0.947476,,main_benchmark,Near ceiling
+table1,repeated_5fold_x10,donor_global_pseudobulk,linear_svm,0.992500,0.023717,0.996083,0.012386,0.960000,0.955167,,main_benchmark,Near ceiling
+table1,repeated_5fold_x10,donor_global_pseudobulk,logreg,0.992500,0.023717,0.996083,0.012386,0.940000,0.927929,,main_benchmark,Near ceiling
+table2,lodo,donor_global_composition,logreg,0.949074,,0.960231,,0.875000,0.864253,,robustness_check,Strong under harsher donor-level validation
+table2,lodo,donor_global_composition,linear_svm,0.925926,,0.930716,,0.861111,0.861111,,robustness_check,Confirms robust composition signal
+table2,lodo,donor_global_composition,xgb,0.861111,,0.922762,,0.722222,0.722222,,robustness_check,Again weaker than linear models
+table2,lodo,donor_global_pseudobulk,linear_svm,1.000000,,1.000000,,0.972222,0.965714,,robustness_check,Near-perfect donor separability
+table2,lodo,donor_global_pseudobulk,logreg,1.000000,,1.000000,,0.944444,0.932127,,robustness_check,Near-perfect donor separability
+table2,lodo,donor_global_pseudobulk,xgb,0.990741,,0.994444,,0.972222,0.965714,,robustness_check,Near-perfect donor separability
+table3,frozen_5fold,compartment_composition,linear_svm,0.955556,0.060858,0.966667,0.045644,0.875000,0.864762,,representation_extension,Best compartment-composition baseline
+table3,frozen_5fold,compartment_composition,logreg,0.955556,0.060858,0.966667,0.045644,0.850000,0.830476,,representation_extension,Tied on AUROC
+table3,frozen_5fold,compartment_composition,xgb,0.711111,0.227031,0.842778,0.109702,0.591667,0.560556,,representation_extension,Poor fit in this regime
+table3,frozen_5fold,compartment_pseudobulk,linear_svm,1.000000,0.000000,1.000000,0.000000,0.966667,0.965714,,representation_extension,Near ceiling
+table3,frozen_5fold,compartment_pseudobulk,logreg,1.000000,0.000000,1.000000,0.000000,1.000000,1.000000,,representation_extension,Near ceiling
+table3,frozen_5fold,compartment_pseudobulk,xgb,0.955556,0.099381,0.961111,0.086958,0.908333,0.899048,,representation_extension,Strong but not best
+table4,frozen_5fold,donor_global_composition,cfn_default,0.905556,0.129696,0.944444,0.085617,,,0.164034,cfn_result,Predictive but weak recurring structure
+table4,frozen_5fold,compartment_composition,cfn_default,0.977778,0.049690,0.983333,0.037268,,,0.131972,cfn_result,Better prediction without stability gain
+table4,structural_diagnostics,donor_global_composition,cfn_default,0.905556,,0.944444,,,,0.164034,cfn_structure,Grouped Jaccard 0.0316; sign consistency 0.8980; matrix cosine 0.5366
+table4,structural_diagnostics,compartment_composition,cfn_default,0.977778,,0.983333,,,,0.131972,cfn_structure,Grouped Jaccard 0.0322; sign consistency 0.8980; matrix cosine 0.4507

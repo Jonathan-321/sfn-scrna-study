@@ -1,0 +1,6 @@
+region	fold	model	auroc	pr_auc	n_train	n_test
+colon	0	GatedStructuralCFN	1.0	1.0	27	7
+colon	1	GatedStructuralCFN	1.0	1.0	27	7
+colon	2	GatedStructuralCFN	0.9	0.8333333333333333	27	7
+colon	3	GatedStructuralCFN	0.9	0.8333333333333333	27	7
+colon	4	GatedStructuralCFN	1.0	1.0	28	6

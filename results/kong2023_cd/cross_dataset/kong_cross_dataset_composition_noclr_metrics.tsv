@@ -1,0 +1,4 @@
+model	auroc	pr_auc	accuracy	f1_macro	n_train	n_test	run_name
+logreg	0.6187	0.3369	0.2394	0.1932	30	71	kong_cross_dataset_composition_noclr
+linear_svm	0.6144	0.3374	0.2394	0.1932	30	71	kong_cross_dataset_composition_noclr
+xgb	0.5757	0.2811	0.493	0.4847	30	71	kong_cross_dataset_composition_noclr

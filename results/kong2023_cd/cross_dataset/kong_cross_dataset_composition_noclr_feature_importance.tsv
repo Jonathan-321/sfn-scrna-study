@@ -1,0 +1,154 @@
+feature	importance	model	run_name
+Follicular	0.26306113600730896	logreg	kong_cross_dataset_composition_noclr
+Immature Enterocytes 1	-0.22506846487522125	logreg	kong_cross_dataset_composition_noclr
+CD4+ Memory	0.22499960660934448	logreg	kong_cross_dataset_composition_noclr
+Enterocyte Progenitors	-0.18176549673080444	logreg	kong_cross_dataset_composition_noclr
+Immature Enterocytes 2	-0.13645917177200317	logreg	kong_cross_dataset_composition_noclr
+Tregs	0.08989256620407104	logreg	kong_cross_dataset_composition_noclr
+Inflammatory Fibroblasts	0.0865461602807045	logreg	kong_cross_dataset_composition_noclr
+CD69+ Mast	0.08203272521495819	logreg	kong_cross_dataset_composition_noclr
+CD4+ Activated Fos-lo	-0.07801765948534012	logreg	kong_cross_dataset_composition_noclr
+Cycling TA	-0.07623986899852753	logreg	kong_cross_dataset_composition_noclr
+TA 1	-0.067874975502491	logreg	kong_cross_dataset_composition_noclr
+Secretory TA	-0.0532757006585598	logreg	kong_cross_dataset_composition_noclr
+Post-capillary Venules	0.05018511787056923	logreg	kong_cross_dataset_composition_noclr
+Macrophages	0.04904183745384216	logreg	kong_cross_dataset_composition_noclr
+Enterocytes	-0.04702335596084595	logreg	kong_cross_dataset_composition_noclr
+CD8+ IELs	-0.046344347298145294	logreg	kong_cross_dataset_composition_noclr
+CD8+ LP	0.041396938264369965	logreg	kong_cross_dataset_composition_noclr
+Goblet	-0.03404238447546959	logreg	kong_cross_dataset_composition_noclr
+Endothelial	0.03338753059506416	logreg	kong_cross_dataset_composition_noclr
+Myofibroblasts	0.03284750506281853	logreg	kong_cross_dataset_composition_noclr
+Inflammatory Monocytes	0.03229870647192001	logreg	kong_cross_dataset_composition_noclr
+TA 2	-0.030806459486484528	logreg	kong_cross_dataset_composition_noclr
+Cycling B	0.02918584644794464	logreg	kong_cross_dataset_composition_noclr
+Best4+ Enterocytes	-0.022076334804296494	logreg	kong_cross_dataset_composition_noclr
+WNT2B+ Fos-lo 2	0.021377867087721825	logreg	kong_cross_dataset_composition_noclr
+CD4+ Activated Fos-hi	-0.019813580438494682	logreg	kong_cross_dataset_composition_noclr
+Pericytes	0.01961313746869564	logreg	kong_cross_dataset_composition_noclr
+Immature Goblet	0.016353709623217583	logreg	kong_cross_dataset_composition_noclr
+Plasma	-0.01601036824285984	logreg	kong_cross_dataset_composition_noclr
+Tuft	-0.012902439571917057	logreg	kong_cross_dataset_composition_noclr
+Microvascular	-0.011545870453119278	logreg	kong_cross_dataset_composition_noclr
+GC	0.011061739176511765	logreg	kong_cross_dataset_composition_noclr
+Stem	-0.010732060298323631	logreg	kong_cross_dataset_composition_noclr
+Glia	-0.010429047979414463	logreg	kong_cross_dataset_composition_noclr
+CD8+ IL17+	0.009149473160505295	logreg	kong_cross_dataset_composition_noclr
+WNT2B+ Fos-hi	-0.007520194631069899	logreg	kong_cross_dataset_composition_noclr
+M cells	0.00739012286067009	logreg	kong_cross_dataset_composition_noclr
+Cycling Monocytes	-0.0073019638657569885	logreg	kong_cross_dataset_composition_noclr
+MT-hi	-0.006209124345332384	logreg	kong_cross_dataset_composition_noclr
+CD4+ PD1+	0.005963318515568972	logreg	kong_cross_dataset_composition_noclr
+Enteroendocrine	0.0057531376369297504	logreg	kong_cross_dataset_composition_noclr
+RSPO3+	-0.005612214095890522	logreg	kong_cross_dataset_composition_noclr
+DC2	-0.005341327749192715	logreg	kong_cross_dataset_composition_noclr
+WNT5B+ 2	0.004290757235139608	logreg	kong_cross_dataset_composition_noclr
+CD69- Mast	0.0024428442120552063	logreg	kong_cross_dataset_composition_noclr
+WNT2B+ Fos-lo 1	-0.0023714820854365826	logreg	kong_cross_dataset_composition_noclr
+WNT5B+ 1	-0.0021735664922744036	logreg	kong_cross_dataset_composition_noclr
+Cycling T	0.0020911635365337133	logreg	kong_cross_dataset_composition_noclr
+ILCs	-0.0019121954683214426	logreg	kong_cross_dataset_composition_noclr
+DC1	-0.0010728636989369988	logreg	kong_cross_dataset_composition_noclr
+NKs	-0.00044917510240338743	logreg	kong_cross_dataset_composition_noclr
+Follicular	0.8148175028644254	linear_svm	kong_cross_dataset_composition_noclr
+Immature Enterocytes 1	-0.7370790821775134	linear_svm	kong_cross_dataset_composition_noclr
+CD4+ Memory	0.6616526811158334	linear_svm	kong_cross_dataset_composition_noclr
+Enterocyte Progenitors	-0.635346770526367	linear_svm	kong_cross_dataset_composition_noclr
+Immature Enterocytes 2	-0.4359897372315407	linear_svm	kong_cross_dataset_composition_noclr
+Inflammatory Fibroblasts	0.317853241875441	linear_svm	kong_cross_dataset_composition_noclr
+Tregs	0.3162412672324259	linear_svm	kong_cross_dataset_composition_noclr
+CD69+ Mast	0.31592746960594725	linear_svm	kong_cross_dataset_composition_noclr
+CD4+ Activated Fos-lo	-0.282030335918797	linear_svm	kong_cross_dataset_composition_noclr
+Post-capillary Venules	0.1886900973485091	linear_svm	kong_cross_dataset_composition_noclr
+Cycling TA	-0.1823030484269188	linear_svm	kong_cross_dataset_composition_noclr
+Secretory TA	-0.17129713653944464	linear_svm	kong_cross_dataset_composition_noclr
+CD8+ IELs	-0.1590806281036552	linear_svm	kong_cross_dataset_composition_noclr
+TA 1	-0.15025256144288177	linear_svm	kong_cross_dataset_composition_noclr
+Enterocytes	-0.14435293902884927	linear_svm	kong_cross_dataset_composition_noclr
+Endothelial	0.13050829773087333	linear_svm	kong_cross_dataset_composition_noclr
+Myofibroblasts	0.12687588435583683	linear_svm	kong_cross_dataset_composition_noclr
+Immature Goblet	0.11429903191931662	linear_svm	kong_cross_dataset_composition_noclr
+Inflammatory Monocytes	0.11387336468927486	linear_svm	kong_cross_dataset_composition_noclr
+Macrophages	0.11187686576772843	linear_svm	kong_cross_dataset_composition_noclr
+CD4+ Activated Fos-hi	-0.1063435081804089	linear_svm	kong_cross_dataset_composition_noclr
+CD8+ LP	0.10526943858246975	linear_svm	kong_cross_dataset_composition_noclr
+Goblet	-0.10376383363931359	linear_svm	kong_cross_dataset_composition_noclr
+Cycling B	0.09717022373086025	linear_svm	kong_cross_dataset_composition_noclr
+WNT2B+ Fos-lo 2	0.08623266569286571	linear_svm	kong_cross_dataset_composition_noclr
+Pericytes	0.07497830480405622	linear_svm	kong_cross_dataset_composition_noclr
+Plasma	-0.06882603580429396	linear_svm	kong_cross_dataset_composition_noclr
+Best4+ Enterocytes	-0.044913720644045516	linear_svm	kong_cross_dataset_composition_noclr
+Microvascular	-0.04150095610309068	linear_svm	kong_cross_dataset_composition_noclr
+Glia	-0.04107822469473376	linear_svm	kong_cross_dataset_composition_noclr
+Tuft	-0.04004245884784858	linear_svm	kong_cross_dataset_composition_noclr
+TA 2	-0.03922966781858835	linear_svm	kong_cross_dataset_composition_noclr
+CD8+ IL17+	0.03716579798047126	linear_svm	kong_cross_dataset_composition_noclr
+GC	0.03626808584095773	linear_svm	kong_cross_dataset_composition_noclr
+DC2	-0.02792227562277183	linear_svm	kong_cross_dataset_composition_noclr
+M cells	0.02754153960656271	linear_svm	kong_cross_dataset_composition_noclr
+WNT5B+ 2	0.02730497563021192	linear_svm	kong_cross_dataset_composition_noclr
+Cycling Monocytes	-0.026672075447968735	linear_svm	kong_cross_dataset_composition_noclr
+Enteroendocrine	0.024672889034270583	linear_svm	kong_cross_dataset_composition_noclr
+WNT2B+ Fos-hi	-0.022880943218380308	linear_svm	kong_cross_dataset_composition_noclr
+CD4+ PD1+	0.022388635751939442	linear_svm	kong_cross_dataset_composition_noclr
+Stem	-0.021863068306161974	linear_svm	kong_cross_dataset_composition_noclr
+MT-hi	-0.020232854741396494	linear_svm	kong_cross_dataset_composition_noclr
+RSPO3+	-0.019577495571420623	linear_svm	kong_cross_dataset_composition_noclr
+NKs	-0.011656110756309757	linear_svm	kong_cross_dataset_composition_noclr
+CD69- Mast	0.01104830852796734	linear_svm	kong_cross_dataset_composition_noclr
+WNT2B+ Fos-lo 1	-0.009321271764244765	linear_svm	kong_cross_dataset_composition_noclr
+ILCs	-0.006881940784330967	linear_svm	kong_cross_dataset_composition_noclr
+DC1	-0.006424554603835494	linear_svm	kong_cross_dataset_composition_noclr
+Cycling T	0.0062040380891304646	linear_svm	kong_cross_dataset_composition_noclr
+WNT5B+ 1	0.0010099502960101009	linear_svm	kong_cross_dataset_composition_noclr
+Immature Enterocytes 1	0.09530094265937805	xgb	kong_cross_dataset_composition_noclr
+Tregs	0.08241808414459229	xgb	kong_cross_dataset_composition_noclr
+Inflammatory Fibroblasts	0.08124672621488571	xgb	kong_cross_dataset_composition_noclr
+Pericytes	0.07270725816488266	xgb	kong_cross_dataset_composition_noclr
+CD8+ IELs	0.07256560027599335	xgb	kong_cross_dataset_composition_noclr
+Myofibroblasts	0.056881703436374664	xgb	kong_cross_dataset_composition_noclr
+CD4+ Activated Fos-lo	0.04913462698459625	xgb	kong_cross_dataset_composition_noclr
+CD69+ Mast	0.048949651420116425	xgb	kong_cross_dataset_composition_noclr
+Cycling Monocytes	0.04888417199254036	xgb	kong_cross_dataset_composition_noclr
+Glia	0.04198446869850159	xgb	kong_cross_dataset_composition_noclr
+Enterocyte Progenitors	0.041957128793001175	xgb	kong_cross_dataset_composition_noclr
+WNT5B+ 2	0.041387684643268585	xgb	kong_cross_dataset_composition_noclr
+CD8+ LP	0.035571563988924026	xgb	kong_cross_dataset_composition_noclr
+ILCs	0.031194400042295456	xgb	kong_cross_dataset_composition_noclr
+CD8+ IL17+	0.030634643509984016	xgb	kong_cross_dataset_composition_noclr
+Microvascular	0.022382166236639023	xgb	kong_cross_dataset_composition_noclr
+M cells	0.018178952857851982	xgb	kong_cross_dataset_composition_noclr
+DC1	0.018079770728945732	xgb	kong_cross_dataset_composition_noclr
+CD4+ PD1+	0.015640337020158768	xgb	kong_cross_dataset_composition_noclr
+Tuft	0.014978719875216484	xgb	kong_cross_dataset_composition_noclr
+Immature Goblet	0.013726521283388138	xgb	kong_cross_dataset_composition_noclr
+NKs	0.011123421601951122	xgb	kong_cross_dataset_composition_noclr
+Enteroendocrine	0.008820174261927605	xgb	kong_cross_dataset_composition_noclr
+DC2	0.008510001003742218	xgb	kong_cross_dataset_composition_noclr
+CD69- Mast	0.00710724014788866	xgb	kong_cross_dataset_composition_noclr
+Plasma	0.006125727202743292	xgb	kong_cross_dataset_composition_noclr
+Cycling TA	0.005853458307683468	xgb	kong_cross_dataset_composition_noclr
+MT-hi	0.005481286905705929	xgb	kong_cross_dataset_composition_noclr
+Secretory TA	0.005440548527985811	xgb	kong_cross_dataset_composition_noclr
+TA 1	0.0040867868810892105	xgb	kong_cross_dataset_composition_noclr
+Stem	0.003646214958280325	xgb	kong_cross_dataset_composition_noclr
+CD4+ Memory	0.0	xgb	kong_cross_dataset_composition_noclr
+CD4+ Activated Fos-hi	0.0	xgb	kong_cross_dataset_composition_noclr
+Best4+ Enterocytes	0.0	xgb	kong_cross_dataset_composition_noclr
+Cycling B	0.0	xgb	kong_cross_dataset_composition_noclr
+Enterocytes	0.0	xgb	kong_cross_dataset_composition_noclr
+Endothelial	0.0	xgb	kong_cross_dataset_composition_noclr
+Cycling T	0.0	xgb	kong_cross_dataset_composition_noclr
+Inflammatory Monocytes	0.0	xgb	kong_cross_dataset_composition_noclr
+GC	0.0	xgb	kong_cross_dataset_composition_noclr
+Follicular	0.0	xgb	kong_cross_dataset_composition_noclr
+Goblet	0.0	xgb	kong_cross_dataset_composition_noclr
+Immature Enterocytes 2	0.0	xgb	kong_cross_dataset_composition_noclr
+Macrophages	0.0	xgb	kong_cross_dataset_composition_noclr
+Post-capillary Venules	0.0	xgb	kong_cross_dataset_composition_noclr
+RSPO3+	0.0	xgb	kong_cross_dataset_composition_noclr
+TA 2	0.0	xgb	kong_cross_dataset_composition_noclr
+WNT2B+ Fos-hi	0.0	xgb	kong_cross_dataset_composition_noclr
+WNT2B+ Fos-lo 1	0.0	xgb	kong_cross_dataset_composition_noclr
+WNT2B+ Fos-lo 2	0.0	xgb	kong_cross_dataset_composition_noclr
+WNT5B+ 1	0.0	xgb	kong_cross_dataset_composition_noclr

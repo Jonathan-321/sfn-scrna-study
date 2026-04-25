@@ -1,0 +1,90 @@
+level,edge_label,support_count,support_fraction
+raw,Enterocyte Progenitors->ILCs,2,0.4
+raw,Enterocyte Progenitors->Myofibroblasts,2,0.4
+raw,RSPO3+->CD8+ IELs,2,0.4
+raw,Stem->Immature Enterocytes 2,2,0.4
+raw,Tuft->TA 2,2,0.4
+raw,Best4+ Enterocytes->WNT2B+ Fos-lo 1,1,0.2
+raw,CD4+ Activated Fos-hi->Plasma,1,0.2
+raw,CD4+ PD1+->Inflammatory Fibroblasts,1,0.2
+raw,CD4+ PD1+->WNT2B+ Fos-hi,1,0.2
+raw,CD69+ Mast->WNT5B+ 2,1,0.2
+raw,CD69- Mast->Inflammatory Fibroblasts,1,0.2
+raw,CD69- Mast->Inflammatory Monocytes,1,0.2
+raw,CD8+ IL17+->Stem,1,0.2
+raw,Cycling Monocytes->Myofibroblasts,1,0.2
+raw,Cycling T->Endothelial,1,0.2
+raw,DC1->CD4+ Activated Fos-hi,1,0.2
+raw,DC1->Plasma,1,0.2
+raw,Enterocyte Progenitors->CD4+ PD1+,1,0.2
+raw,Enterocyte Progenitors->CD8+ IELs,1,0.2
+raw,Enteroendocrine->Inflammatory Monocytes,1,0.2
+raw,Enteroendocrine->WNT5B+ 2,1,0.2
+raw,Follicular->Glia,1,0.2
+raw,Follicular->Inflammatory Monocytes,1,0.2
+raw,GC->Macrophages,1,0.2
+raw,Goblet->Best4+ Enterocytes,1,0.2
+raw,Goblet->Enterocyte Progenitors,1,0.2
+raw,Goblet->WNT5B+ 2,1,0.2
+raw,ILCs->Cycling B,1,0.2
+raw,ILCs->Endothelial,1,0.2
+raw,ILCs->Inflammatory Fibroblasts,1,0.2
+raw,ILCs->WNT5B+ 2,1,0.2
+raw,Immature Enterocytes 1->WNT5B+ 2,1,0.2
+raw,Immature Goblet->Macrophages,1,0.2
+raw,MT-hi->Endothelial,1,0.2
+raw,Macrophages->Follicular,1,0.2
+raw,Macrophages->TA 2,1,0.2
+raw,NKs->TA 1,1,0.2
+raw,NKs->TA 2,1,0.2
+raw,Pericytes->Glia,1,0.2
+raw,RSPO3+->Immature Enterocytes 2,1,0.2
+raw,Stem->Cycling B,1,0.2
+raw,Stem->Endothelial,1,0.2
+raw,TA 2->GC,1,0.2
+raw,Tuft->Inflammatory Fibroblasts,1,0.2
+raw,WNT2B+ Fos-hi->Glia,1,0.2
+grouped,grp08[Tuft]->grp10[TA 2],2,0.4
+grouped,grp12[Stem]->grp01[Goblet|Immature Enterocytes 2],2,0.4
+grouped,grp14[RSPO3+]->grp39[CD8+ IELs],2,0.4
+grouped,grp30[Enterocyte Progenitors]->grp18[Myofibroblasts],2,0.4
+grouped,grp30[Enterocyte Progenitors]->grp25[ILCs],2,0.4
+grouped,grp40[CD69- Mast]->grp00[Inflammatory Fibroblasts|Inflammatory Monocytes|Post-capillary Venules],2,0.4
+grouped,grp01[Goblet|Immature Enterocytes 2]->grp03[WNT5B+ 2],1,0.2
+grouped,grp01[Goblet|Immature Enterocytes 2]->grp30[Enterocyte Progenitors],1,0.2
+grouped,grp01[Goblet|Immature Enterocytes 2]->grp46[Best4+ Enterocytes],1,0.2
+grouped,grp02[Cycling B|GC]->grp20[Macrophages],1,0.2
+grouped,grp07[WNT2B+ Fos-hi]->grp26[Glia],1,0.2
+grouped,grp08[Tuft]->grp00[Inflammatory Fibroblasts|Inflammatory Monocytes|Post-capillary Venules],1,0.2
+grouped,grp10[TA 2]->grp02[Cycling B|GC],1,0.2
+grouped,grp12[Stem]->grp02[Cycling B|GC],1,0.2
+grouped,grp12[Stem]->grp31[Endothelial],1,0.2
+grouped,grp14[RSPO3+]->grp01[Goblet|Immature Enterocytes 2],1,0.2
+grouped,grp16[Pericytes]->grp26[Glia],1,0.2
+grouped,grp17[NKs]->grp10[TA 2],1,0.2
+grouped,grp17[NKs]->grp11[TA 1],1,0.2
+grouped,grp20[Macrophages]->grp10[TA 2],1,0.2
+grouped,grp20[Macrophages]->grp27[Follicular],1,0.2
+grouped,grp21[MT-hi]->grp31[Endothelial],1,0.2
+grouped,grp23[Immature Goblet]->grp20[Macrophages],1,0.2
+grouped,grp24[Immature Enterocytes 1]->grp03[WNT5B+ 2],1,0.2
+grouped,grp25[ILCs]->grp00[Inflammatory Fibroblasts|Inflammatory Monocytes|Post-capillary Venules],1,0.2
+grouped,grp25[ILCs]->grp02[Cycling B|GC],1,0.2
+grouped,grp25[ILCs]->grp03[WNT5B+ 2],1,0.2
+grouped,grp25[ILCs]->grp31[Endothelial],1,0.2
+grouped,grp27[Follicular]->grp00[Inflammatory Fibroblasts|Inflammatory Monocytes|Post-capillary Venules],1,0.2
+grouped,grp27[Follicular]->grp26[Glia],1,0.2
+grouped,grp28[Enteroendocrine]->grp00[Inflammatory Fibroblasts|Inflammatory Monocytes|Post-capillary Venules],1,0.2
+grouped,grp28[Enteroendocrine]->grp03[WNT5B+ 2],1,0.2
+grouped,grp30[Enterocyte Progenitors]->grp39[CD8+ IELs],1,0.2
+grouped,grp30[Enterocyte Progenitors]->grp42[CD4+ PD1+],1,0.2
+grouped,grp33[DC1]->grp15[Plasma],1,0.2
+grouped,grp33[DC1]->grp45[CD4+ Activated Fos-hi],1,0.2
+grouped,grp35[Cycling T]->grp31[Endothelial],1,0.2
+grouped,grp36[Cycling Monocytes]->grp18[Myofibroblasts],1,0.2
+grouped,grp38[CD8+ IL17+]->grp12[Stem],1,0.2
+grouped,grp41[CD69+ Mast]->grp03[WNT5B+ 2],1,0.2
+grouped,grp42[CD4+ PD1+]->grp00[Inflammatory Fibroblasts|Inflammatory Monocytes|Post-capillary Venules],1,0.2
+grouped,grp42[CD4+ PD1+]->grp07[WNT2B+ Fos-hi],1,0.2
+grouped,grp45[CD4+ Activated Fos-hi]->grp15[Plasma],1,0.2
+grouped,grp46[Best4+ Enterocytes]->grp06[WNT2B+ Fos-lo 1],1,0.2

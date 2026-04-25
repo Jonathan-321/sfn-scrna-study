@@ -1,0 +1,16 @@
+run_name	model	fold	n_train	n_test	n_features_selected	roc_auc	pr_auc	balanced_accuracy	macro_f1	runtime_s
+donor_compartment_pseudobulk_baselines	logreg	0	24	6	1000	1.0	1.0	1.0	1.0	0.01879405975341797
+donor_compartment_pseudobulk_baselines	linear_svm	0	24	6	1000	1.0	1.0	1.0	1.0	0.013056039810180664
+donor_compartment_pseudobulk_baselines	xgb	0	24	6	1000	0.7777777777777779	0.8055555555555556	0.6666666666666666	0.6666666666666666	0.08861899375915527
+donor_compartment_pseudobulk_baselines	logreg	1	24	6	1000	1.0	1.0	1.0	1.0	0.01665210723876953
+donor_compartment_pseudobulk_baselines	linear_svm	1	24	6	1000	1.0	1.0	0.8333333333333333	0.8285714285714285	0.013014078140258789
+donor_compartment_pseudobulk_baselines	xgb	1	24	6	1000	1.0	1.0	1.0	1.0	0.057616233825683594
+donor_compartment_pseudobulk_baselines	logreg	2	24	6	1000	1.0	1.0	1.0	1.0	0.016029834747314453
+donor_compartment_pseudobulk_baselines	linear_svm	2	24	6	1000	1.0	1.0	1.0	1.0	0.012753009796142578
+donor_compartment_pseudobulk_baselines	xgb	2	24	6	1000	1.0	1.0	1.0	1.0	0.058088064193725586
+donor_compartment_pseudobulk_baselines	logreg	3	24	6	1000	1.0	1.0	1.0	1.0	0.015752077102661133
+donor_compartment_pseudobulk_baselines	linear_svm	3	24	6	1000	1.0	1.0	1.0	1.0	0.012349843978881836
+donor_compartment_pseudobulk_baselines	xgb	3	24	6	1000	1.0	1.0	1.0	1.0	0.05795478820800781
+donor_compartment_pseudobulk_baselines	logreg	4	24	6	1000	1.0	1.0	1.0	1.0	0.015687942504882812
+donor_compartment_pseudobulk_baselines	linear_svm	4	24	6	1000	1.0	1.0	1.0	1.0	0.012530803680419922
+donor_compartment_pseudobulk_baselines	xgb	4	24	6	1000	1.0	1.0	0.875	0.8285714285714285	0.057250022888183594

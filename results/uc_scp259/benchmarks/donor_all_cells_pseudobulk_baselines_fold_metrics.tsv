@@ -1,0 +1,16 @@
+run_name	model	fold	n_train	n_test	n_features_selected	roc_auc	pr_auc	balanced_accuracy	macro_f1	runtime_s
+donor_all_cells_pseudobulk_baselines	logreg	0	24	6	1000	1.0	1.0	1.0	1.0	0.02204275131225586
+donor_all_cells_pseudobulk_baselines	linear_svm	0	24	6	1000	1.0	1.0	1.0	1.0	0.013089895248413086
+donor_all_cells_pseudobulk_baselines	xgb	0	24	6	1000	1.0	1.0	1.0	1.0	0.08173584938049316
+donor_all_cells_pseudobulk_baselines	logreg	1	24	6	1000	1.0	1.0	1.0	1.0	0.015854835510253906
+donor_all_cells_pseudobulk_baselines	linear_svm	1	24	6	1000	1.0	1.0	1.0	1.0	0.012917041778564453
+donor_all_cells_pseudobulk_baselines	xgb	1	24	6	1000	1.0	1.0	0.8333333333333333	0.8285714285714285	0.05728006362915039
+donor_all_cells_pseudobulk_baselines	logreg	2	24	6	1000	0.625	0.8041666666666667	0.375	0.3333333333333333	0.01599907875061035
+donor_all_cells_pseudobulk_baselines	linear_svm	2	24	6	1000	0.625	0.8041666666666667	0.375	0.3333333333333333	0.012397050857543945
+donor_all_cells_pseudobulk_baselines	xgb	2	24	6	1000	1.0	1.0	1.0	1.0	0.05772113800048828
+donor_all_cells_pseudobulk_baselines	logreg	3	24	6	1000	1.0	1.0	1.0	1.0	0.015446186065673828
+donor_all_cells_pseudobulk_baselines	linear_svm	3	24	6	1000	1.0	1.0	1.0	1.0	0.012630939483642578
+donor_all_cells_pseudobulk_baselines	xgb	3	24	6	1000	1.0	1.0	1.0	1.0	0.05890011787414551
+donor_all_cells_pseudobulk_baselines	logreg	4	24	6	1000	1.0	1.0	0.875	0.8285714285714285	0.015005826950073242
+donor_all_cells_pseudobulk_baselines	linear_svm	4	24	6	1000	1.0	1.0	0.875	0.8285714285714285	0.012692928314208984
+donor_all_cells_pseudobulk_baselines	xgb	4	24	6	1000	1.0	1.0	1.0	1.0	0.05810093879699707

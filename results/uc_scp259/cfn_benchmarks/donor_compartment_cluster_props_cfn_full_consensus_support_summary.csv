@@ -1,0 +1,11 @@
+level,support_count,n_edges,n_edges_at_least_support,n_folds
+raw,1,38,44,5
+raw,2,6,6,5
+raw,3,0,0,5
+raw,4,0,0,5
+raw,5,0,0,5
+grouped,1,38,44,5
+grouped,2,6,6,5
+grouped,3,0,0,5
+grouped,4,0,0,5
+grouped,5,0,0,5

@@ -1,0 +1,51 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Aitchison(1982)]{aitchison1982statistical}
+John Aitchison.
+\newblock The statistical analysis of compositional data.
+\newblock \emph{Journal of the Royal Statistical Society: Series B
+  (Methodological)}, 44\penalty0 (2):\penalty0 139--160, 1982.
+\newblock \doi{10.1111/j.2517-6161.1982.tb01195.x}.
+
+\bibitem[Kong et~al.(2023)Kong, Pokatayev, Lefkovith, Carter, Creasey, Krishna,
+  Subramanian, Kochar, Ashenberg, Lau, Ananthakrishnan, Graham, Deguine, and
+  Xavier]{kong2023single}
+Lingjia Kong, Vladislav Pokatayev, Ariel Lefkovith, Grace~T Carter, Elizabeth~A
+  Creasey, Chirag Krishna, Sathish Subramanian, Bharati Kochar, Orr Ashenberg,
+  Helena Lau, Ashwin~N Ananthakrishnan, Daniel~B Graham, Jacques Deguine, and
+  Ramnik~J Xavier.
+\newblock The landscape of immune dysregulation in {Crohn's} disease revealed
+  through single-cell transcriptomic profiling in the ileum and colon.
+\newblock \emph{Immunity}, 56\penalty0 (2):\penalty0 444--458, 2023.
+\newblock \doi{10.1016/j.immuni.2023.01.002}.
+
+\bibitem[Li(2026)]{li2023structural}
+Fang Li.
+\newblock Interpretable functional compositions for tabular discovery, 2026.
+\newblock URL \url{https://arxiv.org/abs/2601.20037}.
+\newblock Department of Computer Science, Oklahoma Christian University. Code:
+  \url{https://github.com/fanglioc/StructuralCFN-public}.
+
+\bibitem[Lopez et~al.(2018)Lopez, Regier, Cole, Jordan, and
+  Yosef]{lopez2018deep}
+Romain Lopez, Jeffrey Regier, Michael~B Cole, Michael~I Jordan, and Nir Yosef.
+\newblock Deep generative modeling for single-cell transcriptomics.
+\newblock \emph{Nature Methods}, 15\penalty0 (12):\penalty0 1053--1058, 2018.
+\newblock \doi{10.1038/s41592-018-0229-2}.
+
+\bibitem[Smillie et~al.(2019)Smillie, Biton, Ordovas-Montanes, Sullivan,
+  Burgin, Graham, Herbst, Rogel, Slyper, Waldman, et~al.]{smillie2019intra}
+Christopher~S Smillie, Moshe Biton, Jose Ordovas-Montanes, Keri~M Sullivan,
+  Grace Burgin, Daniel~B Graham, Rebecca~H Herbst, Noga Rogel, Michal Slyper,
+  Julia Waldman, et~al.
+\newblock Intra- and inter-cellular rewiring of the human colon during
+  ulcerative colitis.
+\newblock \emph{Cell}, 178\penalty0 (3):\penalty0 714--730, 2019.
+\newblock \doi{10.1016/j.cell.2019.06.029}.
+
+\end{thebibliography}
