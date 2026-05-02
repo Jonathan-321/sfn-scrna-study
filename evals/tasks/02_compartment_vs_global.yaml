@@ -1,0 +1,38 @@
+id: compartment_vs_global
+title: Compartment-stratified vs. global cell pooling for IBD classification
+category: protocol_critique
+context: |
+  In the SCP259 UC atlas (30 donors, 51 cell types), two input representation
+  strategies were compared for donor-level disease classification:
+  (1) GLOBAL: cluster-proportion features from all 51 cell types pooled together
+      (one 51-dimensional vector per donor).
+  (2) COMPARTMENT: cluster-proportion features computed separately within each of
+      three tissue compartments — epithelial, stromal, and immune — then
+      concatenated (one ~153-dimensional vector per donor).
+  Results from a linear SVM with 5-fold donor-level CV:
+  - Global linear SVM: mean AUROC = 0.928 ± 0.110
+  - Compartment linear SVM: mean AUROC = 0.928 ± 0.110
+  Under compartment-stratified CFN (GatedStructuralCFN):
+  - Global CFN: mean AUROC = 0.906 ± 0.130
+  - Compartment CFN: mean AUROC = 0.978 ± 0.050
+question: |
+  Which three tissue compartments are used in the compartment-stratified
+  representation of the SCP259 UC atlas?
+answer_format: set
+correct:
+  - epithelial
+  - stromal
+  - immune
+grader: set_match
+rationale: |
+  The SCP259 dataset separates cell types into epithelial, stromal, and immune
+  compartments as documented in the analysis pipeline and uc_cluster_glossary.
+  Compartment CFN achieves 0.978 AUROC (±0.050) vs. 0.906 (±0.130) for global
+  CFN — a meaningful improvement in both mean and variance.
+  See: results/uc_scp259/benchmarks/donor_compartment_cluster_props_baselines_summary.tsv
+  and results/uc_scp259/cfn_benchmarks/donor_compartment_cluster_props_cfn_full_summary.csv
+sources:
+  - results/uc_scp259/benchmarks/donor_compartment_cluster_props_baselines_summary.tsv
+  - results/uc_scp259/cfn_benchmarks/donor_compartment_cluster_props_cfn_full_summary.csv
+difficulty: easy
+expected_failure: false

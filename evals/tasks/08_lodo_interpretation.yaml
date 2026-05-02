@@ -1,0 +1,48 @@
+id: lodo_interpretation
+title: Interpreting leave-one-donor-out (LODO) vs. k-fold CV results
+category: metrics
+context: |
+  The SCP259 UC atlas (30 donors) was evaluated under two cross-validation
+  strategies:
+
+  Strategy A — Standard 5-fold donor-level CV (single run):
+    LinearSVM AUROC = 0.925 ± 0.110
+    XGBoost AUROC  = 1.000 ± 0.000
+
+  Strategy B — Leave-one-donor-out (LODO, 30 folds):
+    LinearSVM AUROC = 1.000
+    XGBoost AUROC   = 0.991
+
+  A student argues: "LODO always gives higher AUROC than k-fold CV because
+  it uses more training data."
+question: |
+  Is the student's claim correct? What does LODO primarily measure that
+  standard k-fold CV does not?
+answer_format: multiple_choice
+choices:
+  - A: The student is correct; LODO always gives higher AUROC because more
+      training data reduces underfitting.
+  - B: The student is incorrect. LODO primarily tests generalization to completely
+      unseen individual donors — the strictest form of donor independence. It can
+      yield AUROC different from k-fold CV in either direction; here both are high,
+      confirming donor-independent signal rather than proving LODO is universally
+      higher.
+  - C: LODO gives lower AUROC than k-fold CV because it uses smaller test sets
+      (one donor per fold), introducing more variance.
+  - D: LODO and k-fold CV are statistically equivalent and should give identical
+      results on the same dataset.
+correct: "B"
+grader: mc_match
+rationale: |
+  LODO is not universally higher than k-fold. Here, LODO linear SVM=1.000 matches
+  the best 5-fold estimate, while XGB drops slightly from 1.000 (5-fold) to 0.991
+  (LODO). LODO is stricter in the sense that every test evaluation uses exactly
+  one previously unseen donor, but with only one test sample per fold it also has
+  higher variance. The key interpretation: LODO confirms that the classifiers
+  generalize across individual donors, not just across random splits.
+  See: results/uc_scp259/benchmarks/donor_all_cells_pseudobulk_lodo_summary.tsv
+sources:
+  - results/uc_scp259/benchmarks/donor_all_cells_pseudobulk_lodo_summary.tsv
+  - results/uc_scp259/benchmarks/donor_global_representation_comparison.md
+difficulty: medium
+expected_failure: false

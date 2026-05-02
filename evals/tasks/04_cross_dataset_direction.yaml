@@ -1,0 +1,46 @@
+id: cross_dataset_direction
+title: Asymmetry in cross-dataset IBD transfer direction
+category: failure_mode
+context: |
+  Cross-dataset transfer experiments were conducted between two IBD cohorts:
+    - SCP259 UC atlas: 30 donors (18 UC, 12 healthy), 51 cell types
+    - Kong 2023 CD atlas: 71 donors (17 CD, 54 healthy), 68 cell types
+
+  Only 4 cell types overlap between annotation schemes (DC1, ILCs, Macrophages,
+  Tregs). Non-overlapping features are zero-filled in the test set.
+
+  Results (XGBoost with CLR normalization):
+    - UC→CD (train on SCP259, test on Kong): AUROC = 0.465
+    - CD→UC (train on Kong, test on SCP259): AUROC = 0.833
+
+  The UC→CD direction achieves near-chance performance while CD→UC achieves
+  substantial transfer.
+question: |
+  Which direction of cross-dataset transfer achieves substantially above-chance
+  AUROC, and what is the primary mechanistic reason for the asymmetry?
+answer_format: multiple_choice
+choices:
+  - A: UC→CD achieves above-chance because UC is a more severe disease phenotype.
+  - B: CD→UC achieves above-chance (AUROC 0.833); the asymmetry arises because
+      the Kong training set is larger (71 vs 30 donors) and 4 shared immune cell
+      types constitute a larger fractional signal in the 68-dim Kong feature space
+      than in the 51-dim SCP259 space.
+  - C: Both directions achieve above-chance AUROC; the asymmetry is a statistical
+      artifact of different cohort sizes.
+  - D: CD→UC achieves above-chance because UC is a subset of CD biologically.
+correct: "B"
+grader: mc_match
+rationale: |
+  From cross_dataset_metrics.tsv: UC→CD XGB AUROC=0.465 (near chance),
+  CD→UC XGB AUROC=0.833. The README explains the asymmetry: the 47 UC-specific
+  cell-type proportions zero-fill in the Kong test set, eliminating their signal.
+  Only 4 shared immune types transfer, which is insufficient when going UC→CD
+  (47 features zeroed). In the reverse direction, the Kong model can leverage the
+  4 shared immune types — and the larger n=71 training set provides better
+  parameter estimation.
+  See: results/kong2023_cd/cross_dataset/kong_cross_dataset_composition_metrics.tsv
+sources:
+  - results/kong2023_cd/cross_dataset/kong_cross_dataset_composition_metrics.tsv
+  - results/kong2023_cd/cross_dataset/README.md
+difficulty: hard
+expected_failure: true

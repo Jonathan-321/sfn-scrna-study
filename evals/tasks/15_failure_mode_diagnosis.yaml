@@ -1,0 +1,54 @@
+id: failure_mode_diagnosis
+title: Diagnosing performance collapse in multi-region pooled classification
+category: failure_mode
+context: |
+  The Kong 2023 CD atlas was analyzed both region-specifically and with all
+  intestinal regions pooled together. The following AUROC results were obtained
+  under 5-fold donor-level CV:
+
+  GatedStructuralCFN (CLR=True, clean cohort):
+    Colon-only: AUROC = 0.960 ± 0.055
+    TI-only:    AUROC = 0.811 ± 0.177
+    All-region (colon + TI + other pooled): AUROC = 0.822 ± 0.126
+
+  CLR linear SVM (clean cohort):
+    Colon-only:  AUROC = 0.900
+    TI-only:     AUROC = 0.917
+    All-region:  AUROC = 0.833
+
+  The all-region pooled AUROC for CFN (0.822) is LOWER than the colon-only
+  CFN AUROC (0.960), despite having more training data when pooled.
+question: |
+  What is the most likely explanation for why pooling all intestinal regions
+  together REDUCES CFN classification AUROC compared to colon-only analysis?
+answer_format: multiple_choice
+choices:
+  - A: Pooling reduces AUROC because the larger dataset causes CFN to overfit
+      more severely.
+  - B: Pooling reduces AUROC because cell-type co-occurrence structures differ
+      between intestinal regions (colon vs. TI), introducing region-specific
+      confounding that dilutes the disease-discriminative signal; a single
+      pooled CFN model cannot simultaneously optimize for both region-specific
+      co-occurrence patterns.
+  - C: Pooling reduces AUROC because the all-region dataset violates the
+      assumption that donors are sampled independently (donors contribute to
+      multiple regions).
+  - D: Pooling reduces AUROC because the CLR normalization is not valid when
+      cell types span multiple intestinal regions.
+correct: "B"
+grader: mc_match
+rationale: |
+  The key insight is that colon and TI have distinct cell-type composition and
+  co-occurrence patterns. CFN learns graph structure that is region-specific:
+  colonic structures are highly predictive (AUROC 0.960), while TI structures
+  are less predictive (0.811). Pooling forces the model to learn a single
+  graph structure across heterogeneous regional environments, diluting the
+  colon signal with noisy TI and other-region observations. This is the same
+  reason compartment-stratified models outperform globally pooled models.
+  Note: option C is plausible but factually incorrect for this dataset —
+  the Kong atlas uses donor-level CV and one biopsy region per donor per fold.
+sources:
+  - results/kong2023_cd/cfn_clean/summary.tsv
+  - results/kong2023_cd/baselines_clean/kong_clr_colon_clean_summary.tsv
+difficulty: hard
+expected_failure: true

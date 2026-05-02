@@ -1,0 +1,37 @@
+id: donor_label_leakage
+title: Identifying donor-level label leakage in cross-validation
+category: protocol_critique
+context: |
+  The SCP259 dataset (Smillie et al.) contains colon biopsies from 30 donors:
+  18 with Ulcerative Colitis (UC) and 12 healthy controls. Each donor contributes
+  multiple cells (hundreds to thousands). A researcher proposes training a disease
+  classifier on pseudobulk donor-level features using stratified 5-fold
+  cross-validation, where each fold is stratified by disease label (UC vs healthy).
+  The fold-splitting is performed at the CELL level rather than the DONOR level —
+  meaning cells from the same donor can appear in both training and test folds.
+question: |
+  Why is cell-level stratified CV inappropriate for this experimental design, and
+  what is the correct unit of analysis for fold assignment?
+answer_format: multiple_choice
+choices:
+  - A: Cell-level CV is fine because stratification preserves class balance across folds.
+  - B: Cell-level CV inflates AUROC because cells from the same donor appear in both
+      train and test folds, violating the independence assumption; fold assignment must
+      be at the donor level.
+  - C: Cell-level CV is conservative because it reduces training set size.
+  - D: Cell-level CV only matters when using raw counts; pseudobulk aggregation
+      eliminates the problem.
+correct: "B"
+grader: mc_match
+rationale: |
+  When cells from the same donor appear in both train and test folds, the model
+  sees correlated samples during validation. Since pseudobulk features ARE
+  donor-level aggregates (one vector per donor), cell-level splits effectively
+  let the model memorize the donor's phenotype during training and evaluate on
+  a copy of the same donor — leakage. All SCP259 experiments in this repo use
+  donor-level StratifiedKFold (n_splits=5) as the correct protocol
+  (see results/uc_scp259/benchmarks/ summaries).
+sources:
+  - results/uc_scp259/benchmarks/donor_all_cells_pseudobulk_baselines_summary.tsv
+difficulty: medium
+expected_failure: false

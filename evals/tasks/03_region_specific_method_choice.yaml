@@ -1,0 +1,46 @@
+id: region_specific_method_choice
+title: Region-specific method selection in Crohn Disease atlas
+category: method_selection
+context: |
+  The Kong 2023 CD atlas (71 donors, Crohn Disease vs. healthy) contains samples
+  from multiple intestinal regions. Two classification methods were compared on
+  CD vs. healthy donor classification:
+
+  Method A — CLR linear baseline (centered-log-ratio normalized cluster proportions
+  + linear SVM), 5-fold donor-level CV:
+    - Colon region: mean AUROC = 0.900
+    - Terminal ileum (TI) region: mean AUROC = 0.917
+
+  Method B — GatedStructuralCFN (graph neural network over cell-type co-occurrence),
+  CLR=True, clean cohort, 5-fold CV:
+    - Colon region: mean AUROC = 0.960 ± 0.055
+    - TI region: mean AUROC = 0.811 ± 0.177
+
+  A researcher must choose a single method to deploy for a new Crohn Disease
+  biomarker study that focuses exclusively on COLONIC biopsies.
+question: |
+  Which method should the researcher choose for the colonic Crohn Disease
+  classification task, and why?
+answer_format: multiple_choice
+choices:
+  - A: CLR linear baseline, because it consistently outperforms CFN across all
+      intestinal regions in the Kong 2023 atlas.
+  - B: GatedStructuralCFN (CFN), because it achieves higher AUROC in the colon
+      region (0.960 vs. 0.900) and is the recommended method for colonic CD.
+  - C: Neither method is appropriate; a deep learning model trained on raw counts
+      is required for colon-specific classification.
+  - D: CLR linear baseline, because CFN has unacceptably high variance in the
+      colon region and should be avoided.
+correct: "B"
+grader: mc_match
+rationale: |
+  CFN achieves 0.960 ± 0.055 in colon vs. 0.900 CLR linear baseline — a
+  meaningful improvement. In TI, however, CLR baselines dominate (0.917 vs.
+  0.811 for CFN), so method choice is region-specific. For a colonic study,
+  CFN is clearly preferred. Source: kong_cfn_clean/summary.tsv and
+  kong_clr_colon_clean_summary.tsv.
+sources:
+  - results/kong2023_cd/cfn_clean/summary.tsv
+  - results/kong2023_cd/baselines_clean/kong_clr_colon_clean_summary.tsv
+difficulty: medium
+expected_failure: false

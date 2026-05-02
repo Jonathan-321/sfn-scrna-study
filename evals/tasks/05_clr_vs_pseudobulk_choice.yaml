@@ -1,0 +1,51 @@
+id: clr_vs_pseudobulk_choice
+title: CLR composition vs. pseudobulk gene expression for UC classification
+category: method_selection
+context: |
+  In the SCP259 UC atlas (30 donors), two fundamentally different feature
+  representations were benchmarked for donor-level UC vs. healthy classification:
+
+  (1) CLR composition: centered-log-ratio transformed cluster-proportion features
+      (51-dimensional, one proportion per annotated cell type per donor).
+      Repeated 10x 5-fold CV, best model (logreg):
+      AUROC = 0.936 ± 0.049 (95% CI: 0.883–0.971)
+
+  (2) Pseudobulk gene expression: sum of raw counts per donor across all cells,
+      top-1000 highly variable genes selected within each training fold using
+      variance-based filtering.
+      Repeated 10x 5-fold CV, best model (XGBoost):
+      AUROC = 0.997 ± 0.008 (95% CI: 0.981–1.000)
+
+  LODO (leave-one-donor-out) AUROC:
+      CLR composition linear SVM: 0.926
+      Pseudobulk linear SVM: 1.000
+
+  A researcher wants maximum classification accuracy with donor-level
+  leave-one-out generalization as the primary evaluation.
+question: |
+  Which representation achieves higher mean AUROC under repeated 5-fold
+  donor-level CV: CLR composition or pseudobulk gene expression?
+answer_format: multiple_choice
+choices:
+  - A: CLR composition (AUROC ~0.936), because cell-type proportion features
+      are more biologically interpretable.
+  - B: Pseudobulk gene expression (AUROC ~0.997), because aggregated gene
+      expression captures more variance in donor biology.
+  - C: Both achieve identical AUROC (~1.000) under repeated CV.
+  - D: CLR composition (AUROC ~0.997), because CLR normalization corrects for
+      compositional bias that inflates pseudobulk performance.
+correct: "B"
+grader: mc_match
+rationale: |
+  From donor_global_representation_comparison.md:
+  Best repeated-CV composition: logreg AUROC 0.9364 (CI 0.8828–0.9706).
+  Best repeated-CV pseudobulk: XGB AUROC 0.9975 (CI 0.9806–1.0000).
+  Pseudobulk clearly dominates. LODO confirms: pseudobulk SVM AUROC=1.000 vs
+  composition SVM AUROC=0.926. The near-ceiling pseudobulk performance is
+  attributed to strong gene expression differences between inflamed UC and
+  healthy mucosa at the donor level.
+sources:
+  - results/uc_scp259/benchmarks/donor_global_representation_comparison.md
+  - results/uc_scp259/benchmarks/donor_all_cells_pseudobulk_repeated_summary.tsv
+difficulty: easy
+expected_failure: false

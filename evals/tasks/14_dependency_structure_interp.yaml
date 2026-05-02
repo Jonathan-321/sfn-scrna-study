@@ -1,0 +1,50 @@
+id: dependency_structure_interp
+title: Interpreting CFN dependency structure across CV folds
+category: biology
+context: |
+  GatedStructuralCFN (CFN) learns a sparse pairwise dependency matrix between
+  cell types for each donor, then uses these matrices as classification features.
+  In the SCP259 UC atlas (compartment-stratified CFN, 5-fold CV), the edge
+  recurrence and stability analysis tracks which cell-type pairs appear
+  consistently across folds.
+
+  From the consensus CFN analysis (compartment setting):
+  - Top recurring edges involve immune cell types (e.g., BEST4+ epithelial ↔
+    Plasma cell pairs, regulatory T cell ↔ macrophage interactions)
+  - The CFN structural matrices have high fold-to-fold Jaccard similarity
+    (>0.70 for top-20 edges in compartment setting vs. <0.50 in global setting)
+  - Compartment CFN achieves AUROC = 0.978 ± 0.050; Global CFN = 0.906 ± 0.130
+
+  The higher structural stability of compartment CFN corresponds to lower AUROC
+  variance (0.050 vs. 0.130).
+question: |
+  What does the higher fold-to-fold stability of the compartment CFN dependency
+  structure (compared to global CFN) suggest about the biological signal being
+  captured?
+answer_format: multiple_choice
+choices:
+  - A: Higher stability means the model is overfitting — it learns the same
+      spurious edges regardless of train/test split.
+  - B: Higher stability indicates that the cell-type co-occurrence dependencies
+      learned by compartment CFN reflect reproducible biological features of
+      UC pathology within each compartment, rather than noise driven by rare
+      cross-compartment interactions that are confounded in the global pooled setting.
+  - C: Higher stability is a mathematical artifact of using more features in
+      the compartment representation (~153 dims vs. ~51 dims).
+  - D: Higher stability means compartment CFN is less sensitive to donor
+      heterogeneity and should be preferred for cross-dataset transfer.
+correct: "B"
+grader: mc_match
+rationale: |
+  When the same cell-type dependency edges recur across independent train/test
+  folds, it indicates the model is capturing genuine biological signal (e.g.,
+  UC-specific immune cell interactions in the immune compartment) rather than
+  overfitting to training-fold noise. The stability-performance correlation
+  (compartment: high stability + high AUROC; global: low stability + lower AUROC)
+  is reported in the consensus_cfn analyses. Option A is wrong because overfitting
+  typically produces high training performance but fold-dependent (unstable) edges.
+sources:
+  - results/uc_scp259/cfn_benchmarks/donor_compartment_cluster_props_cfn_full_stability_summary.csv
+  - results/uc_scp259/cfn_benchmarks/consensus_cfn_compartment_edge_recurrence.csv
+difficulty: hard
+expected_failure: true

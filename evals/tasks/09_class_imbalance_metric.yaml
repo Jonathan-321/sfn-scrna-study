@@ -1,0 +1,51 @@
+id: class_imbalance_metric
+title: Appropriate metrics for imbalanced IBD cohorts
+category: metrics
+context: |
+  The Kong 2023 Crohn Disease atlas has a substantially imbalanced class
+  distribution: 17 CD donors vs. 54 healthy donors (ratio approximately 1:3.2).
+  A researcher reports only AUROC when evaluating classifiers on this dataset.
+
+  Results for CLR linear SVM on Kong all-region (5-fold CV):
+    AUROC = 0.833 ± 0.103
+    PR-AUC = 0.681 ± 0.207
+    Balanced accuracy = 0.703
+
+  For comparison, on SCP259 (UC) with 18 UC vs. 12 healthy (ratio 1.5:1):
+    AUROC = 0.928 ± 0.110
+    PR-AUC = 0.967 ± 0.046
+    Balanced accuracy = 0.833
+
+  The PR-AUC gap between datasets (0.681 vs. 0.967) is much larger than the
+  AUROC gap (0.833 vs. 0.928).
+question: |
+  Why should precision-recall AUC (PR-AUC) be reported alongside AUROC when
+  evaluating classifiers on the Kong CD cohort, given the class imbalance?
+answer_format: multiple_choice
+choices:
+  - A: PR-AUC is unnecessary; AUROC fully captures classifier performance
+      regardless of class balance.
+  - B: PR-AUC is needed because in imbalanced datasets AUROC can appear high
+      even when the classifier has poor precision on the minority class (CD
+      donors); PR-AUC directly measures the trade-off between precision and
+      recall for the minority class and is more sensitive to failures on CD
+      detection.
+  - C: PR-AUC should replace AUROC entirely; AUROC is only valid for balanced
+      datasets.
+  - D: PR-AUC is only relevant when the positive class prevalence exceeds 40%.
+correct: "B"
+grader: mc_match
+rationale: |
+  With 17 CD vs. 54 healthy (76% healthy), a classifier that performs well on
+  the majority class can still achieve a reasonable ROC curve because the false
+  positive rate (FPR) denominator is large. PR-AUC uses precision as a metric
+  which penalizes false positives relative to all positive predictions, making
+  it sensitive to CD recall. The large PR-AUC gap (0.681 vs 0.967) between Kong
+  and SCP259 despite a smaller AUROC gap is direct evidence that AUROC alone
+  understates Kong's challenge for minority-class detection.
+  See: results/kong2023_cd/baselines_clean/kong_clr_all_clean_summary.tsv
+sources:
+  - results/kong2023_cd/baselines_clean/kong_clr_all_clean_summary.tsv
+  - results/uc_scp259/benchmarks/donor_all_cells_pseudobulk_baselines_summary.tsv
+difficulty: medium
+expected_failure: false

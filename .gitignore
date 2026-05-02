@@ -8,3 +8,8 @@ artifacts/
 __pycache__/
 *.pyc
 .DS_Store
+
+# Eval suite local outputs
+evals/mock_results.json
+evals/results_*.json
+evals/.pytest_cache/
