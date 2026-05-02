@@ -1,0 +1,44 @@
+id: cv_strategy_critique
+title: Single vs. repeated cross-validation for high-variance estimates
+category: protocol_critique
+context: |
+  A researcher evaluates a linear SVM on the SCP259 UC atlas (30 donors, 5-fold
+  donor-level CV) and reports the following AUROC estimates:
+
+  Single 5-fold CV run:
+    Folds: [1.000, 1.000, 0.750, 1.000, 0.875]
+    Mean = 0.925, SD = 0.110
+
+  Repeated 10× 5-fold CV (same model, same data):
+    Mean AUROC = 0.9925, SD = 0.024 (95% CI: 0.942–1.000)
+
+  The standard deviation drops from 0.110 (single run) to 0.024 (repeated).
+  The researcher claims the single-fold result is sufficient for publication
+  because the mean (0.925) is close to the repeated-CV mean (0.9925).
+question: |
+  What is the primary statistical problem with relying on a single 5-fold CV
+  run on a dataset of 30 donors?
+answer_format: multiple_choice
+choices:
+  - A: Single CV is always biased downward because the training set is smaller.
+  - B: With only 30 donors and 5 folds, each fold contains ~6 test donors.
+      A single CV run has high variance because outlier folds (e.g., one fold
+      with 0.750 AUROC) dominate the estimate; repeated CV averages this
+      variance away and is required for stable inference.
+  - C: Single CV inflates AUROC by overfitting to the test fold.
+  - D: Repeated CV is unnecessary when AUROC exceeds 0.90.
+correct: "B"
+grader: mc_match
+rationale: |
+  SCP259 has 30 donors → each fold tests on ~6 donors. With such small test
+  sets, a single bad fold (e.g., fold 2 with 3 UC and 3 healthy donors where
+  one is an outlier) produces unstable AUROC estimates. The SD drops from 0.110
+  to 0.024 with 10 repeats, demonstrating the instability. This is a known
+  issue in small-cohort scRNA studies and motivates the repeated-CV protocol
+  used throughout this repo.
+  See: results/uc_scp259/benchmarks/donor_all_cells_pseudobulk_repeated_summary.tsv
+sources:
+  - results/uc_scp259/benchmarks/donor_all_cells_pseudobulk_repeated_summary.tsv
+  - results/uc_scp259/benchmarks/donor_all_cells_pseudobulk_baselines_summary.tsv
+difficulty: medium
+expected_failure: false

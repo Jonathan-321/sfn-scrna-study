@@ -1,0 +1,55 @@
+id: scvi_latent_use
+title: scVI latent embedding for donor-level classification
+category: method_selection
+context: |
+  scVI (single-cell Variational Inference) learns a low-dimensional latent
+  representation of cells that accounts for technical noise and batch effects.
+  In the SCP259 UC atlas, scVI was used to generate donor-level features by
+  aggregating per-cell latent embeddings. Two aggregation strategies were compared
+  under 5-fold donor-level CV (XGBoost classifier):
+
+  Global scVI (aggregate all cells per donor, 20 latent dims):
+    Mean AUROC = 0.725 ± 0.399
+    Fold-level AUROC: [1.0, 1.0, 0.125, 1.0, 0.5]
+
+  Compartment scVI (aggregate cells separately per compartment, 60 latent dims):
+    Mean AUROC = 0.931 ± 0.101
+    Fold-level AUROC: [0.778, 1.0, 0.875, 1.0, 1.0]
+
+  IMPORTANT CAVEAT: The scVI models in this experiment were trained on the FULL
+  dataset before fold-level evaluation (training/test scVI embeddings were derived
+  from the same pre-trained model). A README note flags this as a potential leakage
+  issue.
+question: |
+  Why are the scVI classification results in this study described as "approximate
+  estimates" rather than rigorously validated results, and what would be required
+  to fix this?
+answer_format: multiple_choice
+choices:
+  - A: scVI results are approximate because the latent space dimensionality (20)
+      is too low for donor classification.
+  - B: scVI results are approximate because the scVI model was trained on the full
+      dataset (including test-fold donors) before fold-level evaluation, meaning
+      test donors' transcriptomes influenced the latent embedding used for their
+      own prediction — a form of data leakage. Fixing this requires retraining
+      scVI within each CV fold using only training-set cells.
+  - C: scVI results are approximate because XGBoost is incompatible with
+      continuous latent embeddings.
+  - D: scVI results are approximate because the Variational Autoencoder loss
+      function biases toward UC samples.
+correct: "B"
+grader: mc_match
+rationale: |
+  The README_leakage_caveat.txt in results/uc_scp259/scvi_within_fold/ explicitly
+  states: "Raw MTX files not available on disk. scVI within-fold retraining cannot
+  proceed. Paper labels scVI results as approximate estimates."
+  The correct approach would be to retrain scVI separately on each training fold's
+  cells, then project test-fold cells through that fold's encoder. Without this,
+  the latent space of test donors is co-determined with training donors, inflating
+  apparent AUROC — especially visible in the volatile fold-level results (0.125
+  to 1.0 range in global scVI).
+sources:
+  - results/uc_scp259/scvi_within_fold/README_leakage_caveat.txt
+  - results/robustness/scvi_fold_level_aucs.tsv
+difficulty: hard
+expected_failure: true

@@ -1,0 +1,40 @@
+id: bootstrap_ci_reading
+title: Reading bootstrap confidence intervals for AUROC
+category: metrics
+context: |
+  Bootstrap confidence intervals were computed for the cross-dataset transfer
+  results (CD→UC direction) using 2000 bootstrap resamples of the 30 SCP259
+  test donors.
+
+  Results from cross_dataset_bootstrap_ci.tsv (XGBoost, CD→UC direction):
+    Point AUROC: 0.833
+    Bootstrap mean AUROC: 0.834
+    95% CI lower: 0.720
+    95% CI upper: 0.931
+
+  For comparison, the linear SVM in the same direction:
+    Point AUROC: 0.764
+    Bootstrap mean AUROC: 0.762
+    95% CI lower: 0.573
+    95% CI upper: 0.915
+question: |
+  Based on the XGBoost bootstrap CI for CD→UC transfer (95% CI: 0.720–0.931),
+  what is the closest numeric value to the lower bound of the 95% confidence
+  interval?
+answer_format: numeric
+correct:
+  value: 0.72
+  tol: 0.02
+grader: numeric_tolerance
+rationale: |
+  From results/robustness/cross_dataset_bootstrap_ci.tsv, direction UC→CD,
+  XGB row: ci_lo_95 = 0.72. The CI spans 0.720–0.931, indicating that while
+  the point estimate is strong (0.833), the lower bound (0.720) is still
+  substantially above chance — confirming statistically significant transfer.
+  Note: the TSV uses the label "CD→UC" as "UC→CD" in direction column — the
+  XGB row with point_auc=0.4646 is actually UC→CD (near chance), while
+  point_auc=0.8333 is CD→UC.
+sources:
+  - results/robustness/cross_dataset_bootstrap_ci.tsv
+difficulty: medium
+expected_failure: false

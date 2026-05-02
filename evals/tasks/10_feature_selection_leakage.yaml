@@ -1,0 +1,47 @@
+id: feature_selection_leakage
+title: Feature selection leakage across cross-validation folds
+category: protocol_critique
+context: |
+  A researcher analyzes the SCP259 UC atlas and selects the top-1000 highly
+  variable genes (HVGs) from the ENTIRE dataset BEFORE running 5-fold
+  cross-validation. They then use these pre-selected features for both training
+  and evaluation across all folds.
+
+  In contrast, the correct protocol implemented in this repo selects the top-1000
+  HVGs WITHIN EACH TRAINING FOLD using only training-set cells, then applies the
+  fold-specific feature set to transform both train and test sets.
+
+  The researcher argues: "Feature selection is unsupervised (we only use gene
+  variance, not disease labels), so it cannot cause leakage."
+question: |
+  Is the researcher's reasoning correct? Explain why or why not.
+answer_format: multiple_choice
+choices:
+  - A: The researcher is correct. Unsupervised feature selection on the full
+      dataset does not use labels and therefore cannot cause leakage.
+  - B: The researcher is incorrect. Even unsupervised HVG selection on the full
+      dataset leaks test-set distributional information into the training pipeline
+      because the gene variance is computed using test-fold samples. This can
+      inflate apparent performance, especially in small datasets where test-fold
+      donors substantially affect variance rankings.
+  - C: The researcher is incorrect, but only because HVG selection is actually
+      supervised — it implicitly uses disease labels.
+  - D: The researcher is correct for pseudobulk features but incorrect for
+      single-cell features.
+correct: "B"
+grader: mc_match
+rationale: |
+  Unsupervised feature selection using the FULL dataset still leaks test
+  information: the gene variance statistics used to select features are
+  computed with test-fold donors included. This means features selected on the
+  full dataset may capture variance patterns specific to the test fold, which
+  is unavailable at deployment. With only 30 donors, removing 6 test donors
+  can meaningfully shift HVG rankings. The correct protocol (implemented in this
+  repo) fits feature selection strictly within each training fold.
+  See: results/uc_scp259/benchmarks/donor_all_cells_pseudobulk_baselines_summary.tsv
+  (column n_features_selected_mean = 1000 across all folds, confirming per-fold
+  selection).
+sources:
+  - results/uc_scp259/benchmarks/donor_all_cells_pseudobulk_baselines_summary.tsv
+difficulty: hard
+expected_failure: true

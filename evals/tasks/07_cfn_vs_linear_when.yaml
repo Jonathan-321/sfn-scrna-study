@@ -1,0 +1,44 @@
+id: cfn_vs_linear_when
+title: When does CFN outperform linear baselines?
+category: method_selection
+context: |
+  GatedStructuralCFN (CFN) is a graph neural network that models pairwise
+  cell-type co-occurrence structure as a donor-level feature graph. It was
+  benchmarked against CLR-normalized linear SVM baselines on the Kong 2023
+  CD atlas across three intestinal regions (5-fold donor-level CV, clean cohort):
+
+  Region       | CLR linear SVM AUROC | CFN (CLR=True) AUROC
+  -------------|----------------------|---------------------
+  Colon        | 0.900                | 0.960 ± 0.055
+  Terminal ileum (TI) | 0.911        | 0.811 ± 0.177
+  All regions  | 0.833                | 0.822 ± 0.126
+
+  Additionally, for the SCP259 UC atlas:
+  - Compartment CFN: AUROC = 0.978 ± 0.050
+  - Global CFN: AUROC = 0.906 ± 0.130
+  - CLR composition SVM (compartment or global): AUROC = 0.928 ± 0.110
+question: |
+  In which scenario does CFN most reliably outperform the CLR linear baseline,
+  based on the empirical results from this study?
+answer_format: multiple_choice
+choices:
+  - A: CFN outperforms CLR linear in all regions and all datasets without exception.
+  - B: CFN outperforms CLR linear specifically in the colonic region of Crohn Disease
+      and in compartment-stratified UC classification; CLR linear matches or exceeds
+      CFN in the terminal ileum and all-region pooled settings.
+  - C: CFN outperforms CLR linear only when the dataset exceeds 50 donors.
+  - D: CFN never outperforms CLR linear; the differences are within noise.
+correct: "B"
+grader: mc_match
+rationale: |
+  The evidence is clear: CFN wins in colon CD (0.960 vs 0.900) and compartment UC
+  (0.978 vs 0.928), but loses in TI (0.811 vs 0.911) and ties/loses in all-region.
+  The pattern suggests CFN captures colonic co-occurrence structure that linear
+  methods miss, but this structure is less informative in the terminal ileum where
+  CLR proportions alone are more discriminative.
+sources:
+  - results/kong2023_cd/cfn_clean/summary.tsv
+  - results/kong2023_cd/baselines_clean/kong_clr_colon_clean_summary.tsv
+  - results/uc_scp259/cfn_benchmarks/donor_compartment_cluster_props_cfn_full_summary.csv
+difficulty: hard
+expected_failure: true

@@ -1,0 +1,40 @@
+id: uc_vs_cd_biology
+title: Biological differences between UC and CD reflected in classification performance
+category: biology
+context: |
+  Ulcerative Colitis (UC) and Crohn's Disease (CD) are the two major forms of
+  Inflammatory Bowel Disease (IBD). Classification performance on donor-level
+  disease status differs substantially between the two atlases in this study:
+
+  SCP259 UC atlas (30 donors, colon-only):
+    Best AUROC = 1.000 (XGBoost pseudobulk, 5-fold CV)
+    CLR composition AUROC = 0.936 (repeated CV)
+    LODO AUROC = 1.000 (pseudobulk linear SVM)
+
+  Kong 2023 CD atlas (71 donors, multi-region):
+    Best within-region AUROC = 0.960 (colon CFN, 5-fold CV)
+    CLR all-region AUROC = 0.833 ± 0.103
+    TI region CFN AUROC = 0.811 ± 0.177
+
+  UC is primarily a colonic disease with relatively uniform mucosal involvement.
+  CD is transmural, can affect any segment of the GI tract, and has more
+  heterogeneous cellular involvement.
+question: |
+  From a biological standpoint, what feature of Crohn Disease makes it inherently
+  harder to classify from colonic single-cell data alone compared to Ulcerative Colitis?
+answer_format: short_answer
+correct: "CD is transmural and can affect any GI segment with heterogeneous involvement, meaning colonic biopsies may not capture the full disease phenotype"
+grader: exact_match
+rationale: |
+  UC is almost exclusively colonic (distal to proximal), making colon biopsies
+  highly representative of disease state — explaining near-perfect UC classification.
+  CD can affect the small intestine, terminal ileum, and colon with patchy/skip
+  lesions; colonic biopsies may miss transmural or ileal disease activity, reducing
+  the discriminability of colon-derived single-cell features. This is reflected in
+  the systematically lower AUROC for CD classification and the poor TI→colon
+  generalization (cross-region CFN AUROC = 0.822).
+sources:
+  - results/kong2023_cd/cfn_clean/summary.tsv
+  - results/uc_scp259/benchmarks/donor_all_cells_pseudobulk_lodo_summary.tsv
+difficulty: medium
+expected_failure: false
