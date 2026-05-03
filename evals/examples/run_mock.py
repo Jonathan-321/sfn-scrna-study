@@ -1,10 +1,10 @@
 """
 End-to-end mock run of the IBD scRNA eval suite.
 
-This script runs the full 15-task suite with the deterministic mock model,
-which requires no API keys. It verifies that:
-  - All 15 task YAML files load and validate correctly
-  - The grading machinery produces sensible pass/fail results
+This script runs the full task suite (v1 + v2) with the deterministic mock
+model, which requires no API keys. It verifies that:
+  - All task YAML files (including v2 subdirectory) load and validate correctly
+  - The grading machinery produces sensible pass/fail results for all graders
   - The summary statistics are computed correctly
   - A results JSON is written to disk
 
@@ -63,15 +63,15 @@ def main():
     print("Verification checks")
     print("=" * 60)
 
-    # Check 1: All 15 tasks ran
+    # Check 1: At least 15 tasks ran (v1 baseline; v2 adds more)
     n_tasks = len(results)
-    assert n_tasks == 15, f"Expected 15 tasks, got {n_tasks}"
-    print(f"[PASS] All 15 tasks ran")
+    assert n_tasks >= 15, f"Expected at least 15 tasks, got {n_tasks}"
+    print(f"[PASS] All {n_tasks} tasks ran")
 
     # Check 2: task_ids are unique
     task_ids = [r["task_id"] for r in results]
-    assert len(set(task_ids)) == 15, f"Duplicate task IDs: {task_ids}"
-    print(f"[PASS] All 15 task IDs are unique")
+    assert len(set(task_ids)) == n_tasks, f"Duplicate task IDs: {task_ids}"
+    print(f"[PASS] All {n_tasks} task IDs are unique")
 
     # Check 3: pass rate is between 0 and 1
     pr = summary["overall_pass_rate"]
@@ -80,12 +80,15 @@ def main():
 
     # Check 4: mock model produces ~50% pass rate (even-index tasks pass)
     n_pass = summary["total_pass"]
-    # Allow ±3 tasks of 50% due to grader edge cases
-    assert 4 <= n_pass <= 11, (
-        f"Mock model should pass ~50% (7-8 of 15) tasks; got {n_pass}/15. "
+    # Allow a wide band — ~50% ± 20 percentage points — to accommodate both
+    # v1-only and v1+v2 task counts without brittle hard-coded bounds.
+    lo = max(1, n_tasks // 4)
+    hi = n_tasks - lo
+    assert lo <= n_pass <= hi, (
+        f"Mock model should pass ~50% of {n_tasks} tasks; got {n_pass}. "
         "This may indicate a grader bug."
     )
-    print(f"[PASS] Mock pass rate plausible: {n_pass}/15 tasks passed")
+    print(f"[PASS] Mock pass rate plausible: {n_pass}/{n_tasks} tasks passed")
 
     # Check 5: per-category breakdown present
     categories_found = set(summary["per_category"].keys())
@@ -113,13 +116,14 @@ def main():
     assert loaded["model"] == "mock"
     print(f"[PASS] results JSON written and readable: {OUT_PATH.name}")
 
-    # Check 8: all grader types exercised
+    # Check 8: core grader types exercised (v2 adds rubric_match)
     graders_used = {r["grader"] for r in results}
-    expected_graders = {"mc_match", "numeric_tolerance", "set_match", "exact_match"}
-    assert graders_used == expected_graders, (
-        f"Not all grader types exercised. Found: {graders_used}"
+    core_graders = {"mc_match", "numeric_tolerance", "set_match", "exact_match"}
+    missing = core_graders - graders_used
+    assert not missing, (
+        f"Core grader types not exercised: {missing}. Found: {graders_used}"
     )
-    print(f"[PASS] All 4 grader types exercised: {sorted(graders_used)}")
+    print(f"[PASS] Core grader types exercised: {sorted(graders_used)}")
 
     # Check 9: latency recorded for all tasks
     latencies = [r["latency_ms"] for r in results]

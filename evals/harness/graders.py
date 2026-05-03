@@ -9,9 +9,9 @@ from __future__ import annotations
 
 import re
 import unicodedata
-from typing import List, Union
+from typing import Any, Dict, List, Union
 
-from .schema import NumericCorrect
+from .schema import NumericCorrect, RubricSpec
 
 
 # ---------------------------------------------------------------------------
@@ -127,6 +127,37 @@ def exact_match(response: str, correct: str) -> bool:
     return False
 
 
+def rubric_match(response: str, correct: Union[RubricSpec, Dict[str, Any]]) -> bool:
+    """
+    Rubric grader for open-ended design-critique tasks.
+
+    Accepts a rubric specification with:
+      - keyword_groups: list of lists; each inner list contains synonymous
+        keywords for one required concept.
+      - threshold (int): minimum number of groups that must be matched.
+
+    Pass condition: the response (lowercased) contains at least one keyword
+    from at least `threshold` of the groups.
+
+    correct is a RubricSpec instance or a plain dict with the same keys.
+    """
+    if isinstance(correct, dict):
+        keyword_groups = correct["keyword_groups"]
+        threshold = int(correct["threshold"])
+    else:
+        keyword_groups = correct.keyword_groups
+        threshold = correct.threshold
+
+    resp_lower = response.lower()
+    matched = 0
+    for group in keyword_groups:
+        for keyword in group:
+            if keyword.lower() in resp_lower:
+                matched += 1
+                break  # one match per group is sufficient
+    return matched >= threshold
+
+
 # ---------------------------------------------------------------------------
 # Dispatcher
 # ---------------------------------------------------------------------------
@@ -136,7 +167,8 @@ def run_grader(grader_name: str, response: str, correct) -> bool:
     Dispatch to the appropriate grader by name.
 
     Args:
-        grader_name: one of 'mc_match', 'numeric_tolerance', 'set_match', 'exact_match'
+        grader_name: one of 'mc_match', 'numeric_tolerance', 'set_match',
+                     'exact_match', 'rubric_match'
         response: raw model response string
         correct: the correct answer (type depends on grader)
 
@@ -151,5 +183,7 @@ def run_grader(grader_name: str, response: str, correct) -> bool:
         return set_match(response, correct)
     elif grader_name == "exact_match":
         return exact_match(response, correct)
+    elif grader_name == "rubric_match":
+        return rubric_match(response, correct)
     else:
         raise ValueError(f"Unknown grader: {grader_name!r}")

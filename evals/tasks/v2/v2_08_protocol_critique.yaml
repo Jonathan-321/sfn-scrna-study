@@ -1,0 +1,53 @@
+id: v2_08_protocol_critique
+title: Identify methodological problems in a deliberately flawed experimental design
+category: protocol_critique
+context: |
+  A collaborator describes the following classification experiment for a grant
+  application figure:
+
+  "We trained a linear SVM on CLR-normalized composition features from
+  single-cell RNA-seq data. The dataset contains 40 donors (25 CD, 15 healthy).
+  We randomly split the data 80/20 at the CELL level (not donor level),
+  trained on the 80% split, and tested on the 20% split — a single train/test
+  partition with no repeated sampling. The model achieved AUROC 0.97.
+  No batch correction was applied; all donors were processed on different
+  Chromium runs across two sites. No confidence interval is reported because
+  we had only one test split. We included all cell types (epithelial, immune,
+  stromal) in a single model. The training set has 25 CD and 15 healthy donors,
+  so the label distribution is 25:15 (unbalanced)."
+
+question: |
+  List the methodological problems with this experimental design that would
+  need to be addressed before this result could be used in a publication.
+answer_format: short_answer
+correct: "donor leakage"
+grader: rubric_match
+rubric:
+  keyword_groups:
+    - ["donor leakage", "donor-level leakage", "cell-level split", "subject-level leakage",
+       "cell level", "same donor in train and test", "donor not controlled"]
+    - ["batch confound", "batch effect", "site effect", "batch correction",
+       "multi-site", "chromium run", "batch covariate"]
+    - ["no resampling", "single split", "single partition", "no cross-validation",
+       "no cv", "one test split", "repeated cv", "bootstrap"]
+    - ["no confidence interval", "no CI", "uncertainty", "variance estimate",
+       "error bar", "confidence bound"]
+    - ["class imbalance", "label imbalance", "unbalanced", "imbalanced", "25 CD 15"]
+    - ["sample size", "small n", "only 40", "small dataset", "n=40", "40 donors",
+       "limited donors"]
+  threshold: 4
+rationale: |
+  Six problems are present: (1) cell-level split causes donor leakage,
+  (2) no batch correction despite multi-site multi-Chromium-run data,
+  (3) single train/test partition with no repeated sampling produces an
+  unreliable point estimate, (4) no confidence interval reported,
+  (5) 25:15 class imbalance is not addressed (no AUROC-weighted resampling,
+  no class weights), (6) small n (40 donors) with a single split magnifies
+  the reliability problem. Pass requires identifying at least 4 of these 6
+  issues. Tier 4 task — no single correct answer string; rubric grader checks
+  for concept coverage.
+sources:
+  - results/kong2023_cd/baselines/kong_clr_colon_fold_metrics.tsv
+  - results/kong2023_cd/baselines_clean/kong_clr_colon_clean_fold_metrics.tsv
+difficulty: hard
+expected_failure: true

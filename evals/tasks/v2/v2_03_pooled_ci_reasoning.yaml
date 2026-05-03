@@ -1,0 +1,42 @@
+id: v2_03_pooled_ci_reasoning
+title: Compute Wald 95% CI lower bound from per-fold AUROCs
+category: metrics
+context: |
+  Per-fold AUROC values from results/kong2023_cd/cfn_clean/kong_cfn_colon_fold_metrics.tsv
+  for the GatedStructuralCFN model, colon compartment, donor-aware 5-fold CV:
+
+    Fold 0: 1.0000
+    Fold 1: 1.0000
+    Fold 2: 0.9000
+    Fold 3: 0.9000
+    Fold 4: 1.0000
+
+  A Wald confidence interval uses the formula:
+    mean ± z * SEM
+  where z = 1.96 for 95% CI and SEM = sample_std(ddof=1) / sqrt(n).
+
+question: |
+  Using the five fold AUROC values above and the Wald approximation, compute
+  the lower bound of the 95% confidence interval (mean - 1.96 * SEM).
+  Report to four decimal places. Cite the source TSV in your response.
+answer_format: numeric
+correct:
+  value: 0.9120
+  tol: 0.01
+grader: numeric_tolerance
+verification:
+  source_file: results/kong2023_cd/cfn_clean/kong_cfn_colon_fold_metrics.tsv
+  column: auroc
+  filter: {}
+  formula: wald_ci_lower
+rationale: |
+  AUROCs = [1.0, 1.0, 0.9, 0.9, 1.0].
+  mean = 0.9600, sample std (ddof=1) = 0.054772, SEM = 0.054772 / sqrt(5) = 0.024495.
+  Wald lower = 0.9600 - 1.96 * 0.024495 = 0.9600 - 0.04801 = 0.91199 ≈ 0.9120.
+  Common failure modes: using z=2.0 instead of 1.96 (gives 0.911), using ddof=0
+  for std (gives 0.9149), or computing CI as [0, 1] clipped (gives wrong answer
+  for any near-ceiling distribution).
+sources:
+  - results/kong2023_cd/cfn_clean/kong_cfn_colon_fold_metrics.tsv
+difficulty: hard
+expected_failure: true

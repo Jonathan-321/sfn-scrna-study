@@ -157,7 +157,7 @@ class MockModel(BaseModel):
 
     @staticmethod
     def _format_correct(correct, grader: str) -> str:
-        from .schema import NumericCorrect
+        from .schema import NumericCorrect, RubricSpec
         if grader == "mc_match":
             if isinstance(correct, str):
                 return f"The answer is {correct}."
@@ -171,6 +171,15 @@ class MockModel(BaseModel):
                 return ", ".join(correct)
         if grader == "exact_match":
             return str(correct)
+        if grader == "rubric_match":
+            # Return a response that mentions the first keyword from each group
+            if isinstance(correct, RubricSpec):
+                keywords = [group[0] for group in correct.keyword_groups]
+            elif isinstance(correct, dict):
+                keywords = [group[0] for group in correct["keyword_groups"]]
+            else:
+                keywords = []
+            return "The design has issues: " + "; ".join(keywords) + "."
         return str(correct)
 
     @staticmethod
@@ -187,6 +196,8 @@ class MockModel(BaseModel):
             return "stromal only"
         if grader == "exact_match":
             return "incorrect_placeholder_xyz"
+        if grader == "rubric_match":
+            return "The experiment looks fine, no issues identified."
         return "wrong answer"
 
 

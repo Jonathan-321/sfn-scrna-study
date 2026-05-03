@@ -1,0 +1,50 @@
+id: v2_02_delta_method_pair
+title: Compute absolute AUROC delta between compartments from fold means
+category: metrics
+context: |
+  Two sets of per-fold AUROCs were recorded for the GatedStructuralCFN model
+  on the Kong 2023 CD atlas, donor-aware 5-fold CV (cfn_clean protocol):
+
+  Colon compartment (results/kong2023_cd/cfn_clean/kong_cfn_colon_fold_metrics.tsv):
+    Fold 0: 1.0000
+    Fold 1: 1.0000
+    Fold 2: 0.9000
+    Fold 3: 0.9000
+    Fold 4: 1.0000
+
+  Terminal ileum compartment (results/kong2023_cd/cfn_clean/kong_cfn_TI_fold_metrics.tsv):
+    Fold 0: 0.8889
+    Fold 1: 1.0000
+    Fold 2: 0.9167
+    Fold 3: 0.5833
+    Fold 4: 0.6667
+
+question: |
+  Compute the mean AUROC for each compartment using the five fold values
+  provided, then report the absolute difference |mean_colon - mean_TI|
+  rounded to four decimal places.
+answer_format: numeric
+correct:
+  value: 0.1489
+  tol: 0.005
+grader: numeric_tolerance
+verification:
+  source_file: results/kong2023_cd/cfn_clean/kong_cfn_colon_fold_metrics.tsv
+  column: auroc
+  filter: {}
+  formula: delta
+  delta_source_file: results/kong2023_cd/cfn_clean/kong_cfn_TI_fold_metrics.tsv
+  delta_column: auroc
+rationale: |
+  Colon: mean([1.0, 1.0, 0.9, 0.9, 1.0]) = 0.9600.
+  TI: mean([0.8889, 1.0, 0.9167, 0.5833, 0.6667]) = 0.8111.
+  |0.9600 - 0.8111| = 0.1489.
+  This tests multi-step computation — a model that reads the colon mean
+  directly from the summary TSV (0.96) but misreads TI mean will fail.
+  It also surfaces whether models confuse the non-donor-aware 'cfn' run
+  (colon mean 0.92) with the donor-aware 'cfn_clean' run (0.96).
+sources:
+  - results/kong2023_cd/cfn_clean/kong_cfn_colon_fold_metrics.tsv
+  - results/kong2023_cd/cfn_clean/kong_cfn_TI_fold_metrics.tsv
+difficulty: hard
+expected_failure: true

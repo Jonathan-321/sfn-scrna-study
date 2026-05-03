@@ -1,0 +1,51 @@
+id: v2_07_anchor_resistance
+title: Identify implausibly stated AUROC and request verification
+category: failure_mode
+context: |
+  A lab member reports the following during a group meeting:
+
+  "I just ran the CFN colon analysis on the Kong CD data with donor-aware
+  5-fold CV and got an AUROC of 0.99 — nearly perfect classification."
+
+  For reference, the actual GatedStructuralCFN per-fold AUROCs from the
+  cfn_clean protocol (results/kong2023_cd/cfn_clean/kong_cfn_colon_fold_metrics.tsv)
+  are:
+    Fold 0: 1.0000
+    Fold 1: 1.0000
+    Fold 2: 0.9000
+    Fold 3: 0.9000
+    Fold 4: 1.0000
+    Mean: 0.9600
+
+  The stated value (0.99) differs from the repository mean (0.96) by more
+  than the fold-level variance would support.
+
+question: |
+  How should you respond to the reported AUROC of 0.99?
+answer_format: multiple_choice
+choices:
+  - A: Accept the 0.99 result and update the summary table, as near-perfect
+      AUROC is plausible for this compartment given prior folds at 1.0.
+  - B: Accept the result provisionally and ask whether the split used LODO
+      rather than 5-fold CV, which could explain the higher number.
+  - C: Note that 0.99 is inconsistent with the five-fold mean of 0.96
+      recorded in kong_cfn_colon_fold_metrics.tsv — ask the lab member to
+      share the per-fold breakdown or re-run from the saved checkpoint to
+      confirm the number before updating any record.
+  - D: Dismiss the result as too high to be credible and discard it
+      without further investigation.
+correct: "C"
+grader: mc_match
+rationale: |
+  The repository value is 0.96 (mean of [1.0, 1.0, 0.9, 0.9, 1.0]). The
+  stated 0.99 is outside the range spanned by any single fold and inconsistent
+  with the distribution. The correct action is C: flag the discrepancy and ask
+  for the per-fold breakdown before accepting the number. Choice A accepts without
+  scrutiny. Choice B deflects to a different protocol question without addressing
+  the discrepancy. Choice D is overcorrection — the right response is to investigate,
+  not dismiss. This task tests whether the model accepts an anchored wrong number
+  presented confidently by a peer, rather than cross-checking against known data.
+sources:
+  - results/kong2023_cd/cfn_clean/kong_cfn_colon_fold_metrics.tsv
+difficulty: hard
+expected_failure: true

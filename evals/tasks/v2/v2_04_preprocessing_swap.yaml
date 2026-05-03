@@ -1,0 +1,52 @@
+id: v2_04_preprocessing_swap
+title: Identify which preprocessing change explains AUROC delta between pipelines
+category: method_selection
+context: |
+  Two classification pipelines were evaluated on the Kong 2023 CD colon
+  compartment. All other experimental conditions (dataset, compartment,
+  number of folds) are held constant.
+
+  Pipeline A — CLR composition features + linear SVM, donor-aware 5-fold CV:
+    Per-fold AUROCs: [0.80, 0.80, 0.80, 0.50, 1.00]
+    Mean AUROC: 0.78
+    Source: results/kong2023_cd/baselines_clean/kong_clr_colon_clean_fold_metrics.tsv
+            (model=linear_svm, column roc_auc)
+
+  Pipeline B — GatedStructuralCFN on CLR features, donor-aware 5-fold CV:
+    Per-fold AUROCs: [1.00, 1.00, 0.90, 0.90, 1.00]
+    Mean AUROC: 0.96
+    Source: results/kong2023_cd/cfn_clean/kong_cfn_colon_fold_metrics.tsv
+
+  The absolute delta in mean AUROC between Pipeline B and Pipeline A is 0.18.
+
+  Additional context:
+  - Both pipelines use CLR-normalized composition features as input.
+  - Both use a donor-aware (clean) cross-validation split.
+  - Both evaluate on the colon compartment only.
+  - The only structural difference is the classifier: linear SVM vs CFN.
+
+question: |
+  Which single change in Pipeline A most directly explains the 0.18 AUROC
+  gap between Pipeline A (CLR + linear SVM) and Pipeline B (CFN)?
+answer_format: multiple_choice
+choices:
+  - A: Replacing CLR normalization with raw count pseudobulk aggregation
+  - B: Switching from donor-aware CV to random-stratified CV
+  - C: Replacing the linear SVM classifier with the GatedStructuralCFN model
+  - D: Restricting to colon-only cells instead of all compartments combined
+correct: "C"
+grader: mc_match
+rationale: |
+  Both pipelines share CLR features (A is wrong), donor-aware splits (B is wrong),
+  and colon-only evaluation (D is wrong). The only difference is the classifier.
+  Pipeline B uses GatedStructuralCFN, which captures nonlinear cell-type dependency
+  structure; Pipeline A uses a linear SVM on the same CLR features, which cannot
+  model those interactions. The 0.18 gap (0.96 vs 0.78) is attributable entirely
+  to the model family, verifiable from the two source TSVs. A model that attributes
+  the gap to CLR normalization has confused the preprocessing-clean (baselines_clean)
+  run with the leaky run, or has confused normalization with model selection.
+sources:
+  - results/kong2023_cd/baselines_clean/kong_clr_colon_clean_fold_metrics.tsv
+  - results/kong2023_cd/cfn_clean/kong_cfn_colon_fold_metrics.tsv
+difficulty: hard
+expected_failure: true

@@ -40,13 +40,17 @@ from evals.harness.schema import NumericCorrect, TaskSpec
 # ---------------------------------------------------------------------------
 
 def load_tasks(tasks_dir: str) -> List[TaskSpec]:
-    """Load all YAML task files from a directory, sorted by filename."""
+    """Load all YAML task files from a directory tree, sorted by path.
+
+    Walks all subdirectories recursively, so evals/tasks/v2/*.yaml are
+    discovered automatically when tasks_dir is evals/tasks/.
+    """
     p = Path(tasks_dir)
     if not p.exists():
         raise FileNotFoundError(f"Tasks directory not found: {tasks_dir}")
-    task_files = sorted(p.glob("*.yaml"))
+    task_files = sorted(p.rglob("*.yaml"))
     if not task_files:
-        raise ValueError(f"No .yaml files found in {tasks_dir}")
+        raise ValueError(f"No .yaml files found under {tasks_dir}")
     tasks = []
     for f in task_files:
         with f.open() as fh:
@@ -122,11 +126,11 @@ def run_task(
     latency_ms = (time.perf_counter() - t0) * 1000
 
     # Grade
-    correct = task.correct
-    if isinstance(correct, NumericCorrect):
-        correct_for_grader = correct
+    # rubric_match graders use the task.rubric spec, not task.correct
+    if task.grader == "rubric_match":
+        correct_for_grader = task.rubric
     else:
-        correct_for_grader = correct
+        correct_for_grader = task.correct
 
     grader_pass = run_grader(task.grader, response, correct_for_grader)
 
