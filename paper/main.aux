@@ -7,30 +7,30 @@
 \citation{smillie2019intra}
 \citation{li2023structural}
 \citation{smillie2019intra}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Methods}{4}{section.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Datasets}{4}{subsection.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1}SCP259 (Smillie et al.\ 2019: UC vs.\ Healthy)}{4}{subsubsection.2.1.1}\protected@file@percent }
 \citation{kong2023single}
 \citation{aitchison1982statistical}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Methods}{5}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Datasets}{5}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1}SCP259 (Smillie et al.\ 2019: UC vs.\ Healthy)}{5}{subsubsection.2.1.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.2}Kong et al.\ 2023 (CD vs.\ Healthy)}{5}{subsubsection.2.1.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Feature Engineering}{5}{subsection.2.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3}CLR Transformation}{5}{subsection.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Baseline Classifiers}{5}{subsection.2.4}\protected@file@percent }
 \citation{lopez2018deep}
 \citation{li2023structural}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Baseline Classifiers}{6}{subsection.2.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.5}scVI Latent Representation}{6}{subsection.2.5}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.6}GatedStructuralCFN}{6}{subsection.2.6}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.7}Cross-Dataset Transfer}{6}{subsection.2.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{6}{section.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}SCP259: UC versus Healthy classification}{6}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{7}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}SCP259: UC versus Healthy classification}{7}{subsection.3.1}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces SCP259 classification results ($n=30$ donors, 5-fold CV). Best result per representation in bold.}}{7}{table.caption.3}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{tab:scp259}{{1}{7}{SCP259 classification results ($n=30$ donors, 5-fold CV). Best result per representation in bold}{table.caption.3}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \textbf  {Figure 1: AUROC across all feature representations and classifiers, broken down by cohort and intestinal region.} The key comparison is the colon panel of Kong 2023 (rightmost), where CFN (orange) achieves 0.960 on filtered features and outperforms all linear CLR baselines; in the TI panel the pattern reverses, with CatBoost CLR reaching 0.967 while CFN lags at 0.811. Bars show mean AUROC across 5 folds; error bars show $\pm $1\,SD; the dashed line at 0.5 marks chance performance. Reading guide: scan left to right across panels to see how the CFN-vs-linear gap changes by region; the colon panel is where the gap is largest and most consistent. }}{8}{figure.caption.4}\protected@file@percent }
 \newlabel{fig:auroc}{{1}{8}{\textbf {Figure 1: AUROC across all feature representations and classifiers, broken down by cohort and intestinal region.} The key comparison is the colon panel of Kong 2023 (rightmost), where CFN (orange) achieves 0.960 on filtered features and outperforms all linear CLR baselines; in the TI panel the pattern reverses, with CatBoost CLR reaching 0.967 while CFN lags at 0.811. Bars show mean AUROC across 5 folds; error bars show $\pm $1\,SD; the dashed line at 0.5 marks chance performance. Reading guide: scan left to right across panels to see how the CFN-vs-linear gap changes by region; the colon panel is where the gap is largest and most consistent}{figure.caption.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}CFN edge stability}{8}{subsection.3.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \textbf  {Figure 2: GatedStructuralCFN dependency matrices averaged across cross-validation folds, contrasting global and compartment formulations.} The critical comparison is between the first panel (SCP259 global, 51-dim, Jaccard 0.026) and the second panel (SCP259 compartment, 102-dim, top-20 recurrence 1.0): the compartment matrix has sharply defined block structure while the global matrix is diffuse and noisy. Warm colors encode positive dependency weights; cool colors encode negative weights. Cell type labels are omitted for matrices with $K > 20$. Reading guide: compare the two SCP259 panels side by side first, then move to the Kong colon panel (rightmost) where the filtered 32-dim CFN achieved the study's best single-region AUROC. }}{8}{figure.caption.5}\protected@file@percent }
-\newlabel{fig:cfn_heatmaps}{{2}{8}{\textbf {Figure 2: GatedStructuralCFN dependency matrices averaged across cross-validation folds, contrasting global and compartment formulations.} The critical comparison is between the first panel (SCP259 global, 51-dim, Jaccard 0.026) and the second panel (SCP259 compartment, 102-dim, top-20 recurrence 1.0): the compartment matrix has sharply defined block structure while the global matrix is diffuse and noisy. Warm colors encode positive dependency weights; cool colors encode negative weights. Cell type labels are omitted for matrices with $K > 20$. Reading guide: compare the two SCP259 panels side by side first, then move to the Kong colon panel (rightmost) where the filtered 32-dim CFN achieved the study's best single-region AUROC}{figure.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \textbf  {Figure 2: GatedStructuralCFN dependency matrices averaged across cross-validation folds, contrasting global and compartment formulations.} The critical comparison is between the first panel (SCP259 global, 51-dim, Jaccard 0.026) and the second panel (SCP259 compartment, 102-dim, top-20 recurrence 1.0): the compartment matrix has sharply defined block structure while the global matrix is diffuse and noisy. Warm colors encode positive dependency weights; cool colors encode negative weights. Cell type labels are omitted for matrices with $K > 20$. Reading guide: compare the two SCP259 panels side by side first, then move to the Kong colon panel (rightmost) where the filtered 32-dim CFN achieved the numerically highest single-region AUROC in this study. }}{8}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:cfn_heatmaps}{{2}{8}{\textbf {Figure 2: GatedStructuralCFN dependency matrices averaged across cross-validation folds, contrasting global and compartment formulations.} The critical comparison is between the first panel (SCP259 global, 51-dim, Jaccard 0.026) and the second panel (SCP259 compartment, 102-dim, top-20 recurrence 1.0): the compartment matrix has sharply defined block structure while the global matrix is diffuse and noisy. Warm colors encode positive dependency weights; cool colors encode negative weights. Cell type labels are omitted for matrices with $K > 20$. Reading guide: compare the two SCP259 panels side by side first, then move to the Kong colon panel (rightmost) where the filtered 32-dim CFN achieved the numerically highest single-region AUROC in this study}{figure.caption.5}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Kong 2023: CD versus Healthy classification}{9}{subsection.3.3}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Kong 2023 CD vs.\ Healthy results (5-fold CV, best model per category shown). Pre-filtering feature counts shown in parentheses.}}{9}{table.caption.6}\protected@file@percent }
 \newlabel{tab:kong}{{2}{9}{Kong 2023 CD vs.\ Healthy results (5-fold CV, best model per category shown). Pre-filtering feature counts shown in parentheses}{table.caption.6}{}}
@@ -49,6 +49,9 @@
 \citation{smillie2019intra}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{13}{section.5}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {6}Future Work (Research Proposal)}{13}{section.6}\protected@file@percent }
+\citation{li2023structural}
+\citation{smillie2019intra}
+\citation{kong2023single}
 \bibstyle{plainnat}
 \bibdata{references}
 \bibcite{aitchison1982statistical}{{1}{1982}{{Aitchison}}{{}}}
