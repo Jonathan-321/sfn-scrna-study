@@ -2,19 +2,20 @@ id: cv_strategy_critique
 title: Single vs. repeated cross-validation for high-variance estimates
 category: protocol_critique
 context: |
-  A researcher evaluates a linear SVM on the SCP259 UC atlas (30 donors, 5-fold
-  donor-level CV) and reports the following AUROC estimates:
+  A researcher evaluates a linear SVM on the SCP259 UC atlas (30 donors,
+  CLR composition features, 5-fold donor-level CV) and reports the following
+  AUROC estimates:
 
-  Single 5-fold CV run:
-    Folds: [1.000, 1.000, 0.750, 1.000, 0.875]
-    Mean = 0.925, SD = 0.110
+  Single 5-fold CV run (linear SVM, CLR composition):
+    Fold AUROCs: [1.000, 0.889, 1.000, 1.000, 0.750]
+    Mean = 0.928, SD = 0.099
 
   Repeated 10× 5-fold CV (same model, same data):
-    Mean AUROC = 0.9925, SD = 0.024 (95% CI: 0.942–1.000)
+    Mean AUROC = 0.927, SD = 0.034 (95% CI: 0.865–0.971)
 
-  The standard deviation drops from 0.110 (single run) to 0.024 (repeated).
+  The standard deviation drops from 0.099 (single run) to 0.034 (repeated).
   The researcher claims the single-fold result is sufficient for publication
-  because the mean (0.925) is close to the repeated-CV mean (0.9925).
+  because the mean (0.928) is close to the repeated-CV mean (0.927).
 question: |
   What is the primary statistical problem with relying on a single 5-fold CV
   run on a dataset of 30 donors?
@@ -22,23 +23,24 @@ answer_format: multiple_choice
 choices:
   - A: Single CV is always biased downward because the training set is smaller.
   - B: With only 30 donors and 5 folds, each fold contains ~6 test donors.
-      A single CV run has high variance because outlier folds (e.g., one fold
-      with 0.750 AUROC) dominate the estimate; repeated CV averages this
-      variance away and is required for stable inference.
+      A single CV run has high variance because individual folds (e.g., fold 4
+      with AUROC 0.750 or fold 1 with 0.889) dominate the mean; repeated CV
+      averages this partition-dependent variance away and is required for
+      stable inference.
   - C: Single CV inflates AUROC by overfitting to the test fold.
   - D: Repeated CV is unnecessary when AUROC exceeds 0.90.
 correct: "B"
 grader: mc_match
 rationale: |
   SCP259 has 30 donors → each fold tests on ~6 donors. With such small test
-  sets, a single bad fold (e.g., fold 2 with 3 UC and 3 healthy donors where
-  one is an outlier) produces unstable AUROC estimates. The SD drops from 0.110
-  to 0.024 with 10 repeats, demonstrating the instability. This is a known
-  issue in small-cohort scRNA studies and motivates the repeated-CV protocol
-  used throughout this repo.
-  See: results/uc_scp259/benchmarks/donor_all_cells_pseudobulk_repeated_summary.tsv
+  sets, single-run fold assignments strongly affect the mean; fold 4 (AUROC
+  0.750) pulls the estimate down while fold 1 (AUROC 0.889) reflects a
+  different partition. The SD drops from 0.099 (single run) to 0.034 (10
+  repeats), demonstrating instability. This motivates the repeated-CV protocol.
+  See: results/uc_scp259/benchmarks/donor_cluster_props_repeated_summary.tsv
+  and donor_cluster_props_baselines_fold_metrics.tsv.
 sources:
-  - results/uc_scp259/benchmarks/donor_all_cells_pseudobulk_repeated_summary.tsv
-  - results/uc_scp259/benchmarks/donor_all_cells_pseudobulk_baselines_summary.tsv
+  - results/uc_scp259/benchmarks/donor_cluster_props_repeated_summary.tsv
+  - results/uc_scp259/benchmarks/donor_cluster_props_baselines_fold_metrics.tsv
 difficulty: medium
 expected_failure: false

@@ -7,17 +7,19 @@ context: |
   (1) GLOBAL: cluster-proportion features from all 51 cell types pooled together
       (one 51-dimensional vector per donor).
   (2) COMPARTMENT: cluster-proportion features computed separately within each of
-      three tissue compartments — epithelial, stromal, and immune — then
-      concatenated (one ~153-dimensional vector per donor).
+      three major tissue compartments, then concatenated
+      (one ~153-dimensional vector per donor).
   Results from a linear SVM with 5-fold donor-level CV:
   - Global linear SVM: mean AUROC = 0.928 ± 0.110
   - Compartment linear SVM: mean AUROC = 0.928 ± 0.110
   Under compartment-stratified CFN (GatedStructuralCFN):
   - Global CFN: mean AUROC = 0.906 ± 0.130
   - Compartment CFN: mean AUROC = 0.978 ± 0.050
+  The compartment partition follows the standard intestinal tissue classification
+  used in the Smillie et al. SCP259 atlas.
 question: |
-  Which three tissue compartments are used in the compartment-stratified
-  representation of the SCP259 UC atlas?
+  Name the three tissue compartments used in the compartment-stratified
+  representation of the SCP259 UC atlas.
 answer_format: set
 correct:
   - epithelial

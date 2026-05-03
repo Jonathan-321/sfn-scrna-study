@@ -8,7 +8,7 @@ context: |
 
   Method A — CLR linear baseline (centered-log-ratio normalized cluster proportions
   + linear SVM), 5-fold donor-level CV:
-    - Colon region: mean AUROC = 0.900
+    - Colon region: mean AUROC = 0.911
     - Terminal ileum (TI) region: mean AUROC = 0.917
 
   Method B — GatedStructuralCFN (graph neural network over cell-type co-occurrence),
@@ -23,22 +23,26 @@ question: |
   classification task, and why?
 answer_format: multiple_choice
 choices:
-  - A: CLR linear baseline, because it consistently outperforms CFN across all
-      intestinal regions in the Kong 2023 atlas.
+  - A: CLR linear baseline, because it achieves higher AUROC than CFN in the
+      terminal ileum region, and that superiority likely generalises to the colon
+      as well.
   - B: GatedStructuralCFN (CFN), because it achieves higher AUROC in the colon
-      region (0.960 vs. 0.900) and is the recommended method for colonic CD.
+      region (0.960 vs. 0.911) and region-specific evaluation supports its use
+      for colonic CD classification.
   - C: Neither method is appropriate; a deep learning model trained on raw counts
       is required for colon-specific classification.
-  - D: CLR linear baseline, because CFN has unacceptably high variance in the
-      colon region and should be avoided.
+  - D: CLR linear baseline, because CFN performance varies strongly by region
+      and a method that fails in TI cannot be trusted in any intestinal region.
 correct: "B"
 grader: mc_match
 rationale: |
-  CFN achieves 0.960 ± 0.055 in colon vs. 0.900 CLR linear baseline — a
-  meaningful improvement. In TI, however, CLR baselines dominate (0.917 vs.
-  0.811 for CFN), so method choice is region-specific. For a colonic study,
-  CFN is clearly preferred. Source: kong_cfn_clean/summary.tsv and
-  kong_clr_colon_clean_summary.tsv.
+  CFN achieves 0.960 ± 0.055 in colon vs. 0.911 CLR linear SVM — a meaningful
+  improvement. In TI, CLR dominates (0.917 vs. 0.811 for CFN), so method choice
+  is region-specific. The question specifies a colonic study, where CFN is
+  clearly preferred. Option A is a plausible trap because CLR does beat CFN in TI,
+  but the task specifies colonic biopsies and region-specific evaluation must be
+  applied. Option D conflates poor TI performance with global unreliability.
+  Source: kong_cfn_clean/summary.tsv and kong_clr_colon_clean_summary.tsv.
 sources:
   - results/kong2023_cd/cfn_clean/summary.tsv
   - results/kong2023_cd/baselines_clean/kong_clr_colon_clean_summary.tsv

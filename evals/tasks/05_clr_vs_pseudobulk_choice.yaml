@@ -3,23 +3,17 @@ title: CLR composition vs. pseudobulk gene expression for UC classification
 category: method_selection
 context: |
   In the SCP259 UC atlas (30 donors), two fundamentally different feature
-  representations were benchmarked for donor-level UC vs. healthy classification:
+  representations were benchmarked for donor-level UC vs. healthy classification
+  using repeated 10x 5-fold donor-level CV:
 
   (1) CLR composition: centered-log-ratio transformed cluster-proportion features
       (51-dimensional, one proportion per annotated cell type per donor).
-      Repeated 10x 5-fold CV, best model (logreg):
-      AUROC = 0.936 ± 0.049 (95% CI: 0.883–0.971)
 
   (2) Pseudobulk gene expression: sum of raw counts per donor across all cells,
       top-1000 highly variable genes selected within each training fold using
       variance-based filtering.
-      Repeated 10x 5-fold CV, best model (XGBoost):
-      AUROC = 0.997 ± 0.008 (95% CI: 0.981–1.000)
 
-  LODO (leave-one-donor-out) AUROC:
-      CLR composition linear SVM: 0.926
-      Pseudobulk linear SVM: 1.000
-
+  LODO (leave-one-donor-out) evaluation was also conducted.
   A researcher wants maximum classification accuracy with donor-level
   leave-one-out generalization as the primary evaluation.
 question: |

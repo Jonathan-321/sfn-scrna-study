@@ -12,9 +12,6 @@ context: |
   Results (XGBoost with CLR normalization):
     - UC→CD (train on SCP259, test on Kong): AUROC = 0.465
     - CD→UC (train on Kong, test on SCP259): AUROC = 0.833
-
-  The UC→CD direction achieves near-chance performance while CD→UC achieves
-  substantial transfer.
 question: |
   Which direction of cross-dataset transfer achieves substantially above-chance
   AUROC, and what is the primary mechanistic reason for the asymmetry?

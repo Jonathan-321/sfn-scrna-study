@@ -11,10 +11,10 @@ context: |
     TI-only:    AUROC = 0.811 ± 0.177
     All-region (colon + TI + other pooled): AUROC = 0.822 ± 0.126
 
-  CLR linear SVM (clean cohort):
-    Colon-only:  AUROC = 0.900
-    TI-only:     AUROC = 0.917
-    All-region:  AUROC = 0.833
+  CLR best linear baseline (clean cohort):
+    Colon-only:  AUROC = 0.911 (linear SVM)
+    TI-only:     AUROC = 0.917 (logreg)
+    All-region:  AUROC = 0.833 (linear SVM)
 
   The all-region pooled AUROC for CFN (0.822) is LOWER than the colon-only
   CFN AUROC (0.960), despite having more training data when pooled.

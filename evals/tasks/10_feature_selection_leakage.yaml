@@ -44,4 +44,4 @@ rationale: |
 sources:
   - results/uc_scp259/benchmarks/donor_all_cells_pseudobulk_baselines_summary.tsv
 difficulty: hard
-expected_failure: true
+expected_failure: false
