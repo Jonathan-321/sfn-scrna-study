@@ -1,0 +1,39 @@
+id: v2_01_sem_from_folds
+title: Compute standard error of the mean from per-fold AUROCs
+category: metrics
+context: |
+  The following per-fold AUROC values were recorded for the GatedStructuralCFN
+  model trained on Kong 2023 CD data, terminal ileum (TI) compartment,
+  donor-aware 5-fold cross-validation (cfn_clean protocol):
+
+    Fold 0: 0.8889
+    Fold 1: 1.0000
+    Fold 2: 0.9167
+    Fold 3: 0.5833
+    Fold 4: 0.6667
+
+  Source: results/kong2023_cd/cfn_clean/kong_cfn_TI_fold_metrics.tsv, column `auroc`.
+
+question: |
+  Using the five per-fold AUROC values listed above, compute the standard error
+  of the mean (SEM). Use the sample standard deviation (ddof=1) divided by
+  sqrt(n). Report to four decimal places.
+answer_format: numeric
+correct:
+  value: 0.0793
+  tol: 0.005
+grader: numeric_tolerance
+verification:
+  source_file: results/kong2023_cd/cfn_clean/kong_cfn_TI_fold_metrics.tsv
+  column: auroc
+  filter: {}
+  formula: sem
+rationale: |
+  From the TSV: AUROCs = [0.8889, 1.0000, 0.9167, 0.5833, 0.6667].
+  mean = 0.8111, sample std (ddof=1) = 0.1772, SEM = 0.1772 / sqrt(5) = 0.0793.
+  A model that confuses population std (ddof=0) for sample std will report
+  ~0.0708, which falls outside the tolerance — this is the intended discriminator.
+sources:
+  - results/kong2023_cd/cfn_clean/kong_cfn_TI_fold_metrics.tsv
+difficulty: hard
+expected_failure: true

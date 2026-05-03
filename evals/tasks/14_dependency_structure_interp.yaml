@@ -8,11 +8,14 @@ context: |
   recurrence and stability analysis tracks which cell-type pairs appear
   consistently across folds.
 
-  From the consensus CFN analysis (compartment setting):
-  - Top recurring edges involve immune cell types (e.g., BEST4+ epithelial ↔
-    Plasma cell pairs, regulatory T cell ↔ macrophage interactions)
-  - The CFN structural matrices have high fold-to-fold Jaccard similarity
-    (>0.70 for top-20 edges in compartment setting vs. <0.50 in global setting)
+  From the consensus CFN analysis:
+  - Top recurring edges in the compartment setting involve immune cell types
+    (e.g., BEST4+ epithelial ↔ Plasma cell pairs, regulatory T cell ↔
+    macrophage interactions)
+  - Fold-to-fold Jaccard similarity for the top-20 edges is higher for
+    compartment CFN (mean 0.053, max 0.111) than for global CFN (mean 0.026,
+    max 0.053); edge-weight standard deviation is also lower for compartment
+    (0.007 vs. 0.012 for global)
   - Compartment CFN achieves AUROC = 0.978 ± 0.050; Global CFN = 0.906 ± 0.130
 
   The higher structural stability of compartment CFN corresponds to lower AUROC
@@ -40,9 +43,15 @@ rationale: |
   folds, it indicates the model is capturing genuine biological signal (e.g.,
   UC-specific immune cell interactions in the immune compartment) rather than
   overfitting to training-fold noise. The stability-performance correlation
-  (compartment: high stability + high AUROC; global: low stability + lower AUROC)
-  is reported in the consensus_cfn analyses. Option A is wrong because overfitting
-  typically produces high training performance but fold-dependent (unstable) edges.
+  (compartment: higher Jaccard 0.053 vs. global 0.026, lower edge-weight std
+  0.007 vs. 0.012, higher AUROC 0.978 vs. 0.906, lower AUROC variance 0.050
+  vs. 0.130) is documented in the stability summary CSVs.
+  Option A is wrong because overfitting typically produces high training
+  performance but fold-dependent (unstable) edges.
+  Sources: donor_compartment_cluster_props_cfn_full_stability_summary_top20.csv
+  (compartment: topk_jaccard_mean=0.053, edge_std_mean=0.0074) vs.
+  donor_cluster_props_cfn_full_stability_summary.csv
+  (global: topk_jaccard_mean=0.026, edge_std_mean=0.0125).
 sources:
   - results/uc_scp259/cfn_benchmarks/donor_compartment_cluster_props_cfn_full_stability_summary.csv
   - results/uc_scp259/cfn_benchmarks/consensus_cfn_compartment_edge_recurrence.csv

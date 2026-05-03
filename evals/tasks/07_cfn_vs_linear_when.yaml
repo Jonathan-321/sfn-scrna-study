@@ -9,7 +9,7 @@ context: |
 
   Region       | CLR linear SVM AUROC | CFN (CLR=True) AUROC
   -------------|----------------------|---------------------
-  Colon        | 0.900                | 0.960 ± 0.055
+  Colon        | 0.911                | 0.960 ± 0.055
   Terminal ileum (TI) | 0.911        | 0.811 ± 0.177
   All regions  | 0.833                | 0.822 ± 0.126
 
@@ -31,7 +31,7 @@ choices:
 correct: "B"
 grader: mc_match
 rationale: |
-  The evidence is clear: CFN wins in colon CD (0.960 vs 0.900) and compartment UC
+  The evidence is clear: CFN wins in colon CD (0.960 vs 0.911) and compartment UC
   (0.978 vs 0.928), but loses in TI (0.811 vs 0.911) and ties/loses in all-region.
   The pattern suggests CFN captures colonic co-occurrence structure that linear
   methods miss, but this structure is less informative in the terminal ileum where
@@ -41,4 +41,4 @@ sources:
   - results/kong2023_cd/baselines_clean/kong_clr_colon_clean_summary.tsv
   - results/uc_scp259/cfn_benchmarks/donor_compartment_cluster_props_cfn_full_summary.csv
 difficulty: hard
-expected_failure: true
+expected_failure: false

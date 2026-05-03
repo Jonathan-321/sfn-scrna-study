@@ -6,7 +6,7 @@ context: |
   strategies:
 
   Strategy A — Standard 5-fold donor-level CV (single run):
-    LinearSVM AUROC = 0.925 ± 0.110
+    LinearSVM AUROC = 0.925 ± 0.168
     XGBoost AUROC  = 1.000 ± 0.000
 
   Strategy B — Leave-one-donor-out (LODO, 30 folds):
@@ -45,4 +45,4 @@ sources:
   - results/uc_scp259/benchmarks/donor_all_cells_pseudobulk_lodo_summary.tsv
   - results/uc_scp259/benchmarks/donor_global_representation_comparison.md
 difficulty: medium
-expected_failure: false
+expected_failure: true

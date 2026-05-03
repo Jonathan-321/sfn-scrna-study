@@ -1,0 +1,52 @@
+id: v2_05_leakage_localization
+title: Identify protocol decision responsible for AUROC inflation between CV regimes
+category: method_selection
+context: |
+  Two experiments evaluated the same CLR composition + linear SVM pipeline
+  on the Kong 2023 CD colon compartment, differing only in the cross-validation
+  splitting strategy:
+
+  Experiment X — random stratified 5-fold CV (cells split by label, NOT by donor):
+    Per-fold AUROCs: [0.80, 1.00, 0.80, 0.90, 1.00]
+    Mean AUROC: 0.90
+    Source: results/kong2023_cd/baselines/kong_clr_colon_fold_metrics.tsv
+            (model=linear_svm)
+
+  Experiment Y — donor-aware stratified 5-fold CV (each fold = held-out donors):
+    Per-fold AUROCs: [0.80, 0.80, 0.80, 0.50, 1.00]
+    Mean AUROC: 0.78
+    Source: results/kong2023_cd/baselines_clean/kong_clr_colon_clean_fold_metrics.tsv
+            (model=linear_svm)
+
+  The 0.12 mean AUROC gap (0.90 vs 0.78) between the two experiments is
+  entirely a protocol artifact — no hyperparameters, features, or model weights
+  differ between X and Y.
+
+question: |
+  Which specific protocol decision in Experiment X most directly inflates
+  its AUROC relative to Experiment Y?
+answer_format: multiple_choice
+choices:
+  - A: Experiment X uses CLR normalization, which introduces compositional bias
+  - B: Experiment X folds are split at the cell level rather than the donor level,
+      allowing cells from the same donor to appear in both train and test folds
+  - C: Experiment X uses 5 folds rather than leave-one-donor-out, reducing
+      test-set diversity
+  - D: Experiment X evaluates only the colon compartment, excluding TI cells
+      that would add regularizing variance
+correct: "B"
+grader: mc_match
+rationale: |
+  Both experiments use CLR features (A is wrong). Both use 5 folds (C is wrong —
+  and LODO would give even more conservative estimates). Both restrict to colon (D
+  is wrong). The only difference is that Experiment X splits at the cell level,
+  meaning cells from the same donor appear in train and test; since each CLR
+  composition vector is a donor-level aggregate, this is equivalent to including
+  the test donor in training. This is classic donor-level label leakage, verified
+  by the 0.12 AUROC inflation between baselines (leaky) and baselines_clean
+  (donor-aware) directories in results/.
+sources:
+  - results/kong2023_cd/baselines/kong_clr_colon_fold_metrics.tsv
+  - results/kong2023_cd/baselines_clean/kong_clr_colon_clean_fold_metrics.tsv
+difficulty: hard
+expected_failure: true

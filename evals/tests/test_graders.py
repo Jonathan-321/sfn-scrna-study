@@ -31,10 +31,11 @@ from evals.harness.graders import (
     exact_match,
     mc_match,
     numeric_tolerance,
+    rubric_match,
     run_grader,
     set_match,
 )
-from evals.harness.schema import NumericCorrect
+from evals.harness.schema import NumericCorrect, RubricSpec
 
 
 # ---------------------------------------------------------------------------
@@ -228,6 +229,105 @@ class TestExactMatch:
 
     def test_no_match(self):
         assert exact_match("The colon is a large intestine segment.", "transmural") is False
+
+
+# ---------------------------------------------------------------------------
+# rubric_match
+# ---------------------------------------------------------------------------
+
+class TestRubricMatch:
+    """Tests for the rubric_match grader."""
+
+    _RUBRIC = RubricSpec(
+        keyword_groups=[
+            ["donor leakage", "donor-level leakage", "cell-level split"],
+            ["batch effect", "batch correction", "batch confound"],
+            ["no confidence interval", "no CI", "uncertainty"],
+            ["class imbalance", "imbalanced", "unbalanced"],
+            ["sample size", "small n", "only 40 donors"],
+        ],
+        threshold=4,
+    )
+
+    def test_meets_threshold_exactly(self):
+        """Response that hits exactly `threshold` groups should pass."""
+        resp = (
+            "The design has donor leakage because cells from the same donor "
+            "appear in train and test. There is also no batch correction. "
+            "No confidence interval is reported. The labels are class imbalance."
+        )
+        assert rubric_match(resp, self._RUBRIC) is True
+
+    def test_exceeds_threshold(self):
+        """Response that mentions all 5 groups should pass."""
+        resp = (
+            "Problems: donor leakage, batch effect, no confidence interval, "
+            "class imbalance, and the sample size is too small."
+        )
+        assert rubric_match(resp, self._RUBRIC) is True
+
+    def test_below_threshold(self):
+        """Response that hits only 2 groups (below threshold=4) should fail."""
+        resp = "There is donor leakage and batch effect in this study."
+        assert rubric_match(resp, self._RUBRIC) is False
+
+    def test_zero_matches(self):
+        """Empty / irrelevant response should fail."""
+        assert rubric_match("The experiment looks completely fine.", self._RUBRIC) is False
+
+    def test_case_insensitive_keywords(self):
+        """Keywords should match regardless of case."""
+        resp = (
+            "DONOR LEAKAGE is present. BATCH CORRECTION is missing. "
+            "NO CONFIDENCE INTERVAL. CLASS IMBALANCE noted."
+        )
+        assert rubric_match(resp, self._RUBRIC) is True
+
+    def test_synonym_within_group(self):
+        """Any synonym in a group counts — should not require a specific keyword."""
+        # Uses 'cell-level split' (not 'donor leakage') and 'batch confound',
+        # 'no CI', 'unbalanced' — four groups via synonyms.
+        resp = (
+            "cell-level split means the donor is in both folds; batch confound "
+            "from multi-site; no CI reported; labels are unbalanced."
+        )
+        assert rubric_match(resp, self._RUBRIC) is True
+
+    def test_dict_interface(self):
+        """rubric_match accepts a plain dict as well as a RubricSpec."""
+        rubric_dict = {
+            "keyword_groups": [
+                ["donor leakage"],
+                ["batch effect"],
+                ["no CI"],
+                ["class imbalance"],
+            ],
+            "threshold": 3,
+        }
+        resp = "donor leakage, batch effect, no CI mentioned."
+        assert rubric_match(resp, rubric_dict) is True
+
+    def test_threshold_one_below_fails(self):
+        """Exactly one below threshold should fail."""
+        rubric = RubricSpec(
+            keyword_groups=[
+                ["donor leakage"],
+                ["batch effect"],
+                ["no CI"],
+            ],
+            threshold=3,
+        )
+        resp = "donor leakage and batch effect only."
+        assert rubric_match(resp, rubric) is False  # 2 of 3, threshold=3
+
+    def test_dispatch_rubric_match(self):
+        """run_grader dispatches correctly to rubric_match."""
+        rubric = RubricSpec(
+            keyword_groups=[["donor leakage"], ["batch effect"], ["no CI"]],
+            threshold=2,
+        )
+        resp = "donor leakage and batch effect found."
+        assert run_grader("rubric_match", resp, rubric) is True
 
 
 # ---------------------------------------------------------------------------

@@ -23,7 +23,7 @@ question: |
   From a biological standpoint, what feature of Crohn Disease makes it inherently
   harder to classify from colonic single-cell data alone compared to Ulcerative Colitis?
 answer_format: short_answer
-correct: "CD is transmural and can affect any GI segment with heterogeneous involvement, meaning colonic biopsies may not capture the full disease phenotype"
+correct: "transmural"
 grader: exact_match
 rationale: |
   UC is almost exclusively colonic (distal to proximal), making colon biopsies
@@ -36,5 +36,5 @@ rationale: |
 sources:
   - results/kong2023_cd/cfn_clean/summary.tsv
   - results/uc_scp259/benchmarks/donor_all_cells_pseudobulk_lodo_summary.tsv
-difficulty: medium
-expected_failure: false
+difficulty: hard
+expected_failure: true
