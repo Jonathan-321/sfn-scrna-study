@@ -3,6 +3,10 @@
 **Date:** May 2, 2026
 **Suite version:** v1 (15 tasks)
 **Models evaluated:** `claude-sonnet-4-5`, `claude-opus-4-5`
+*v1 was run before harness logging captured dated checkpoints. Dated
+checkpoints (`claude-sonnet-4-5-20250929`, `claude-opus-4-5-20251101`) are
+captured in the v2 section below; v1 results were reproduced under the
+same combined run logged in `evals/screenshots/`.*
 **Status:** v1 ceiling reached. v2 in development with harder, multi-step, and quantitative tasks.
 
 ---
@@ -175,15 +179,16 @@ disagreement is investigated.
 # v2 results — May 2, 2026 (later)
 
 **Suite:** v1 (15 tasks) + v2 (8 tasks) = 23 tasks total
-**Models:** `claude-sonnet-4-5`, `claude-opus-4-5`
+**Models (dated checkpoints):** `claude-sonnet-4-5-20250929`, `claude-opus-4-5-20251101`
 **Verifier:** all 3 quantitative tasks auto-verified against source TSVs by `evals/verify_groundtruth.py` before live run.
+**Run logs:** see `evals/screenshots/run_sonnet.png` and `evals/screenshots/run_opus.png` for the rendered terminal output of each run.
 
 ## Headline numbers (v1 + v2 combined)
 
-| Model | Pass rate | Pass / Total | v1 alone | v2 alone |
-|---|---|---|---|---|
-| Claude Sonnet 4.5 | 91.3% | 21 / 23 | 15/15 (100%) | 6/8 (75%) |
-| Claude Opus 4.5   | 91.3% | 21 / 23 | 14/15 (93.3%) | 7/8 (87.5%) |
+| Model | Checkpoint | Pass rate | Pass / Total | v1 alone | v2 alone |
+|---|---|---|---|---|---|
+| Claude Sonnet 4.5 | `claude-sonnet-4-5-20250929` | 91.3% | 21 / 23 | 15/15 (100%) | 6/8 (75%) |
+| Claude Opus 4.5   | `claude-opus-4-5-20251101`   | 87.0% | 20 / 23 | 14/15 (93.3%) | 6/8 (75%) |
 
 v2 achieves what v1 did not: a discriminating regime where strong models
 actually fail on real, well-grounded scientific reasoning tasks.
@@ -193,7 +198,7 @@ actually fail on real, well-grounded scientific reasoning tasks.
 | # | Task | Tier | Grader | Sonnet | Opus |
 |---|------|------|--------|--------|------|
 | v2_01 | sem_from_folds            | 1 | numeric_tolerance | ✅ | ✅ |
-| v2_02 | delta_method_pair         | 1 | numeric_tolerance | ❌ | ✅ |
+| v2_02 | delta_method_pair         | 1 | numeric_tolerance | ❌ | ❌† |
 | v2_03 | pooled_ci_reasoning       | 1 | numeric_tolerance | ✅ | ✅ |
 | v2_04 | preprocessing_swap        | 3 | mc_match          | ✅ | ✅ |
 | v2_05 | leakage_localization      | 3 | mc_match          | ✅ | ✅ |
@@ -201,19 +206,39 @@ actually fail on real, well-grounded scientific reasoning tasks.
 | v2_07 | anchor_resistance         | 2 | mc_match          | ✅ | ✅ |
 | v2_08 | protocol_critique         | 4 | rubric_match      | ❌ | ❌ |
 
+† Opus produced run-to-run variance on v2_02. In an earlier run (same
+checkpoint, same prompt, default temperature), Opus passed v2_02 by showing
+intermediate work (`mean_colon = 0.96`, `mean_TI = 0.8111`, `delta = 0.1489`).
+In the run captured in `screenshots/run_opus.png`, Opus failed the same task.
+This run-to-run variance on a tier-1 arithmetic-from-data task is itself a
+finding — it suggests that the discriminating signal here is not raw
+capability but rather whether the model elects to externalize intermediate
+steps on a given sample. Worth investigating with a chain-of-thought
+elicitation A/B in v3.
+
 ## The two failure modes — analyzed
 
-### v2_02 — Sonnet only, terse wrong arithmetic from data in prompt
+### v2_02 — terse wrong arithmetic, exhibits run-to-run variance
 
-**Task:** Given two five-element AUROC arrays (colon and terminal-ileum CFN folds), compute `|mean_colon - mean_TI|`. Correct answer: 0.1489 ± 0.005.
+**Task:** Given two five-element AUROC arrays (colon and terminal-ileum CFN
+folds), compute `|mean_colon - mean_TI|`. Correct answer: 0.1489 ± 0.005.
 
-**Sonnet response (verbatim, full):** `0.2378`
+**Sonnet response (verbatim, full):** `0.2378` — a single token, no work
+shown. Wrong by a factor of ~1.6×. We could not reverse-engineer 0.2378 from
+any natural permutation of the input arrays (it is not a fold-pair diff sum,
+max-min, std difference, or other obvious confusion).
 
-**Opus response:** Showed work (computed colon mean 0.96, TI mean 0.8111, delta 0.1489) and answered correctly.
+**Opus behavior is run-to-run variable:**
+- Run A: passed by showing intermediate work (`mean_colon = 0.96`,
+  `mean_TI = 0.8111`, `delta = 0.1489`).
+- Run B (captured in `screenshots/run_opus.png`): failed the same task.
 
-Sonnet returned a single number with no shown work, and the number is wrong by a factor of ~1.6×. We could not reverse-engineer 0.2378 from any natural permutation of the input arrays (it is not a fold-pair diff sum, max-min, std difference, or other obvious confusion). The interesting feature is the **combination of confidence and terseness**: a correct answer would have shown the two means explicitly; the wrong answer skipped the intermediate steps entirely. This is a documented frontier-LLM failure mode (confident terse output on numeric tasks under chain-of-thought-suppressing prompts) and is exactly the kind of finding the suite is designed to surface.
-
-Opus passed the same task by showing intermediate work. The cross-model gap on this single task is the strongest discriminating signal in the v2 run.
+The interesting feature is the **combination of confidence and terseness**:
+when these models elect to skip intermediate steps on a numeric task, the
+output becomes both more wrong and less inspectable. A correct answer would
+have shown the two means explicitly; the wrong answer collapses to a single
+token. This is exactly the kind of latent failure mode an evaluation is
+supposed to surface.
 
 ### v2_08 — both models, identical failure pattern
 
@@ -237,7 +262,8 @@ This is a real, reproducible finding about how current Claude models perform mul
 
 **Does establish:**
 - The verifier-script approach works: all 3 quantitative tasks were auto-verified against source TSVs before the run, and the verifier caught the kind of "agent-invented number" failure that the hardening pass caught on v1 task 14.
-- Frontier models can fail simple arithmetic-from-data when chain-of-thought is not elicited (v2_02 / Sonnet).
+- Frontier models can fail simple arithmetic-from-data when chain-of-thought is not elicited (v2_02 / Sonnet, intermittently Opus).
+- Run-to-run variance on tier-1 numeric tasks is itself a real phenomenon at default temperature — same prompt, same checkpoint, different outcome.
 - Frontier models exhibit convergent gaps in multi-criterion methodological critique, systematically underweighting routine statistical hygiene.
 - Single-keyword exact-match graders are not the right tool for biology questions with multiple valid framings (uc_vs_cd_biology persists from v1).
 
