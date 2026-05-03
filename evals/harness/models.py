@@ -39,8 +39,13 @@ class ClaudeModel(BaseModel):
     Wrapper around the Anthropic Python SDK.
 
     Requires ANTHROPIC_API_KEY environment variable.
-    Default model: claude-opus-4-5 (override via model_name argument or
-    ANTHROPIC_MODEL env var).
+    Model name must be supplied explicitly via the `model_name` argument or
+    the ANTHROPIC_MODEL env var — there is no silent default. This avoids
+    runs being silently attributed to the wrong model checkpoint.
+
+    The resolved checkpoint string returned by the API on each call is stored
+    on the instance as `last_resolved_model` so the harness can record the
+    exact dated version that responded (e.g. claude-sonnet-4-5-20250929).
     """
 
     def __init__(self, model_name: Optional[str] = None):
@@ -52,11 +57,16 @@ class ClaudeModel(BaseModel):
             ) from exc
 
         self._client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
-        self._model = (
-            model_name
-            or os.environ.get("ANTHROPIC_MODEL")
-            or "claude-opus-4-5"
-        )
+        resolved = model_name or os.environ.get("ANTHROPIC_MODEL")
+        if not resolved:
+            raise ValueError(
+                "No Claude model specified. Pass model_name=... or set the "
+                "ANTHROPIC_MODEL environment variable (e.g. "
+                "'claude-sonnet-4-5' or 'claude-opus-4-5'). The harness does "
+                "not assume a default to avoid silent misattribution."
+            )
+        self._model = resolved
+        self.last_resolved_model: Optional[str] = None
 
     def complete(self, prompt: str, max_tokens: int = 512, **kwargs) -> str:
         message = self._client.messages.create(
@@ -64,6 +74,8 @@ class ClaudeModel(BaseModel):
             max_tokens=max_tokens,
             messages=[{"role": "user", "content": prompt}],
         )
+        # Anthropic API returns the resolved dated checkpoint in `model`
+        self.last_resolved_model = getattr(message, "model", None) or self._model
         return message.content[0].text
 
 

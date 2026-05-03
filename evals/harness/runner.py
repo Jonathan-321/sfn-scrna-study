@@ -228,6 +228,12 @@ def run(
         print(f"Initializing model: {model_name!r} ...")
     model = get_model(model_name, model_name=model_checkpoint)
 
+    # Print the resolved model identifier loudly so silent default fallback
+    # to a different checkpoint cannot happen unnoticed.
+    requested = getattr(model, "_model", None)
+    if verbose and requested:
+        print(f"  Requested checkpoint: {requested}")
+
     results = []
     for i, task in enumerate(tasks):
         if verbose:
@@ -240,9 +246,15 @@ def run(
 
     summary = compute_summary(results)
 
+    # Capture the dated checkpoint the API actually responded with (e.g.
+    # 'claude-sonnet-4-5-20250929'), if the backend exposes it. This is what
+    # gets cited in published results, not the alias.
+    resolved_checkpoint = getattr(model, "last_resolved_model", None)
+
     output = {
         "model": model_name,
-        "model_checkpoint": model_checkpoint,
+        "model_checkpoint": model_checkpoint or getattr(model, "_model", None),
+        "resolved_checkpoint": resolved_checkpoint,
         "tasks_dir": str(tasks_dir),
         "summary": summary,
         "results": results,
@@ -268,7 +280,9 @@ def run(
             f"\nExpected-failure tasks: {ef['pass_rate']:.1%}  "
             f"({ef['n_pass']}/{ef['n_tasks']})"
         )
-        print(f"\nResults written to: {out_path}")
+        if resolved_checkpoint:
+            print(f"\nResolved checkpoint: {resolved_checkpoint}")
+        print(f"Results written to: {out_path}")
 
     return output
 
